@@ -1,0 +1,42 @@
+.aside 
+  left: 0
+  z-index: 1
+  height: 100vh
+  width: 225px
+  background: $purple
+  position: fixed
+  +box-shadow()
+
+.aside-link
+  display: block
+  color: $white
+  line-height: 55px
+  padding-left: 25px
+  +transition()
+
+  &:hover, &:active,
+    color: $purple
+    background: $gray
+  
+.aside-link-active
+  color: $purple
+  background: $gray
+
+.aside-logo-link
+  width: 112.5px
+  height: 40px
+  display: block
+  margin-left: calc(112.5px / 2)
+  margin-bottom: 48px
+  opacity: .8
+  color: $white
+  margin-top: 23px
+  +transition()
+
+  &:hover, &:active
+    opacity: 1    
+
+.aside-link-avatar
+  margin-top: -5px
+  margin-right: 5px
+  vertical-align: middle

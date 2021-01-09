@@ -1,0 +1,139 @@
+.block-first-company
+  margin-top: 110px
+  +margin-bottom()
+  
+.block-first-company-title
+  +margin-bottom()
+
+.block-first-company-button
+  text-align: center
+  
+  display: block 
+  border: 2px solid $orange
+  background: $orange
+  color: $gray
+  padding: 10px 15px
+  +margin-top()
+  +border-radius()
+  +box-shadow()
+  +transition()
+
+  &:hover, &:active
+    color: $orange
+    background: $white
+
+.block-list-company-avatar 
+  display: flex
+  height: 58px
+  width: 58px
+  +border-image()
+
+.block-list-company
+  +background()
+  +margin-bottom()
+  cursor: pointer
+  +border-radius()
+  +box-shadow()
+  +transition()
+  +padding()
+
+  &:hover, &:active
+    color: $white
+
+    .color-done,
+    .color-not-paid,
+    .color-process,
+    .color-considered
+      color: $white
+
+
+
+.margin-left-2
+  margin-left: -15px
+
+.block-company-text
+  margin-bottom: 5px
+  margin-top: 15px
+
+  &:last-of-type
+    margin-bottom: 0
+    margin-top: 0
+
+.block-company-text-2
+  margin-bottom: 5px
+  margin-top: 5px
+
+  &:last-of-type
+    margin-bottom: 0
+    margin-top: 0
+
+.block-created-company
+  +background()
+  +margin-bottom()
+  cursor: pointer
+  +border-radius()
+  +transition()
+  +box-shadow()
+  +padding()
+
+  &:hover, &:active
+    color: $white
+
+    .color-done,
+    .color-not-paid,
+    .color-process,
+    .color-considered
+      color: $white
+
+.block-created-company-avatar 
+  display: flex
+  height: 74px
+  width: 74px
+  +border-image()
+
+.company-avatar
+  margin: auto
+  color: $white
+
+.block-created-company-link
+  color: $black
+
+.color-done
+  color: $green
+
+.color-not-paid
+  color: $pink
+
+.color-process
+  color: $orange
+
+.color-considered
+  color: $purple
+
+.bg-done
+  background: $green
+
+.bg-not-paid
+  background: $pink
+
+.bg-process
+  background: $orange
+
+.bg-considered
+  background: $purple
+
+.status-done
+  &:hover, &:active
+    background: $green
+
+.status-not-paid
+  &:hover, &:active
+    background: $pink
+
+.status-process
+  &:hover, &:active
+    background: $orange
+
+.status-considered
+  &:hover, &:active
+    background: $purple
