@@ -1,0 +1,38 @@
+.header
+  +background()
+  z-index: 1
+  line-height: 80px
+  position: fixed
+  width: 100%
+  padding-left: 255px
+  padding-right: 30px
+  +box-shadow()
+
+.heder-link-title
+  color: $black
+  +transition()
+
+  &:hover, &:active
+    color: $orange
+
+.header-link-balance
+  margin-right: 30px
+  color: $purple
+  +transition()
+
+  &:hover, &:active
+    color: $orange
+
+.header-link-avatar
+  color: $black
+  opacity: .8
+  margin-top: -5px
+  vertical-align: middle
+  +transition()
+
+  &:hover, &:active
+    opacity: 1
+    color: $orange
+
+.header-status
+  margin-right: 30px
