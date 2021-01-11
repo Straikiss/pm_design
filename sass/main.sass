@@ -5,7 +5,7 @@
 $white: #fff
 $gray: #f8f9fa
 $black: #212529
-$green: #198754
+$green: #1aa179
 $pink: #d63384
 $purple: #6f42c1
 $orange: #fd7e14
@@ -35,6 +35,20 @@ h1
   font-size: 24px
   font-weight: 400
 
+img
+  display: block
+  width: 100%
+
+button,
+input 
+  font-family: NotoSans-Regular
+  font-size: 16px
+  outline: none
+  border: 0
+
+button
+  cursor: pointer
+
 =padding()
   padding: 30px
 
@@ -61,6 +75,9 @@ h1
 
 =background()
   background: $white
+
+=opacity()
+  opacity: .9
 
 .block-def
   +border-radius()
@@ -419,7 +436,9 @@ h1
   padding-top: 10px
   text-align: center
   padding-bottom: 10px
-  border: 2px solid $green
+  border: 1px solid $green
+  margin-top: 1px
+  margin-bottom: 1px
   +border-radius()
   +transition()
   +box-shadow()
@@ -529,14 +548,12 @@ h1
   &:active
     border-bottom: 1px solid $orange
 
-
 input::placeholder
   color: $black
 
 .block-blogger-text
   margin-top: 5px
 
-  
 .color-purple
   color: $purple
 
@@ -706,6 +723,7 @@ input::placeholder
   text-align: center
   display: block
   color: $green
+  +transition()
 
   &:hover, &:active
     color: $orange
@@ -714,7 +732,9 @@ input::placeholder
   cursor: pointer
 
 .hide
+  color: $purple
   display: none
+  +transition()
  
   &:hover, &:active
     color: $orange
@@ -728,5 +748,6 @@ input::placeholder
 @import aside 
 @import header
 @import company
+@import settings
 @import media
 @import ../css/grid

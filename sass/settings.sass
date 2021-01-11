@@ -1,0 +1,86 @@
+.block-settings
+  +margin-bottom()
+  
+.settings-input
+  border-bottom: 1px solid $purple
+  padding-bottom: 2px
+  height: 40px
+  width: 100%
+  +margin-bottom()
+  +transition()
+
+  &:hover,
+  &:active
+    border-bottom: 1px solid $orange
+
+.settings-title
+  font-size: 14px
+  opacity: .5
+ 
+.block-settings-title-balance,
+.block-settings-title-unitpay, 
+.block-settings-title-links
+  +margin-bottom()
+
+.block-settings-title-unitpay 
+  text-align: right
+
+.block-settings-svg
+  vertical-align: middle
+  margin-top: -2.5px
+
+.settings-image
+  cursor: pointer
+  +margin-bottom()
+  +border-image()
+  +transition()
+
+  &:hover, &:active
+    +opacity()
+
+.settings-btn
+  border: 1px solid $green
+  background: $green
+  padding: 10px 15px
+  text-align: center
+  display: block
+  color: $white
+  margin: auto
+  width: 50%
+  +border-radius()
+  +box-shadow()
+  +transition()
+
+  &:hover, &:active
+    background: $white
+    color: $green
+
+.settings-button
+  border: 1px solid $purple
+  background: $purple
+  padding: 10px 15px
+  text-align: center
+  display: block
+  color: $white
+  margin: auto
+  width: 50%
+  +border-radius()
+  +box-shadow()
+  +transition()
+
+  &:hover, &:active
+    background: $white
+    color: $purple
+
+.settings-link
+  justify-content: space-between
+  line-height: 44px
+  color: $purple
+  display: flex
+  +transition()
+
+  &:hover, &:active
+    color: $orange
+
+    .block-settings-link-svg 
+      color: $orange 
