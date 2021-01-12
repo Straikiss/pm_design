@@ -1,25 +1,26 @@
-.block-parnter
+.block-partner-2,
+.block-partner
   +margin-top-large()
   +margin-bottom()
 
-.block-parnter-svg
+.block-partner-svg
   vertical-align: middle
   margin-top: -2.5px
 
-.block-parnter-title
+.block-partner-title
   text-align: center
   +margin-top()
 
-.block-parnter-button
+.block-partner-button
   border: 1px solid $purple
   background: $purple
   padding: 10px 15px
   text-align: center
+  margin-top: 10px
   cursor: pointer
   color: $white
   +border-radius()
   +margin-bottom()
-  +margin-top()
   +box-shadow()
   +transition()
 
@@ -32,7 +33,9 @@
   background: $green
   padding: 10px 15px
   text-align: center
+  display: block
   color: $white
+  width: 100%
   +border-radius()
   +box-shadow()
   +transition()
@@ -41,11 +44,25 @@
     background: $white
     color: $green
 
-.block-parnter-body
+.block-partner-body
   margin-bottom: 15px
 
-.block-parnter-body-2
+.block-partner-body-2
   margin-bottom: 5px
 
 .block-settings-stats
   +margin-bottom()
+
+.blcok-settings-select
+  height: 40px
+  display: block
+  appearance: none
+  width: 100%
+  border: 1px solid $purple
+  +border-image()
+  +margin-bottom()
+  padding-left: 10px
+  margin-top: 10px
+
+  &:hover, &:active
+    border: 1px solid $orange

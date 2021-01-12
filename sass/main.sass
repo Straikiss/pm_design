@@ -39,12 +39,27 @@ img
   display: block
   width: 100%
 
+.mb-10
+  margin-bottom: 10px
+
+select,
+textarea,
 button,
 input 
   font-family: NotoSans-Regular
   font-size: 16px
   outline: none
   border: 0
+
+textarea
+  resize: none
+  width: 100%
+
+textarea::placeholder
+  color: $black
+
+.text-align-center
+  text-align: center
 
 button
   cursor: pointer
@@ -521,13 +536,6 @@ button
   +border-image()
   display: flex
 
-.block-plus
-  +margin-bottom()
-  +background()
-  +border-radius()
-  +box-shadow()
-  +padding()
-
 .block-select-city-avatar
   color: $purple
   vertical-align: bottom
@@ -547,6 +555,9 @@ button
   &:hover,
   &:active
     border-bottom: 1px solid $orange
+
+.mb-20
+  margin-bottom: 20px
 
 input::placeholder
   color: $black
@@ -570,13 +581,26 @@ input::placeholder
   line-height: 24px
   margin-bottom: 20px
     
-.block-image
+.block-image,
+.block-image-2
   background: $white
   +border-radius()
   +box-shadow()
   +margin-bottom()
 
+.block-image-2
+  cursor: pointer
+
+  &:hover, &:active
+    .block-image-text,
+    .margin-svg
+      color: $orange
+
+.color-black
+  color: $black
+
 .block-image-text
+  +transition()
   +padding()
 
 .block-image-avatar
@@ -756,5 +780,6 @@ input::placeholder
 @import company
 @import settings
 @import partner
+@import modal
 @import media
 @import ../css/grid

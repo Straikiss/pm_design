@@ -31,7 +31,14 @@
     height: 53px
     width: 53px
 
-@media (max-width: 1239px)  
+@media (max-width: 1239px) 
+  .ml-partner-size
+    margin-left: 55% !important
+
+  .block-partner-2
+    margin-top: 0
+    +margin-bottom()
+
   .header
     padding-left: 30px
 
@@ -70,6 +77,7 @@
   .block-gender
     margin-bottom: 0
   
+  .ml-price-size,
   .offset-2,
   .offset-3,
     margin-left: 0 !important
@@ -91,11 +99,21 @@
     +margin-top()
   
 @media (max-width: 767px) 
-  .block-screenshots-title
+  .ml-price-size
+    margin-top: -25px
+
+  .block-modal-inside
+    height: 337px
+    width: 510px 
+
+  .block-modal-inside-iframe
+    height: 225px
+
+  .block-screenshots-title,
+  .text-align-center-size
     text-align: center
 
   .header
-    padding-left: 0
     padding-right: 0
     padding-left: 0
 
@@ -131,6 +149,31 @@
     +margin-bottom()
 
 @media (max-width: 578px) 
+  .ml-partner-size
+    margin-left: 0 !important
+
+  .font-size-14
+    font-size: 14px
+
+  .block-partner-button
+    font-size: 16px
+
+  .block-modal-inside-2,
+  .block-modal-inside
+    margin-right: 15px
+    margin-left: 15px
+    padding: 15px
+    width: auto
+
+  .block-modal-inside
+    height: 237px
+
+  .block-modal-inside-iframe
+    height: 175px
+
+  .block-modal-inside-btn
+    margin-bottom: 10px
+
   .ml-10
     margin-left: 0
     float: right
@@ -145,7 +188,7 @@
   .block-settings-title-unitpay
     text-align: left
 
-  .block-settings-title-balance
+  .block-settings-title-balance,
     margin-bottom: 5px
 
   .block-create-link,

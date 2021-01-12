@@ -8,6 +8,14 @@ html(lang="ru")
     link(rel="shortcut icon" href="img/fav/pm-fav.png")
     link(rel="stylesheet" href="css/main.css")
   body
+    .block-modal#video-modal-1(style="display:none;")
+      .block-modal-inside
+        button.block-modal-inside-btn(onclick="document.getElementById('video-modal-1').style.display='none'") Закрыть
+        iframe.block-modal-inside-iframe(src="https://www.youtube.com/embed/5juX944Pos8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+    .block-modal#video-modal-2(style="display:none;")
+      .block-modal-inside
+        button.block-modal-inside-btn(onclick="document.getElementById('video-modal-2').style.display='none'") Закрыть
+        iframe.block-modal-inside-iframe(src="https://www.youtube.com/embed/hpbNqUY2LQo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
     .header
       .container-fluid
         .row
@@ -284,29 +292,52 @@ html(lang="ru")
               .block-start
                 h2.block-start-title 
                   <svg class="block-blogger-card-link-avatar color-purple" width="27" height="27" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M1 0L0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"/>
+                    <path d="M9.669.864L8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193l.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
+                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
                   </svg> Лучший инструмент 2020 года по версии Russian Ad Solution
             .col-xl-4.col-lg-4.col-md-4.col-sm-6
               .block-image
-                img.block-image-avatar(src="img/home/1.png" draggable="false")
+                img.block-image-avatar(src="img/home/preview/1.png" draggable="false")
                 p.block-image-text Создайте рекламную кампанию в личном кабинете.
             .col-xl-4.col-lg-4.col-md-4.col-sm-6
               .block-image
-                img.block-image-avatar(src="img/home/2.png" draggable="false")
+                img.block-image-avatar(src="img/home/preview/2.png" draggable="false")
                 p.block-image-text PostMarket подберет блогеров для Вашей рекламы.
             .col-xl-4.col-lg-4.col-md-4.col-sm-6
               .block-image
-                img.block-image-avatar(src="img/home/3.png" draggable="false")
+                img.block-image-avatar(src="img/home/preview/3.png" draggable="false")
                 p.block-image-text Вас рекомендуют лидеры, которым доверяют Ваши клиенты.
       .container
         .row
-          .col-xl-4.col-lg-4.col-md-4
-            .block-plus
-              p — Запустите кампанию с минимальными вложениями.
-          .col-xl-4.col-lg-4.col-md-4
-            .block-plus
-              p — Вам не нужно тратить свое время на подбор блогеров.
-          .col-xl-4.col-lg-4.col-md-4
-            .block-plus
-              p — Окупаемость 100% уже в первуе дни подключения к сервису.
+          .col-xl-12
+            .margin
+              h2.block-start-title 
+                <svg class="block-blogger-card-link-avatar color-purple" width="27" height="27" fill="currentColor" viewBox="0 0 16 16">
+                   <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"/>
+                </svg> Информационные материалы PostMarket
+          .col-xl-4.col-lg-4.col-md-4.col-sm-6
+            a(href="#" onclick="document.getElementById('video-modal-1').style.display='block'")
+              .block-image-2
+                img.block-image-avatar(src="img/home/case/1.png" draggable="false")
+                <svg class="margin-svg" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M10.804 8L5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+                </svg>
+                p.block-image-text Обзор сервиса маркетологом Дамиром Халиловым
+          .col-xl-4.col-lg-4.col-md-4.col-sm-6
+            a(href="#" onclick="document.getElementById('video-modal-2').style.display='block'")
+              .block-image-2
+                img.block-image-avatar(src="img/home/case/2.png" draggable="false")
+                <svg class="margin-svg" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M10.804 8L5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+                </svg>
+                p.block-image-text Обзор сервиса маркетологом Антоном Сабуровым
+          .col-xl-4.col-lg-4.col-md-4.col-sm-6
+            a.color-black(href="https://www.cossa.ru/cases/279524/" target="_blank")
+              .block-image-2
+                img.block-image-avatar(src="img/home/case/3.png" draggable="false")
+                <svg class="margin-svg" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                </svg>
+                p.block-image-text Успешный кейс маркетингового агенства cossa.ru с PostMarket
     script(src="js/menu.js")
+    script(src="js/modal.js")
