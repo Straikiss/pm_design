@@ -52,7 +52,8 @@ input
   border: 0
 
 textarea
-  resize: none
+  display: block
+  background: $gray
   width: 100%
 
 textarea::placeholder
@@ -133,6 +134,9 @@ button
   +box-shadow()
   +padding()
 
+.block-publications
+  height: 539.66px
+
 .block-blogger
   +background()
   +margin-bottom()
@@ -211,7 +215,7 @@ button
     color: $purple
 
 .block-list-company-more
-  border: 2px solid $green
+  border: 1px solid $green
   margin-left: 15px
   background: $green
   color: $white
@@ -228,7 +232,7 @@ button
     background: $white
 
 .block-list-company-more-2
-  border: 2px solid $green
+  border: 1px solid $green
   background: $green
   color: $white
   display: inline-block
@@ -238,10 +242,6 @@ button
   border-radius: 100%
   +box-shadow()
   +transition()
-
-  &:hover, &:active
-    // color: $green
-    // background: $white
   
 .block-list-company-more-avatar
   margin-top: -5px
@@ -391,7 +391,7 @@ button
   +transition()
   text-align: center
   height: 22px
-
+input-def-title-2
 .va-middle
   margin-top: 2.5px
 
@@ -559,9 +559,6 @@ button
 .mb-20
   margin-bottom: 20px
 
-input::placeholder
-  color: $black
-
 .block-blogger-text
   margin-top: 5px
 
@@ -571,7 +568,7 @@ input::placeholder
 .color-orange
   color: $orange
 
-.color-green
+.color-green 
   color: $green
 
 .block-image-title
@@ -609,12 +606,16 @@ input::placeholder
   display: block
   width: 100%
 
+.block-publications-2,
 .block-publications
   +background()
   +margin-bottom()
   +padding()
   +border-radius()
   +box-shadow()
+
+.block-publications-2
+  height: 300px
 
 .block-publications-avatar
   width: 100%
@@ -781,5 +782,6 @@ input::placeholder
 @import settings
 @import partner
 @import modal
+@import create-company
 @import media
 @import ../css/grid
