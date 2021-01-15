@@ -1,0 +1,681 @@
+.block-def
+  +border-radius()
+  +background()
+  +box-shadow()
+  +padding()
+
+.block-view
+  +margin-bottom()
+  +border-radius()
+  +box-shadow()
+  +padding()
+  background: $yellow
+
+.block-create-body
+  +margin-top()
+  +margin-bottom()
+
+.block-bloggers,
+.block-select-city
+  +background()
+  +margin-top-large()
+  +border-radius()
+  +box-shadow()
+  +padding()
+
+.block-create-company-1-avatar
+  height: 40px
+  width: 48px
+
+.block-create-company-2-avatar
+  height: 40px
+  width: 42px
+
+.block-publications 
+  +background()
+  +border-radius()
+  +box-shadow()
+  +padding()
+
+.block-publications
+  height: 539.66px
+
+.block-blogger
+  +background()
+  +margin-bottom()
+  +border-radius()
+  +box-shadow()
+  +padding()
+  +transition()
+
+  &:hover,
+  &:active
+    color: $orange
+
+    .block-blogger-title, .color-purple
+      color: $orange
+    
+    .block-blogger-avatar
+      +opacity()
+
+.ml-10
+  margin-left: 15px   
+
+.block-blogger-card-body
+  margin-left: 28px
+  font-size: 14px
+  color: $gray-text
+  +transition()
+
+.block-blogger-card-body-2
+  font-size: 14px
+  color: $gray-text
+  margin-left: 30px
+
+.block-select-city-body
+  font-size: 14px
+  color: $gray-text
+
+.block-blogger-card-avatar
+  margin-right: 5px
+  color: $purple
+  vertical-align: bottom
+
+.block-bloggers-title
+  text-align: left
+
+.block-view-padding
+  text-align: center
+
+.block-bloggers-link,
+.block-publications-link
+  color: $black
+  +margin-top()
+  display: block
+  +transition()
+
+  &:hover, &:active
+    color: $orange
+
+    .block-blogger-card-body
+      opacity: 1
+
+    .block-blogger-card-avatar, .color-purple
+      color: $orange
+
+    .block-bloggers-avatar,
+    .block-publications-avatar
+      +opacity()
+
+.block-bloggers-link-more, 
+.block-publications-more, 
+.block-created-company-more
+  color: $orange
+  float: right
+  +transition()
+
+  &:hover, &:active
+    color: $purple
+
+.block-list-company-more
+  border: 1px solid $green
+  margin-left: 15px
+  background: $green
+  color: $white
+  display: inline-block
+  width: 52px
+  height: 52px
+  text-align: center
+  border-radius: 100%
+  +box-shadow()
+  +transition()
+
+  &:hover, &:active
+    color: $green
+    background: $white
+
+.block-list-company-more-2
+  border: 1px solid $green
+  background: $green
+  color: $white
+  display: inline-block
+  width: 52px
+  height: 52px
+  text-align: center
+  border-radius: 100%
+  +box-shadow()
+  +transition()
+  
+.block-list-company-more-avatar
+  margin-top: -5px
+  vertical-align: middle
+
+.block-blogger-link-avatar
+  margin-top: -5px
+  margin-right: 5px
+  vertical-align: middle
+
+.block-blogger-link-settings
+  color: $green
+  background: $white
+  display: block
+  width: 100%
+  text-align: center
+  line-height: 44px
+  +border-image()
+  +box-shadow()
+  +transition()
+
+  &:hover, &:active
+    color: $white
+    background: $green
+
+.block-blogger-link-all
+  color: $purple
+  background: $white
+  text-align: center
+  display: block
+  width: 100%
+  line-height: 44px
+  +border-image()
+  +box-shadow()
+  +transition()
+
+  &:hover, &:active
+    color: $white
+    background: $purple
+
+.block-blogger-link-favorite
+  display: block
+  line-height: 44px
+  color: $orange
+  text-align: center
+  background: $white
+  width: 100%
+  +border-image()
+  +box-shadow()
+  +transition()
+
+  &:hover, &:active
+    color: $white
+    background: $orange
+
+.block-blogger-card-favorite
+  display: block
+  margin-top: 10px 
+  line-height: 33px
+  color: $green
+  text-align: center
+  +border-image()
+  +transition()
+
+  &:hover, &:active
+    color: $white
+    background: $green
+
+.all-active
+  color: $white
+  background: $purple
+
+.favorite-active
+  color: $white
+  background: $orange
+
+.block-blogger-link-block
+  display: flex
+  +margin-bottom()
+
+.block-blogger-link-more-block
+  height: 52px
+  line-height: 52px
+  text-align: center
+  +margin-bottom()
+
+.block-blogger-link-more
+  color: $purple
+  +transition()
+
+  &:hover,
+  &:active
+    color: $green
+
+    .block-list-company-more-2
+      color: $green
+      background: $white
+
+.block-bloggers-avatar,
+.block-blogger-avatar
+  display: block
+  width: 100%
+  +border-image()
+  +transition()
+
+  &:hover, &:active
+    +opacity()
+
+.block-screenshots-avatar
+  display: block
+  margin-top: 10px
+  width: 100%
+  cursor: pointer
+  +transition()
+
+  &:hover, &:active
+    +opacity()
+
+.block-screenshots-avatar-2
+  display: block
+  width: 100%
+  cursor: pointer
+  height: 250px
+  object-fit: cover
+  +transition()
+
+  &:hover, &:active
+    +opacity()
+
+.block-screenshots-title
+  +margin-top()
+  +margin-bottom()
+
+.float-right
+  float: right
+
+.block-bloggers-card-avatar
+  display: block
+  width: 100%
+  +border-image()
+  +transition()
+
+.block-blogger-link
+  color: $black
+
+.block-icons
+  +transition()
+  text-align: center
+  height: 22px
+
+.va-middle
+  margin-top: 2.5px
+
+.va-m-m
+  margin-top: -2.5px
+
+.va-m
+  vertical-align: middle
+
+.block-bloggers-text, 
+.block-publications-text
+  text-align: center
+
+.block-bloggers-text
+  &:first-of-type
+    height: 44px
+    overflow: hidden
+
+.block-publications-text
+  &:first-of-type
+    height: 44px
+    overflow: hidden
+
+.block-blogger-card-link
+  color: $purple
+  +transition()
+
+  &:hover, &:active
+    color: $pink
+
+.height-300
+  overflow: hidden
+  height: 67px
+  
+.block-create
+  margin-top: 110px
+  +background()
+  +margin-bottom()
+  +padding()
+  +border-radius()
+  +box-shadow()
+
+.block-start
+  +margin-top()
+  +margin-bottom()
+
+.block-create-title
+  text-align: center
+  +margin-bottom()
+
+.block-create-link
+  margin: auto
+  display: block
+  width: 60%
+  color: $white
+  background: $green
+  padding-top: 10px
+  text-align: center
+  padding-bottom: 10px
+  border: 1px solid $green
+  margin-top: 1px
+  margin-bottom: 1px
+  +border-radius()
+  +transition()
+  +box-shadow()
+
+  &:hover, &:active
+    color: $green
+    background: $white
+
+.block-create-company-1
+  background: linear-gradient(145.83deg, #F4EAFF 27.13%, #F0C5FF 93.47%)
+  +padding()
+  +border-radius()
+  +box-shadow()
+
+.block-create-company-2
+  background: linear-gradient(298.77deg, #9CFFF9 20.66%, #FFFFFF 131.12%)
+  +padding()
+  +border-radius()
+  +box-shadow()
+
+.block-create-company-title,
+  margin-bottom: 20px
+
+.block-blogger-title
+  margin-bottom: 5px
+
+.h-27
+  height: 27px
+  overflow: hidden
+
+.block-select-city-title
+  margin-bottom: 15px
+
+.color-orange
+  color: $orange
+
+.block-list-company-head
+  padding-top: 110px
+  +margin-bottom()
+
+.block-list-company-title,
+  line-height: 52px
+  height: 52px
+
+.height-400
+  height: 42px
+  overflow: hidden
+
+.text-align 
+  text-align: right
+
+.mt-20
+  margin-top: 20px
+
+.block-created-company-title
+  +margin-top()
+  +margin-bottom()
+
+.preview
+  margin-left: -35px
+
+.block-list-company-not-paid-avatar
+  width: 68px
+  height: 68px
+  background: $pink
+  +border-image()
+  display: flex
+
+.block-list-company-process-avatar
+  width: 68px
+  height: 68px
+  background: $orange
+  +border-image()
+  display: flex
+
+.block-list-company-considered-avatar
+  width: 68px
+  height: 68px
+  background: $purple
+  +border-image()
+  display: flex
+
+.block-select-city-avatar
+  color: $purple
+  vertical-align: bottom
+
+.block-select-city-input
+  font-family: NotoSans-Regular
+  font-size: 16px
+  border: 0
+  border-bottom: 1px solid $purple
+  outline: none
+  width: 100%
+  margin-top: 15px
+  margin-bottom: 10px
+  +transition()
+  padding-bottom: 2px
+
+  &:hover,
+  &:active
+    border-bottom: 1px solid $orange
+
+.mb-20
+  margin-bottom: 20px
+
+.block-blogger-text
+  margin-top: 5px
+
+.color-purple
+  +transition()
+  color: $purple
+
+.color-orange
+  color: $orange
+
+.color-green 
+  color: $green
+
+.block-image-title
+  margin-top: 20px
+  font-weight: normal
+  font-size: 20px
+  line-height: 24px
+  margin-bottom: 20px
+    
+.block-image,
+.block-image-2
+  background: $white
+  +border-radius()
+  +box-shadow()
+  +margin-bottom()
+
+.block-image-2
+  cursor: pointer
+
+  &:hover, &:active
+    .block-image-text,
+    .margin-svg
+      color: $orange
+
+.color-black
+  color: $black
+
+.block-image-text
+  +transition()
+  +padding()
+
+.block-image-avatar
+  border-top-left-radius: 15px
+  border-top-right-radius: 15px
+  display: block
+  width: 100%
+
+.block-publications-2,
+.block-publications
+  +background()
+  +margin-bottom()
+  +padding()
+  +border-radius()
+  +box-shadow()
+
+.block-publications-2
+  height: 300px
+
+.block-publications-avatar
+  width: 100%
+  display: block
+  +box-shadow()
+  +border-image()
+  +transition()
+
+.block-blogger-card
+  +margin-top-large()
+  +margin-bottom()
+
+.block-blogger-card-link-avatar
+  vertical-align: bottom
+
+.block-view-text
+  text-align: center
+  padding: 10px
+
+.block-blogger-card-head
+  margin-top: 10px
+
+.block-blogger-card-head-2
+  margin-top: 5px
+
+.block-blogger-card-price
+  margin-top: 10px
+  color: $white
+  background: $purple
+  padding: 10px
+  +border-image()
+
+.align-left
+  text-align: left
+
+.block-gender
+  color: $white
+  +margin-top()
+  +margin-bottom()
+  +padding()
+  +box-shadow()
+  +border-radius()
+  background: $purple
+
+.block-age
+  +margin-top()
+  +margin-bottom()
+  +padding()
+  +box-shadow()
+  +border-radius()
+  +background()
+
+.progress-line
+  height: 10px
+  width: 100%
+  margin-top: 15px
+  margin-bottom: 10px
+  +border-radius()
+
+.progress-line-age
+  margin: auto
+  width: 10px
+  height: 60px
+  margin-bottom: 3px
+  background: $purple
+  +border-radius()
+
+.empty-line-age
+  width: 10px
+  opacity: .5
+  background: $white
+
+.empty-line-age-1
+  height: 90%
+
+.empty-line-age-2
+  height: 80%
+
+.empty-line-age-3
+  height: 70%
+
+.empty-line-age-4
+  height: 75%
+
+.empty-line-age-5
+  height: 90%
+
+.empty-line-age-6
+  height: 95%
+
+.block-gender-title
+  +margin-bottom()
+
+.text-center, .text-center-2
+  text-align: center
+
+.text-center-2
+  margin-left: 10px
+
+.female
+  background: $pink
+
+.male
+  background: $blue
+
+.margin
+  +margin-bottom()
+
+.empty-line 
+  opacity: .5
+  height: 10px
+  background: $purple
+  border-top-right-radius: 20px
+  border-bottom-right-radius: 20px
+
+.empty-line-male
+  width: 25%
+  margin-left: 75%
+  
+.empty-line-female
+  width: 75%
+  margin-left: 25%
+
+.block-gender-body
+  font-size: 14px
+
+.main
+  padding-left: 240px
+  padding-right: 15px
+
+.block-dev
+  +margin-top-large()
+  +margin-bottom()
+
+.block-blogger-link-screen
+  text-align: center
+  display: block
+  color: $green
+  +transition()
+
+  &:hover, &:active
+    color: $orange
+
+.cursor-pointer
+  cursor: pointer
+
+.hide
+  color: $purple
+  display: none
+  +transition()
+ 
+  &:hover, &:active
+    color: $orange
+
+.hide-2
+  display: none !important
+
+.hide-avatar
+  vertical-align: middle

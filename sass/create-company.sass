@@ -1,0 +1,205 @@
+.block-create-company-steps
+  justify-content: space-between
+  display: flex
+  +margin-top-large()
+  +margin-bottom()
+
+.block-create-company-3
+  +margin-bottom()
+
+.block-create-company-3-bg
+  background: $green
+  color: $white
+
+.block-create-company-3-title
+  text-align: center
+  margin-top: 5px
+  
+.block-create-company-select
+  margin-top: 45px
+
+.block-create-company-select-2
+  +margin-top()
+
+.block-create-company-select-title
+  display: inline
+  color: $purple
+
+.block-create-company-select-title-3
+  display: inline
+  +transition()
+
+.block-create-company-select-text
+  opacity: .5
+  +transition()
+  font-size: 14px
+
+.block-create-company-select-box
+  margin-right: 50px
+
+  &:hover, &:active
+    .block-create-company-select-text
+      opacity: 1
+
+.block-create-company-select-title-2
+  font-size: 14px
+
+.block-create-company-svg
+  margin-left: 15px
+
+.block-create-company-link
+  border: 1px solid $purple
+  background: $purple
+  text-align: center
+  line-height: 44px
+  display: block
+  color: $white
+  height: 44px
+  margin: auto
+  +border-radius()
+  +transition()
+  +box-shadow()
+
+  &:hover, &:active
+    color: $purple
+    +background()
+
+.block-create-company-link-svg
+  vertical-align: middle
+  margin-top: -2.5px
+  height: 35px
+  width: 35px
+  +transition()
+
+.block-create-company-steps-text
+  border: 1px solid $purple
+  background: $purple
+  border-radius: 100%
+  text-align: center
+  line-height: 45px
+  color: $white
+  margin: auto
+  height: 45px
+  width: 45px
+  opacity: .5
+  +transition()
+  +box-shadow()
+
+.block-create-company-steps-text-disabled
+  cursor: not-allowed
+
+.block-create-company-steps-text-2
+  text-align: center
+  color: $purple
+  opacity: .5
+
+.block-create-company-steps-text-active
+  cursor: pointer
+
+  .block-create-company-steps-text-2,
+  .block-create-company-steps-text
+    opacity: 1
+
+  &:hover, &:active
+    .block-create-company-steps-text
+      border: 1px solid $orange
+      color: $orange
+      +background()
+    
+    .block-create-company-steps-text-2,
+      color: $orange
+
+.create-company-textarea
+  resize: vertical
+  padding: 15px
+  min-height: 150px
+  border: 1px solid $purple
+  +border-image()
+  +transition()
+
+  &:hover, &:active
+    border: 1px solid $orange
+
+.input-def
+  border-bottom: 1px solid $purple
+  height: 45px
+  width: 100%
+  +transition()
+
+  &:hover,
+  &:active
+    border-bottom: 1px solid $orange
+
+.input-def-title-3,
+.input-def-title-2,
+.input-def-title
+  font-size: 14px
+  color: $gray-text
+
+.input-def-title
+  +margin-top()
+
+.input-def-title-2
+  margin-top: 5px
+
+.input-def-title-3
+  margin-bottom: 5px
+
+input::placeholder
+  color: $black
+
+.create-company-button
+  +margin-top()
+  border: 1px solid #1aa179
+  background: #1aa179
+  padding: 10px 15px
+  text-align: center
+  display: block
+  color: #fff
+  border-radius: 15px
+  box-shadow: 0 5px 10px rgba(0,0,0,.1)
+  transition: .2s
+
+  &:hover, &:active
+    color: $green
+    background: $white
+
+.create-company-select-type
+  margin-top: 10px
+  +transition()
+
+  &:hover, &:active
+    color: $orange
+
+.create-company-select-type-svg
+  vertical-align: middle
+  margin-top: -2.5px
+
+.create-company-image
+  +box-shadow()
+  +border-image()
+
+.create-company-change-type-2,
+.create-company-change-type
+  text-align: center
+  line-height: 44px
+  color: $purple
+  display: block
+  width: 100%
+  +border-image()
+  +background()
+  +box-shadow()
+  +transition()
+
+  &:hover, &:active
+    background: $purple
+    color: $white
+
+.create-company-change-type-active-2,
+.create-company-change-type-active
+  background: $purple
+  color: $white
+
+.create-company-text
+  padding-left: 18px
+  margin-top: -20px
