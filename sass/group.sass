@@ -11,11 +11,6 @@
   +padding()
   background: $yellow
 
-.block-create-body
-  +margin-top()
-  +margin-bottom()
-
-.block-bloggers,
 .block-select-city
   +background()
   +margin-top-large()
@@ -23,13 +18,6 @@
   +box-shadow()
   +padding()
 
-.block-create-company-1-avatar
-  height: 40px
-  width: 48px
-
-.block-create-company-2-avatar
-  height: 40px
-  width: 42px
 
 .block-publications 
   +background()
@@ -81,13 +69,9 @@
   color: $purple
   vertical-align: bottom
 
-.block-bloggers-title
-  text-align: left
-
 .block-view-padding
   text-align: center
 
-.block-bloggers-link,
 .block-publications-link
   color: $black
   +margin-top()
@@ -103,11 +87,9 @@
     .block-blogger-card-avatar, .color-purple
       color: $orange
 
-    .block-bloggers-avatar,
     .block-publications-avatar
       +opacity()
 
-.block-bloggers-link-more, 
 .block-publications-more, 
 .block-created-company-more
   color: $orange
@@ -243,7 +225,6 @@
       color: $green
       background: $white
 
-.block-bloggers-avatar,
 .block-blogger-avatar
   display: block
   width: 100%
@@ -304,14 +285,8 @@
 .va-m
   vertical-align: middle
 
-.block-bloggers-text, 
 .block-publications-text
   text-align: center
-
-.block-bloggers-text
-  &:first-of-type
-    height: 44px
-    overflow: hidden
 
 .block-publications-text
   &:first-of-type
@@ -328,57 +303,14 @@
 .height-300
   overflow: hidden
   height: 67px
-  
-.block-create
-  margin-top: 110px
-  +background()
-  +margin-bottom()
-  +padding()
-  +border-radius()
-  +box-shadow()
 
-.block-start
-  +margin-top()
-  +margin-bottom()
 
 .block-create-title
   text-align: center
   +margin-bottom()
 
-.block-create-link
-  margin: auto
-  display: block
-  width: 60%
-  color: $white
-  background: $green
-  padding-top: 10px
-  text-align: center
-  padding-bottom: 10px
-  border: 1px solid $green
-  margin-top: 1px
-  margin-bottom: 1px
-  +border-radius()
-  +transition()
-  +box-shadow()
 
-  &:hover, &:active
-    color: $green
-    background: $white
 
-.block-create-company-1
-  background: linear-gradient(145.83deg, #F4EAFF 27.13%, #F0C5FF 93.47%)
-  +padding()
-  +border-radius()
-  +box-shadow()
-
-.block-create-company-2
-  background: linear-gradient(298.77deg, #9CFFF9 20.66%, #FFFFFF 131.12%)
-  +padding()
-  +border-radius()
-  +box-shadow()
-
-.block-create-company-title,
-  margin-bottom: 20px
 
 .block-blogger-title
   margin-bottom: 5px
@@ -482,33 +414,13 @@
   line-height: 24px
   margin-bottom: 20px
     
-.block-image,
-.block-image-2
-  background: $white
-  +border-radius()
-  +box-shadow()
-  +margin-bottom()
-
-.block-image-2
-  cursor: pointer
-
-  &:hover, &:active
-    .block-image-text,
-    .margin-svg
-      color: $orange
 
 .color-black
   color: $black
 
-.block-image-text
-  +transition()
-  +padding()
 
-.block-image-avatar
-  border-top-left-radius: 15px
-  border-top-right-radius: 15px
-  display: block
-  width: 100%
+
+
 
 .block-publications-2,
 .block-publications

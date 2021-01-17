@@ -1,0 +1,145 @@
+.home-block-2,
+.home-block
+  +margin-bottom()
+  +border-radius()
+  +box-shadow()
+  +background()
+
+.home-block-2
+  display: block
+  color: $black
+  +transition()
+
+  &:hover, &:active
+    .home-block-inside-text,
+    .home-block-inside-svg
+      color: $orange
+
+.home-block-inside-image
+  border-top-right-radius: 15px
+  border-top-left-radius: 15px
+
+.home-block-inside-svg
+  position: absolute
+  color: $white
+  width: 45px
+  right: 15px
+  top: 0
+  +transition()
+
+.home-block-inside-text
+  +transition()
+  +padding()
+
+.home-block-title-svg
+  vertical-align: middle
+  margin-top: -2.5px
+  color: $purple
+  height: 27px
+  width: 27px
+
+.home-company
+  background: linear-gradient(145.83deg, #F4EAFF 27.13%, #F0C5FF 93.47%)
+
+.home-company-2
+  background: linear-gradient(298.77deg, #9CFFF9 20.66%, #FFFFFF 131.12%)
+
+.home-company-2,
+.home-company
+  +margin-bottom()
+  +border-radius()
+  +box-shadow()
+  +padding()
+
+.home-company-svg
+  height: 42px
+  width: 42px
+
+.home-company-create-title,
+.home-company-create-text
+  text-align: center
+
+.home-company-create,
+.home-bloggers
+  +margin-top-large()
+  +border-radius()
+  +background()
+  +box-shadow()
+  +padding()
+
+.home-company-create-text,
+.home-company-create,
+.home-company-title,
+.home-block-title,
+.home-bloggers
+  +margin-bottom()
+
+.home-company-create-text
+  +margin-top()
+
+.home-company-create-button
+  border: 1px solid $green
+  text-align: center
+  background: $green
+  line-height: 44px
+  display: block
+  color: $white
+  height: 44px
+  margin: auto
+  width: 50%
+  +border-radius()
+  +transition()
+  +box-shadow()
+  +font-size()
+
+  &:hover, &:active
+    color: $green
+    +background()
+
+.home-bloggers-title
+  text-align: left
+
+.home-bloggers-title-link
+  color: $orange
+  float: right
+  +transition()
+
+  &:hover, &:active
+    color: $purple
+  
+.home-bloggers-block
+  display: block
+  color: $black
+  +margin-top()
+  +transition()
+
+  &:hover, &:active
+    color: $orange
+
+    .home-bloggers-block-icons-svg
+      color: $orange
+
+    .home-bloggers-block-image
+      +opacity()
+
+.home-bloggers-block-text
+  text-align: center
+
+  &:first-of-type
+    overflow: hidden
+    height: 40px
+
+.home-bloggers-block-image
+  +border-image()
+  +transition()
+
+.home-bloggers-block-icons
+  text-align: center
+  line-height: 20px
+
+.home-bloggers-block-icons-svg
+  vertical-align: middle
+  margin-top: -2.5px
+  color: $purple
+  height: 15px
+  width: 15px

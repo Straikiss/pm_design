@@ -1,11 +1,9 @@
 .block-create-company-steps
-  justify-content: space-between
-  display: flex
-  +margin-top-large()
+  padding-top: 110px
   +margin-bottom()
 
 .block-create-company-3
-  +margin-bottom()
+  margin-top: 45px
 
 .block-create-company-3-bg
   background: $green
@@ -15,11 +13,11 @@
   text-align: center
   margin-top: 5px
   
+.create-company-title
+  +margin-bottom()
+  
 .block-create-company-select
-  margin-top: 45px
-
-.block-create-company-select-2
-  +margin-top()
+  margin-bottom: 60px
 
 .block-create-company-select-title
   display: inline
@@ -30,26 +28,26 @@
   +transition()
 
 .block-create-company-select-text
-  opacity: .5
+  color: $gray-text
   +transition()
   font-size: 14px
+  margin-top: 15px
 
 .block-create-company-select-box
-  margin-right: 50px
-
   &:hover, &:active
     .block-create-company-select-text
-      opacity: 1
+      color: $black
 
 .block-create-company-select-title-2
   font-size: 14px
 
 .block-create-company-svg
   margin-left: 15px
+  +margin-top()
 
 .block-create-company-link
-  border: 1px solid $purple
-  background: $purple
+  border: 1px solid $green
+  background: $green
   text-align: center
   line-height: 44px
   display: block
@@ -61,7 +59,7 @@
   +box-shadow()
 
   &:hover, &:active
-    color: $purple
+    color: $green
     +background()
 
 .block-create-company-link-svg
@@ -76,12 +74,13 @@
   background: $purple
   border-radius: 100%
   text-align: center
-  line-height: 45px
+  line-height: 30px
   color: $white
   margin: auto
-  height: 45px
-  width: 45px
+  height: 30px
+  width: 30px
   opacity: .5
+  font-size: 15px
   +transition()
   +box-shadow()
 
@@ -90,6 +89,8 @@
 
 .block-create-company-steps-text-2
   text-align: center
+  margin-top: 15px
+  font-size: 15px
   color: $purple
   opacity: .5
 
@@ -101,13 +102,9 @@
     opacity: 1
 
   &:hover, &:active
-    .block-create-company-steps-text
-      border: 1px solid $orange
-      color: $orange
-      +background()
-    
     .block-create-company-steps-text-2,
-      color: $orange
+    .block-create-company-steps-text
+      opacity: .5
 
 .create-company-textarea
   resize: vertical
@@ -149,20 +146,20 @@ input::placeholder
   color: $black
 
 .create-company-button
-  +margin-top()
   border: 1px solid #1aa179
   background: #1aa179
   padding: 10px 15px
   text-align: center
   display: block
-  color: #fff
+  color: $white
   border-radius: 15px
-  box-shadow: 0 5px 10px rgba(0,0,0,.1)
-  transition: .2s
+   +margin-top()
+  +box-shadow()
+  +transition()
 
   &:hover, &:active
+    +background()
     color: $green
-    background: $white
 
 .create-company-select-type
   margin-top: 10px

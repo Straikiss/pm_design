@@ -26,16 +26,16 @@ a
   text-decoration: none
 
 p 
-  font-size: 16px
+  font-size: 15px
 
 h2
   font-weight: 400
-  font-size: 20px
+  font-size: 17px
 
 h1 
   font-weight: 400
-  font-size: 24px
-  
+  font-size: 19px
+
 img
   display: block
   width: 100%
@@ -65,12 +65,15 @@ textarea::placeholder
 
 .text-align-center
   text-align: center
-
+ 
 input[disabled]
   background: none
 
 button
   cursor: pointer
+
+.mb-60
+  margin-bottom: 60px
 
 =padding()
   padding: 30px
@@ -88,7 +91,7 @@ button
   border-radius: 15px
 
 =border-image()
-  border-radius: 10px
+  border-radius: 5px
 
 =transition()
   transition: .2s
@@ -102,10 +105,21 @@ button
 =opacity()
   opacity: .9
 
-@import base  
-@import group
+=font-size()
+  font-size: 15px
+
+.block-def-2
+  padding: 60px 30px
+  +border-radius()
+  +box-shadow()
+  +background()
+
+@import base 
+@import header 
 @import aside 
-@import header
+@import home
+
+@import group
 @import company
 @import settings
 @import partner

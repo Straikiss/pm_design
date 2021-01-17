@@ -1,40 +1,47 @@
 .header
-  +background()
-  z-index: 1
+  padding-left: 255px
+  padding-right: 30px
   line-height: 80px
   position: fixed
   width: 100%
-  padding-left: 255px
-  padding-right: 30px
+  z-index: 1
+  +background()
   +box-shadow()
 
   .col-xl-6
     height: 80px
 
-.heder-link-title
-  color: $black
-  +transition()
-
-  &:hover, &:active
-    color: $orange
-
-.header-link-balance
-  color: $purple
-  +transition()
-
-  &:hover, &:active
-    color: $orange
-
-.header-link-avatar
-  color: $black
-  opacity: .9
-  margin-top: -5px
-  vertical-align: middle
-  +transition()
-
-  &:hover, &:active
-    opacity: 1
-    color: $pink
-
 .header-status
+  text-align: right
+
+.header-link
+  color: $purple
+  display: none
+
+.heder-title-link
+  color: $black
+  +transition()
+
+.heder-title-link,
+.header-status-pay,
+.header-link  
+  &:hover, &:active
+    color: $orange
+
+.header-status-pay,
+.header-link
+  color: $purple
+  +font-size()
+  +transition()
+
+.header-link-svg
+  vertical-align: middle
+  height: 19px
+  width: 19px
+
+.header-status-balance
   margin-right: 30px
+  display: inline
+
+.header-status-balance-money
+  color: $orange
