@@ -3,7 +3,7 @@ doctype html
 html(lang="ru")
   head
     meta(charset="utf-8")
-    title Рекламные кампании - Рекламодатель - PostMarket
+    title Новая рекламная кампания - Контент - Рекламодатель - PostMarket
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     link(rel="shortcut icon" href="img/fav/pm-fav.png")
     link(rel="stylesheet" href="css/main.css")
@@ -17,7 +17,7 @@ html(lang="ru")
                 <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
               </svg> Меню
             h1.header-title
-              a.heder-title-link(href="company-2.html") Реклама
+              a.heder-title-link(href="create-company-auto-1.html") Новая рекламная кампания - Контент
           .col-xl-6.col-lg-6.col-md-9.col-sm-7.col-8
             .header-status
               p.header-status-balance 0 ₽ <sup class="header-status-balance-money"> 2 000 ₽ 
@@ -79,17 +79,115 @@ html(lang="ru")
             <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
             <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
           </svg> Выйти
-      .container
-        .row
-          .col-xl-8.offset-xl-2.col-lg-8.offset-lg-2.col-md-12
-            .block-first-company.block-def
-              h2.block-first-company-title 
-                <svg class="svg-2 color-purple" fill="currentColor" viewBox="0 0 16 16">
-                  <path d="M4.968 9.75a.5.5 0 1 0-.866.5A4.498 4.498 0 0 0 8 12.5a4.5 4.5 0 0 0 3.898-2.25.5.5 0 1 0-.866-.5A3.498 3.498 0 0 1 8 11.5a3.498 3.498 0 0 1-3.032-1.75zM7 5.116V5a1 1 0 0 0-1-1H3.28a1 1 0 0 0-.97 1.243l.311 1.242A2 2 0 0 0 4.561 8H5a2 2 0 0 0 1.994-1.839A2.99 2.99 0 0 1 8 6c.393 0 .74.064 1.006.161A2 2 0 0 0 11 8h.438a2 2 0 0 0 1.94-1.515l.311-1.242A1 1 0 0 0 12.72 4H10a1 1 0 0 0-1 1v.116A4.22 4.22 0 0 0 8 5c-.35 0-.69.04-1 .116z"/>
-                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-1 0A7 7 0 1 0 1 8a7 7 0 0 0 14 0z"/>
-                </svg> А теперь самое время создать свою рекламную кампанию!
-              p Просто заполните все необходимые поля в рекламной кампании. Все остальное PostMarket сделает за Вас. И Вы начнете получать новые заказы и клиентов!
+      .container.block-create-company-steps
+        .block-def-2
+          .row.mb-60
+            .col-xl-2.offset-xl-2.col-lg-2.offset-lg-2.col-md-2.offset-md-2.col-sm-3.offset-sm-0.col-3
+              a.block-create-company-steps-text-active(href="create-company.html")
+                p.block-create-company-steps-text 1
+                p.block-create-company-steps-text-2 Выбор блогеров
+            .col-xl-2.col-lg-2.col-md-2.col-sm-3.col-3
+              a.block-create-company-steps-text-active(href="create-company-auto-1.html")
+                p.block-create-company-steps-text 2 
+                p.block-create-company-steps-text-2 Создание контента
+            .col-xl-2.col-lg-2.col-md-2.col-sm-3.col-3
+              a.block-create-company-steps-text-disabled(href="#")
+                p.block-create-company-steps-text 3
+                p.block-create-company-steps-text-2 Охват и таргетинг 
+            .col-xl-2.col-lg-2.col-md-2.col-sm-3.col-3
+              a.block-create-company-steps-text-disabled(href="#")
+                p.block-create-company-steps-text 4
+                p.block-create-company-steps-text-2 Оплата рекламы
+          .row
+            .col-xl-6.offset-xl-1.col-lg-6.offset-lg-1.col-md-10.offset-md-1
+              .block-create-company
+                p.input-def-title.input-def-title-3.mt-0 Рекламный контент создает
+                .row  
+                  .col-xl-4.col-lg-4.col-md-4.col-sm-4.col-4
+                    a.create-company-change-type.create-company-change-type-active(href="create-company-auto-1.html") Блогер
+                  .col-xl-4.col-lg-4.col-md-4.col-sm-4.col-4
+                    a.create-company-change-type(href="create-company-auto-1-2.html") Я
+                p.input-def-title.input-def-title-3 Тип публикации
+                .row#Buttons  
+                  .col-xl-4.col-lg-4.col-md-4.col-sm-4.col-4
+                    a.create-company-change-type-2.create-company-change-type-active-2(href="#") Любой
+                  .col-xl-4.col-lg-4.col-md-4.col-sm-4.col-4
+                    a.create-company-change-type-2(href="#") Пост
+                  .col-xl-4.col-lg-4.col-md-4.col-sm-4.col-4
+                    a.create-company-change-type-2(href="#") Сторис
+                p.input-def-title.input-def-title-3 Выбор сценария рекламной публикации
+                .create-company-select-type.mt-0(onclick="ChangeImage1()")
+                  input.create-company-select-type-svg(type="radio" id="CampTypePost1" name="CampTypePost" value="0" checked)
+                  label(for="CampTypePost1")
+                    p.block-create-company-select-title-3.create-company-text-3 Эффект пользования с оценкой блогера
+                .create-company-select-type(onclick="ChangeImage2()")
+                  input.create-company-select-type-svg(type="radio" id="CampTypePost2" name="CampTypePost" value="1")
+                  label(for="CampTypePost2")
+                    p.create-company-text Презентация продукта от имени блогера с позитивным комментарием
+                .create-company-select-type(onclick="ChangeImage3()")
+                  input.create-company-select-type-svg(type="radio" id="CampTypePost3" name="CampTypePost" value="2")
+                  label(for="CampTypePost3")
+                    p.create-company-text Публикаци от лица блогера с рекомендацией купить или воспользоваться рекламируемым продуктом
+                .create-company-select-type(onclick="ChangeImage4()")
+                  input.create-company-select-type-svg(type="radio" id="CampTypePost4" name="CampTypePost" value="3")
+                  label(for="CampTypePost4")
+                    p.block-create-company-select-title-3 Свой вариант
+                p.input-def-title.input-def-title-3 Описание задачи
+                textarea.create-company-textarea(placeholder="Опишите дополнительные пожелания к выполнению задачи.")
+                p.input-def-title.input-def-title-3 Текст публикации (не обязательно)
+                textarea.create-company-textarea(placeholder="Конкретный текст публикации.")
+                p.input-def-title.input-def-title-3 Фото или видео для публикации (не обязательно)
+                .row
+                  .col-xl-5.col-lg-5.col-md-5.col-sm-5
+                    a.create-company-button.mt-0(href="") Загрузить
+                .row
+                  .col-xl-4.col-lg-4.col-md-4.col-sm-4.col-6
+                    .uploaded
+                      a(href="#")
+                        img.uploaded-image(src="img/blogger-card/1.png" draggable="false")
+                      .text-center.mt-10
+                        a.uploaded-link(href="#") Удалить
+                  .col-xl-4.col-lg-4.col-md-4.col-sm-4.col-6
+                    .uploaded
+                      a(href="#")
+                        img.uploaded-image(src="img/blogger-card/2.png" draggable="false")
+                      .text-center.mt-10
+                        a.uploaded-link(href="#") Удалить
+                  .col-xl-4.col-lg-4.col-md-4.col-sm-4.col-6
+                    .uploaded
+                      a(href="#")
+                        img.uploaded-image(src="img/blogger-card/3.png" draggable="false")
+                      .text-center.mt-10
+                        a.uploaded-link(href="#") Удалить
+                  .col-xl-4.col-lg-4.col-md-4.col-sm-4.col-6
+                    .uploaded
+                      a(href="#")
+                        img.uploaded-image(src="img/blogger-card/4.png" draggable="false")
+                      .text-center.mt-10
+                        a.uploaded-link(href="#") Удалить
+                p.input-def-title-2 Фото: .jpg, .png, .gif 600x600, 720x1280, 600x1067 (не больше 100MB) <br> Видео: .mp4 900x1600, 720x1280, 600x1067 (не больше 100MB)
+                p.input-def-title Профиль в Инстаграм (по желанию)
+                input.input-def(placeholder="@instagram")
+                p.input-def-title.tooltip Ссылка на сайт (по желанию) 
+                  <svg class="block-partner-svg color-purple" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+                  </svg>
+                  span.tooltip-text Если Вы хотите указать сайт, то Вас смогут рекламировать только блогеры с аудиторией от 10 000 подписчиков.
+                input.input-def(placeholder="https://site.ru")
+                p.input-def-title-2 Вы можете прорекламировать ссылку на свой сайт, которую блогер добавит в шапку своего профиля. Стоимость рекламы увеличится на 15%.
+                p.input-def-title Хэштег (не обязательно)
+                input.input-def(placeholder="#hashtag")
+                p.input-def-title Отметка локации (не обязательно)
+                input.input-def(placeholder="Например: Москва")
               .row
-                .col-xl-6.col-lg-7.col-md-6
-                  a.block-first-company-button(href="create-company.html") Создать рекламную кампанию
+                .col-5
+                  a.block-create-company-link(href="create-company.html") Назад
+                .col-5.offset-2
+                  a.block-create-company-link(href="create-company-auto-2.html") Далее
+            .col-xl-3.offset-xl-1.col-lg-3.offset-lg-1.col-md-6.offset-md-3.col-12
+              .block-create-company-2
+                img.create-company-image#ImagePost(src="img/company/post/1.png" draggable="false")
     script(src="js/menu.js")
+    script(src="js/image.js")
+    script(src="js/active-2.js")

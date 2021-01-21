@@ -1,52 +1,49 @@
 .block-def
+  background: $white
   +border-radius()
-  +background()
   +box-shadow()
   +padding()
 
 .block-view
+  background: $yellow
   +margin-bottom()
   +border-radius()
   +box-shadow()
   +padding()
-  background: $yellow
 
-.block-create-body
-  +margin-top()
-  +margin-bottom()
-
-.block-bloggers,
 .block-select-city
-  +background()
+  background: $white
   +margin-top-large()
   +border-radius()
   +box-shadow()
   +padding()
-
-.block-create-company-1-avatar
-  height: 40px
-  width: 48px
-
-.block-create-company-2-avatar
-  height: 40px
-  width: 42px
+  +margin-bottom()
 
 .block-publications 
-  +background()
+  background: $white
   +border-radius()
   +box-shadow()
   +padding()
+
+.block-bloggers-link
+  display: block
+  +margin-top()
+
+.block-bloggers-avatar
+  +border-image()
+
+  &:hover, &:active
+    +opacity()
 
 .block-publications
   height: 539.66px
 
 .block-blogger
-  +background()
+  background: $white
   +margin-bottom()
   +border-radius()
   +box-shadow()
   +padding()
-  +transition()
 
   &:hover,
   &:active
@@ -59,13 +56,12 @@
       +opacity()
 
 .ml-10
-  margin-left: 15px   
+  margin-left: 6px   
 
 .block-blogger-card-body
-  margin-left: 28px
+  margin-left: 30px
   font-size: 14px
   color: $gray-text
-  +transition()
 
 .block-blogger-card-body-2
   font-size: 14px
@@ -76,23 +72,13 @@
   font-size: 14px
   color: $gray-text
 
-.block-blogger-card-avatar
-  margin-right: 5px
-  color: $purple
-  vertical-align: bottom
-
-.block-bloggers-title
-  text-align: left
-
 .block-view-padding
   text-align: center
 
-.block-bloggers-link,
 .block-publications-link
   color: $black
-  +margin-top()
   display: block
-  +transition()
+  +margin-top()
 
   &:hover, &:active
     color: $orange
@@ -103,22 +89,18 @@
     .block-blogger-card-avatar, .color-purple
       color: $orange
 
-    .block-bloggers-avatar,
     .block-publications-avatar
       +opacity()
 
-.block-bloggers-link-more, 
 .block-publications-more, 
 .block-created-company-more
   color: $orange
   float: right
-  +transition()
 
   &:hover, &:active
     color: $purple
 
 .block-list-company-more
-  border: 1px solid $green
   margin-left: 15px
   background: $green
   color: $white
@@ -127,15 +109,16 @@
   height: 52px
   text-align: center
   border-radius: 100%
+  +border($green)
   +box-shadow()
-  +transition()
+  +font-size()
 
   &:hover, &:active
-    color: $green
     background: $white
+    color: $green
 
 .block-list-company-more-2
-  border: 1px solid $green
+  +border($green)
   background: $green
   color: $white
   display: inline-block
@@ -144,7 +127,6 @@
   text-align: center
   border-radius: 100%
   +box-shadow()
-  +transition()
   
 .block-list-company-more-avatar
   margin-top: -5px
@@ -164,7 +146,6 @@
   line-height: 44px
   +border-image()
   +box-shadow()
-  +transition()
 
   &:hover, &:active
     color: $white
@@ -179,7 +160,6 @@
   line-height: 44px
   +border-image()
   +box-shadow()
-  +transition()
 
   &:hover, &:active
     color: $white
@@ -194,7 +174,6 @@
   width: 100%
   +border-image()
   +box-shadow()
-  +transition()
 
   &:hover, &:active
     color: $white
@@ -203,11 +182,10 @@
 .block-blogger-card-favorite
   display: block
   margin-top: 10px 
-  line-height: 33px
+  line-height: 38px
   color: $green
   text-align: center
   +border-image()
-  +transition()
 
   &:hover, &:active
     color: $white
@@ -233,7 +211,6 @@
 
 .block-blogger-link-more
   color: $purple
-  +transition()
 
   &:hover,
   &:active
@@ -243,12 +220,10 @@
       color: $green
       background: $white
 
-.block-bloggers-avatar,
 .block-blogger-avatar
   display: block
   width: 100%
   +border-image()
-  +transition()
 
   &:hover, &:active
     +opacity()
@@ -258,7 +233,6 @@
   margin-top: 10px
   width: 100%
   cursor: pointer
-  +transition()
 
   &:hover, &:active
     +opacity()
@@ -269,7 +243,6 @@
   cursor: pointer
   height: 250px
   object-fit: cover
-  +transition()
 
   &:hover, &:active
     +opacity()
@@ -285,13 +258,11 @@
   display: block
   width: 100%
   +border-image()
-  +transition()
 
 .block-blogger-link
   color: $black
 
 .block-icons
-  +transition()
   text-align: center
   height: 22px
 
@@ -304,14 +275,8 @@
 .va-m
   vertical-align: middle
 
-.block-bloggers-text, 
 .block-publications-text
   text-align: center
-
-.block-bloggers-text
-  &:first-of-type
-    height: 44px
-    overflow: hidden
 
 .block-publications-text
   &:first-of-type
@@ -320,65 +285,13 @@
 
 .block-blogger-card-link
   color: $purple
-  +transition()
 
   &:hover, &:active
     color: $pink
 
-.height-300
-  overflow: hidden
-  height: 67px
-  
-.block-create
-  margin-top: 110px
-  +background()
-  +margin-bottom()
-  +padding()
-  +border-radius()
-  +box-shadow()
-
-.block-start
-  +margin-top()
-  +margin-bottom()
-
 .block-create-title
   text-align: center
   +margin-bottom()
-
-.block-create-link
-  margin: auto
-  display: block
-  width: 60%
-  color: $white
-  background: $green
-  padding-top: 10px
-  text-align: center
-  padding-bottom: 10px
-  border: 1px solid $green
-  margin-top: 1px
-  margin-bottom: 1px
-  +border-radius()
-  +transition()
-  +box-shadow()
-
-  &:hover, &:active
-    color: $green
-    background: $white
-
-.block-create-company-1
-  background: linear-gradient(145.83deg, #F4EAFF 27.13%, #F0C5FF 93.47%)
-  +padding()
-  +border-radius()
-  +box-shadow()
-
-.block-create-company-2
-  background: linear-gradient(298.77deg, #9CFFF9 20.66%, #FFFFFF 131.12%)
-  +padding()
-  +border-radius()
-  +box-shadow()
-
-.block-create-company-title,
-  margin-bottom: 20px
 
 .block-blogger-title
   margin-bottom: 5px
@@ -392,14 +305,6 @@
 
 .color-orange
   color: $orange
-
-.block-list-company-head
-  padding-top: 110px
-  +margin-bottom()
-
-.block-list-company-title,
-  line-height: 52px
-  height: 52px
 
 .height-400
   height: 42px
@@ -422,15 +327,15 @@
   width: 68px
   height: 68px
   background: $pink
-  +border-image()
   display: flex
+  +border-image()
 
 .block-list-company-process-avatar
   width: 68px
   height: 68px
   background: $orange
-  +border-image()
   display: flex
+  +border-image()
 
 .block-list-company-considered-avatar
   width: 68px
@@ -444,16 +349,15 @@
   vertical-align: bottom
 
 .block-select-city-input
-  font-family: NotoSans-Regular
-  font-size: 16px
   border: 0
-  border-bottom: 1px solid $purple
   outline: none
   width: 100%
   margin-top: 15px
   margin-bottom: 10px
-  +transition()
   padding-bottom: 2px
+  border-bottom: 1px solid $purple
+  +font-family()
+  +font-size()
 
   &:hover,
   &:active
@@ -466,7 +370,6 @@
   margin-top: 5px
 
 .color-purple
-  +transition()
   color: $purple
 
 .color-orange
@@ -477,56 +380,13 @@
 
 .block-image-title
   margin-top: 20px
-  font-weight: normal
+  font-weight: 400
   font-size: 20px
   line-height: 24px
   margin-bottom: 20px
     
-.block-image,
-.block-image-2
-  background: $white
-  +border-radius()
-  +box-shadow()
-  +margin-bottom()
-
-.block-image-2
-  cursor: pointer
-
-  &:hover, &:active
-    .block-image-text,
-    .margin-svg
-      color: $orange
-
 .color-black
   color: $black
-
-.block-image-text
-  +transition()
-  +padding()
-
-.block-image-avatar
-  border-top-left-radius: 15px
-  border-top-right-radius: 15px
-  display: block
-  width: 100%
-
-.block-publications-2,
-.block-publications
-  +background()
-  +margin-bottom()
-  +padding()
-  +border-radius()
-  +box-shadow()
-
-.block-publications-2
-  height: 300px
-
-.block-publications-avatar
-  width: 100%
-  display: block
-  +box-shadow()
-  +border-image()
-  +transition()
 
 .block-blogger-card
   +margin-top-large()
@@ -556,21 +416,21 @@
   text-align: left
 
 .block-gender
+  background: $purple
   color: $white
   +margin-top()
   +margin-bottom()
   +padding()
   +box-shadow()
   +border-radius()
-  background: $purple
 
 .block-age
+  background: $white
   +margin-top()
   +margin-bottom()
   +padding()
   +box-shadow()
   +border-radius()
-  +background()
 
 .progress-line
   height: 10px
@@ -583,7 +443,6 @@
   margin: auto
   width: 10px
   height: 60px
-  margin-bottom: 3px
   background: $purple
   +border-radius()
 
@@ -658,7 +517,6 @@
   text-align: center
   display: block
   color: $green
-  +transition()
 
   &:hover, &:active
     color: $orange
@@ -669,7 +527,6 @@
 .hide
   color: $purple
   display: none
-  +transition()
  
   &:hover, &:active
     color: $orange

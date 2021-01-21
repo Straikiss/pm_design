@@ -7,7 +7,6 @@
   height: 40px
   width: 100%
   +margin-bottom()
-  +transition()
 
   &:hover,
   &:active
@@ -40,13 +39,16 @@
   cursor: pointer
   +margin-bottom()
   +border-image()
-  +transition()
 
   &:hover, &:active
     +opacity()
+ 
+.settings-hover
+  &:hover, &:active
+    .home-block-inside-svg
+      color: $orange
 
 .settings-btn
-  border: 1px solid $green
   background: $green
   padding: 10px 15px
   text-align: center
@@ -54,16 +56,15 @@
   color: $white
   margin: auto
   width: 50%
+  +border($green)
   +border-radius()
   +box-shadow()
-  +transition()
 
   &:hover, &:active
     background: $white
     color: $green
 
 .settings-button
-  border: 1px solid $purple
   background: $purple
   padding: 10px 15px
   text-align: center
@@ -71,9 +72,9 @@
   color: $white
   margin: auto
   width: 50%
+  +border($purple)
   +border-radius()
   +box-shadow()
-  +transition()
 
   &:hover, &:active
     background: $white
@@ -84,7 +85,6 @@
   line-height: 44px
   color: $purple
   display: flex
-  +transition()
 
   &:hover, &:active
     color: $orange

@@ -1,4 +1,4 @@
-@media (max-width: 1499px)
+@media (max-width: $xxl)
   .create-company-text-2
     padding-left: 18px
     margin-top: -20px
@@ -18,7 +18,10 @@
     margin-left: 16.5% !important
 
   .block-select-city-title
-    margin-bottom: 25px
+    +margin-bottom()
+
+  .block-select-city-input
+    margin-bottom: 18px
 
   .block-create-body
     margin-bottom: 10px
@@ -30,19 +33,21 @@
   .height-400
     height: 65px
 
-  .display-none-2,
-  .display-none
+  .display-none-2
     display: none
-
-  .height-300
-    height: 40px
 
   .block-created-company-avatar
     margin-bottom: 15px
     height: 53px
     width: 53px
 
-@media (max-width: 1239px) 
+@media (max-width: $xl) 
+  .home-bloggers-none-2
+    display: none
+
+  .home-company-create
+    margin-top: 0
+
   .create-company-text-3
     padding-left: 18px
     margin-top: -20px
@@ -61,24 +66,15 @@
     margin-top: 0
     +margin-bottom()
 
-  .header
-    padding-left: 30px
-
   .aside
     transform: translateX(-100%)
-
-  .hide-title
-    display: none
-
-  .hide
-    display: inline 
 
   .main
     padding-right: 0
     padding-left: 0
 
-  .display-none-2,
-  .display-none
+  .home-bloggers-none,
+  .display-none-2
     display: block
 
   .hide-2
@@ -115,13 +111,24 @@
   .block-blogger-card-favorite
     margin-top: 6px
 
-  .mt-30
+  .mt-30, .mt-30-size
     +margin-top()
   
-@media (max-width: 767px) 
-  .block-create-company-3
+  .block-create-company-3,
+  .block-create-company-2,
     justify-content: center
     display: flex
+    margin-top: 0
+
+@media (max-width: $lg) 
+  .home-bloggers-none-2
+    display: block
+
+  .color-considered,
+  .color-not-paid,
+  .color-process,
+  .color-done
+    margin-top: 10px
 
   .block-create-company-svg
     margin-left: 15px
@@ -136,17 +143,13 @@
   .block-modal-inside-iframe
     height: 225px
 
-  .block-screenshots-title,
   .text-align-center-size
     text-align: center
-
-  .header
-    padding-right: 0
-    padding-left: 0
 
   .ml-10
     margin-left: 35px
 
+  .home-bloggers-none,
   .display-none
     display: none
 
@@ -159,23 +162,31 @@
   .block-blogger-card-title,
     text-align: left
 
+  .home-bloggers-text,
+  .home-block-title
+    text-align: center
+
   .ml-15,
   .ml-25
     margin-left: 0
 
-  .header-status
-    margin-top: -20px
-    margin-right: 0
-    display: block
-
-  .header-link-balance
-    margin-top: -55px
-    display: block
-
   .mb-30-size
     +margin-bottom()
 
-@media (max-width: 578px) 
+  .block-def-2
+    +padding()
+
+  .block-modal-inside-2,
+  .block-modal-inside
+    margin-right: 15px
+    margin-left: 15px
+    width: auto
+
+@media (max-width: $md) 
+
+  .home-bloggers-none
+    display: block
+
   .ml-partner-size
     margin-left: 0 !important
 
@@ -187,10 +198,7 @@
 
   .block-modal-inside-2,
   .block-modal-inside
-    margin-right: 15px
-    margin-left: 15px
     padding: 15px
-    width: auto
 
   .block-modal-inside
     height: 237px
@@ -223,6 +231,9 @@
   .settings-btn
     width: 100%
 
+  .block-screenshots-title
+    text-align: center
+
   .mb-30-size
     .block-def
       padding: 15px
@@ -230,7 +241,29 @@
       p
         font-size: 14px
 
-@media (max-width: 575px) 
+@media (max-width: $sm) 
+  .block-def-2
+    .mb-60
+      margin-left: -30px
+      margin-right: -30px
+
+  .block-create-company-steps-text
+    width: 30px
+    height: 30px
+    line-height: 28px
+
+  .block-create-company-steps-text-2
+    font-size: 13px
+
+  .home-company-create-button
+    width: 80%
+
+  .block-create-company-svg
+    margin-top: 0
+
+  .block-create-company-select
+    +margin-bottom()
+
   .block-blogger-stats
     text-align: center
 
@@ -257,12 +290,5 @@
   .block-blogger-link-more-block-title 
     font-size: 18px
 
-@media (max-width: 340px) 
-  .block-blogger-link-more-block-title 
-    font-size: 14px
-
-  .size-320
-    font-size: 16px
-
-  .block-blogger-card-title
-    text-align: center
+  .block-create-company-svg
+    margin-left: 0

@@ -12,7 +12,7 @@
   +margin-top()
 
 .block-partner-button
-  border: 1px solid $purple
+  +border($purple)
   background: $purple
   padding: 10px 15px
   text-align: center
@@ -22,23 +22,21 @@
   +border-radius()
   +margin-bottom()
   +box-shadow()
-  +transition()
 
   &:hover, &:active
     background: $white
     color: $purple
 
 .block-settings-link
-  border: 1px solid $green
   background: $green
   padding: 10px 15px
   text-align: center
   display: block
   color: $white
   width: 100%
+  +border($green)
   +border-radius()
   +box-shadow()
-  +transition()
 
   &:hover, &:active
     background: $white
@@ -53,16 +51,36 @@
 .block-settings-stats
   +margin-bottom()
 
+.partner-stats
+  text-align: center
+  +margin-bottom()
+     
 .blcok-settings-select
   height: 40px
   display: block
   appearance: none
   width: 100%
-  border: 1px solid $purple
-  +border-image()
-  +margin-bottom()
   padding-left: 10px
   margin-top: 10px
+  +border($purple)
+  +border-image()
+  +margin-bottom()
 
   &:hover, &:active
-    border: 1px solid $orange
+    +border($orange)
+
+.partner-none
+  text-align: center
+  display: none
+  background: $purple
+  color: $white
+  +padding()
+  +box-shadow()
+  +border-radius()
+  
+@media (max-width: $xl)
+  .partner-none
+    display: block
+
+  .partner-size
+    display: none

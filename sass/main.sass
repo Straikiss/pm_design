@@ -1,3 +1,5 @@
+@import ../css/grid
+  
 @font-face 
   font-family: NotoSans-Regular
   src: url(../font/NotoSans-Regular.ttf)
@@ -13,64 +15,14 @@ $orange: #fd7e14
 $yellow: #ffda6a
 $blue: #6ea8fe
 
-* 
-  padding: 0 
-  margin: 0
+$xxl: 1499px
+$xl: 1239px
+$lg: 767px
+$md: 578px
+$sm: 575px
 
-body 
-  font-family: NotoSans-Regular
-  background: $gray
-  color: $black
-  
-a 
-  text-decoration: none
-
-p 
-  font-size: 16px
-
-h2
-  font-weight: 400
-  font-size: 20px
-
-h1 
-  font-weight: 400
-  font-size: 24px
-  
-img
-  display: block
-  width: 100%
-
-.mb-10
-  margin-bottom: 10px
-
-.mt-10
-  margin-top: 10px
-
-select,
-textarea,
-button,
-input 
-  font-family: NotoSans-Regular
-  font-size: 16px
-  outline: none
-  border: 0
-
-textarea
-  background: $gray
-  display: block
-  width: 100%
-
-textarea::placeholder
-  color: $black
-
-.text-align-center
-  text-align: center
-
-input[disabled]
-  background: none
-
-button
-  cursor: pointer
+=border($color)
+  border: 1px solid $color
 
 =padding()
   padding: 30px
@@ -88,28 +40,116 @@ button
   border-radius: 15px
 
 =border-image()
-  border-radius: 10px
-
-=transition()
-  transition: .2s
+  border-radius: 5px
 
 =box-shadow()
   box-shadow: 0 5px 10px rgba(0,0,0,.1)
 
-=background()
-  background: $white
-
 =opacity()
   opacity: .9
 
-@import base  
-@import group
+=font-size()
+  font-size: 15px
+
+=font-family()
+  font-family: NotoSans-Regular
+
+* 
+  padding: 0 
+  margin: 0
+
+body 
+  background: $gray
+  color: $black
+  +font-family()
+  
+a 
+  text-decoration: none
+
+p
+  font-size: 15px
+
+h2
+  font-weight: 400
+  font-size: 17px
+
+h1 
+  font-weight: 400
+  font-size: 19px
+
+img
+  display: block
+  width: 100%
+
+.mb-10
+  margin-bottom: 10px
+
+.mt-10
+  margin-top: 10px
+
+select,
+textarea,
+button,
+input 
+  outline: none
+  border: 0
+  +font-family()
+  +font-size()
+
+textarea
+  background: $gray
+  display: block
+  width: 100%
+
+textarea::placeholder
+  color: $black
+
+.text-align-center
+  text-align: center
+ 
+input[disabled]
+  background: none
+
+button
+  cursor: pointer
+
+.mb-60
+  margin-bottom: 60px
+
+.mt-30
+  +margin-top()
+
+.svg-mr
+  margin-right: 5px
+
+.block-def-2
+  padding: 60px 30px
+  background: $white
+  +border-radius()
+  +box-shadow()
+
+.color-purple
+  color: $purple 
+
+.svg
+  width: 20px
+
+.svg-2
+  width: 23px 
+
+.svg-2,
+.svg
+  vertical-align: middle
+  margin-top: -2.5px
+
+@import header 
 @import aside 
-@import header
+@import tooltip 
+@import home
 @import company
+@import group
 @import settings
 @import partner
 @import modal
 @import create-company
 @import media
-@import ../css/grid

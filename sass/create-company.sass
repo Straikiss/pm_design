@@ -1,25 +1,26 @@
 .block-create-company-steps
-  justify-content: space-between
-  display: flex
-  +margin-top-large()
+  padding-top: 110px
   +margin-bottom()
 
 .block-create-company-3
-  +margin-bottom()
+  margin-top: 45px
 
+.block-create-company
+  margin-bottom: 60px
+  
 .block-create-company-3-bg
-  background: $green
-  color: $white
+  color: $gray-text
+  +margin-top()
 
 .block-create-company-3-title
   text-align: center
   margin-top: 5px
   
+.create-company-title
+  +margin-bottom()
+  
 .block-create-company-select
-  margin-top: 45px
-
-.block-create-company-select-2
-  +margin-top()
+  margin-bottom: 60px
 
 .block-create-company-select-title
   display: inline
@@ -27,29 +28,27 @@
 
 .block-create-company-select-title-3
   display: inline
-  +transition()
 
 .block-create-company-select-text
-  opacity: .5
-  +transition()
+  color: $gray-text
   font-size: 14px
+  margin-top: 15px
 
 .block-create-company-select-box
-  margin-right: 50px
-
   &:hover, &:active
     .block-create-company-select-text
-      opacity: 1
+      color: $black
 
 .block-create-company-select-title-2
   font-size: 14px
 
 .block-create-company-svg
   margin-left: 15px
+  +margin-top()
 
 .block-create-company-link
-  border: 1px solid $purple
-  background: $purple
+  +border($green)
+  background: $green
   text-align: center
   line-height: 44px
   display: block
@@ -57,32 +56,30 @@
   height: 44px
   margin: auto
   +border-radius()
-  +transition()
   +box-shadow()
+  +font-size()
 
   &:hover, &:active
-    color: $purple
-    +background()
+    background: $white
+    color: $green
 
 .block-create-company-link-svg
   vertical-align: middle
   margin-top: -2.5px
   height: 35px
   width: 35px
-  +transition()
 
 .block-create-company-steps-text
-  border: 1px solid $purple
+  +border($purple)
   background: $purple
   border-radius: 100%
   text-align: center
-  line-height: 45px
+  line-height: 35px
   color: $white
   margin: auto
-  height: 45px
-  width: 45px
+  height: 35px
+  width: 35px
   opacity: .5
-  +transition()
   +box-shadow()
 
 .block-create-company-steps-text-disabled
@@ -90,6 +87,8 @@
 
 .block-create-company-steps-text-2
   text-align: center
+  margin-top: 15px
+  font-size: 15px
   color: $purple
   opacity: .5
 
@@ -101,30 +100,24 @@
     opacity: 1
 
   &:hover, &:active
-    .block-create-company-steps-text
-      border: 1px solid $orange
-      color: $orange
-      +background()
-    
     .block-create-company-steps-text-2,
-      color: $orange
+    .block-create-company-steps-text
+      opacity: .5
 
 .create-company-textarea
   resize: vertical
   padding: 15px
   min-height: 150px
-  border: 1px solid $purple
+  +border($purple)
   +border-image()
-  +transition()
 
   &:hover, &:active
-    border: 1px solid $orange
+    +border($orange)
 
 .input-def
-  border-bottom: 1px solid $purple
   height: 45px
   width: 100%
-  +transition()
+  border-bottom: 1px solid $purple
 
   &:hover,
   &:active
@@ -149,24 +142,23 @@ input::placeholder
   color: $black
 
 .create-company-button
-  +margin-top()
-  border: 1px solid #1aa179
-  background: #1aa179
+  background: $green
   padding: 10px 15px
   text-align: center
   display: block
-  color: #fff
-  border-radius: 15px
-  box-shadow: 0 5px 10px rgba(0,0,0,.1)
-  transition: .2s
+  color: $white
+  +border-radius()
+  +border($green)
+  +margin-top()
+  +box-shadow()
+  +font-size()
 
   &:hover, &:active
-    color: $green
     background: $white
+    color: $green
 
 .create-company-select-type
   margin-top: 10px
-  +transition()
 
   &:hover, &:active
     color: $orange
@@ -181,15 +173,15 @@ input::placeholder
 
 .create-company-change-type-2,
 .create-company-change-type
+  background: $white
   text-align: center
   line-height: 44px
   color: $purple
   display: block
   width: 100%
   +border-image()
-  +background()
   +box-shadow()
-  +transition()
+  +font-size()
 
   &:hover, &:active
     background: $purple
@@ -203,3 +195,41 @@ input::placeholder
 .create-company-text
   padding-left: 18px
   margin-top: -20px
+
+.uploaded
+  +margin-top()
+  padding: 10px
+  background: $gray
+  +border-radius()
+  +box-shadow()
+
+.uploaded-image
+  +border-image()
+
+  &:hover, &:active
+    +opacity()
+
+.uploaded-link
+  +font-size()
+  color: $gray-text
+
+  &:hover, &:active
+    color: $pink
+
+.create-company-result
+  background: linear-gradient(55.47deg, #650FD0 9.28%, #A850FD 88.61%)
+  color: $white
+
+.create-company-svg
+  position: absolute
+  color: $gray-text
+  width: 40px
+  right: 15px
+  top: 0
+
+  &:hover, &:active
+    color: $pink
+
+@media (max-width: $xl)
+  .create-company-image
+    +margin-top()

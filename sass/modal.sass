@@ -8,18 +8,10 @@
   left: 0
   top: 0
 
-.margin-svg
-  position: absolute
-  color: $white
-  width: 90px
-  right: 15px
-  top: 0
-  +transition()
-
 .block-modal-inside-2,
 .block-modal-inside
-  position: absolute
   background: $white
+  position: absolute
   height: 487px
   width: 620px 
   margin: auto
@@ -35,7 +27,6 @@
   background: none
   float: right
   +margin-bottom()
-  +transition()
 
   &:hover, &:active
     color: $orange
@@ -45,26 +36,24 @@
   width: 100%
 
 .block-modal-textarea
-  border: 1px solid $purple
+  +border($purple)
   min-height: 100px
   margin-top: 15px
   padding: 15px
   resize: none
   +margin-bottom()
   +border-image()
-  +transition()
 
   &:hover, &:focus
-    border: 1px solid $orange
+    +border($orange)
 
 .block-modal-input
-  border-bottom: 1px solid $purple
   padding-bottom: 2px
   margin-top: 5px
   height: 40px
   width: 100%
   +margin-bottom()
-  +transition()
+  border-bottom: 1px solid $purple
 
   &:hover, &:focus
-    border-bottom: 1px solid $orange
+      border-bottom: 1px solid $orange

@@ -1,3 +1,48 @@
+.block-company
+  background: $white
+  display: block
+  color: $black
+  +margin-bottom()
+  +border-radius()
+  +box-shadow()
+  +padding()
+
+  &:hover, &:active
+    color: $white
+
+    .color-considered,
+    .color-not-paid,
+    .color-process,
+    .color-done
+      color: $white
+  
+.block-company-inside
+  display: flex
+  height: 71px
+  width: 71px
+  +border-image()
+
+.block-company-inside-svg
+  color: $white
+  margin: auto
+  height: 35px
+  width: 35px
+
+.block-company-height
+  overflow: hidden
+  height: 60px 
+  
+.block-company-text 
+  margin-bottom: 5px
+
+.block-company-list
+  padding-top: 110px
+  +margin-bottom()
+
+.block-company-list-title,
+  line-height: 52px
+  height: 52px
+
 .block-first-company
   +margin-top-large()
   +margin-bottom()
@@ -8,14 +53,14 @@
 .block-first-company-button
   text-align: center
   display: block 
-  border: 1px solid $green
+  +border($green)
   background: $green
   color: $white
   padding: 10px 15px
   +margin-top()
   +border-radius()
   +box-shadow()
-  +transition()
+  +font-size()
 
   &:hover, &:active
     color: $green
@@ -28,12 +73,11 @@
   +border-image()
 
 .block-list-company
-  +background()
-  +margin-bottom()
+  background: $white
   cursor: pointer
+  +margin-bottom()
   +border-radius()
   +box-shadow()
-  +transition()
   +padding()
 
   &:hover, &:active
@@ -48,9 +92,6 @@
 .margin-left-2
   margin-left: -15px
 
-.block-company-text
-  margin-bottom: 5px
-
 .block-company-text-2
   margin-bottom: 5px
   margin-top: 5px
@@ -58,34 +99,6 @@
   &:last-of-type
     margin-bottom: 0
     margin-top: 0
-
-.block-created-company
-  +background()
-  +margin-bottom()
-  cursor: pointer
-  +border-radius()
-  +transition()
-  +box-shadow()
-  +padding()
-
-  &:hover, &:active
-    color: $white
-
-    .color-done,
-    .color-not-paid,
-    .color-process,
-    .color-considered
-      color: $white
-
-.block-created-company-avatar 
-  display: flex
-  height: 70px
-  width: 70px
-  +border-image()
-
-.company-avatar
-  margin: auto
-  color: $white
 
 .block-created-company-link
   color: $black
