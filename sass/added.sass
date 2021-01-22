@@ -1,0 +1,134 @@
+ul 
+  max-width: 600px
+  margin: auto
+  width: 100%
+  padding: 0
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+
+ul li 
+  list-style-type: none
+  position: relative
+
+ul li
+  &:first-child
+    &::before
+      display: none
+
+ul li
+  &:last-child
+    &::after
+      display: none
+
+ul li.active:before
+  background: #852BF9
+
+ul li:before 
+  position: absolute
+  content: ''
+  display: block
+  width: 50%
+  height: 1px
+  background: #E4E4ED
+  top: 12px
+
+ul li.active:after 
+  background: #852BF9
+
+ul li:after 
+  position: absolute
+  content: ''
+  display: block
+  width: 50%
+  height: 1px
+  background: #E4E4ED
+  top: 12px
+  right: 0
+
+ul li a 
+  text-decoration: none
+  display: flex
+  align-items: center
+  flex-direction: column
+  color: inherit
+
+ul li.active .number 
+  background: #852BF9
+  color: #fff
+
+ul li:hover
+  +opacity()
+
+ul li .number 
+  position: relative
+  z-index: 1
+  display: block
+  width: 24px
+  height: 24px
+  background: #E4E4ED
+  border-radius: 50%
+  font-style: normal
+  font-weight: normal
+  line-height: 20px
+  text-align: center
+  color: #7B7B9A
+  display: flex
+  align-items: center
+  justify-content: center
+  +font-size()
+
+ul li.active .text 
+  color: #852BF9
+
+ul li .text 
+  margin-top: 15px
+  font-style: normal
+  font-weight: normal
+  line-height: 20px
+  text-align: center
+  color: #C5C5D1
+  width: 100%
+  position: relative
+  left: 0
+  +font-size()
+
+.who-performs 
+  +font-size()
+  display: flex
+  align-items: center
+  flex-direction: row
+  background: $gray
+  
+  height: 44px
+  +border-image()
+
+.who-performs .form-group 
+  width: 50%
+  text-align: center
+
+.who-performs .form-group input[type="radio"]
+  display: none
+
+.request-form input
+  
+  padding: 10px
+  border: none
+  border-bottom: 1px solid #e6e8eb
+
+.who-performs .form-group label 
+  display: block
+  font-style: normal
+  font-weight: normal
+  line-height: 16px
+  text-align: center
+  height: 44px
+  line-height: 44px
+  width: 100%
+  margin-bottom: 0
+  +border-image()
+
+.who-performs .form-group input[type="radio"]:checked + label 
+  color: $white
+  background: linear-gradient(268.83deg,#aa53fe 1.58%,#790ee1 99.84%)
+  // border: 0.5px solid rgba(0, 0, 0, 0.04)
+  // box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.04), 0px 3px 8px rgba(0, 0, 0, 0.12)

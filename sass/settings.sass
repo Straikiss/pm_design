@@ -8,8 +8,7 @@
   width: 100%
   +margin-bottom()
 
-  &:hover,
-  &:active
+  &:focus
     border-bottom: 1px solid $orange
 
 .settings-title-2,
@@ -37,7 +36,6 @@
 
 .settings-image
   cursor: pointer
-  +margin-bottom()
   +border-image()
 
   &:hover, &:active
@@ -49,36 +47,32 @@
       color: $orange
 
 .settings-btn
-  background: $green
-  padding: 10px 15px
+  background: $green-bg
+  line-height: 44px
   text-align: center
   display: block
   color: $white
   margin: auto
   width: 50%
-  +border($green)
   +border-radius()
   +box-shadow()
 
   &:hover, &:active
-    background: $white
-    color: $green
+    +opacity()
 
 .settings-button
-  background: $purple
-  padding: 10px 15px
+  background: $purple-bg
+  line-height: 44px
   text-align: center
   display: block
   color: $white
   margin: auto
   width: 50%
-  +border($purple)
   +border-radius()
   +box-shadow()
 
   &:hover, &:active
-    background: $white
-    color: $purple
+    +opacity()
 
 .settings-link
   justify-content: space-between

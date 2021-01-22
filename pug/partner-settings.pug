@@ -57,20 +57,20 @@ html(lang="ru")
         .row
           .col-xl-6.offset-xl-3.col-lg-6.offset-lg-3.col-md-8.offset-md-2
             .block-partner.block-def
-              p.settings-title Ник
-              input.settings-input(placeholder="Ваш ник/псевдоним")
-              p.settings-title Telegram
-              input.settings-input(placeholder="@telegram")
-              p.settings-title Email
-              input.settings-input(placeholder="email@mail.ru")
-              p.settings-title Вывод средст на кошелек/телефон
-              select.blcok-settings-select
+              p.input-def-title.mt-0 Ник
+              input.input-def(placeholder="Ваш ник/псевдоним")
+              p.input-def-title Telegram
+              input.input-def(placeholder="@telegram")
+              p.input-def-title Email
+              input.input-def(placeholder="email@mail.ru")
+              p.input-def-title Вывод средст на кошелек/телефон
+              select.input-def
                 option(selected="selected" value="0") CreditCard
                 option(value="1") Qiwi
                 option(value="2") YandexMoney
                 option(value="3") PhoneBalance
                 option(value="4") WebMoney
-              p.settings-title Номер кошелька
-              input.settings-input(placeholder="+7 777 777 77 77")
+              p.input-def-title Номер кошелька
+              input.input-def.margin(placeholder="+7 777 777 77 77")
               a.settings-btn(href="") Сохранить
     script(src="js/menu.js")

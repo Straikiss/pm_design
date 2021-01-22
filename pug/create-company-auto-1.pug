@@ -34,7 +34,7 @@ html(lang="ru")
             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
             <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
           </svg> Закрыть меню
-        a.aside-link(href="company-2.html") 
+        a.aside-link.aside-link-create(href="company-2.html") 
           <svg class="svg" fill="currentColor" viewBox="0 0 16 16">
             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
             <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
@@ -82,39 +82,50 @@ html(lang="ru")
       .container.block-create-company-steps
         .block-def-2
           .row.mb-60
-            .col-xl-2.offset-xl-2.col-lg-2.offset-lg-2.col-md-2.offset-md-2.col-sm-3.offset-sm-0.col-3
-              a.block-create-company-steps-text-active(href="create-company.html")
-                p.block-create-company-steps-text 1
-                p.block-create-company-steps-text-2 Выбор блогеров
-            .col-xl-2.col-lg-2.col-md-2.col-sm-3.col-3
-              a.block-create-company-steps-text-active(href="create-company-auto-1.html")
-                p.block-create-company-steps-text 2 
-                p.block-create-company-steps-text-2 Создание контента
-            .col-xl-2.col-lg-2.col-md-2.col-sm-3.col-3
-              a.block-create-company-steps-text-disabled(href="#")
-                p.block-create-company-steps-text 3
-                p.block-create-company-steps-text-2 Охват и таргетинг 
-            .col-xl-2.col-lg-2.col-md-2.col-sm-3.col-3
-              a.block-create-company-steps-text-disabled(href="#")
-                p.block-create-company-steps-text 4
-                p.block-create-company-steps-text-2 Оплата рекламы
+            ul
+              li.active
+                a(href="create-company.html")
+                  span.number 1
+                  span.text Выбор блогеров
+              li.active
+                a(href="create-company-auto-1.html")
+                  span.number 2
+                  span.text Создание контента
+              li
+                a(href="#")
+                  span.number 3
+                  span.text Таргетинг и охват      
+              li
+                a(href="#")
+                  span.number 4
+                  span.text Оплата кампании
           .row
             .col-xl-6.offset-xl-1.col-lg-6.offset-lg-1.col-md-10.offset-md-1
               .block-create-company
                 p.input-def-title.input-def-title-3.mt-0 Рекламный контент создает
-                .row  
-                  .col-xl-4.col-lg-4.col-md-4.col-sm-4.col-4
-                    a.create-company-change-type.create-company-change-type-active(href="create-company-auto-1.html") Блогер
-                  .col-xl-4.col-lg-4.col-md-4.col-sm-4.col-4
-                    a.create-company-change-type(href="create-company-auto-1-2.html") Я
+                .who-performs
+                  .form-group.app-state-contentby_publisher
+                    input#Item_ContentBy_Publisher.app-trigger-contentfor(name="Item.ContentBy" type="radio" value="0" checked)
+                    label(for="Item_ContentBy_Publisher") Блогер
+                  .form-group
+                    input#Item_ContentBy_Advertiser.app-trigger-contentfor(name="Item.ContentBy" type="radio" value="1")
+                    label(for="Item_ContentBy_Advertiser") Я
+                //- .row  
+                //-   .col-xl-4.col-lg-4.col-md-4.col-sm-4.col-4
+                //-     a.create-company-change-type.create-company-change-type-active(href="create-company-auto-1.html") Блогер
+                //-   .col-xl-4.col-lg-4.col-md-4.col-sm-4.col-4
+                //-     a.create-company-change-type(href="create-company-auto-1-2.html") Я
                 p.input-def-title.input-def-title-3 Тип публикации
-                .row#Buttons  
-                  .col-xl-4.col-lg-4.col-md-4.col-sm-4.col-4
-                    a.create-company-change-type-2.create-company-change-type-active-2(href="#") Любой
-                  .col-xl-4.col-lg-4.col-md-4.col-sm-4.col-4
-                    a.create-company-change-type-2(href="#") Пост
-                  .col-xl-4.col-lg-4.col-md-4.col-sm-4.col-4
-                    a.create-company-change-type-2(href="#") Сторис
+                .who-performs
+                  .form-group.app-state-contentby_publisher
+                    input#Item_PublicationKind_Any.app-trigger-contentfor(name="Item.PublicationKind" type="radio" value="0")
+                    label(for="Item_PublicationKind_Any") Любой
+                  .form-group
+                    input#Item_PublicationKind_Post.app-trigger-contentfor(name="Item.PublicationKind" type="radio" value="1" checked)
+                    label(for="Item_PublicationKind_Post") Пост
+                  .form-group
+                    input#Item_PublicationKind_Stories.app-trigger-contentfor(name="Item.PublicationKind" type="radio" value="2")
+                    label(for="Item_PublicationKind_Stories") Сторис
                 p.input-def-title.input-def-title-3 Выбор сценария рекламной публикации
                 .create-company-select-type.mt-0(onclick="ChangeImage1()")
                   input.create-company-select-type-svg(type="radio" id="CampTypePost1" name="CampTypePost" value="0" checked)
@@ -179,7 +190,7 @@ html(lang="ru")
                 p.input-def-title Хэштег (не обязательно)
                 input.input-def(placeholder="#hashtag")
                 p.input-def-title Отметка локации (не обязательно)
-                input.input-def(placeholder="Например: Москва")
+                input.input-def.margin(placeholder="Например: Москва")
               .row
                 .col-5
                   a.block-create-company-link(href="create-company.html") Назад
@@ -190,4 +201,3 @@ html(lang="ru")
                 img.create-company-image#ImagePost(src="img/company/post/1.png" draggable="false")
     script(src="js/menu.js")
     script(src="js/image.js")
-    script(src="js/active-2.js")
