@@ -115,6 +115,15 @@
   .mt-30, .mt-30-size
     +margin-top()
   
+  .mb-30-size
+    +margin-bottom()
+
+    &:last-of-type
+      margin-bottom: 0
+
+  .block-create-company-2
+    margin-left: 0
+
   .block-create-company-3,
   .block-create-company-2,
     justify-content: center
@@ -174,16 +183,15 @@
   .mb-30-size
     +margin-bottom()
 
-  .block-def-2
-    +padding()
-
   .block-modal-inside-2,
   .block-modal-inside
     margin-right: 15px
     margin-left: 15px
     width: auto
-
+    
 @media (max-width: $md) 
+  .block-def-2
+    padding: 15px
 
   .home-bloggers-none
     display: block
@@ -243,11 +251,6 @@
         font-size: 14px
 
 @media (max-width: $sm) 
-  .block-def-2
-    .mb-60
-      margin-left: -30px
-      margin-right: -30px
-
   .block-create-company-steps-text
     width: 30px
     height: 30px
@@ -291,5 +294,17 @@
   .block-blogger-link-more-block-title 
     font-size: 18px
 
-  .block-create-company-svg
+  .ml-m-2,
+  .ml-m
+    margin-top: 10px !important
+
+  .mb-15-s
+    margin-bottom: 15px
+
+  .create-company-result
+    padding: 15px
+
+  .block-create-company-svg,
+  .ml-m-2,
+  .ml-m
     margin-left: 0

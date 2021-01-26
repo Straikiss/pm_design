@@ -12,6 +12,9 @@
   color: $gray-text
   +margin-top()
 
+  p 
+    font-size: 14px
+
 .block-create-company-3-title
   text-align: center
   margin-top: 5px
@@ -23,7 +26,6 @@
   margin-bottom: 60px
 
 .block-create-company-select-title
-  display: inline
   color: $purple
 
 .block-create-company-select-title-3
@@ -32,22 +34,17 @@
 .block-create-company-select-text
   color: $gray-text
   font-size: 14px
-  margin-top: 15px
-
-.block-create-company-select-box
-  &:hover, &:active
-    .block-create-company-select-text
-      color: $black
+  padding-top: 15px
 
 .block-create-company-select-title-2
   font-size: 14px
 
 .block-create-company-svg
   margin-left: 15px
-  +margin-top()
+  margin-top: 15px
 
 .block-create-company-link
-  background: linear-gradient(189.78deg, #12e17e 0%, #13bd60 100%)
+  background: $green-bg
   text-align: center
   line-height: 44px
   display: block
@@ -146,9 +143,9 @@ input::placeholder
   color: $black
 
 .create-company-button
-  background: linear-gradient(268.83deg, #AA53FE 1.58%, #790EE1 99.84%)
-  line-height: 44px
+  background: $purple-bg
   text-align: center
+  line-height: 44px
   display: block
   color: $white
   +border-radius()
@@ -162,9 +159,6 @@ input::placeholder
 .create-company-select-type
   margin-top: 10px
 
-  &:hover, &:active
-    color: $orange
-
 .create-company-select-type-svg
   vertical-align: middle
   margin-top: -2.5px
@@ -172,6 +166,9 @@ input::placeholder
 .create-company-image
   +box-shadow()
   +border-image()
+
+.block-create-company-2
+  margin-left: 30px
 
 .create-company-change-type-2,
 .create-company-change-type
@@ -219,9 +216,14 @@ input::placeholder
     color: $pink
 
 .create-company-result
-  background: linear-gradient(55.47deg, #650FD0 9.28%, #A850FD 88.61%)
-  color: $white
-
+  background: $white
+  margin: auto
+  margin-top: -20px
+  width: 85%
+  +border-radius()
+  +box-shadow()
+  +padding()
+  
 .create-company-svg
   position: absolute
   color: $gray-text
@@ -231,7 +233,3 @@ input::placeholder
 
   &:hover, &:active
     color: $pink
-
-@media (max-width: $xl)
-  .create-company-image
-    +margin-top()

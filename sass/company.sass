@@ -6,21 +6,32 @@
   +border-radius()
   +box-shadow()
   +padding()
-
-  &:hover, &:active
-    color: $white
-
-    .color-considered,
-    .color-not-paid,
-    .color-process,
-    .color-done
-      color: $white
   
 .block-company-inside
   display: flex
   height: 71px
   width: 71px
   +border-image()
+
+.block-company-pro,
+.block-company-cpa
+  &::before
+    border-bottom-right-radius: 5px
+    border-top-left-radius: 5px
+    width: 45px
+    background: $black
+    position: absolute
+    text-align: center
+    color: $white
+    font-size: 14px
+
+.block-company-pro
+  &::before
+    content: 'PRO'
+
+.block-company-cpa
+  &::before
+    content: 'CPA'
 
 .block-company-inside-svg
   color: $white
@@ -78,15 +89,6 @@
   +box-shadow()
   +padding()
 
-  &:hover, &:active
-    color: $white
-
-    .color-done,
-    .color-not-paid,
-    .color-process,
-    .color-considered
-      color: $white
-
 .margin-left-2
   margin-left: -15px
 
@@ -127,16 +129,16 @@
 
 .status-done
   &:hover, &:active
-    background: $green
+    color: $green
 
 .status-not-paid
   &:hover, &:active
-    background: $pink
+    color: $pink
 
 .status-process
   &:hover, &:active
-    background: $orange
+    color: $orange
 
 .status-considered
   &:hover, &:active
-    background: $purple
+    color: $purple

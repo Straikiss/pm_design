@@ -1,5 +1,5 @@
 @import ../css/grid
-  
+
 @font-face 
   font-family: NotoSans-Regular
   src: url(../font/NotoSans-Regular.ttf)
@@ -47,7 +47,7 @@ $sm: 575px
 
 =box-shadow()
   // box-shadow: 0 5px 10px rgba(0,0,0,.1)
-  box-shadow: 0 0 3px 0 #ccc
+  box-shadow: 0 0 3px#dee2e6
 
 =opacity()
   opacity: .9
@@ -69,6 +69,7 @@ body
   
 a 
   text-decoration: none
+  cursor: pointer
 
 p
   font-size: 15px
@@ -81,6 +82,9 @@ h1
   font-weight: 400
   font-size: 19px
 
+.none
+  display: none
+
 img
   display: block
   width: 100%
@@ -88,8 +92,14 @@ img
 .mb-10
   margin-bottom: 10px
 
+.w-100
+  width: 100% !important
+
 .mt-10
   margin-top: 10px
+
+.padding
+  padding: 15px !important
 
 select,
 textarea,
@@ -99,6 +109,10 @@ input
   border: 0
   +font-family()
   +font-size()
+
+select 
+  appearance: none
+  cursor: pointer
 
 textarea
   background: $gray
@@ -115,7 +129,9 @@ input[disabled]
   background: none
 
 button
+  background: none
   cursor: pointer
+  width: 100%
 
 .mb-60
   margin-bottom: 60px
@@ -126,12 +142,29 @@ button
 .svg-mr
   margin-right: 5px
 
+.ml-m
+  margin-left: -30px
+
+.ml-m-2
+  margin-left: -45px
+
 .block-def-2
-  padding: 60px 30px
+  padding: 60px
   background: $white
   +border-radius()
   +box-shadow()
 
+.bb
+  border-bottom: 1px solid $gray-text
+  padding-bottom: 3px
+
+  &:hover, &:active
+    border-bottom: 1px solid $purple
+
+.hover-purple
+  &:hover, &:active
+    color: $purple
+    
 .color-purple
   color: $purple 
 
@@ -139,13 +172,43 @@ button
   width: 20px
 
 .svg-2
-  width: 23px 
+  width: 23px
+
+.top-30
+  top: 30px !important
+
+.bg-gray
+  background: $gray !important
 
 .svg-2,
 .svg
   vertical-align: middle
   margin-top: -2.5px
 
+::-webkit-scrollbar 
+  width: 0
+
+.ml-size-10
+  margin-left: 13px
+
+.block-blogger-see
+  background: $purple-bg
+  text-align: center
+  margin-top: 10px
+  color: $white
+  line-height: 44px
+  +border-image()
+
+.blogger-span 
+  background: $green-bg
+  display: inline-block
+  border-radius: 100%
+  text-align: center
+  line-height: 44px
+  height: 44px
+  color: $white
+  width: 44px
+  
 @import header 
 @import aside 
 @import tooltip 

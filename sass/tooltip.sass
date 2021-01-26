@@ -34,3 +34,25 @@
     content: ""
     bottom: 100%
     left: 50%
+
+.input-radio
+  position: absolute
+  cursor: pointer
+  opacity: 0
+
+.checkmark 
+  position: absolute
+  background: $gray
+  border-radius: 50%
+  height: 20px
+  width: 20px
+
+label
+  cursor: pointer
+
+.input-select
+  p
+    margin-left: 30px
+
+.input-radio:checked ~ .checkmark
+  background: $purple-bg

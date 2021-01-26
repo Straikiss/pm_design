@@ -17,7 +17,7 @@ html(lang="ru")
                 <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
               </svg> Меню
             h1.header-title
-              a.heder-title-link(href="create-company-auto-2.html") Новая рекламная кампания - Таргетинг
+              a.heder-title-link(href="create-company-pro-2.html") Новая рекламная кампания - Таргетинг
           .col-xl-6.col-lg-6.col-md-9.col-sm-7.col-8
             .header-status
               p.header-status-balance 0 ₽ <sup class="header-status-balance-money"> 2 000 ₽ 
@@ -77,11 +77,11 @@ html(lang="ru")
                   span.number 1
                   span.text Выбор блогеров
               li.active
-                a(href="create-company-auto-1.html")
+                a(href="create-company-pro-1.html")
                   span.number 2
                   span.text Создание контента
               li.active
-                a(href="create-company-auto-2.html")
+                a(href="create-company-pro-2.html")
                   span.number 3
                   span.text Таргетинг и охват      
               li
@@ -168,7 +168,7 @@ html(lang="ru")
                 input.input-def.mt-10(placeholder="11.11.2021")
             .col-xl-6.col-lg-6.col-md-12
               h2.mb-10 Бюджет
-              .who-performs.margin
+              .who-performs.mb-10
                 .form-group.app-state-contentby_publisher
                   input#Item_PublicationKind_Any.app-trigger-contentfor(name="Item.PublicationKind" type="radio" value="0" checked)
                   label(for="Item_PublicationKind_Any") Эконом
@@ -178,11 +178,13 @@ html(lang="ru")
                 .form-group
                   input#Item_PublicationKind_Stories.app-trigger-contentfor(name="Item.PublicationKind" type="radio" value="2")
                   label(for="Item_PublicationKind_Stories") Оптимально
+              p.input-def-title.mb-0.mt-0.text-center Режим PRO при пополнении баланса от 15 000 ₽
+              .margin 
               .container-budget.app-state-isnotregular
-                input#Item_Budget(name="Item.Budget" type="hidden" value="1990")
+                input#Item_Budget(name="Item.Budget" type="hidden" value="15000")
                 .block-custome-price
                     label Ввести сумму вручную
-                    input#manual-budget(min="1990" value="1990" step="10" max="65500")
+                    input#manual-budget(min="15000" value="15000" step="10" max="65500")
                 <span class="irs irs--big js-irs-0">
                   <span class="irs">
                     <span class="irs-line" tabindex="0"></span>
@@ -190,7 +192,7 @@ html(lang="ru")
                     <span class="irs-max" style="display: none; visibility: visible;">1</span>
                     <span class="irs-from" style="visibility: hidden;">0</span>
                     <span class="irs-to" style="visibility: hidden;">0</span>
-                    <span class="irs-single" style="left: -2.05703%;">1 990₽</span>
+                    <span class="irs-single" style="left: -2.05703%;">15 000₽</span>
                   </span>
                   <span class="irs-grid"></span>
                   <span class="irs-bar irs-bar--single" style="left: 0px; width: 3.69458%;"></span>
@@ -239,7 +241,7 @@ html(lang="ru")
             .col-xl-6.col-lg-6.col-md-12
               .row
                 .col-5
-                  a.block-create-company-link(href="create-company-auto-1.html") Назад
+                  a.block-create-company-link(href="create-company-pro-1.html") Назад
                 .col-5.offset-2
-                  a.block-create-company-link(href="create-company-auto-3.html") Готово
+                  a.block-create-company-link(href="create-company-pro-3.html") Готово
     script(src="js/scripts.js")
