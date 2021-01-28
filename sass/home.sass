@@ -68,16 +68,18 @@
 .home-company-create,
 .home-company-title,
 .home-block-title-2,
-.home-block-title,
 .home-bloggers
   +margin-bottom()
+
+.home-block-title
+  margin-bottom: 15px
 
 .home-company-create-text,
 .home-bloggers-text
   +margin-top()
 
 .home-company-create-button
-  background: linear-gradient(189.78deg, #12e17e 0%, #13bd60 100%)
+  background: $green-bg
   text-align: center
   line-height: 44px
   display: block
@@ -108,11 +110,9 @@
   +margin-top()
 
   &:hover, &:active
-    color: $orange
+    +opacity()
 
     .home-bloggers-block-icons-svg,
-      color: $orange
-
     .home-bloggers-block-image
       +opacity()
 
@@ -124,11 +124,12 @@
     height: 40px
 
 .home-bloggers-block-image
+  margin-top: 5px
   +border-image()
 
 .home-bloggers-block-icons
   text-align: center
-  line-height: 20px
+  line-height: 15px
 
 .home-bloggers-block-icons-svg
   vertical-align: middle

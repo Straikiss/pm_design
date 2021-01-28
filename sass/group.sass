@@ -40,20 +40,20 @@
 
 .block-blogger
   background: $white
+  padding: 15px
   +margin-bottom()
   +border-radius()
   +box-shadow()
-  +padding()
-
+  
   &:hover,
   &:active
-    color: $orange
-
-    .block-blogger-title, .color-purple
-      color: $orange
-    
-    .block-blogger-avatar
+    .block-blogger-avatar,
+    .block-blogger-title, 
+    .color-purple, p
       +opacity()
+    
+    .block-price
+      opacity: 1
 
 .ml-10
   margin-left: 15px   
@@ -176,6 +176,19 @@
     color: $white
     background: $orange
 
+.block-blogger-link-added
+  display: block
+  line-height: 44px
+  color: $white
+  text-align: center
+  background: $purple-bg
+  width: 100%
+  +border-image()
+  +box-shadow()
+
+  &:hover, &:active
+    +opacity()
+
 .block-blogger-card-favorite
   display: block
   margin-top: 10px 
@@ -244,8 +257,8 @@
     +opacity()
 
 .block-screenshots-title
+  margin-bottom: 15px
   +margin-top()
-  +margin-bottom()
 
 .float-right
   float: right
@@ -293,8 +306,9 @@
   margin-bottom: 5px
 
 .h-27
-  height: 27px
+  margin-right: 10px
   overflow: hidden
+  height: 23px
 
 .block-select-city-title
   margin-bottom: 15px
@@ -415,20 +429,20 @@
 
 .block-gender
   background: $purple
+  margin-top: 15px
   color: $white
-  +margin-top()
-  +margin-bottom()
-  +padding()
-  +box-shadow()
   +border-radius()
+  +margin-bottom()
+  +box-shadow()
+  +padding()
 
 .block-age
   background: $white
-  +margin-top()
-  +margin-bottom()
-  +padding()
-  +box-shadow()
+  margin-top: 15px
   +border-radius()
+  +margin-bottom()
+  +box-shadow()
+  +padding()
 
 .progress-line
   height: 10px
@@ -468,7 +482,7 @@
   height: 95%
 
 .block-gender-title
-  +margin-bottom()
+  margin-bottom: 15px
 
 .text-center, .text-center-2
   text-align: center

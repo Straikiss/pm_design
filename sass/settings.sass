@@ -41,11 +41,26 @@
   &:hover, &:active
     +opacity()
  
-.settings-hover
+.settings-hover 
+  justify-content: center
+  display: flex
+
+  .home-block-inside-svg
+    right: auto
+
+  .settings-image
+    width: 35%
+
   &:hover, &:active
     .home-block-inside-svg
       color: $orange
 
+.block-settings
+  .row
+    .col-6
+      min-width: 100%
+      flex: 0 0 100%
+  
 .settings-title-login
   width: auto
 

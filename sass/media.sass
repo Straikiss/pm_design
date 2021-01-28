@@ -1,4 +1,7 @@
 @media (max-width: $xxl)
+  .sticky
+    width: 810px
+
   .create-company-text-2
     padding-left: 18px
     margin-top: -20px
@@ -42,7 +45,19 @@
     height: 53px
     width: 53px
 
-@media (max-width: $xl) 
+@media (max-width: $xl)
+  .sticky
+    width: 570px
+
+  .bloggers-list-inside
+    max-height: 320px
+
+  .block-age
+    +margin-top()
+
+  .mb-add
+    +margin-bottom()
+
   .home-bloggers-none-2
     display: none
 
@@ -130,7 +145,13 @@
     display: flex
     margin-top: 0
 
-@media (max-width: $lg) 
+@media (max-width: $lg)
+  .sticky
+    width: 390px
+
+  .bloggers-list-inside
+    max-height: 190px
+
   .home-bloggers-none-2
     display: block
 
@@ -190,8 +211,24 @@
     width: auto
     
 @media (max-width: $md) 
-  .block-def-2
+  .sticky
+    margin-right: 15px
+    margin-left: 15px
+    width: auto
+    right: 0
+    left: 0
+
+  .bloggers-list-inside
+    max-height: 310px
+
+  .block-def-2,
     padding: 15px
+
+  .block-def-3
+    padding-right: 15px
+    padding-left: 15px
+    padding-top: 15px
+    padding-bottom: 0
 
   .home-bloggers-none
     display: block
@@ -308,3 +345,11 @@
   .ml-m-2,
   .ml-m
     margin-left: 0
+
+  .flex
+    justify-content: center
+    display: flex
+    
+    .block-bloggers-card-avatar,
+    .block-blogger-avatar
+      width: 45%

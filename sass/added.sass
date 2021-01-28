@@ -21,7 +21,7 @@ ul li
       display: none
 
 ul li.active:before
-  background: #852BF9
+  background: $purple
 
 ul li:before 
   position: absolute
@@ -29,11 +29,11 @@ ul li:before
   display: block
   width: 50%
   height: 1px
-  background: #E4E4ED
+  background: $gray-text
   top: 12px
 
 ul li.active:after 
-  background: #852BF9
+  background: $purple
 
 ul li:after 
   position: absolute
@@ -41,7 +41,7 @@ ul li:after
   display: block
   width: 50%
   height: 1px
-  background: #E4E4ED
+  background: $gray-text
   top: 12px
   right: 0
 
@@ -53,8 +53,8 @@ ul li a
   color: inherit
 
 ul li.active .number 
-  background: #852BF9
-  color: #fff
+  background: $purple-bg
+  color: $white
 
 ul li:hover
   +opacity()
@@ -65,29 +65,29 @@ ul li .number
   display: block
   width: 24px
   height: 24px
-  background: #E4E4ED
+  background: $gray
   border-radius: 50%
   font-style: normal
   font-weight: normal
   line-height: 20px
   text-align: center
-  color: #7B7B9A
   display: flex
   align-items: center
   justify-content: center
   +font-size()
 
 ul li.active .text 
-  color: #852BF9
+  color: $purple
 
 ul li .text 
+  color: $gray-text
   margin-top: 15px
   font-style: normal
   font-weight: normal
-  line-height: 20px
-  text-align: center
-  width: 100%
   position: relative
+  text-align: center
+  line-height: 20px
+  width: 100%
   left: 0
   +font-size()
 

@@ -14,6 +14,7 @@ function ChangeImage4(){document.getElementById('ImagePost').src="img/company/po
 function ChangeLinkAuto(){document.getElementById('ChangeLink').href="create-company-auto-1.html";} 
 function ChangeLinkManual(){document.getElementById('ChangeLink').href="create-company-manual-1.html";} 
 function ChangeLinkPro(){document.getElementById('ChangeLink').href="create-company-pro-1.html";} 
+function ChangeLinkCpa(){document.getElementById('ChangeLink').href="create-company-cpa-1.html";} 
 function ImagePreviewShow(){
 document.getElementById('ChangeImagePreviewHide').style.display = "block";
 document.getElementById('BlockCreateBlogger').style.display = "block";
@@ -28,3 +29,16 @@ function openbox(pClass){
 var elems = document.getElementsByClassName(pClass);
 for(var i=0; i < elems.length; i++){var display = elems[i].style.display;if(display=='none')
 {elems[i].style.display='block';}else{elems[i].style.display='none';}}}
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("search");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
