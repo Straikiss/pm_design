@@ -209,7 +209,13 @@
     margin-right: 15px
     margin-left: 15px
     width: auto
-    
+
+  .partner-show-pc
+    display: flex
+
+  .partner-show-mobile
+    display: none
+
 @media (max-width: $md) 
   .sticky
     margin-right: 15px
@@ -286,8 +292,19 @@
       
       p
         font-size: 14px
-
+  
 @media (max-width: $sm) 
+  .home-company-2,
+  .home-company
+    display: none
+
+  .block-partner-2,
+  .block-partner
+    padding: 15px
+
+    .block-partner-title
+      margin-top: 15px
+
   .block-create-company-steps-text
     width: 30px
     height: 30px
@@ -353,3 +370,9 @@
     .block-bloggers-card-avatar,
     .block-blogger-avatar
       width: 45%
+
+  .partner-show-pc
+    display: none
+
+  .partner-show-mobile
+    display: flex

@@ -59,8 +59,20 @@ html(lang="ru")
             .block-partner.block-def
               p.input-def-title.mt-0 Ник
               input.input-def(placeholder="Ваш ник/псевдоним")
-              p.input-def-title Telegram
-              input.input-def(placeholder="@telegram")
+              p.input-def-title Метод привлечения клиентов
+              select.input-def
+                option(value="0" selected="selected") Cсылки в социальных сетях
+                option(value="1") Контекстная реклама
+                option(value="2") Реклама с помощью Facebook
+                option(value="3") Свои интернет сайты
+                option(value="4") Другое
+              p.input-def-title Введите средство связи, по которому с Вами в течении нескольких часов свяжется менеджер и поможет начать работу
+              select.input-def
+                option(value="0" selected="selected") Telegram
+                option(value="1") WhatsApp
+                option(value="2") Skype
+              p.input-def-title Аккаунт или номер телефона для связи
+              input.input-def(placeholder="@telegram или +79001234567")
               p.input-def-title Email
               input.input-def(placeholder="email@mail.ru")
               p.input-def-title Вывод средст на кошелек/телефон

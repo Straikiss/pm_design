@@ -85,7 +85,7 @@ h1
 .none
   display: none
 
-img
+video, img
   display: block
   width: 100%
 
@@ -329,6 +329,18 @@ input:checked + .slider:before
   padding: 15px
   +border-radius()
   +box-shadow()
+
+.add-mb-2
+  +margin-top()
+
+.color-hover
+  color: $gray
+
+  &:hover, &:active
+    color: $purple
+
+.border-radius
+  +border-image()
 
 @import header 
 @import aside 
