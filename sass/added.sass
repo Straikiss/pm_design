@@ -126,6 +126,16 @@ ul li .text
   cursor: pointer
   background: $gray
     
+.who-performs-2 .form-group label,
+.who-performs-2
+  background: $white
+
+.who-performs-3 .form-group label,
+.who-performs-2 .form-group label
+  color: $purple
+
+
+
 .who-performs .form-group input[type="radio"]:checked + label 
   color: $white
   background: linear-gradient(268.83deg,#aa53fe 1.58%,#790ee1 99.84%)
@@ -238,9 +248,10 @@ ul li .text
   outline: none !important
 
 .irs--big .irs-line 
-  top: 35px
+  background: $gray-text
   height: 10px
-  background: $gray
+  opacity: .3
+  top: 35px
   +border-radius()
 
 .irs-hidden-input 
@@ -262,15 +273,9 @@ ul li .text
   border-color: transparent !important
 
 .irs--big .irs-handle 
-  box-shadow: 1px 1px 2px rgba(0,0,0,0.2), inset 0 0 3px 1px $white
   top: 25px
   width: 30px
   height: 30px
-  background: $gray-text
+  background: $green-bg
   border-radius: 30px
   cursor: pointer
-
-.irs--big .irs-handle
-  &:hover, &:active
-    background: $gray
-

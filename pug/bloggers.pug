@@ -106,15 +106,17 @@ html(lang="ru")
               a.home-company-create-button(href="create-company.html") Создать
           .col-xl-12
             .row
-              .col-xl-3.col-lg-3.col-md-4.col-sm-4
-                .block-blogger-link-block
-                  a.block-blogger-link-all.all-active(href="bloggers.html") 
-                    <svg class="svg" fill="currentColor" viewBox="0 0 16 16">
-                      <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
-                    </svg> Все
-              .col-xl-3.col-lg-3.col-md-4.col-sm-4
-                .block-blogger-link-block
-                  a.block-blogger-link-favorite(href="bloggers-2.html") 
+              .col-xl-6.col-lg-6.col-md-8.col-sm-8
+                .who-performs.who-performs-2
+                  .form-group.app-state-contentby_publisher
+                    input#Item_ContentBy_Publisher.app-trigger-contentfor(name="Item.ContentBy" type="radio" value="0" checked)
+                    label(for="Item_ContentBy_Publisher" onclick="ImagePreviewShow()") 
+                      <svg class="svg" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+                      </svg> Все
+                  .form-group
+                    input#Item_ContentBy_Advertiser.app-trigger-contentfor(name="Item.ContentBy" type="radio" value="1")
+                    label(for="Item_ContentBy_Advertiser" onclick="ImagePreviewHide()") 
                       <svg class="svg" fill="currentColor" viewBox="0 0 16 16">
                         <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
                       </svg> Избранные
@@ -125,8 +127,81 @@ html(lang="ru")
                       <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"/>
                     </svg> Настройки
             .settings-filtr(style="display:none;")
-              .row        
+              .row 
                 .col-xl-6.col-lg-6.col-md-6.margin
+                  .block-def
+                    p.input-def-title.input-def-title-3.mt-0 Пол блогера
+                    .create-company-select-type.input-select
+                      label(for="CampTypeGender1")
+                        input.input-radio(type="radio" id="CampTypeGender1" name="CampTypeGender" value="0" checked)
+                        span.checkmark
+                        p Любой
+                    .create-company-select-type.input-select
+                      label(for="CampTypeGender2")
+                        input.input-radio(type="radio" id="CampTypeGender2" name="CampTypeGender" value="1")
+                        span.checkmark
+                        p Женский
+                    .create-company-select-type.input-select
+                      label(for="CampTypeGender3")
+                        input.input-radio(type="radio" id="CampTypeGender3" name="CampTypeGender" value="2")
+                        span.checkmark
+                        p Мужской
+                    p.input-def-title.input-def-title-3 Количество подписчиков
+                    <span class="irs irs--big js-irs-0">
+                      <span class="irs">
+                        <span class="irs-line" tabindex="0"></span>
+                        <span class="irs-min" style="display: none; visibility: hidden;">0</span>
+                        <span class="irs-max" style="display: none; visibility: visible;">1</span>
+                        <span class="irs-from" style="visibility: hidden;">0</span>
+                        <span class="irs-to" style="visibility: hidden;">0</span>
+                        <span class="irs-single" style="left: 1.25%;">0</span>
+                        <span class="irs-single" style="left: 91.5%;">2 000 000</span>
+                      </span>
+                      <span class="irs-grid"></span>
+                      <span class="irs-bar irs-bar--single" style="left: 0px; width: 3.69458%;"></span>
+                      <span class="irs-handle single" style="left: 0%;"></span>
+                      <span class="irs-handle single" style="left: 95%;"></span>
+                    </span>
+                    input.js-range-slider.irs-hidden-input(type="text" name="my_range" value="" tabindex="-1" readonly="")
+                    .create-company-select-type.input-select
+                      label(for="CampTypeFollowers1")
+                        input.input-radio(type="radio" id="CampTypeFollowers1" name="CampTypeFollowers" value="0")
+                        span.checkmark
+                        p По убыванию
+                    .create-company-select-type.input-select
+                      label(for="CampTypeFollowers2")
+                        input.input-radio(type="radio" id="CampTypeFollowers2" name="CampTypeFollowers" value="1")
+                        span.checkmark
+                        p По возрастанию
+                    p.input-def-title.input-def-title-3 По популярности
+                    .create-company-select-type.input-select
+                      label(for="CampTypeRate1")
+                        input.input-radio(type="radio" id="CampTypeRate1" name="CampTypeRate" value="0")
+                        span.checkmark
+                        p Сначала Высокая
+                    .create-company-select-type.input-select
+                      label(for="CampTypeRate2")
+                        input.input-radio(type="radio" id="CampTypeRate2" name="CampTypeRate" value="1")
+                        span.checkmark
+                        p Сначала Средняя
+                    p.input-def-title.input-def-title-3 CPM
+                    <span class="irs irs--big js-irs-0">
+                      <span class="irs">
+                        <span class="irs-line" tabindex="0"></span>
+                        <span class="irs-min" style="display: none; visibility: hidden;">0</span>
+                        <span class="irs-max" style="display: none; visibility: visible;">1</span>
+                        <span class="irs-from" style="visibility: hidden;">0</span>
+                        <span class="irs-to" style="visibility: hidden;">0</span>
+                        <span class="irs-single" style="left: 1.25%;">0</span>
+                        <span class="irs-single" style="left: 94.5%;">3 000</span>
+                      </span>
+                      <span class="irs-grid"></span>
+                      <span class="irs-bar irs-bar--single" style="left: 0px; width: 3.69458%;"></span>
+                      <span class="irs-handle single" style="left: 0%;"></span>
+                      <span class="irs-handle single" style="left: 95%;"></span>
+                    </span>
+                    input.js-range-slider.irs-hidden-input(type="text" name="my_range" value="" tabindex="-1" readonly="")
+                .col-xl-6.col-lg-6.col-md-6
                   .block-def
                     p.input-def-title.input-def-title-3.mt-0 Тематика аккаунта
                     .create-company-select-type.input-select
@@ -194,53 +269,72 @@ html(lang="ru")
                         input.input-radio(type="radio" id="CampType13" value="12")
                         span.checkmark
                         p.create-company-select-type Авто/Мото
-                .col-xl-6.col-lg-6.col-md-6
-                  .block-def
-                    p.input-def-title.input-def-title-3.mt-0 Пол блогера
-                    .create-company-select-type.input-select
-                      label(for="CampTypeGender1")
-                        input.input-radio(type="radio" id="CampTypeGender1" name="CampTypeGender" value="0" checked)
-                        span.checkmark
-                        p Любой
-                    .create-company-select-type.input-select
-                      label(for="CampTypeGender2")
-                        input.input-radio(type="radio" id="CampTypeGender2" name="CampTypeGender" value="1")
-                        span.checkmark
-                        p Женский
-                    .create-company-select-type.input-select
-                      label(for="CampTypeGender3")
-                        input.input-radio(type="radio" id="CampTypeGender3" name="CampTypeGender" value="2")
-                        span.checkmark
-                        p Мужской
-                    p.input-def-title.input-def-title-3 Количество подписчиков
-                    .create-company-select-type.input-select
-                      label(for="CampTypeFollowers1")
-                        input.input-radio(type="radio" id="CampTypeFollowers1" name="CampTypeFollowers" value="0")
-                        span.checkmark
-                        p По убыванию
-                    .create-company-select-type.input-select
-                      label(for="CampTypeFollowers2")
-                        input.input-radio(type="radio" id="CampTypeFollowers2" name="CampTypeFollowers" value="1")
-                        span.checkmark
-                        p По возрастанию
-                    p.input-def-title.input-def-title-3 По популярности
-                    .create-company-select-type.input-select
-                      label(for="CampTypeRate1")
-                        input.input-radio(type="radio" id="CampTypeRate1" name="CampTypeRate" value="0")
-                        span.checkmark
-                        p Сначала Высокая
-                    .create-company-select-type.input-select
-                      label(for="CampTypeRate2")
-                        input.input-radio(type="radio" id="CampTypeRate2" name="CampTypeRate" value="1")
-                        span.checkmark
-                        p Сначала Средняя
                   .row
                     .col-xl-6.col-lg-6.col-md-6.col-sm-6
                       a.block-first-company-button(href="bloggers.html") Сбросить фильтр
                     .col-xl-6.col-lg-6.col-md-6.col-sm-6
-                      a.create-company-button(href="#" onclick="openbox('settings-filtr'); return false") Применить
-            .row
-              - for(i=0; i < 10; i++)
+                      a.create-company-button(href="#" onclick="openbox('settings-filtr'); return false") Применить       
+            #ChangeImagePreviewHide
+            #BlockCreateSelf.none
+              .row
+                .col-xl-12
+                  .block-def.margin
+                    h2.fav-bloggers 
+                      <svg class="svg-2 color-purple" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0-1a8 8 0 1 1 0 16A8 8 0 0 1 8 0z"/>
+                        <path d="M4.285 6.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 4.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 3.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683zM7 9.5C7 8.672 6.552 8 6 8s-1 .672-1 1.5.448 1.5 1 1.5 1-.672 1-1.5zm4 0c0-.828-.448-1.5-1-1.5s-1 .672-1 1.5.448 1.5 1 1.5 1-.672 1-1.5z"/>
+                      </svg> В избранном еще нет блогеров, выберите блогеров которые Вам понравились и они появятся тут!
+            #BlockCreateBlogger
+              .row
+                - for(i=0; i < 10; i++)
+                  .col-xl-6.col-lg-6.col-md-6.col-sm-12
+                    a.block-blogger-link(href="blogger.html")
+                      .block-blogger
+                        .row
+                          .col-xl-4.col-lg-5.col-md-8.ml-15.col-sm-5
+                            .flex
+                              img.block-blogger-avatar(src="img/blogger-card/1.png" draggable="false")
+                          .col-xl-8.col-lg-7.col-md-12.col-sm-7
+                            h2.block-blogger-title.h-27 Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎
+                            .row
+                              .col-xl-7.col-lg-5.col-md-6.col-sm-5.col-5
+                                p.block-blogger-text Качество аккаунта:
+                              .col-xl-5.col-lg-7.col-md-6.col-sm-7.col-7
+                                .block-icons.color-purple.text-align
+                                  <svg class="va-middle" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                  </svg>
+                                  <svg class="va-middle" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                  </svg>
+                                  <svg class="va-middle" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                  </svg>
+                                  <svg class="va-middle" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M5.354 5.119L7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.519.519 0 0 1-.146.05c-.341.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.171-.403.59.59 0 0 1 .084-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027c.08 0 .16.018.232.056l3.686 1.894-.694-3.957a.564.564 0 0 1 .163-.505l2.906-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.002 2.223 8 2.226v9.8z"/>
+                                  </svg>
+                                  <svg class="va-middle" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                  </svg>
+                              .col-xl-7.col-lg-5.col-md-5.col-sm-5.col-5
+                                p.block-blogger-text Охват:
+                              .col-xl-5.col-lg-7.col-md-7.col-sm-7.col-7
+                                p.block-blogger-text.text-align  1236 
+                              .col-xl-7.col-lg-5.col-md-5.col-sm-5.col-5
+                                p.block-blogger-text Подписчики:
+                              .col-xl-5.col-lg-7.col-md-7.col-sm-7.col-7
+                                p.block-blogger-text.text-align 4 334
+                              .col-xl-7.col-lg-5.col-md-5.col-sm-5.col-5
+                                p.block-blogger-text Тематика:
+                              .col-xl-5.col-lg-7.col-md-7.col-sm-7.col-7
+                                p.block-blogger-text.text-align Личный блог  
+                .col-xl-6.offset-xl-3.col-lg-7.offset-lg-3
+                  .block-blogger-link-more-block
+                    a.block-blogger-link-more(href="create-company.html")
+                      h2.block-blogger-link-more-block-title 
+                        <svg class="block-list-company-more-avatar block-list-company-more-2" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
+                          <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
+                        </svg> Создать рекламную кампанию
                 .col-xl-6.col-lg-6.col-md-6.col-sm-12
                   a.block-blogger-link(href="blogger.html")
                     .block-blogger
@@ -254,7 +348,7 @@ html(lang="ru")
                             .col-xl-7.col-lg-5.col-md-6.col-sm-5.col-5
                               p.block-blogger-text Качество аккаунта:
                             .col-xl-5.col-lg-7.col-md-6.col-sm-7.col-7
-                              .block-icons.color-purple.text-align
+                              .block-icons.color-purple.ml-10
                                 <svg class="va-middle" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                   <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                                 </svg>
@@ -281,53 +375,5 @@ html(lang="ru")
                             .col-xl-7.col-lg-5.col-md-5.col-sm-5.col-5
                               p.block-blogger-text Тематика:
                             .col-xl-5.col-lg-7.col-md-7.col-sm-7.col-7
-                              p.block-blogger-text.text-align Личный блог  
-              .col-xl-6.offset-xl-3.col-lg-7.offset-lg-3
-                .block-blogger-link-more-block
-                  a.block-blogger-link-more(href="create-company.html")
-                    h2.block-blogger-link-more-block-title 
-                      <svg class="block-list-company-more-avatar block-list-company-more-2" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
-                      </svg> Создать рекламную кампанию
-              .col-xl-6.col-lg-6.col-md-6.col-sm-12
-                a.block-blogger-link(href="blogger.html")
-                  .block-blogger
-                    .row
-                      .col-xl-4.col-lg-5.col-md-8.ml-15.col-sm-5
-                        .flex
-                          img.block-blogger-avatar(src="img/blogger-card/1.png" draggable="false")
-                      .col-xl-8.col-lg-7.col-md-12.col-sm-7
-                        h2.block-blogger-title.h-27 Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎
-                        .row
-                          .col-xl-7.col-lg-5.col-md-6.col-sm-5.col-5
-                            p.block-blogger-text Качество аккаунта:
-                          .col-xl-5.col-lg-7.col-md-6.col-sm-7.col-7
-                            .block-icons.color-purple.ml-10
-                              <svg class="va-middle" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                              </svg>
-                              <svg class="va-middle" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                              </svg>
-                              <svg class="va-middle" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                              </svg>
-                              <svg class="va-middle" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M5.354 5.119L7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.519.519 0 0 1-.146.05c-.341.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.171-.403.59.59 0 0 1 .084-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027c.08 0 .16.018.232.056l3.686 1.894-.694-3.957a.564.564 0 0 1 .163-.505l2.906-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.002 2.223 8 2.226v9.8z"/>
-                              </svg>
-                              <svg class="va-middle" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
-                              </svg>
-                          .col-xl-7.col-lg-5.col-md-5.col-sm-5.col-5
-                            p.block-blogger-text Охват:
-                          .col-xl-5.col-lg-7.col-md-7.col-sm-7.col-7
-                            p.block-blogger-text.text-align  1236 
-                          .col-xl-7.col-lg-5.col-md-5.col-sm-5.col-5
-                            p.block-blogger-text Подписчики:
-                          .col-xl-5.col-lg-7.col-md-7.col-sm-7.col-7
-                            p.block-blogger-text.text-align 4 334
-                          .col-xl-7.col-lg-5.col-md-5.col-sm-5.col-5
-                            p.block-blogger-text Тематика:
-                          .col-xl-5.col-lg-7.col-md-7.col-sm-7.col-7
-                            p.block-blogger-text.text-align Личный блог
+                              p.block-blogger-text.text-align Личный блог
     script(src="js/scripts.js")
