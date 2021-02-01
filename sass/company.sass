@@ -34,10 +34,13 @@
     content: 'CPA'
 
 .block-company-inside-svg
-  color: $white
-  margin: auto
-  height: 35px
-  width: 35px
+    margin: auto
+    height: 35px
+
+    &::before
+      font-size: 35px
+      color: $white
+      height: 35px
 
 .block-company-height
   overflow: hidden
@@ -51,8 +54,8 @@
   +margin-bottom()
 
 .block-company-list-title,
-  line-height: 52px
-  height: 52px
+  line-height: 35px
+  height: 35px
 
 .block-first-company
   +margin-top-large()

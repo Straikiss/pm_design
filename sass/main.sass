@@ -1,4 +1,5 @@
 @import ../css/grid
+@import ../css/icons
 
 @font-face 
   font-family: NotoSans-Regular
@@ -210,22 +211,31 @@ button
 .color-purple
   color: $purple 
 
-.svg
-  width: 20px
+.svg-3, .svg
+  &::before
+   font-size: 20px
+   height: 20px
 
+.svg-4,
 .svg-2
-  width: 23px
+  &::before
+    font-size: 23px
+    height: 23px
+
+.svg-2,
+.svg
+  &::before
+    vertical-align: bottom
+    
+.svg-4,
+.svg-3
+  vertical-align: top
 
 .top-30
   top: 30px !important
 
 .bg-gray
   background: $gray !important
-
-.svg-2,
-.svg
-  vertical-align: middle
-  margin-top: -2.5px
 
 ::-webkit-scrollbar 
   width: 12.5px
@@ -270,10 +280,10 @@ button
   display: inline-block
   border-radius: 100%
   text-align: center
-  line-height: 44px
-  height: 44px
+  line-height: 35px
+  height: 35px
   color: $white
-  width: 44px
+  width: 35px
   
 .switch 
   display: inline-block

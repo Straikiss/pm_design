@@ -101,26 +101,28 @@
     color: $purple
 
 .block-list-company-more
-  margin-left: 15px
-  background: linear-gradient(189.78deg, #12e17e 0%, #13bd60 100%)
+  margin-left: 5px
+  background: $green-bg
   color: $white
   display: inline-block
-  width: 52px
-  height: 52px
+  width: 35px
+  height: 35px
+  line-height: 35px
   text-align: center
   border-radius: 100%
   +box-shadow()
   +font-size()
 
   &:hover, &:active
-    +opacity()
+    background: $purple-bg
 
 .block-list-company-more-2
-  background: linear-gradient(189.78deg,#12e17e,#13bd60)
+  background: $green-bg
   color: $white
   display: inline-block
-  width: 52px
-  height: 52px
+  width: 35px
+  height: 35px
+  line-height: 35px
   text-align: center
   border-radius: 100%
   +box-shadow()
@@ -141,12 +143,13 @@
   width: 100%
   text-align: center
   line-height: 44px
+  height: 44px
   +border-image()
   +box-shadow()
 
   &:hover, &:active
     color: $white
-    background: linear-gradient(189.78deg,#12e17e,#13bd60)
+    background: $green-bg
 
 .block-blogger-link-all
   color: $purple
@@ -160,7 +163,7 @@
 
   &:hover, &:active
     color: $white
-    background: linear-gradient(268.83deg, #AA53FE 1.58%, #790EE1 99.84%)
+    background: $purple-bg
 
 .block-blogger-link-favorite
   display: block
@@ -183,6 +186,7 @@
   text-align: center
   background: $purple-bg
   width: 100%
+  height: 44px
   +border-image()
   +box-shadow()
 
@@ -192,7 +196,8 @@
 .block-blogger-card-favorite
   display: block
   margin-top: 10px 
-  line-height: 38px
+  line-height: 35px
+  height: 35px
   color: $green
   text-align: center
   +border-image()
@@ -214,20 +219,10 @@
   +margin-bottom()
 
 .block-blogger-link-more-block
-  height: 52px
-  line-height: 52px
+  height: 35px
+  line-height: 35px
   text-align: center
   +margin-bottom()
-
-.block-blogger-link-more
-  color: $purple
-
-  &:hover,
-  &:active
-    color: $green
-
-    .block-list-company-more-2
-     +opacity()
 
 .block-blogger-avatar
   display: block
@@ -253,8 +248,15 @@
   height: 250px
   object-fit: cover
 
-  &:hover, &:active
-    +opacity()
+.block-blogger-link-more
+  color: $green
+
+  &:hover,
+  &:active
+    color: $purple
+
+    .block-list-company-more-2
+      background: $purple-bg
 
 .block-screenshots-title
   margin-bottom: 15px

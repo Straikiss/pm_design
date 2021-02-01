@@ -147,6 +147,7 @@ input::placeholder
   text-align: center
   line-height: 44px
   display: block
+  height: 44px
   color: $white
   +border-radius()
   +margin-top()
@@ -227,9 +228,13 @@ input::placeholder
 .create-company-svg
   position: absolute
   color: $gray-text
-  width: 40px
+  height: 35px
+  font-size: 35px
   right: 15px
-  top: 0
+
+  &::before
+    height: 35px
+    font-size: 35px
 
   &:hover, &:active
     color: $pink

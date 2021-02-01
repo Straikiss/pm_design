@@ -19,11 +19,14 @@
   border-top-left-radius: 15px
 
 .home-block-inside-svg
-  position: absolute
   color: $white
-  width: 45px
-  right: 15px
-  top: 0
+
+  &::before
+    position: absolute
+    top: 0
+    right: 15px
+    font-size: 45px
+    height: 45px
 
 .home-block-inside-text
   +padding()
@@ -48,9 +51,17 @@
   +box-shadow()
   +padding()
 
-.home-company-svg
+.home-company-search,  
+.home-company-clock
+  display: block
   height: 42px
   width: 42px
+
+.home-company-clock
+  background: url(../img/home/logo/clock.svg) no-repeat
+
+.home-company-search
+  background: url(../img/home/logo/search.svg) no-repeat
 
 .home-company-create-title,
 .home-company-create-text
@@ -131,9 +142,13 @@
   text-align: center
   line-height: 15px
 
+  i 
+    display: inline-block
+
 .home-bloggers-block-icons-svg
-  vertical-align: middle
-  margin-top: -2.5px
   color: $purple
-  height: 15px
-  width: 15px
+
+  &::before
+    vertical-align: bottom
+    font-size: 15px
+    height: 15px
