@@ -291,6 +291,11 @@
         font-size: 14px
   
 @media (max-width: $sm) 
+  .block-bloggers-card-avatar,
+  .settings-image
+    width: 135px !important
+    height: 135px
+
   .who-performs-2
     margin-bottom: 15px
 
@@ -298,8 +303,17 @@
   .home-company
     display: none
 
+  .home-company-create,
+  .block-select-city,
   .block-partner-2,
-  .block-partner
+  .block-partner,
+  .block-def,
+  .block-view,
+  .block-gender,
+  .block-age,
+  .block-company,
+  .home-block-inside-text,
+  .home-bloggers
     padding: 15px
 
     .block-partner-title
@@ -322,6 +336,7 @@
   .block-create-company-select
     +margin-bottom()
 
+  .block-company-list-title,
   .block-blogger-stats
     text-align: center
 
@@ -366,11 +381,11 @@
   .flex
     justify-content: center
     display: flex
-    
+
     .block-bloggers-card-avatar,
     .block-blogger-avatar
       width: 45%
-
+    
   .partner-show-pc
     display: none
 

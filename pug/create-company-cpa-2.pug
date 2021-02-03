@@ -8,6 +8,8 @@ html(lang="ru")
     meta(name="format-detection" content="telephone=no")
     link(rel="shortcut icon" href="img/fav/pm-fav.png")
     link(rel="stylesheet" href="css/main.css")
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons')
   body
     .header
       .container-fluid
@@ -166,14 +168,21 @@ html(lang="ru")
             .col-xl-6.col-lg-6.col-md-12
               p.input-def-title.input-def-title-3.mt-0.tooltip.w-100  Выбор цели 
                 <i class="bi bi-question-circle svg color-purple"></i>
-                span.tooltip-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptatem, hic voluptates consequatur aut.
+                span.tooltip-text Платите только за реальные действия. Минимальная цена за 1 переход/тап - 15р, минимальная цена за 1 цель - 50р
               .row
-                .col-xl-6.col-lg-6.col-md-6.col-sm-6
-                  p.mb-10 Цена за переход
-                  input.input-def.text-center.mb-10(placeholder="2")
-                .col-xl-6.col-lg-6.col-md-6.col-sm-6
-                  p.mb-10 Цена за цель
-                  input.input-def.text-center.mb-10(placeholder="0")
+                .col-xl-6.col-lg-6.col-md-5.col-sm-6
+                  .create-company-select-type.input-select.mt-0(onclick="ChangeCofusTap()")
+                    label(for="CampTypeFocus1")
+                      input.input-radio(type="radio" id="CampTypeFocus1" name="CampTypeFocus" value="0" checked)
+                      span.checkmark
+                      p Цена за переход/тап
+                .col-xl-6.ml-m-2.col-lg-6.col-md-5.col-sm-6
+                  .create-company-select-type.input-select.mt-0(onclick="ChangeCofusFocus()")
+                    label(for="CampTypeFocus2")
+                      input.input-radio(type="radio" id="CampTypeFocus2" name="CampTypeFocus" value="1")
+                      span.checkmark
+                      p Цена за цель
+              input.input-def.text-center.mb-10.mt-10#ChangeFocus(placeholder="15")
               p.text-center.margin
                 a.bb.input-def-title.mt-0(href="http://postmarket.pro/article/cpa-manual" target="_blank") Инструкция по настройке postback уведомлений
               h2.mb-10 Бюджет
@@ -217,3 +226,4 @@ html(lang="ru")
                 .col-5.offset-2
                   a.block-create-company-link(href="create-company-cpa-3.html") Готово
     script(src="js/scripts.js")
+    script(src="js/index.js")

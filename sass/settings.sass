@@ -46,14 +46,13 @@
   display: flex
 
   .home-block-inside-svg
-    right: auto
+    position: relative
+
+    &::before
+      right: 0
 
   .settings-image
     width: 35%
-
-  &:hover, &:active
-    .home-block-inside-svg
-      color: $orange
 
 .block-settings
   .row
@@ -94,7 +93,8 @@
 
 .settings-link
   justify-content: space-between
-  line-height: 44px
+  line-height: 35px
+  height: 35px
   color: $purple
   display: flex
 
@@ -103,6 +103,12 @@
 
     .block-settings-link-svg 
       color: $orange 
+
+.block-settings-link-svg 
+  height: 35px
+
+  &::before
+    font-size: 35px
 
 .block-settings-post,
 .block-settings-story
