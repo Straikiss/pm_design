@@ -25,19 +25,22 @@ document.getElementById('ChangeImagePreviewHide').style.display = "none";
 document.getElementById('BlockCreateSelf').style.display = "block";
 document.getElementById('BlockCreateBlogger').style.display = "none";
 } 
-function ChangeCofusTap(){document.getElementById('ChangeFocus').placeholder = '15';} 
-function ChangeCofusFocus(){document.getElementById('ChangeFocus').placeholder = '50';} 
+function ChangeCofusTap(){
+  document.getElementById('ChangeFocus').placeholder = '15';
+  document.getElementById('ChangeImagePreviewHide').style.display = "none";
+} 
+function ChangeCofusFocus(){
+  document.getElementById('ChangeFocus').placeholder = '50';
+  document.getElementById('ChangeImagePreviewHide').style.display = "block";
+} 
 function openbox(pClass){
 var elems = document.getElementsByClassName(pClass);
 for(var i=0; i < elems.length; i++){var display = elems[i].style.display;if(display=='none')
 {elems[i].style.display='block';}else{elems[i].style.display='none';}}}
-window.onscroll = function() {myFunction()};
+
+window.onscroll=function(){myFunction()};
 var navbar = document.getElementById("search");
 var sticky = navbar.offsetTop;
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
+function myFunction(){
+  if(window.pageYOffset >= sticky){navbar.classList.add("sticky")}else{navbar.classList.remove("sticky");}
 }

@@ -170,21 +170,22 @@ html(lang="ru")
                 <i class="bi bi-question-circle svg color-purple"></i>
                 span.tooltip-text Платите только за реальные действия. Минимальная цена за 1 переход/тап - 15р, минимальная цена за 1 цель - 50р
               .row
-                .col-xl-6.col-sm-7
+                .col-xl-6.col-lg-7.col-md-6.col-sm-7
                   .create-company-select-type.input-select.mt-0(onclick="ChangeCofusTap()")
                     label(for="CampTypeFocus1")
                       input.input-radio(type="radio" id="CampTypeFocus1" name="CampTypeFocus" value="0" checked)
                       span.checkmark
                       p Цена за переход/тап
-                .col-xl-6.col-sm-5.ml-m-2
+                .col-xl-6.col-lg-5.col-md-6.col-sm-5.ml-m-2
                   .create-company-select-type.input-select.mt-0(onclick="ChangeCofusFocus()")
                     label(for="CampTypeFocus2")
                       input.input-radio(type="radio" id="CampTypeFocus2" name="CampTypeFocus" value="1")
                       span.checkmark
                       p Цена за цель
               input.input-def.text-center.mb-10.mt-10#ChangeFocus(placeholder="15")
-              p.text-center.margin
-                a.bb.input-def-title.mt-0(href="http://postmarket.pro/article/cpa-manual" target="_blank") Инструкция по настройке postback уведомлений
+              #ChangeImagePreviewHide.none
+                p.text-center.margin
+                  a.bb.input-def-title.mt-0(href="http://postmarket.pro/article/cpa-manual" target="_blank") Инструкция по настройке postback уведомлений
               h2.mb-10 Бюджет
               .who-performs.mb-10
                 .form-group.app-state-contentby_publisher
