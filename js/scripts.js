@@ -37,10 +37,3 @@ function openbox(pClass){
 var elems = document.getElementsByClassName(pClass);
 for(var i=0; i < elems.length; i++){var display = elems[i].style.display;if(display=='none')
 {elems[i].style.display='block';}else{elems[i].style.display='none';}}}
-
-window.onscroll=function(){myFunction()};
-var navbar = document.getElementById("search");
-var sticky = navbar.offsetTop;
-function myFunction(){
-  if(window.pageYOffset >= sticky){navbar.classList.add("sticky")}else{navbar.classList.remove("sticky");}
-}

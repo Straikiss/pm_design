@@ -1,9 +1,6 @@
 @import ../css/grid
-@import ../css/icons
-
-@font-face 
-  font-family: NotoSans-Regular
-  src: url(../font/NotoSans-Regular.ttf)
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap)
+@import url(https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css)
 
 $white: #fff
 $gray: #f8f9fa
@@ -47,7 +44,6 @@ $sm: 575px
   border-radius: 5px
 
 =box-shadow()
-  // box-shadow: 0 5px 10px rgba(0,0,0,.1)
   box-shadow: 0 0 3px#dee2e6
 
 =opacity()
@@ -57,7 +53,7 @@ $sm: 575px
   font-size: 15px
 
 =font-family()
-  font-family: NotoSans-Regular
+  font-family: 'Noto Sans', sans-serif
 
 * 
   padding: 0 
@@ -139,6 +135,9 @@ button
 
 .mb-60
   margin-bottom: 60px
+
+.mt-20
+  margin-top: 20px
 
 .mt-30
   +margin-top()
@@ -368,5 +367,6 @@ input:checked + .slider:before
 @import partner
 @import modal
 @import create-company
+@import created-company
 @import added
 @import media

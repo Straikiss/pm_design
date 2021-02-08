@@ -1,0 +1,143 @@
+doctype html
+
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    title Рекламная кампания - Подробно - Рекламодатель - PostMarket
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(name="format-detection" content="telephone=no")
+    link(rel="shortcut icon" href="img/fav/pm-fav.png")
+    link(rel="stylesheet" href="css/main.css")
+  body
+    .header
+      .container-fluid
+        .row
+          .col-xl-6.col-lg-6.col-md-3.col-sm-5.col-4
+            a.header-link#hidden-link(href="#") 
+              <i class="bi bi-list svg-3"></i> Меню
+            h1.header-title
+              a.heder-title-link(href="created-company-auto-not-paid.html") Рекламная кампания - Подробно
+          .col-xl-6.col-lg-6.col-md-9.col-sm-7.col-8
+            .header-status
+              p.header-status-balance 0 ₽ <sup class="header-status-balance-money">2 000 ₽
+              a.header-status-pay(href="settings.html") Пополнить баланс
+    .main
+      .aside#hidden-element
+        a.aside-logo(href="index.html")
+          <i class="aside-logo-svg"></i>
+        a.aside-link.hide-2#hidden-link-2(href="#") 
+          <i class="bi bi-x-circle svg"></i> Закрыть меню
+        a.aside-link.aside-link-create(href="create-company.html") 
+          <i class="bi bi-plus-circle svg"></i> Запустить рекламу
+        a.aside-link(href="index.html")
+          <i class="bi bi-house svg"></i> Главная
+        a.aside-link.aside-link-active(href="company.html") 
+          <i class="bi bi-bullseye svg"></i> Реклама 
+        a.aside-link(href="bloggers.html") 
+          <i class="bi bi-people svg"></i> Блогеры 
+        a.aside-link(href="settings.html") 
+          <i class="bi bi-gear svg"></i> Настройки
+        a.aside-link(href="partner.html") 
+          <i class="bi bi-arrow-left-right svg"></i> Партнер
+        a.aside-link(href="#") 
+          <i class="bi bi-box-arrow-right svg"></i> Выйти
+      .container.created-company
+        .row
+          .col-xl-12.margin 
+            .block-def
+              .row
+                .col-xl-1.col-lg-1.col-md-1.col-sm-2
+                  .block-company-inside.bg-not-paid
+                    <i class="bi bi-question block-company-inside-svg"></i>
+                .col-xl-4.col-lg-3.col-md-4.col-sm-6
+                  .created-company-title 
+                    p.color-not-paid Не оплачено
+                .col-xl-7.col-lg-8.col-md-7
+                  .row.created-company-title-2
+                    .col-xl-4.offset-xl-4.col-lg-4.offset-lg-4.col-md-6.offset-md-0
+                      a.block-create-company-link(href="create-company-auto-3.html")  
+                        <i class="bi bi-wallet svg-3"></i> Оплатить
+                    .col-xl-4.col-lg-4.col-md-6
+                      a.created-company-edit(href="create-company-auto-1.html") 
+                        <i class="bi bi-pencil-square svg-3"></i> Редактировать
+                .col-12
+                  p.input-def-title.mb-0 Текст публикации 
+                  p.mt-10 Лима Баррето родился в Рио-де-Жанейро в бедной семье смешанной этнической принадлежности (был мулатом). Поскольку рабство в Бразилии было упразднено в 1888 году, Баррето получил доступ к высшему образованию.
+                .col-12
+                  p.input-def-title.mb-0 Описание задачи 
+                  p.mt-10 Лима Баррето родился в Рио-де-Жанейро в бедной семье смешанной этнической принадлежности (был мулатом). Поскольку рабство в Бразилии было упразднено в 1888 году, Баррето получил доступ к высшему образованию.
+          .col-xl-6.col-lg-6.margin 
+            .block-def 
+              h2 
+                <i class="bi bi-wallet svg-2 color-purple"></i> Бюджет
+              .create-company-line
+                .create-company-line-full
+              .row.margin 
+                 .col-6   
+                  p.color-gray.create-company-dot.dot-purple Оплачено <span class="float-right color-black">0 ₽
+                 .col-6    
+                  p.color-gray.create-company-dot.dot-gray Потрачено <span class="float-right color-black">0 ₽
+              .row 
+                .col-6  
+                  h2
+                    <i class="bi bi-people svg-2 color-purple"></i> Аудитория
+                  .create-company-line
+                  p.color-gray.create-company-dot.dot-purple.mb-10 Результат <span class="float-right color-black">0
+                  p.color-gray.create-company-dot.dot-gray Прогноз <span class="float-right color-black">5 000
+                .col-6  
+                  h2
+                    <i class="bi bi-person svg-2 color-purple"></i> Блогеров
+                  .create-company-line
+                  p.color-gray.create-company-dot.dot-purple.mb-10 Результат <span class="float-right color-black">0
+                  p.color-gray.create-company-dot.dot-gray Прогноз <span class="float-right color-black">15
+          .col-xl-6.col-lg-6.margin
+            .block-def 
+              h2 
+                <i class="bi bi-bar-chart svg-2 color-purple"></i> Диаграмма охвата
+              .row 
+                .col-xl-6.col-lg-6.col-md-6.col-sm-6.col-12
+                  | <!-- место для #graphics -->
+                .col-xl-6.col-lg-6.col-md-6.col-sm-6.col-12
+                  h2.mt-20.mb-10.created-company-count 5 000
+                  p.color-gray.mb-10 Итоговый охват
+                  p.color-gray.create-company-dot.dot-gray.mb-10 Фактический охват 
+                  p.color-gray.create-company-dot.dot-purple Меньше прогноза
+                  br 
+                  br
+                  br
+          .col-xl-6.col-lg-6.margin 
+            .block-def 
+              h2 
+                <i class="bi bi-archive svg-2 color-purple"></i> Настройки контента
+              p.mt-20.mb-10.color-gray Контент предоставляет: <span class="float-right color-black">Блогер
+              p.mb-10.color-gray Тип публикации: <span class="float-right color-black">Пост
+              p.mb-10.color-gray Аккаунт инстаграм: <span class="float-right">
+                <a href="http://instagram.com/postmarket_code" target="_blank" class="color-purple">@postmarket_code</a>
+              p.mb-10.color-gray Ссылка на сайт: <span class="float-right">
+                <a href="postmarket.pro" target="_blank" class="color-purple">postmarket.pro</a>
+              p.mb-10.color-gray Геолокация: <span class="float-right color-black">МОСКВА
+              p.color-gray Хэштег: <span class="float-right color-black">#postmarket.pro
+          .col-xl-6.col-lg-6.margin 
+            .block-def 
+              h2 
+                <i class="bi bi-bullseye svg-2 color-purple"></i> Настройки таргетинга
+              p.mt-20.mb-10.color-gray Пол блогера: <span class="float-right color-black">Любой
+              p.mb-10.color-gray Пол аудитории: <span class="float-right color-black">Любой
+              p.mb-10.color-gray Аудитория: <span class="float-right color-black">25 000
+              p.mb-10.color-gray Регион: <span class="float-right color-black">Россия
+              p.mb-10.color-gray Тематика: <span class="float-right color-black">Любая
+              br
+          .col-12.margin
+            .block-def 
+              h2 
+                <i class="bi bi-camera svg-2 color-purple"></i> Фото/Видео кампании
+              .row
+                - for (i = 0; i < 4; i++)
+                  .col-xl-2.col-lg-2.col-md-3.col-sm-4.col-6
+                    .uploaded
+                      a(href="#")
+                        img.uploaded-image(src="img/blogger-card/1.png" draggable="false")
+          .col-xl-2.offset-xl-10.col-lg-2.offset-lg-10.col-md-3.offset-md-9.col-sm-4.offset-sm-8.col-6.offset-6.margin 
+            a.created-company-delete(href="") 
+              <i class="bi bi-emoji-dizzy svg-3"></i> Удалить
+    script(src="js/scripts.js")

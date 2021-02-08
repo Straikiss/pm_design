@@ -2,6 +2,9 @@
   .sticky
     width: 810px
 
+  .created-company-title
+    margin-left: 15px
+
   .create-company-text-2
     padding-left: 18px
     margin-top: -20px
@@ -52,13 +55,17 @@
   .bloggers-list-inside
     max-height: 320px
 
+  .created-company-title-2
+    margin-bottom: -10px
+
   .block-age
     +margin-top()
 
   .mb-add
     +margin-bottom()
 
-  .home-bloggers-none-2
+  .home-bloggers-none-2,
+  .br-none
     display: none
 
   .home-company-create
@@ -145,7 +152,20 @@
     display: flex
     margin-top: 0
 
+  .created-company-title
+    margin-left: 30px
+
 @media (max-width: $lg)
+  .created-company-title
+    margin-left: 0
+
+  .created-company-title-2
+    .col-xl-4
+      margin-bottom: 15px
+
+      &:last-of-type
+        margin-bottom: 0
+
   .who-performs-3
     margin-bottom: 15px
 
@@ -294,6 +314,10 @@
         font-size: 14px
   
 @media (max-width: $sm) 
+  .created-company-title
+    margin-top: 0
+    margin-bottom: 0
+
   .block-bloggers-card-avatar,
   .settings-image
     width: 135px !important
@@ -305,6 +329,9 @@
   .home-company-2,
   .home-company
     display: none
+
+  .mb-30-filts-size
+    +margin-bottom()
 
   .home-company-create,
   .block-select-city,

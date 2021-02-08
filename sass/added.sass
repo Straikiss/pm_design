@@ -3,8 +3,8 @@ ul
   margin: auto
   width: 100%
   padding: 0
-  display: grid
-  grid-template-columns: repeat(4, 1fr)
+  display: flex
+  justify-content: center
 
 ul li 
   list-style-type: none
@@ -20,9 +20,6 @@ ul li
     &::after
       display: none
 
-ul li.active:before
-  background: $purple
-
 ul li:before 
   position: absolute
   content: ''
@@ -30,10 +27,8 @@ ul li:before
   width: 50%
   height: 1px
   background: $gray-text
+  opacity: .3
   top: 12px
-
-ul li.active:after 
-  background: $purple
 
 ul li:after 
   position: absolute
@@ -42,6 +37,7 @@ ul li:after
   width: 50%
   height: 1px
   background: $gray-text
+  opacity: .3
   top: 12px
   right: 0
 
@@ -59,6 +55,14 @@ ul li.active .number
 ul li:hover
   +opacity()
 
+ul li.active:before
+  background: $purple
+  opacity: 1 
+
+ul li.active:after 
+  background: $purple
+  opacity: 1 
+
 ul li .number 
   z-index: 1
   position: relative
@@ -74,6 +78,7 @@ ul li .number
   display: flex
   align-items: center
   justify-content: center
+  color: $gray-text
   +font-size()
 
 ul li.active .text 
@@ -133,8 +138,6 @@ ul li .text
 .who-performs-3 .form-group label,
 .who-performs-2 .form-group label
   color: $purple
-
-
 
 .who-performs .form-group input[type="radio"]:checked + label 
   color: $white

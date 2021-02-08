@@ -1,0 +1,116 @@
+.created-company
+  padding-top: 110px
+
+.create-company-dot
+  &::before
+    display: inline-block
+    border-radius: 100%
+    margin-right: 5px
+    margin-top: 5px
+    height: 10px
+    width: 10px
+    content: ""
+
+.dot-purple
+  &::before
+    background: $purple-bg
+
+.dot-gray
+  &::before
+    background: $gray-text
+    opacity: .3
+
+.create-company-line
+  background: $gray-text
+  margin-bottom: 20px
+  margin-top: 20px
+  height: 5px
+  +border-image()
+
+.create-company-line-full
+  background: $purple-bg
+  height: 5px
+  width: 50%
+
+.created-company-count
+  background: $purple-bg
+  width: fit-content
+  padding: 5px 10px
+  color: $white
+  +border-radius()
+
+.created-company-title
+  margin-bottom: 25px
+  margin-top: 25px
+
+.created-company-title-2
+  margin-bottom: 13.5px
+  margin-top: 13.5px
+
+.created-company-edit
+  background: $purple
+
+.created-company-delete
+  background: $pink
+
+.created-company-delete,
+.created-company-edit
+  text-align: center
+  line-height: 44px
+  display: block
+  color: $white
+  margin: auto
+  height: 44px
+  +border-radius()
+  +box-shadow()
+  +font-size()
+
+  &:hover, &:active
+    +opacity()
+
+.created-company-table
+  background: $white
+  border-spacing: 0
+  width: 100%
+  +border-radius()
+  +box-shadow()
+  
+  .w-100
+    width: 121px !important
+
+  .tooltip-text
+    top: 100%
+
+  th
+    color: $gray-text
+    font-weight: 400
+    font-size: 15px
+
+  tr:nth-child(even)
+    background: $gray
+
+  th, td 
+    padding: 15px
+
+  td
+    text-align: center
+    +font-size()
+
+    i:hover
+      +opacity()
+
+.created-company-table-flex
+  display: flex
+
+  img
+    height: 100px
+    width: 100px
+
+.created-company-table-flex-inside
+  margin-left: 15px
+  text-align: left
+
+.created-company-table-title
+  width: 210px
+  overflow: hidden
+  height: 40px
