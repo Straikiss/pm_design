@@ -16,7 +16,7 @@ html(lang="ru")
             a.header-link#hidden-link(href="#") 
               <i class="bi bi-list svg-3"></i> Меню
             h1.header-title
-              a.heder-title-link(href="created-company-auto-considered.html") Рекламная кампания - Подробно
+              a.heder-title-link(href="created-company-auto-done.html") Рекламная кампания - Подробно
           .col-xl-6.col-lg-6.col-md-9.col-sm-7.col-8
             .header-status
               p.header-status-balance 0 ₽ <sup class="header-status-balance-money">2 000 ₽
@@ -47,16 +47,11 @@ html(lang="ru")
             .block-def
               .row
                 .col-xl-1.col-lg-1.col-md-1.col-sm-2
-                  .block-company-inside.bg-considered
-                    <i class="bi bi-clock block-company-inside-svg"></i>
+                  .block-company-inside.bg-process.block-company-pro
+                    <i class="bi bi-lightning block-company-inside-svg"></i>
                 .col-xl-4.col-lg-3.col-md-4.col-sm-6
                   .created-company-title 
-                    p.color-considered Рассматривается
-                .col-xl-7.col-lg-8
-                  .row.created-company-title-2
-                    .col-xl-4.offset-xl-8.col-lg-4.offset-lg-8.col-md-4
-                      a.created-company-edit(href="create-company-auto-1.html") 
-                        <i class="bi bi-pencil-square svg-3"></i> Редактировать
+                    p.color-process Выполняется
                 .col-12
                   p.input-def-title.mb-0 Текст публикации 
                   p.mt-10 Лима Баррето родился в Рио-де-Жанейро в бедной семье смешанной этнической принадлежности (был мулатом). Поскольку рабство в Бразилии было упразднено в 1888 году, Баррето получил доступ к высшему образованию.
@@ -65,7 +60,7 @@ html(lang="ru")
                   p.mt-10 Лима Баррето родился в Рио-де-Жанейро в бедной семье смешанной этнической принадлежности (был мулатом). Поскольку рабство в Бразилии было упразднено в 1888 году, Баррето получил доступ к высшему образованию.
           .col-xl-6.col-lg-6.margin 
             .block-def 
-              h2
+              h2 
                 <i class="bi bi-wallet svg-2 color-purple"></i> Бюджет
               .create-company-line
                 .create-company-line-full
@@ -188,4 +183,92 @@ html(lang="ru")
                                 p.block-blogger-text.text-align Личный блог
                               .col-12
                                 p.block-blogger-see Рекламу увидят: 153 чел.
+          .col-12.margin
+            h2.margin 
+              <i class="bi bi-check2-square svg-2 color-purple"></i> Выполняют задачу <span class="created-company-count"> 500
+            .table-size.created-company-pc
+              table.created-company-table
+                tr
+                  th Блогер
+                  th.tooltip.w-100 Оценка 
+                    <i class="bi bi-question-circle svg color-purple"></i>
+                    span.tooltip-text Рейтинг блогера влияет на частоту показа блогера в системе и позицию показа в подборах.
+                  th Тип
+                  th Охват
+                  th Действия
+                  th Цена
+                  th Ссылка
+                  th Результат
+                  th Статистика
+                  - for (i = 0; i < 10; i++)
+                    tr
+                      td                         
+                        .created-company-table-flex
+                          img.uploaded-image.cursor-pointer(src="img/blogger-card/1.png" draggable="false")
+                          .created-company-table-flex-inside
+                            p.created-company-table-title.mb-10 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, ipsam libero beatae adipisci tempore placeat ea, veniam aliquam dignissimos fugit quia dicta quidem aspernatur nisi inventore? Obcaecati, velit culpa. Et.
+                            a.color-purple(href="http://instagram.com/@ksesimaa_" target="_blank") @ksesimaa_ 
+                            p.mt-10 <i class="bi bi-people svg color-purple"></i> 500/250000
+                      td
+                        .block-icons.color-purple
+                          <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                          <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                          <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                          <i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
+                          <i class="bi bi-star home-bloggers-block-icons-svg"></i>
+                      td Сторис
+                      td Ждем
+                      td Ждем
+                      td 1.000₽
+                      td <i class="bi bi-plus svg color-purple"></i>
+                      | <!-- Нету ссылки td <i class="bi bi-dash svg color-purple"></i> -->
+                      td 
+                        a(href="#") 
+                          <i class="bi bi-image svg color-purple"></i>
+                      td 
+                        a(href="#") 
+                          <i class="bi bi-bar-chart svg color-purple"></i>
+            .created-company-mobile
+              .created-company-mobile-inside         
+                .created-company-table-flex
+                  img.uploaded-image.cursor-pointer(src="img/blogger-card/1.png" draggable="false")
+                  .created-company-table-flex-inside
+                    p.created-company-table-title.mb-10 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, ipsam libero beatae adipisci tempore placeat ea, veniam aliquam dignissimos fugit quia dicta quidem aspernatur nisi inventore? Obcaecati, velit culpa. Et.
+                    a.color-purple(href="http://instagram.com/@ksesimaa_" target="_blank") @ksesimaa_ 
+                    p.mt-10 <i class="bi bi-people svg color-purple"></i> 500/250000
+                  <i class="bi bi-caret-down created-company-svg cursor-pointer"></i>
+            .created-company-mobile.open
+              .created-company-mobile-inside         
+                .created-company-table-flex
+                  img.uploaded-image.cursor-pointer(src="img/blogger-card/1.png" draggable="false")
+                  .created-company-table-flex-inside
+                    p.created-company-table-title.mb-10 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, ipsam libero beatae adipisci tempore placeat ea, veniam aliquam dignissimos fugit quia dicta quidem aspernatur nisi inventore? Obcaecati, velit culpa. Et.
+                    a.color-purple(href="http://instagram.com/@ksesimaa_" target="_blank") @ksesimaa_ 
+                    p.mt-10 <i class="bi bi-people svg color-purple"></i> 500/250000
+                  <i class="bi bi-caret-down created-company-svg cursor-pointer"></i>
+                p.mt-10.color-gray.tooltip.w-100 Оценка: 
+                  <i class="bi bi-question-circle svg color-purple"></i>
+                  span.tooltip-text Рейтинг блогера влияет на частоту показа блогера в системе и позицию показа в подборах. 
+                  <span class="color-purple float-right home-bloggers-block-icons">
+                    <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                    <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                    <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                    <i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
+                    <i class="bi bi-star home-bloggers-block-icons-svg"></i>
+                p.mt-10.color-gray Тип: <span class="float-right color-black">Пост
+                p.mt-10.color-gray Охват: <span class="float-right color-black">Ждем
+                p.mt-10.color-gray Действия: <span class="float-right color-black">Ждем
+                p.mt-10.color-gray Цена: <span class="float-right color-black">10 000 ₽
+                p.mt-10.color-gray Ссылка: 
+                  <span class="float-right color-black">
+                    <i class="bi bi-plus svg color-purple"></i>
+                p.mt-10.color-gray Результат: 
+                  <span class="float-right color-black">
+                    a(href="#") <i class="bi bi-image svg color-purple"></i>
+                p.mt-10.color-gray Статистика: 
+                  <span class="float-right color-black">
+                    a(href="#") <i class="bi bi-bar-chart svg color-purple"></i>
+          .col-xl-2.offset-xl-10.col-lg-2.offset-lg-10.col-md-3.offset-md-9.col-sm-4.offset-sm-8.col-6.offset-6.margin
+            a.created-company-edit(href="#")  
+              <i class="bi bi-arrow-repeat svg-3"></i> Больше
     script(src="js/scripts.js")

@@ -111,6 +111,36 @@
   text-align: left
 
 .created-company-table-title
-  width: 210px
   overflow: hidden
+  width: 210px
   height: 40px
+
+.created-company-mobile
+  background: $white
+  margin-top: 30px
+  display: none
+  +border-radius()
+  +box-shadow()
+  +padding()
+
+  img
+    height: 100px
+    width: 100px
+
+.created-company-svg
+  &::before
+    position: absolute
+    right: 45px
+    font-size: 25px
+    color: $purple
+    float: right
+    height: 25px
+
+  &:hover, &:active
+    &::before
+      +opacity()
+
+.created-company-mobile.open
+  .created-company-svg
+    &::before
+      transform: rotate(180deg)
