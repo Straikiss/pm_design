@@ -1,7 +1,9 @@
 .block-partner-2,
 .block-partner
   +margin-top-large()
-  +margin-bottom()
+
+.block-partner 
+  margin-bottom: 15px
 
 .block-partner-svg
   vertical-align: middle
@@ -12,12 +14,13 @@
   +margin-top()
 
 .block-partner-button
-  background: linear-gradient(268.83deg, #AA53FE 1.58%, #790EE1 99.84%)
+  background: $purple-bg
   line-height: 44px
   text-align: center
   margin-top: 10px
   cursor: pointer
   color: $white
+  height: 44px
   +border-radius()
   +margin-bottom()
   +box-shadow()
@@ -26,12 +29,13 @@
     +opacity()
 
 .block-settings-link
-  background: linear-gradient(189.78deg, #12e17e 0%, #13bd60 100%)
+  background: $green-bg
   line-height: 44px
   text-align: center
   display: block
   color: $white
   width: 100%
+  height: 44px
   +border-radius()
   +box-shadow()
 
@@ -52,12 +56,12 @@
   +margin-bottom()
      
 .blcok-settings-select
-  height: 44px
-  display: block
-  appearance: none
-  width: 100%
   padding-left: 10px
+  appearance: none
   margin-top: 10px
+  display: block
+  height: 44px
+  width: 100%
   +border($purple)
   +border-image()
   +margin-bottom()
@@ -66,17 +70,34 @@
     +border($orange)
 
 .partner-none
+  background: $purple
   text-align: center
   display: none
-  background: $purple
   color: $white
-  +padding()
-  +box-shadow()
   +border-radius()
+  +box-shadow()
+  +padding()
   
-@media (max-width: $xl)
-  .partner-none
-    display: block
+.partner-stats 
+  text-align: center
+  background: $white
+  border-radius: 15px
+  +margin-bottom()
+  +box-shadow()
 
-  .partner-size
-    display: none
+.table-size 
+  overflow-x: auto
+
+.table
+  border-spacing: 0
+  width: 100%
+
+  th, td 
+    padding: 15px
+    +font-size()
+
+  th
+    font-weight: 400
+
+.table tr:nth-child(even)
+  background: $gray

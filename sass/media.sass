@@ -1,6 +1,17 @@
 @media (max-width: $xxl)
+  .create-company-more-story-image,
+  .create-company-more-story
+    height: 119.97px
+
+  .create-company-more-svg
+    &::before
+      top: 77.48500px
+
   .sticky
     width: 810px
+
+  .created-company-title
+    margin-left: 15px
 
   .create-company-text-2
     padding-left: 18px
@@ -46,11 +57,29 @@
     width: 53px
 
 @media (max-width: $xl)
+  .create-company-more-story-image,
+  .create-company-more-story
+    height: 157.5px
+
+  .create-company-more-svg
+    &::before
+      top: 96.25px
+
+  .block-def
+    padding: 15px
+
+  .blogger-task-title
+    top: 48px
+    right: 30px
+
   .sticky
     width: 570px
 
   .bloggers-list-inside
     max-height: 320px
+
+  .created-company-title-2
+    margin-bottom: -10px
 
   .block-age
     +margin-top()
@@ -58,7 +87,9 @@
   .mb-add
     +margin-bottom()
 
-  .home-bloggers-none-2
+  .home-bloggers-none-2,
+  .created-company-pc,
+  .br-none
     display: none
 
   .home-company-create
@@ -89,6 +120,7 @@
     padding-right: 0
     padding-left: 0
 
+  .created-company-mobile,
   .home-bloggers-none,
   .display-none-2
     display: block
@@ -145,7 +177,28 @@
     display: flex
     margin-top: 0
 
+  .created-company-title
+    margin-left: 30px
+
 @media (max-width: $lg)
+  .create-company-more-story-image,
+  .create-company-more-story
+    height: 236.25px
+
+  .create-company-more-svg
+    &::before
+      top: 135.62500px
+
+  .created-company-title
+    margin-left: 0
+
+  .created-company-title-2
+    .col-xl-4
+      margin-bottom: 15px
+
+      &:last-of-type
+        margin-bottom: 0
+
   .who-performs-3
     margin-bottom: 15px
 
@@ -213,6 +266,9 @@
     margin-left: 15px
     width: auto
 
+  .bloggers-margin-size
+    +margin-bottom()
+
 @media (max-width: $md) 
   .sticky
     margin-right: 15px
@@ -227,7 +283,8 @@
   .block-def-2,
     padding: 15px
 
-  .block-def-3
+  .block-def-3,
+  .block-def-4
     padding-right: 15px
     padding-left: 15px
     padding-top: 15px
@@ -291,6 +348,15 @@
         font-size: 14px
   
 @media (max-width: $sm) 
+  .created-company-title
+    margin-top: 0
+    margin-bottom: 0
+
+  .block-bloggers-card-avatar,
+  .settings-image
+    width: 135px !important
+    height: 135px
+
   .who-performs-2
     margin-bottom: 15px
 
@@ -298,8 +364,20 @@
   .home-company
     display: none
 
+  .mb-30-filts-size
+    +margin-bottom()
+
+  .created-company-mobile,
+  .home-company-create,
+  .block-select-city,
   .block-partner-2,
-  .block-partner
+  .block-partner,
+  .block-view,
+  .block-gender,
+  .block-age,
+  .block-company,
+  .home-block-inside-text,
+  .home-bloggers
     padding: 15px
 
     .block-partner-title
@@ -322,6 +400,7 @@
   .block-create-company-select
     +margin-bottom()
 
+  .block-company-list-title,
   .block-blogger-stats
     text-align: center
 
@@ -366,13 +445,26 @@
   .flex
     justify-content: center
     display: flex
-    
+
     .block-bloggers-card-avatar,
     .block-blogger-avatar
       width: 45%
-
+    
   .partner-show-pc
     display: none
 
   .partner-show-mobile
     display: flex
+
+  .block-company-list
+    margin-bottom: 15px
+
+  .created-company-table-title
+    width: 100%
+
+  .created-company-table-flex-inside
+    margin-right: 15px
+
+  .created-company-svg
+    &::before
+      right: 30px

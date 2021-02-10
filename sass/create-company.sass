@@ -50,6 +50,7 @@
   display: block
   color: $white
   margin: auto
+  height: 44px
   +border-radius()
   +box-shadow()
   +font-size()
@@ -238,3 +239,54 @@ input::placeholder
 
   &:hover, &:active
     color: $pink
+
+.create-company-more-story
+  background: $gray
+  height: 187.5px
+  +border-image()
+  +margin-top()
+  +box-shadow()
+
+.create-company-more-story-image
+  height: 187.5px
+  object-fit: cover
+
+  &:hover, &:active
+    opacity: 1
+
+.create-company-more-svg
+  &::before
+    position: absolute
+    color: $gray-text
+    cursor: pointer
+    font-size: 35px
+    height: 35px
+    right: 0
+    left: 0
+    width: 35px
+    top: 111.25px
+    margin: auto
+
+  &:hover, &:active
+    &::before
+      color: $orange
+
+.create-company-more-svg-2
+  &::before
+    cursor: pointer
+    position: absolute
+    color: $gray-text
+    font-size: 35px
+    height: 35px
+    right: 15px
+    width: 35px
+    top: 30px
+
+  &:hover, &:active
+    &::before
+      color: $pink
+
+.story-empty
+  .create-company-more-story-image,
+  .create-company-more-svg-2
+    display: none

@@ -64,11 +64,11 @@
                     <label for="Item_PublicationKind_Any">Любой</label>
                   </div>
                   <div class="form-group">
-                    <input class="app-trigger-contentfor" id="Item_PublicationKind_Post" name="Item.PublicationKind" type="radio" value="1" checked>
+                    <input class="app-trigger-contentfor" id="Item_PublicationKind_Post" name="Item.PublicationKind" type="radio" value="1" checked onclick="StoryPreviewHide()">
                     <label for="Item_PublicationKind_Post">Пост</label>
                   </div>
                   <div class="form-group">
-                    <input class="app-trigger-contentfor" id="Item_PublicationKind_Stories" name="Item.PublicationKind" type="radio" value="2">
+                    <input class="app-trigger-contentfor" id="Item_PublicationKind_Stories" name="Item.PublicationKind" type="radio" value="2" onclick="StoryPreviewShow()">
                     <label for="Item_PublicationKind_Stories">Сторис</label>
                   </div>
                 </div>
@@ -163,6 +163,45 @@
 <path d="M198.55 26.7583V28.1324H197.54V27.4092L198.55 26.7583Z" fill="#7B7B9A"></path>
 <path d="M220.491 24.3719H220.131V24.0103C220.131 23.7934 219.986 23.6487 219.77 23.6487H219.409V23.2871C219.409 22.9255 219.12 22.6362 218.759 22.6362H210.604C210.243 22.6362 209.954 22.9255 209.954 23.2871V27.337C209.954 27.6986 210.243 27.9879 210.604 27.9879H218.759C219.12 27.9879 219.409 27.6986 219.409 27.337V26.9754H219.77C219.986 26.9754 220.131 26.8308 220.131 26.6861V26.3245H220.491C220.708 26.3245 220.852 26.1799 220.852 25.9629V24.5889C220.852 24.5165 220.708 24.3719 220.491 24.3719ZM218.759 24.0103V27.4093H213.996V23.3594H218.759V24.0103Z" fill="#7B7B9A"></path>
 </svg>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="block-create-company-2 margin" id="ShowMoreStoryButtonOpened" style="display:none"> 
+                  <div class="input-select">
+                    <label for="CampTypeMoreStory">
+                      <input class="input-radio" type="checkbox" id="CampTypeMoreStory" name="CampTypeMoreStory" value="0" onclick="ShowMoreStory()"><span class="checkmark"></span>
+                      <p>Использовать до 5 сторис</p>
+                    </label>
+                  </div>
+                  <div id="CampTypeMoreStoryOpened" style="display:none">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="create-company-more-story"><img class="block-blogger-avatar create-company-more-story-image" src="img/blogger-card/1.png" draggable="false"><i class="bi bi-plus-circle create-company-more-svg"></i>
+<i class="bi bi-x create-company-more-svg-2"></i>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="create-company-more-story"><img class="block-blogger-avatar create-company-more-story-image" src="img/blogger-card/1.png" draggable="false"><i class="bi bi-plus-circle create-company-more-svg"></i>
+<i class="bi bi-x create-company-more-svg-2"></i>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="create-company-more-story"><img class="block-blogger-avatar create-company-more-story-image" src="img/blogger-card/1.png" draggable="false"><i class="bi bi-plus-circle create-company-more-svg"></i>
+<i class="bi bi-x create-company-more-svg-2"></i>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="create-company-more-story story-empty"><img class="block-blogger-avatar create-company-more-story-image" src="img/blogger-card/1.png" draggable="false"><i class="bi bi-plus-circle create-company-more-svg"></i>
+<i class="bi bi-x create-company-more-svg-2"></i>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="create-company-more-story story-empty"><img class="block-blogger-avatar create-company-more-story-image" src="img/blogger-card/1.png" draggable="false"><i class="bi bi-plus-circle create-company-more-svg"></i>
+<i class="bi bi-x create-company-more-svg-2"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -42,11 +42,11 @@ html(lang="ru")
         a.aside-link(href="#") 
           <i class="bi bi-box-arrow-right svg"></i> Выйти
       .container
-        .row
+        .row.block-blogger-card
           .col-xl-5.offset-xl-1.col-lg-6.col-md-6
             .row
               .col-xl-12
-                .block-blogger-card.block-def
+                .block-def.margin
                   .row
                     .col-xl-6.col-lg-6.col-md-6.ml-25.col-sm-5
                       .flex
@@ -57,10 +57,10 @@ html(lang="ru")
                   .row
                     .col-6
                       a.block-blogger-card-favorite(href="") 
-                        <i class="bi bi-plus-circle svg-3"></i> в избранное
+                        <i class="bi bi-plus-circle svg-4"></i> в избранное
                     .col-6
                       a.block-blogger-card-favorite(href="") 
-                        <i class="bi bi-plus-circle svg-3"></i> в кампанию
+                        <i class="bi bi-plus-circle svg-4"></i> в кампанию
                   p.block-blogger-card-head.block-select-city-body Имя аккаунта
                   p Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎
                   p.block-blogger-card-head.block-select-city-body Ник аккаунта
@@ -126,7 +126,24 @@ html(lang="ru")
                         h2.size-320 <strong>485</strong> сторис
                         p просмотров
           .col-xl-5.col-lg-6.col-md-6
-            .block-blogger-card.block-def.mt-0-size
+            | <!-- выполнена задача -->
+            .block-def.blogger-task 
+              h2.mb-10 <i class="bi bi-award svg-2 color-purple"></i> Текущая задача  <span class="color-done">Выполнена
+              a(href="")
+                img.block-bloggers-avatar(src="img/tasks/1.png" draggable="false")
+                span.blogger-task-title Пост 27 ноября, 2020
+            .block-def.blogger-task
+              h2.text-center <i class="bi bi-star svg-2 color-purple"></i> Оцените качество выполненной задачи 
+              p.mb-10.tooltip.w-100.input-def-title.mt-0.text-center На что влияет моя оценка 
+                <i class="bi bi-question-circle svg color-purple"></i>
+                span.tooltip-text Рейтинг блогера влияет на частоту показа блогера в системе и позицию показа в подборах.
+              .home-bloggers-block-icons
+                <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                <i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
+                <i class="bi bi-star home-bloggers-block-icons-svg"></i>
+            .block-def.mt-0-size.margin
               p.block-blogger-card-title 
                 <i class="bi bi-instagram svg color-purple"></i> Последние публикации в Instagram 
               .row
