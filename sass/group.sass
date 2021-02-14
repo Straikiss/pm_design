@@ -237,6 +237,8 @@
   margin-top: 10px
   width: 100%
   cursor: pointer
+  height: 250px
+  object-fit: cover
 
   &:hover, &:active
     +opacity()
@@ -247,6 +249,9 @@
   cursor: pointer
   height: 250px
   object-fit: cover
+
+  &:hover, &:active
+    +opacity()
 
 .block-blogger-link-more
   color: $green
@@ -272,6 +277,7 @@
 
 .block-blogger-link
   color: $black
+  display: block
 
 .block-icons
   text-align: center
@@ -288,6 +294,9 @@
 
 .block-publications-text
   text-align: center
+
+.bloggers-list-p
+  margin-top: 15px
 
 .block-publications-text
   &:first-of-type
@@ -306,6 +315,13 @@
 
 .block-blogger-title
   margin-bottom: 5px
+  margin-left: -15px
+
+.block-blogger-text
+  margin-left: -15px
+
+.fav-bloggers
+  text-align: center
 
 .h-27
   margin-right: 10px
@@ -529,7 +545,7 @@
 .block-blogger-link-screen
   text-align: center
   display: block
-  color: $green
+  color: $purple
 
   &:hover, &:active
     color: $orange

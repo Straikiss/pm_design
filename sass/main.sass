@@ -21,8 +21,9 @@ $blue: #6ea8fe
 $green-bg: linear-gradient(189.78deg,#12e17e,#13bd60)
 $purple-bg: linear-gradient(268.83deg,#aa53fe 1.58%,#790ee1 99.84%)
 
-$xxl: 1499px
-$xl: 1239px
+$xxl: 1409px
+$xl: 1216px
+
 $lg: 767px
 $md: 578px
 $sm: 575px
@@ -93,6 +94,9 @@ video, img
 
 .mb-10
   margin-bottom: 10px
+
+.mb-5
+  margin-bottom: 5px !important
 
 .w-100
   width: 100% !important
@@ -191,7 +195,7 @@ button
 
 .bloggers-list-inside
   overflow-x: hidden
-  max-height: 175px
+  max-height: 190px
   overflow-y: auto
   
 .last-child
@@ -293,10 +297,11 @@ button
   display: inline-block
   border-radius: 100%
   text-align: center
-  line-height: 35px
-  height: 35px
   color: $white
-  width: 35px
+  width: fit-content
+  width: -moz-fit-content
+  padding: 5px 10px
+  +border-radius()
   
 .switch 
   display: inline-block
@@ -371,6 +376,20 @@ input:checked + .slider:before
 .partner-show-mobile
   display: none
 
+.icon-delete
+  cursor: pointer
+
+.form-group-active
+  background: $purple-bg
+  line-height: 44px
+  display: block
+  color: $white
+  +border-image
+
+.form-group 
+  a 
+    color: $purple
+  
 @import header 
 @import aside 
 @import tooltip 

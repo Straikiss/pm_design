@@ -49,9 +49,11 @@ html(lang="ru")
                 p.settings-title-login Логин:
               .col-xl-8.col-lg-8.col-sm-8.col-12
                 p.settings-title-login.text-align.color-purple STRAIKISS.WEB@GMAIL.COM
-              .col-xl-4.col-lg-4.col-sm-4.col-12
-                button.settings-title-login.mt-10.hover-purple.bb(onclick="openbox('settings-key'); return false") Секретный ключ:
-              .col-xl-8.col-lg-8.col-sm-8.col-12
+              .col-xl-4.col-lg-5.col-sm-4.col-12
+                button.settings-title-login.mt-10.hover-purple.bb.tooltip(onclick="openbox('settings-key'); return false") Секретный ключ: 
+                  <i class="bi bi-question-circle svg color-purple"></i>
+                  span.tooltip-text Нужен для работы ЦПА по настройке postback уведомлений.
+              .col-xl-8.col-lg-7.col-sm-8.col-12
                 p.settings-key.settings-title-login.color-purple.mt-10.text-align(style="display:none;") 5a94e4fb-58cb-4128-8224-8b3d46244823
         .row
           .col-xl-6.col-lg-6.col-md-12.order-xl-1.order-lg-1.order-md-2.order-sm-2.order-2
@@ -92,8 +94,9 @@ html(lang="ru")
                 input.input-def(placeholder="20 цифр")
               button.settings-btn Сохранить
             .row
-              .col-xl-6.offset-xl-3.col-lg-8.offset-lg-2.col-md-6.offset-md-3
-                button.mt-10.margin.hover-purple(onclick="openbox('settings-filtr'); return false") Для юридических лиц
+              .col-xl-5.offset-xl-7.col-lg-6.offset-lg-6.col-md-4.offset-md-8
+                button.mt-10.margin.hover-purple.bb(onclick="openbox('settings-filtr'); return false") 
+                  <i class="bi bi-person-plus svg color-purple"></i> Для юридических лиц
           .col-xl-6.col-lg-6.col-md-12.order-1
             .block-settings.block-def
               .row

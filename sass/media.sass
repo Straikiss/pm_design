@@ -56,7 +56,32 @@
     height: 53px
     width: 53px
 
+  .home-company-2,
+  .home-company
+    p
+      display: none
+
+  .home-company-title
+    margin-top: 18px
+    margin-bottom: 0  
+
+  .block-company
+    .col-xl-6 
+      p 
+        margin-left: -15px
+
 @media (max-width: $xl)
+  .aside
+    transform: translateX(-100%)
+
+  .main
+    padding-right: 0
+    padding-left: 0
+
+  .block-blogger-title,
+  .block-blogger-text
+    margin-left: 0
+
   .create-company-more-story-image,
   .create-company-more-story
     height: 157.5px
@@ -88,8 +113,7 @@
     +margin-bottom()
 
   .home-bloggers-none-2,
-  .created-company-pc,
-  .br-none
+  .created-company-pc
     display: none
 
   .home-company-create
@@ -112,13 +136,6 @@
   .block-partner-2
     margin-top: 0
     +margin-bottom()
-
-  .aside
-    transform: translateX(-100%)
-
-  .main
-    padding-right: 0
-    padding-left: 0
 
   .created-company-mobile,
   .home-bloggers-none,
@@ -237,7 +254,8 @@
     margin-left: 35px
 
   .home-bloggers-none,
-  .display-none
+  .display-none,
+  .br-none
     display: none
 
   .block-screenshots-title,
@@ -448,7 +466,8 @@
 
     .block-bloggers-card-avatar,
     .block-blogger-avatar
-      width: 45%
+      width: 135px
+      height: 135px
     
   .partner-show-pc
     display: none
