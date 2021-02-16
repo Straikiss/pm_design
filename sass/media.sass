@@ -56,7 +56,35 @@
     height: 53px
     width: 53px
 
+  .home-company-2,
+  .home-company
+    p
+      display: none
+
+  .home-company-title
+    margin-top: 18px
+    margin-bottom: 0  
+
+  .block-company
+    .col-xl-6 
+      p 
+        margin-left: -15px
+
 @media (max-width: $xl)
+  .aside
+    transform: translateX(-100%)
+
+  .main
+    padding-right: 0
+    padding-left: 0
+
+  .block-blogger-title,
+  .block-blogger-text
+    margin-left: 0
+
+  .h-20
+    text-align: center
+
   .create-company-more-story-image,
   .create-company-more-story
     height: 157.5px
@@ -88,8 +116,7 @@
     +margin-bottom()
 
   .home-bloggers-none-2,
-  .created-company-pc,
-  .br-none
+  .created-company-pc
     display: none
 
   .home-company-create
@@ -112,13 +139,6 @@
   .block-partner-2
     margin-top: 0
     +margin-bottom()
-
-  .aside
-    transform: translateX(-100%)
-
-  .main
-    padding-right: 0
-    padding-left: 0
 
   .created-company-mobile,
   .home-bloggers-none,
@@ -180,6 +200,9 @@
   .created-company-title
     margin-left: 30px
 
+  .block-def-2
+    padding: 15px
+
 @media (max-width: $lg)
   .create-company-more-story-image,
   .create-company-more-story
@@ -203,7 +226,7 @@
     margin-bottom: 15px
 
   .sticky
-    width: 390px
+    width: 480px
 
   .bloggers-list-inside
     max-height: 190px
@@ -237,8 +260,14 @@
     margin-left: 35px
 
   .home-bloggers-none,
-  .display-none
+  .display-none,
+  .br-none
     display: none
+
+  .block-company
+    .col-xl-6 
+      p 
+        margin-left: 0
 
   .block-screenshots-title,
   .mt-0-size,
@@ -247,6 +276,7 @@
     margin-top: 0
 
   .block-blogger-card-title,
+  .h-20
     text-align: left
 
   .home-bloggers-text,
@@ -269,19 +299,9 @@
   .bloggers-margin-size
     +margin-bottom()
 
-@media (max-width: $md) 
-  .sticky
-    margin-right: 15px
-    margin-left: 15px
-    width: auto
-    right: 0
-    left: 0
-
-  .bloggers-list-inside
-    max-height: 310px
-
-  .block-def-2,
-    padding: 15px
+  .block-blogger-title,
+  .block-blogger-text
+    margin-left: -15px
 
   .block-def-3,
   .block-def-4
@@ -289,6 +309,22 @@
     padding-left: 15px
     padding-top: 15px
     padding-bottom: 0
+ 
+@media (max-width: 575px) 
+  .sticky
+    margin-right: 15px
+    margin-left: 15px
+    width: auto
+    right: 0
+    left: 0
+
+@media (max-width: $md) 
+  .block-blogger-title,
+  .block-blogger-text
+    margin-left: 0
+
+  .bloggers-list-inside
+    max-height: 310px
 
   .home-bloggers-none
     display: block
@@ -337,7 +373,8 @@
   .settings-btn
     width: 100%
 
-  .block-screenshots-title
+  .block-screenshots-title,
+  .h-20
     text-align: center
 
   .mb-30-size
@@ -448,7 +485,8 @@
 
     .block-bloggers-card-avatar,
     .block-blogger-avatar
-      width: 45%
+      width: 135px
+      height: 135px
     
   .partner-show-pc
     display: none
@@ -468,3 +506,6 @@
   .created-company-svg
     &::before
       right: 30px
+
+  .mb-60
+    +margin-bottom()

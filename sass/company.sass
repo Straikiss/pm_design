@@ -6,6 +6,9 @@
   +border-radius()
   +box-shadow()
   +padding()
+
+  &:hover, &:active
+    +opacity()
   
 .block-company-inside
   display: flex
@@ -129,19 +132,3 @@
 
 .bg-considered
   background: $purple
-
-.status-done
-  &:hover, &:active
-    color: $green
-
-.status-not-paid
-  &:hover, &:active
-    color: $pink
-
-.status-process
-  &:hover, &:active
-    color: $orange
-
-.status-considered
-  &:hover, &:active
-    color: $purple

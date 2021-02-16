@@ -47,11 +47,16 @@ html(lang="ru")
             .block-def
               .row
                 .col-xl-1.col-lg-1.col-md-1.col-sm-2
-                  .block-company-inside.bg-process.block-company-pro
-                    <i class="bi bi-lightning block-company-inside-svg"></i>
+                  .block-company-inside.bg-done
+                    <i class="bi bi-check2 block-company-inside-svg"></i>
                 .col-xl-4.col-lg-3.col-md-4.col-sm-6
                   .created-company-title 
-                    p.color-process Выполняется
+                    p.color-done Выполнено
+                .col-xl-7.col-lg-8
+                  .row.created-company-title-2
+                    .col-xl-4.offset-xl-8.col-lg-4.offset-lg-8.col-md-4
+                      a.block-create-company-link(href="#")  
+                        <i class="bi bi-arrow-repeat svg-3"></i> Возобновить
                 .col-12
                   p.input-def-title.mb-0 Текст публикации 
                   p.mt-10 Лима Баррето родился в Рио-де-Жанейро в бедной семье смешанной этнической принадлежности (был мулатом). Поскольку рабство в Бразилии было упразднено в 1888 году, Баррето получил доступ к высшему образованию.
@@ -75,27 +80,24 @@ html(lang="ru")
                     <i class="bi bi-people svg-2 color-purple"></i> Аудитория
                   .create-company-line
                   p.color-gray.create-company-dot.dot-purple.mb-10 Результат <span class="float-right color-black">0
-                  p.color-gray.create-company-dot.dot-gray Прогноз <span class="float-right color-black">5 000
                 .col-6  
                   h2
                     <i class="bi bi-person svg-2 color-purple"></i> Блогеров
                   .create-company-line
                   p.color-gray.create-company-dot.dot-purple.mb-10 Результат <span class="float-right color-black">0
-                  p.color-gray.create-company-dot.dot-gray Прогноз <span class="float-right color-black">15
           .col-xl-6.col-lg-6.margin
             .block-def 
               h2 
-                <i class="bi bi-bar-chart svg-2 color-purple"></i> Диаграмма охвата
+                <i class="bi bi-bar-chart svg-2 color-purple"></i> Диаграмма лидов/переходов
               .row 
                 .col-xl-6.col-lg-6.col-md-6.col-sm-6.col-12
                   | <!-- место для #graphics -->
                 .col-xl-6.col-lg-6.col-md-6.col-sm-6.col-12
-                  h2.mt-20.mb-10.created-company-count 5 000
-                  p.color-gray.mb-10 Итоговый охват
+                  h2.mt-20.mb-10.created-company-count 1 000
+                  p.color-gray.mb-10 лидов
                   p.color-gray.create-company-dot.dot-gray.mb-10 Фактический охват 
                   p.color-gray.create-company-dot.dot-purple Меньше прогноза
                   br 
-                  br
                   br
           .col-xl-6.col-lg-6.margin 
             .block-def 
@@ -129,79 +131,20 @@ html(lang="ru")
                     .uploaded
                       a(href="#")
                         img.uploaded-image(src="img/blogger-card/1.png" draggable="false")
-          | <!-- PRO подбор --> 
-          .col-12.margin
-            .block-def 
-              h2.mb-10 
-                <i class="bi bi-pencil-square svg-2 color-purple"></i> Специалисты PostMarket подготовили сценарий для блогера
-              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolor voluptatum at delectus eligendi ratione voluptates rem nam! Officia dolore quidem ex voluptatibus quia quasi dolores modi nobis iste aliquam!
-          .col-12.margin
-            .block-def 
-              h2 
-                <i class="bi bi-camera svg-2 color-purple"></i> Специалисты PostMarket подготовили промо материал
-              .row
-                - for (i = 0; i < 4; i++)
-                  .col-xl-2.col-lg-2.col-md-3.col-sm-4.col-6
-                    .uploaded
-                      a(href="#")
-                        img.uploaded-image(src="img/blogger-card/1.png" draggable="false")
-          | <!-- ручной подбор --> 
-          .col-xl-12.margin
-            .block-def-4
-              h2.margin Выбранные блогеры для рекламы <span class=" blogger-span"> 15
-              .row
-                - for (i=0; i < 15; i++)
-                  .col-xl-4.col-lg-6.col-md-6
-                    .block-blogger.padding
-                      .row
-                        .col-xl-6.offset-xl-3.col-lg-6.offset-lg-3.col-md-8.offset-md-2.col-sm-6.offset-sm-3.col-6.offset-3
-                          a(href="blogger.html")
-                            img.block-blogger-avatar(src="img/blogger-card/1.png" draggable="false")
-                        .col-xl-12
-                          p.mb-5.h-20.text-center Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎
-                          p.mb-5.h-20.text-center  
-                            a.block-blogger-card-link(href="https://www.instagram.com/ksesimaa_/" target="_blank") @ksesimaa_
-                          .row   
-                              .col-6
-                                p.mb-5 Охват:
-                              .col-6
-                                p.mb-5.text-align  1236 
-                              .col-6
-                                p.mb-5 Подписчики:
-                              .col-6
-                                p.mb-5.text-align 4 334                                           
-                              .col-xl-6.col-lg-5.col-md-6.col-sm-6.col-6
-                                p.mb-5 Качество:
-                              .col-xl-6.col-lg-7.col-md-6.col-sm-6.col-6
-                                .block-icons.color-purple.text-align.mb-5
-                                  <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-                                  <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-                                  <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-                                  <i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
-                                  <i class="bi bi-star home-bloggers-block-icons-svg"></i>
-                              .col-4
-                                p.mb-5 Тематика:
-                              .col-8
-                                p.mb-5.text-align Путешествия/отдых
-                              .col-12
-                                p.block-blogger-see Рекламу увидят: 153 чел.
           .col-12.margin
             h2.margin 
-              <i class="bi bi-check2-square svg-2 color-purple"></i> Выполняют задачу <span class="created-company-count"> 500
+              <i class="bi bi-check2-square svg-2 color-purple"></i> Выполнили задачу <span class="created-company-count"> 500
             .table-size.created-company-pc
               table.created-company-table
                 tr
                   th Блогер
-                  th.tooltip.w-100 Оценка 
+                  th.tooltip.w-100(style="width:100% !important") Оценка 
                     <i class="bi bi-question-circle svg color-purple"></i>
                     span.tooltip-text Рейтинг блогера влияет на частоту показа блогера в системе и позицию показа в подборах.
                   th Тип
-                  th Охват
-                  th Действия
+                  th Переходов/Тапов
+                  th Цель
                   th Цена
-                  th Ссылка
-                  th Результат
-                  th Статистика
                   - for (i = 0; i < 10; i++)
                     tr
                       td                         
@@ -221,34 +164,30 @@ html(lang="ru")
                           <i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
                           <i class="bi bi-star home-bloggers-block-icons-svg"></i>
                       td Сторис
-                      td Ждем
-                      td Ждем
+                      td 100
+                      td <i class="bi bi-dash svg color-purple"></i>
                       td 1.000₽
-                      td <i class="bi bi-plus svg color-purple"></i>
-                      | <!-- Нету ссылки td <i class="bi bi-dash svg color-purple"></i> -->
-                      td 
-                        a(href="#") 
-                          <i class="bi bi-image svg color-purple"></i>
-                      td 
-                        a(href="#") 
-                          <i class="bi bi-bar-chart svg color-purple"></i>
             .created-company-mobile
               .created-company-mobile-inside         
                 .created-company-table-flex
-                  img.uploaded-image.cursor-pointer(src="img/blogger-card/1.png" draggable="false")
+                  a(href="blogger.html")
+                    img.uploaded-image.cursor-pointer(src="img/blogger-card/1.png" draggable="false")
                   .created-company-table-flex-inside
-                    p.created-company-table-title.mb-10 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, ipsam libero beatae adipisci tempore placeat ea, veniam aliquam dignissimos fugit quia dicta quidem aspernatur nisi inventore? Obcaecati, velit culpa. Et.
-                    a.color-purple(href="http://instagram.com/@ksesimaa_" target="_blank") @ksesimaa_ 
-                    p.mt-10 <i class="bi bi-people svg color-purple"></i> 500/250000
+                    p.mb-5.created-company-table-title Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎
+                    a.block-blogger-card-link(href="https://www.instagram.com/ksesimaa_/" target="_blank") @ksesimaa_
+                    p.mb-5 <i class="bi bi-people svg color-purple"></i> 500/250000
+                    p Путешествия/отдых
                   <i class="bi bi-caret-down created-company-svg cursor-pointer"></i>
             .created-company-mobile.open
               .created-company-mobile-inside         
                 .created-company-table-flex
-                  img.uploaded-image.cursor-pointer(src="img/blogger-card/1.png" draggable="false")
+                  a(href="blogger.html")
+                    img.uploaded-image.cursor-pointer(src="img/blogger-card/1.png" draggable="false")
                   .created-company-table-flex-inside
-                    p.created-company-table-title.mb-10 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, ipsam libero beatae adipisci tempore placeat ea, veniam aliquam dignissimos fugit quia dicta quidem aspernatur nisi inventore? Obcaecati, velit culpa. Et.
-                    a.color-purple(href="http://instagram.com/@ksesimaa_" target="_blank") @ksesimaa_ 
-                    p.mt-10 <i class="bi bi-people svg color-purple"></i> 500/250000
+                    p.mb-5.created-company-table-title Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎
+                    a.block-blogger-card-link(href="https://www.instagram.com/ksesimaa_/" target="_blank") @ksesimaa_
+                    p.mb-5 <i class="bi bi-people svg color-purple"></i> 500/250000
+                    p Путешествия/отдых
                   <i class="bi bi-caret-down created-company-svg cursor-pointer"></i>
                 p.mt-10.color-gray.tooltip.w-100 Оценка: 
                   <i class="bi bi-question-circle svg color-purple"></i>

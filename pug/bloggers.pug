@@ -19,7 +19,7 @@ html(lang="ru")
               a.heder-title-link(href="bloggers.html") Блогеры
           .col-xl-6.col-lg-6.col-md-9.col-sm-7.col-8
             .header-status
-              p.header-status-balance 0 ₽ <sup class="header-status-balance-money">2 000 ₽
+              p.header-status-balance 0 ₽ <sup class="header-status-balance-money">5 000 ₽
               a.header-status-pay(href="settings.html") Пополнить баланс
     .main
       .aside#hidden-element
@@ -192,17 +192,17 @@ html(lang="ru")
                       label(for="CampType7")
                         input.input-radio(type="radio" id="CampType7" value="6")
                         span.checkmark
-                        p.create-company-select-type Музыка/Кино/Искусство
+                        p.create-company-select-type Музыка/Кино
                     .create-company-select-type.input-select
                       label(for="CampType8")
                         input.input-radio(type="radio" id="CampType8" value="7")
                         span.checkmark
-                        p.create-company-select-type Обзоры товаров/продуктов/услуг
+                        p.create-company-select-type Обзор товаров/услуг
                     .create-company-select-type.input-select
                       label(for="CampType9")
                         input.input-radio(type="radio" id="CampType9" value="8")
                         span.checkmark
-                        p.create-company-select-type Путешествия и отдых
+                        p.create-company-select-type Путешествия/отдых
                     .create-company-select-type.input-select
                       label(for="CampType10")
                         input.input-radio(type="radio" id="CampType10" value="9")
@@ -225,9 +225,9 @@ html(lang="ru")
                         p.create-company-select-type Авто/Мото
                     br.br-none
                   .row
-                    .col-xl-6.col-lg-6.col-md-6.col-sm-6
+                    .col-6
                       a.block-first-company-button(href="bloggers.html") Сбросить фильтр
-                    .col-xl-6.col-lg-6.col-md-6.col-sm-6
+                    .col-6
                       a.create-company-button(href="#" onclick="openbox('settings-filtr'); return false") Применить       
             #ChangeImagePreviewHide
             #BlockCreateSelf.none
@@ -240,70 +240,79 @@ html(lang="ru")
               .row
                 - for(i=0; i < 10; i++)
                   .col-xl-6.col-lg-6.col-md-6.col-sm-12
-                    a.block-blogger-link(href="blogger.html")
-                      .block-blogger
-                        .row
-                          .col-xl-4.col-lg-5.col-md-8.ml-15.col-sm-5
-                            .flex
-                              img.block-blogger-avatar(src="img/blogger-card/1.png" draggable="false")
-                          .col-xl-8.col-lg-7.col-md-12.col-sm-7
-                            h2.block-blogger-title.h-27 Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎
-                            .row
-                              .col-xl-7.col-lg-5.col-md-6.col-sm-5.col-5
-                                p.block-blogger-text Качество аккаунта:
-                              .col-xl-5.col-lg-7.col-md-6.col-sm-7.col-7
-                                .block-icons.color-purple.text-align
-                                  <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-                                  <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-                                  <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-                                  <i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
-                                  <i class="bi bi-star home-bloggers-block-icons-svg"></i>
-                              .col-xl-7.col-lg-5.col-md-5.col-sm-5.col-5
-                                p.block-blogger-text Охват:
-                              .col-xl-5.col-lg-7.col-md-7.col-sm-7.col-7
-                                p.block-blogger-text.text-align  1236 
-                              .col-xl-7.col-lg-5.col-md-5.col-sm-5.col-5
-                                p.block-blogger-text Подписчики:
-                              .col-xl-5.col-lg-7.col-md-7.col-sm-7.col-7
-                                p.block-blogger-text.text-align 4 334
-                              .col-xl-7.col-lg-5.col-md-5.col-sm-5.col-5
-                                p.block-blogger-text Тематика:
-                              .col-xl-5.col-lg-7.col-md-7.col-sm-7.col-7
-                                p.block-blogger-text.text-align Личный блог  
-                .col-xl-6.offset-xl-3.col-lg-7.offset-lg-3
-                  .block-blogger-link-more-block
-                    a.block-blogger-link-more(href="create-company.html")
-                      h2.block-blogger-link-more-block-title 
-                        <i class="bi bi-plus block-list-company-more-avatar block-list-company-more-2 svg-4"></i> Создать рекламную кампанию
-                .col-xl-6.col-lg-6.col-md-6.col-sm-12
-                  a.block-blogger-link(href="blogger.html")
-                    .block-blogger
+                    .block-blogger.block-blogger-link
                       .row
-                        .col-xl-4.col-lg-5.col-md-8.ml-15.col-sm-5
+                        .col-xl-4.offset-xl-0.col-lg-4.offset-lg-0.col-md-6.offset-md-3.col-sm-4
                           .flex
-                            img.block-blogger-avatar(src="img/blogger-card/1.png" draggable="false")
-                        .col-xl-8.col-lg-7.col-md-12.col-sm-7
-                          h2.block-blogger-title.h-27 Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎
+                            a(href="blogger.html")
+                              img.block-blogger-avatar(src="img/blogger-card/1.png" draggable="false")
+                        .col-xl-8.col-lg-8.col-md-12.col-sm-8
+                          p.block-blogger-text.mt-0.h-20 Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎
+                          p.block-blogger-text.h-20  
+                            a.block-blogger-card-link(href="https://www.instagram.com/ksesimaa_/" target="_blank") @ksesimaa_
                           .row
-                            .col-xl-7.col-lg-5.col-md-6.col-sm-5.col-5
-                              p.block-blogger-text Качество аккаунта:
-                            .col-xl-5.col-lg-7.col-md-6.col-sm-7.col-7
-                              .block-icons.color-purple.ml-10
-                                <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-                                  <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-                                  <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-                                  <i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
-                                  <i class="bi bi-star home-bloggers-block-icons-svg"></i>
                             .col-xl-7.col-lg-5.col-md-5.col-sm-5.col-5
                               p.block-blogger-text Охват:
                             .col-xl-5.col-lg-7.col-md-7.col-sm-7.col-7
-                              p.block-blogger-text.text-align  1236 
+                              p.block-blogger-text.text-align 1236 
                             .col-xl-7.col-lg-5.col-md-5.col-sm-5.col-5
                               p.block-blogger-text Подписчики:
                             .col-xl-5.col-lg-7.col-md-7.col-sm-7.col-7
                               p.block-blogger-text.text-align 4 334
-                            .col-xl-7.col-lg-5.col-md-5.col-sm-5.col-5
+                            .col-xl-7.col-lg-5.col-md-6.col-sm-5.col-5
+                              p.block-blogger-text Качество:
+                            .col-xl-5.col-lg-7.col-md-6.col-sm-7.col-7
+                              .home-bloggers-block-icons.color-purple.text-align.mt-5
+                                <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                                <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                                <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                                <i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
+                                <i class="bi bi-star home-bloggers-block-icons-svg"></i>
+                            .col-xl-5.col-lg-4.col-md-5.col-sm-5.col-5
                               p.block-blogger-text Тематика:
+                            .col-xl-7.col-lg-8.col-md-7.col-sm-7.col-7
+                              p.block-blogger-text.text-align Путешествия/отдых 
+                .col-xl-4.offset-xl-4.col-lg-6.offset-lg-3.col-md-6.offset-md-3
+                  .block-blogger-link-more-block
+                    a.block-blogger-link-more(href="create-company.html")
+                      h2.block-blogger-link-more-block-title 
+                        <i class="bi bi-plus block-list-company-more-avatar block-list-company-more-2 svg-4"></i> Создать рекламную кампанию
+                - for(i=0; i < 1; i++)
+                  .col-xl-6.col-lg-6.col-md-6.col-sm-12
+                    .block-blogger.block-blogger-link
+                      .row
+                        .col-xl-4.offset-xl-0.col-lg-4.offset-lg-0.col-md-6.offset-md-3.col-sm-5
+                          .flex
+                            a(href="blogger.html")
+                              img.block-blogger-avatar(src="img/blogger-card/1.png" draggable="false")
+                        .col-xl-8.col-lg-8.col-md-12.col-sm-7
+                          p.block-blogger-text.mt-0.h-20 Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎
+                          p.block-blogger-text.h-20  
+                            a.block-blogger-card-link(href="https://www.instagram.com/ksesimaa_/" target="_blank") @ksesimaa_
+                          .row
+                            .col-xl-7.col-lg-5.col-md-5.col-sm-5.col-5
+                              p.block-blogger-text Охват:
                             .col-xl-5.col-lg-7.col-md-7.col-sm-7.col-7
-                              p.block-blogger-text.text-align Личный блог
+                              p.block-blogger-text.text-align 1236 
+                            .col-xl-7.col-lg-5.col-md-5.col-sm-5.col-5
+                              p.block-blogger-text Подписчики:
+                            .col-xl-5.col-lg-7.col-md-7.col-sm-7.col-7
+                              p.block-blogger-text.text-align 4 334
+                            .col-xl-7.col-lg-5.col-md-6.col-sm-5.col-5
+                              p.block-blogger-text Качество:
+                            .col-xl-5.col-lg-7.col-md-6.col-sm-7.col-7
+                              .home-bloggers-block-icons.color-purple.text-align.mt-5
+                                <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                                <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                                <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                                <i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
+                                <i class="bi bi-star home-bloggers-block-icons-svg"></i>
+                            .col-xl-5.col-lg-4.col-md-5.col-sm-5.col-5
+                              p.block-blogger-text Тематика:
+                            .col-xl-7.col-lg-8.col-md-7.col-sm-7.col-7
+                              p.block-blogger-text.text-align Путешествия/отдых 
+              .row
+                .col-xl-2.offset-xl-5.col-lg-2.offset-lg-5.col-md-4.offset-md-4.col-sm-4.offset-sm-4.col-6.offset-3.margin 
+                  button.created-company-edit
+                    <i class="bi bi-arrow-repeat svg-3"></i> Больше
     script(src="js/scripts.js")

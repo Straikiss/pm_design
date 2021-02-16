@@ -47,11 +47,6 @@
   
   &:hover,
   &:active
-    .block-blogger-avatar,
-    .block-blogger-title, 
-    .color-purple, p
-      +opacity()
-    
     .block-price
       opacity: 1
 
@@ -237,6 +232,8 @@
   margin-top: 10px
   width: 100%
   cursor: pointer
+  height: 250px
+  object-fit: cover
 
   &:hover, &:active
     +opacity()
@@ -247,6 +244,9 @@
   cursor: pointer
   height: 250px
   object-fit: cover
+
+  &:hover, &:active
+    +opacity()
 
 .block-blogger-link-more
   color: $green
@@ -272,6 +272,7 @@
 
 .block-blogger-link
   color: $black
+  display: block
 
 .block-icons
   text-align: center
@@ -289,6 +290,9 @@
 .block-publications-text
   text-align: center
 
+.bloggers-list-p
+  margin-top: 15px
+
 .block-publications-text
   &:first-of-type
     height: 44px
@@ -298,7 +302,7 @@
   color: $purple
 
   &:hover, &:active
-    color: $pink
+    color: $orange
 
 .block-create-title
   text-align: center
@@ -306,11 +310,19 @@
 
 .block-blogger-title
   margin-bottom: 5px
+  margin-left: -15px
+
+.fav-bloggers
+  text-align: center
 
 .h-27
   margin-right: 10px
   overflow: hidden
   height: 23px
+
+.h-20
+  overflow: hidden
+  height: 20px
 
 .block-select-city-title
   margin-bottom: 15px
@@ -381,6 +393,7 @@
   margin-bottom: 20px
 
 .block-blogger-text
+  margin-left: -15px
   margin-top: 5px
 
 .color-purple
@@ -529,7 +542,7 @@
 .block-blogger-link-screen
   text-align: center
   display: block
-  color: $green
+  color: $purple
 
   &:hover, &:active
     color: $orange
