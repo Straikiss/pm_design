@@ -49,11 +49,11 @@ html(lang="ru")
                 p.settings-title-login Логин:
               .col-xl-8.col-lg-8.col-sm-8.col-12
                 p.settings-title-login.text-align.color-purple STRAIKISS.WEB@GMAIL.COM
-              .col-xl-4.col-lg-5.col-sm-4.col-12
+              .col-xl-4.col-lg-5.col-sm-5.col-12
                 button.settings-title-login.mt-10.hover-purple.bb.tooltip(onclick="openbox('settings-key'); return false") Секретный ключ: 
                   <i class="bi bi-question-circle svg color-purple"></i>
                   span.tooltip-text Нужен для работы ЦПА по настройке postback уведомлений.
-              .col-xl-8.col-lg-7.col-sm-8.col-12
+              .col-xl-8.col-lg-7.col-sm-7.col-12
                 p.settings-key.settings-title-login.color-purple.mt-10.text-align(style="display:none;") 5a94e4fb-58cb-4128-8224-8b3d46244823
         .row
           .col-xl-6.col-lg-6.col-md-12.order-xl-1.order-lg-1.order-md-2.order-sm-2.order-2
@@ -106,7 +106,23 @@ html(lang="ru")
                 .col-xl-6.col-lg-6.col-md-6.col-sm-6.col-12
                   p.block-settings-title-unitpay 
                     <i class="bi bi-shield-check svg color-purple"></i> UnitPay Касса
-              input.input-def.margin.text-center(placeholder="Сумма пополнения ₽")
+              input.input-def.text-center(placeholder="Сумма пополнения ₽")
+              .row
+                .col-xl-3.col-lg-3.col-md-3.col-sm-3.col-4
+                  img.payment(src="img/payment/mastercard.png" draggable="false")
+                .col-xl-3.col-lg-3.col-md-3.col-sm-3.col-4
+                  img.payment(src="img/payment/yandex.png" draggable="false")
+                .col-xl-3.col-lg-3.col-md-3.col-sm-3.col-4
+                  img.payment(src="img/payment/sberbank.png" draggable="false")
+                .col-xl-3.col-lg-3.col-md-3.col-sm-3.col-4.payment-none
+                  img.payment(src="img/payment/visa.png" draggable="false")
+              .row
+                .col-xl-3.col-lg-3.col-md-3.col-sm-3.col-4.payment-none-2
+                  img.payment(src="img/payment/visa.png" draggable="false")
+                .col-xl-3.offset-xl-3.col-lg-3.offset-lg-3.col-md-3.offset-md-3.col-sm-3.offset-sm-3.col-4
+                  img.payment(src="img/payment/apple.png" draggable="false")
+                .col-xl-3.col-lg-3.col-md-3.col-sm-3.col-4
+                  img.payment(src="img/payment/google.png" draggable="false")
               button.settings-button Пополнить
             .block-settings.block-def
               p.block-settings-title-links 
