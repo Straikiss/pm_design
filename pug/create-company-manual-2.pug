@@ -248,8 +248,8 @@ html(lang="ru")
               .col-xl-3.col-lg-3.col-md-4.col-sm-4.col-4
                 .block-blogger-link-block.mb-0(onclick="openbox('bloggers-list'); return false")
                   a.block-blogger-link-added(href="#") 
-                     <i class="bi bi-person svg-3"></i> 15
-            .mt-10.bloggers-list(style="display:block;")
+                    <i class="bi bi-person svg-3"></i> 15
+            .mt-10.bloggers-list(style="display:none;")
               .row
                 .col-xl-7.col-lg-7
                   .row.bloggers-list-inside.last-child
@@ -316,9 +316,9 @@ html(lang="ru")
               - for(i=0; i < 15; i++)
                 .col-xl-6.col-lg-6.col-md-6.col-sm-12
                   .block-blogger
-                    <i class="bi bi-plus add home-block-inside-svg color-purple"></i>
-                    | <!-- иконка когда добавлен блогер -->
-                    | <!-- <i class="bi bi-check added home-block-inside-svg color-purple"></i> -->
+                    <i class="bi bi-check home-block-inside-svg color-purple"></i>
+                    <i class="bi bi-plus home-block-inside-svg color-purple"></i>
+                    <i class="bi bi-x home-block-inside-svg color-purple"></i>
                     p.block-price
                       <i class="bi bi-tag svg"></i> 10 000 ₽ за сторис
                     .row
@@ -354,3 +354,8 @@ html(lang="ru")
                             p.block-blogger-text.text-align Путешествия/отдых 
     script(src="js/scripts.js")
     script(src="js/scroll.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")  
+    script.
+      $(".block-blogger").click(function(){
+        $(this).toggleClass("block-blogger-added");
+      }); 

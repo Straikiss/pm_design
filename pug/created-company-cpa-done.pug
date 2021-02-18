@@ -167,51 +167,37 @@ html(lang="ru")
                       td 100
                       td <i class="bi bi-dash svg color-purple"></i>
                       td 1.000₽
-            .created-company-mobile
-              .created-company-mobile-inside         
-                .created-company-table-flex
-                  a(href="blogger.html")
-                    img.uploaded-image.cursor-pointer(src="img/blogger-card/1.png" draggable="false")
-                  .created-company-table-flex-inside
-                    p.mb-5.created-company-table-title Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎
-                    a.block-blogger-card-link(href="https://www.instagram.com/ksesimaa_/" target="_blank") @ksesimaa_
-                    p.mb-5 <i class="bi bi-people svg color-purple"></i> 500/250000
-                    p Путешествия/отдых
-                  <i class="bi bi-caret-down created-company-svg cursor-pointer"></i>
-            .created-company-mobile.open
-              .created-company-mobile-inside         
-                .created-company-table-flex
-                  a(href="blogger.html")
-                    img.uploaded-image.cursor-pointer(src="img/blogger-card/1.png" draggable="false")
-                  .created-company-table-flex-inside
-                    p.mb-5.created-company-table-title Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎
-                    a.block-blogger-card-link(href="https://www.instagram.com/ksesimaa_/" target="_blank") @ksesimaa_
-                    p.mb-5 <i class="bi bi-people svg color-purple"></i> 500/250000
-                    p Путешествия/отдых
-                  <i class="bi bi-caret-down created-company-svg cursor-pointer"></i>
-                p.mt-10.color-gray.tooltip.w-100 Оценка: 
-                  <i class="bi bi-question-circle svg color-purple"></i>
-                  span.tooltip-text Рейтинг блогера влияет на частоту показа блогера в системе и позицию показа в подборах. 
-                  <span class="color-purple float-right home-bloggers-block-icons">
-                    <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-                    <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-                    <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-                    <i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
-                    <i class="bi bi-star home-bloggers-block-icons-svg"></i>
-                p.mt-10.color-gray Тип: <span class="float-right color-black">Пост
-                p.mt-10.color-gray Охват: <span class="float-right color-black">Ждем
-                p.mt-10.color-gray Действия: <span class="float-right color-black">Ждем
-                p.mt-10.color-gray Цена: <span class="float-right color-black">10 000 ₽
-                p.mt-10.color-gray Ссылка: 
-                  <span class="float-right color-black">
-                    <i class="bi bi-plus svg color-purple"></i>
-                p.mt-10.color-gray Результат: 
-                  <span class="float-right color-black">
-                    a(href="#") <i class="bi bi-image svg color-purple"></i>
-                p.mt-10.color-gray Статистика: 
-                  <span class="float-right color-black">
-                    a(href="#") <i class="bi bi-bar-chart svg color-purple"></i>
+            - for (i = 0; i < 10; i++)
+              .created-company-mobile
+                .created-company-mobile-inside         
+                  .created-company-table-flex
+                    a(href="blogger.html")
+                      img.uploaded-image.cursor-pointer(src="img/blogger-card/1.png" draggable="false")
+                    .created-company-table-flex-inside
+                      p.mb-5.created-company-table-title Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎
+                      a.block-blogger-card-link(href="https://www.instagram.com/ksesimaa_/" target="_blank") @ksesimaa_
+                      p.mb-5 <i class="bi bi-people svg color-purple"></i> 500/250000
+                      p Путешествия/отдых
+                    <i class="bi bi-caret-down created-company-svg cursor-pointer"></i>
+                  p.mt-10.color-gray.tooltip.w-100 Оценка: 
+                    <i class="bi bi-question-circle svg color-purple"></i>
+                    span.tooltip-text Рейтинг блогера влияет на частоту показа блогера в системе и позицию показа в подборах. 
+                    <span class="color-purple float-right home-bloggers-block-icons">
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star home-bloggers-block-icons-svg"></i>
+                  p.mt-10.color-gray Тип: <span class="float-right color-black">Сторис
+                  p.mt-10.color-gray Переходов/Тапов: <span class="float-right color-black">100
+                  p.mt-10.color-gray Цель: <span class="float-right color-black"><i class="bi bi-dash svg color-purple"></i>
+                  p.mt-10.color-gray Цена: <span class="float-right color-black">1000₽
           .col-xl-2.offset-xl-5.col-lg-2.offset-lg-5.col-md-4.offset-md-4.col-sm-4.offset-sm-4.col-6.offset-3.margin
             a.created-company-edit(href="#")  
               <i class="bi bi-arrow-repeat svg-3"></i> Больше
     script(src="js/scripts.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")  
+    script.
+      $(document).on('click', '.bi-caret-down', function(){
+        $(this).parents('.created-company-mobile').toggleClass('open');
+      }); 

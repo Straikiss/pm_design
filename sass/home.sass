@@ -8,11 +8,10 @@
 .home-block-2
   display: block
   color: $black
-
-  &:hover, &:active
-    .home-block-inside-text,
+  &:hover
+    .home-block-inside-image,
     .home-block-inside-svg
-      color: $orange
+      +opacity()
 
 .home-block-inside-image
   border-top-right-radius: 15px
@@ -20,16 +19,19 @@
 
 .home-block-inside-svg
   color: $white
-
   &::before
     position: absolute
-    top: 0
-    right: 15px
     font-size: 45px
     height: 45px
+    right: 15px
+    top: 0
 
 .home-block-inside-text
   +padding()
+
+.home-block-inside
+  .bi-plus
+    display: block 
 
 .home-block-title-svg
   vertical-align: middle
@@ -101,8 +103,7 @@
   +border-radius()
   +box-shadow()
   +font-size()
-
-  &:hover, &:active
+  &:hover
     +opacity()
 
 .home-bloggers-title
@@ -111,25 +112,21 @@
 .home-bloggers-title-link
   color: $purple
   float: right
-
-  &:hover, &:active
-    color: $orange
+  &:hover
+    +opacity()
   
 .home-bloggers-block
   display: block
   color: $black
   +margin-top()
-
-  &:hover, &:active
+  &:hover
     +opacity()
-
     .home-bloggers-block-icons-svg,
     .home-bloggers-block-image
       +opacity()
 
 .home-bloggers-block-text
   text-align: center
-
   &:first-of-type
     overflow: hidden
     height: 40px
@@ -142,13 +139,11 @@
   text-align: center
   line-height: 15px
   height: 15px
-
   i 
     display: inline-block
 
 .home-bloggers-block-icons-svg
   color: $purple
-
   &::before
     vertical-align: middle
     font-size: 15px

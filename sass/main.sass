@@ -23,7 +23,6 @@ $purple-bg: linear-gradient(268.83deg,#aa53fe 1.58%,#790ee1 99.84%)
 
 $xxl: 1409px
 $xl: 1216px
-
 $lg: 767px
 $md: 578px
 $sm: 575px
@@ -213,19 +212,17 @@ button
 .bloggers-list-p
   p
     margin-bottom: 5px
-
     &:last-of-type
       +margin-bottom()
 .bb
   border-bottom: 1px solid $gray-text
   padding-bottom: 3px
-
-  &:hover, &:active
+  &:hover
     border-bottom: 1px solid $purple
     color: $purple
 
 .hover-purple
-  &:hover, &:active
+  &:hover
     color: $purple
     
 .color-purple
@@ -246,7 +243,7 @@ button
 .svg
   &::before
     vertical-align: bottom
-    
+
 .svg-4,
 .svg-3
   vertical-align: top
@@ -256,6 +253,10 @@ button
 
 .bg-gray
   background: $gray !important
+
+td, .float-right
+  .bi-plus
+    display: block
 
 ::-webkit-scrollbar 
   width: 12.5px
@@ -267,13 +268,25 @@ button
 .ml-size-10
   margin-left: 13px
 
-.add, .added
+.bi-check, .bi-plus, .bi-x
   display: none
-
+  
+.block-blogger-added
+  .bi-check
+    display: block 
+ 
 .block-blogger
-  &:hover, &:active
-    .add, .added
+  cursor: pointer
+  &:hover
+    .bi-plus, .added
       display: block
+
+.block-blogger.block-blogger-added
+  &:hover
+    .bi-plus, .bi-check
+      display: none
+    .bi-x
+      display: block 
 
 .block-price
   border-bottom-right-radius: 15px
@@ -366,8 +379,7 @@ input:checked + .slider:before
 
 .color-hover
   color: $gray
-
-  &:hover, &:active
+  &:hover
     color: $purple
 
 .border-radius
@@ -401,6 +413,14 @@ input:checked + .slider:before
 .payment-none-2
   display: none
 
+.col-xl-4
+  .bi-x
+    display: block
+
+.block-list-company-more
+  .bi-plus
+    display: block
+  
 @import header 
 @import aside 
 @import tooltip 

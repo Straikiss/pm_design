@@ -6,8 +6,7 @@
   +border-radius()
   +box-shadow()
   +padding()
-
-  &:hover, &:active
+  &:hover
     +opacity()
   
 .block-company-inside
@@ -37,13 +36,12 @@
     content: 'CPA'
 
 .block-company-inside-svg
-    margin: auto
+  margin: auto
+  height: 35px
+  &::before
+    font-size: 35px
+    color: $white
     height: 35px
-
-    &::before
-      font-size: 35px
-      color: $white
-      height: 35px
 
 .block-company-height
   overflow: hidden
@@ -77,8 +75,7 @@
   +border-radius()
   +box-shadow()
   +font-size()
-
-  &:hover, &:active
+  &:hover
     +opacity()
 
 .block-list-company-avatar 
@@ -101,7 +98,6 @@
 .block-company-text-2
   margin-bottom: 5px
   margin-top: 5px
-
   &:last-of-type
     margin-bottom: 0
     margin-top: 0

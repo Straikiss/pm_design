@@ -65,8 +65,7 @@
   +border-radius()
   +box-shadow()
   +font-size()
-
-  &:hover, &:active
+  &:hover
     +opacity()
 
 .created-company-table
@@ -75,34 +74,26 @@
   width: 100%
   +border-radius()
   +box-shadow()
-  
   .w-100
     width: 121px !important
-
   .tooltip-text
     top: 100%
-
   th
     color: $gray-text
     font-weight: 400
     font-size: 15px
-
   tr:nth-child(even)
     background: $gray
-
   th, td 
     padding: 15px
-
   td
     text-align: center
     +font-size()
-
     i:hover
       +opacity()
 
 .created-company-table-flex
   display: flex
-
   img
     height: 100px
     width: 100px
@@ -110,7 +101,6 @@
 .created-company-table-flex-inside
   margin-left: 15px
   text-align: left
-
   a
     display: inline-block
     margin-bottom: 5px
@@ -128,7 +118,8 @@
   +border-radius()
   +box-shadow()
   +padding()
-
+  .color-gray
+    display: none
   img
     height: 100px
     width: 100px
@@ -141,8 +132,7 @@
     color: $purple
     float: right
     height: 25px
-
-  &:hover, &:active
+  &:hover
     &::before
       +opacity()
 
@@ -150,3 +140,5 @@
   .created-company-svg
     &::before
       transform: rotate(180deg)
+  .color-gray
+    display: block

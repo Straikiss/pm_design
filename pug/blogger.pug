@@ -55,12 +55,18 @@ html(lang="ru")
                       p.block-select-city-body О себе
                       p есть люди, которые не продаются, есть сердца, которых не купить и королю.. По вопросам сотрудничества в Директ
                   .row
-                    .col-6
-                      a.block-blogger-card-favorite(href="") 
-                        <i class="bi bi-plus-circle svg-4"></i> в избранное
-                    .col-6
-                      a.block-blogger-card-favorite(href="") 
-                        <i class="bi bi-plus-circle svg-4"></i> в кампанию
+                    .col-xl-6.col-lg-6
+                      span.favorite.block-blogger-card-favorite
+                        span.favorite-add
+                          <i class="bi bi-plus-circle svg-4"></i> в избранное
+                        span.favorite-remove
+                          <i class="bi bi-x-circle svg-4"></i> из избранного
+                    .col-xl-6.col-lg-6
+                      span.company.block-blogger-card-favorite
+                        span.company-add
+                          <i class="bi bi-plus-circle svg-4"></i> в кампанию
+                        span.company-remove
+                          <i class="bi bi-x-circle svg-4"></i> из кампании
                   p.block-blogger-card-head.block-select-city-body Имя аккаунта
                   p Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎
                   p.block-blogger-card-head.block-select-city-body Ник аккаунта
@@ -258,3 +264,11 @@ html(lang="ru")
                     p.block-blogger-card-head
                       a.block-blogger-link-screen(href="") Скриншот статистики  
     script(src="js/scripts.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")  
+    script.
+      $(".favorite").click(function(){
+        $(this).toggleClass("favorite-added");
+      }); 
+      $(".company").click(function(){
+        $(this).toggleClass("company-added");
+      }); 

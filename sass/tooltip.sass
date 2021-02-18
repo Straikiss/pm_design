@@ -1,11 +1,9 @@
 .tooltip 
   display: inline-block
   position: relative
-  
-  &:hover, &:active, &:focus
+  &:hover
     .color-purple
       color: $orange
-
     .tooltip-text  
       visibility: visible
 
@@ -24,7 +22,6 @@
   +border-image()
   +font-family()
   +box-shadow()
-  
   &::after
     border-color: transparent transparent $purple transparent
     border-style: solid

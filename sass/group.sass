@@ -32,7 +32,7 @@
 .block-bloggers-avatar
   +border-image()
 
-  &:hover, &:active
+  &:hover
     +opacity()
 
 .block-publications
@@ -44,11 +44,12 @@
   +margin-bottom()
   +border-radius()
   +box-shadow()
-  
-  &:hover,
-  &:active
+  &:hover
     .block-price
       opacity: 1
+
+.block-blogger.padding
+  cursor: default
 
 .ml-10
   margin-left: 15px   
@@ -75,15 +76,12 @@
   display: block
   +margin-top()
 
-  &:hover, &:active
+  &:hover
     color: $orange
-
     .block-blogger-card-body
       opacity: 1
-
     .block-blogger-card-avatar, .color-purple
       color: $orange
-
     .block-publications-avatar
       +opacity()
 
@@ -91,8 +89,7 @@
 .block-created-company-more
   color: $orange
   float: right
-
-  &:hover, &:active
+  &:hover
     color: $purple
 
 .block-list-company-more
@@ -107,9 +104,8 @@
   border-radius: 100%
   +box-shadow()
   +font-size()
-
-  &:hover, &:active
-    background: $purple-bg
+  &:hover
+    +opacity()
 
 .block-list-company-more-2
   background: $green-bg
@@ -122,10 +118,6 @@
   border-radius: 100%
   +box-shadow()
   
-.block-list-company-more-avatar
-  margin-top: -5px
-  vertical-align: middle
-
 .block-blogger-link-avatar
   margin-top: -5px
   margin-right: 5px
@@ -141,8 +133,7 @@
   height: 44px
   +border-image()
   +box-shadow()
-
-  &:hover, &:active
+  &:hover
     color: $white
     background: $green-bg
 
@@ -155,8 +146,7 @@
   line-height: 44px
   +border-image()
   +box-shadow()
-
-  &:hover, &:active
+  &:hover
     color: $white
     background: $purple-bg
 
@@ -169,8 +159,7 @@
   width: 100%
   +border-image()
   +box-shadow()
-
-  &:hover, &:active
+  &:hover
     color: $white
     background: $orange
 
@@ -184,11 +173,11 @@
   height: 44px
   +border-image()
   +box-shadow()
-
-  &:hover, &:active
+  &:hover
     +opacity()
 
 .block-blogger-card-favorite
+  cursor: pointer
   display: block
   margin-top: 10px 
   line-height: 35px
@@ -196,18 +185,35 @@
   color: $green
   text-align: center
   +border-image()
-
-  &:hover, &:active
+  &:hover
+    background: $green-bg
     color: $white
-    background: linear-gradient(189.78deg, #12e17e 0%, #13bd60 100%)
+
+.favorite-remove
+  display: none
+
+.favorite-added
+  .favorite-add
+    display: none
+  .favorite-remove
+    display: block
+
+.company-remove
+  display: none
+
+.company-added
+  .company-add
+    display: none
+  .company-remove
+    display: block
 
 .all-active
+  background: $purple-bg
   color: $white
-  background: linear-gradient(268.83deg, #AA53FE 1.58%, #790EE1 99.84%)
 
 .favorite-active
-  color: $white
   background: $orange
+  color: $white
 
 .block-blogger-link-block
   display: flex
@@ -223,8 +229,7 @@
   display: block
   width: 100%
   +border-image()
-
-  &:hover, &:active
+  &:hover
     +opacity()
 
 .block-screenshots-avatar
@@ -234,8 +239,7 @@
   cursor: pointer
   height: 250px
   object-fit: cover
-
-  &:hover, &:active
+  &:hover
     +opacity()
 
 .block-screenshots-avatar-2
@@ -244,19 +248,15 @@
   cursor: pointer
   height: 250px
   object-fit: cover
-
-  &:hover, &:active
+  &:hover
     +opacity()
 
 .block-blogger-link-more
   color: $green
-
-  &:hover,
-  &:active
-    color: $purple
-
+  &:hover
+    +opacity()
     .block-list-company-more-2
-      background: $purple-bg
+      +opacity()
 
 .block-screenshots-title
   margin-bottom: 15px
@@ -271,21 +271,13 @@
   +border-image()
 
 .block-blogger-link
-  color: $black
+  cursor: default
   display: block
+  color: $black
 
 .block-icons
   text-align: center
   height: 22px
-
-.va-middle
-  margin-top: 2.5px
-
-.va-m-m
-  margin-top: -2.5px
-
-.va-m
-  vertical-align: middle
 
 .block-publications-text
   text-align: center
@@ -300,8 +292,8 @@
 
 .block-blogger-card-link
   color: $purple
-
-  &:hover, &:active
+  height: 20px
+  &:hover
     color: $orange
 
 .block-create-title
@@ -385,7 +377,6 @@
   background: $gray
   +font-family()
   +font-size()
-
   &:focus
     +border($purple)
 
@@ -543,8 +534,7 @@
   text-align: center
   display: block
   color: $purple
-
-  &:hover, &:active
+  &:hover
     color: $orange
 
 .cursor-pointer
@@ -553,8 +543,7 @@
 .hide
   color: $purple
   display: none
- 
-  &:hover, &:active
+  &:hover
     color: $orange
 
 .hide-2

@@ -49,10 +49,8 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-6"><a class="block-blogger-card-favorite" href="">
-                         <i class="bi bi-plus-circle svg-4"></i> в избранное</a></div>
-                    <div class="col-6"><a class="block-blogger-card-favorite" href="">
-                         <i class="bi bi-plus-circle svg-4"></i> в кампанию</a></div>
+                    <div class="col-xl-6 col-lg-6"><span class="favorite block-blogger-card-favorite"><span class="favorite-add"><i class="bi bi-plus-circle svg-4"></i> в избранное</span><span class="favorite-remove"><i class="bi bi-x-circle svg-4"></i> из избранного</span></span></div>
+                    <div class="col-xl-6 col-lg-6"><span class="company block-blogger-card-favorite"><span class="company-add"><i class="bi bi-plus-circle svg-4"></i> в кампанию</span><span class="company-remove"><i class="bi bi-x-circle svg-4"></i> из кампании</span></span></div>
                   </div>
                   <p class="block-blogger-card-head block-select-city-body">Имя аккаунта</p>
                   <p>Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎</p>
@@ -365,5 +363,14 @@
       </div>
     </div>
     <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script>
+      $(".favorite").click(function(){
+        $(this).toggleClass("favorite-added");
+      }); 
+      $(".company").click(function(){
+        $(this).toggleClass("company-added");
+      }); 
+    </script>
   </body>
 </html>

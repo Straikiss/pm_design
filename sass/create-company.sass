@@ -11,7 +11,6 @@
 .block-create-company-3-bg
   color: $gray-text
   +margin-top()
-
   p 
     font-size: 14px
 
@@ -55,8 +54,7 @@
   +border-radius()
   +box-shadow()
   +font-size()
-
-  &:hover, &:active
+  &:hover
     +opacity()
 
 .block-create-company-link-svg
@@ -106,7 +104,6 @@
   padding: 15px
   +border($gray)
   +border-image()
-
   &:focus
     +border($purple)
 
@@ -121,7 +118,6 @@
   width: 100%
   +border-image()
   +border($gray)
-
   &:focus
     +border($purple)
 
@@ -155,8 +151,7 @@ input::placeholder
   +margin-top()
   +box-shadow()
   +font-size()
-
-  &:hover, &:active
+  &:hover
     +opacity()
 
 .create-company-select-type
@@ -184,8 +179,7 @@ input::placeholder
   +border-image()
   +box-shadow()
   +font-size()
-
-  &:hover, &:active
+  &:hover
     background: $purple
     color: $white
 
@@ -207,15 +201,13 @@ input::placeholder
 
 .uploaded-image
   +border-image()
-
-  &:hover, &:active
+  &:hover
     +opacity()
 
 .uploaded-link
   +font-size()
   color: $gray-text
-
-  &:hover, &:active
+  &:hover
     color: $pink
 
 .create-company-result
@@ -233,12 +225,10 @@ input::placeholder
   height: 35px
   font-size: 35px
   right: 15px
-
   &::before
     height: 35px
     font-size: 35px
-
-  &:hover, &:active
+  &:hover
     color: $pink
 
 .create-company-more-story
@@ -251,8 +241,7 @@ input::placeholder
 .create-company-more-story-image
   height: 187.5px
   object-fit: cover
-
-  &:hover, &:active
+  &:hover
     opacity: 1
 
 .create-company-more-svg
@@ -267,8 +256,7 @@ input::placeholder
     width: 35px
     top: 111.25px
     margin: auto
-
-  &:hover, &:active
+  &:hover
     &::before
       color: $orange
 
@@ -282,8 +270,7 @@ input::placeholder
     right: 15px
     width: 35px
     top: 30px
-
-  &:hover, &:active
+  &:hover
     &::before
       color: $pink
 
