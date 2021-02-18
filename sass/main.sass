@@ -268,11 +268,12 @@ td, .float-right
 .ml-size-10
   margin-left: 13px
 
-.bi-check, .bi-plus, .bi-x
+.bi-check, .bi-x
   display: none
   
 .block-blogger-added
   .bi-check
+    color: $green
     display: block 
  
 .block-blogger
@@ -282,11 +283,21 @@ td, .float-right
       display: block
 
 .block-blogger.block-blogger-added
+  .bi-plus
+    display: none
   &:hover
-    .bi-plus, .bi-check
+    .bi-check
       display: none
     .bi-x
       display: block 
+      color: $pink
+
+.bloggers-list-inside
+  .bi-x
+    display: block
+  &:hover
+    .bi-x
+      color: $pink
 
 .block-price
   border-bottom-right-radius: 15px
