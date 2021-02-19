@@ -51,3 +51,7 @@ function StoryPreviewHide(){
   document.getElementById('ShowMoreStoryButtonOpened').style.display = "block";
   document.getElementById('ShowMoreStoryButtonOpened').style.display = "none";
 }
+function OpenModalStart(){
+  document.getElementById('start-modal').style.display='none';
+  document.getElementById('video-modal-3').style.display='block';
+}

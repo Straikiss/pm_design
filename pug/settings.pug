@@ -125,6 +125,16 @@ html(lang="ru")
                   img.payment(src="img/payment/google.png" draggable="false")
               button.settings-button Пополнить
             .block-settings.block-def
+              .row
+                .col-xl-6.col-lg-6.col-md-6.col-sm-6.col-12
+                  p.block-settings-title-balance 
+                    <i class="bi bi-wallet2 svg color-purple"></i> Вывести средства
+                .col-xl-6.col-lg-6.col-md-6.col-sm-6.col-12
+                  p.block-settings-title-unitpay 
+                    <i class="bi bi-shield-check svg color-purple"></i> Доступно 5 000 ₽ 
+              input.input-def.text-center(placeholder="Сумма к выводу ₽")
+              button.settings-button Вывести
+            .block-settings.block-def
               p.block-settings-title-links 
                 <i class="bi bi-archive svg color-purple"></i> Полезные ссылки 
               a.settings-link(href="https://postmarket.pro/blog" target="_blank") F.A.Q.

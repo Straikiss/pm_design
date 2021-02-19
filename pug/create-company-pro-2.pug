@@ -141,7 +141,7 @@ html(lang="ru")
                 input.input-def.mt-10(placeholder="11.11.2021")
             .col-xl-6.col-lg-6.col-md-12
               h2.mb-10 Бюджет
-              .who-performs.mb-10
+              .who-performs.margin 
                 .form-group.app-state-contentby_publisher
                   input#Item_PublicationKind_Any.app-trigger-contentfor(name="Item.PublicationKind" type="radio" value="0" checked)
                   label(for="Item_PublicationKind_Any") Эконом
@@ -151,8 +151,6 @@ html(lang="ru")
                 .form-group
                   input#Item_PublicationKind_Stories.app-trigger-contentfor(name="Item.PublicationKind" type="radio" value="2")
                   label(for="Item_PublicationKind_Stories") Оптимально
-              p.input-def-title.mb-0.mt-0.text-center Режим PRO доступен при бюджете от 15 000 ₽
-              .margin 
               .container-budget.app-state-isnotregular
                 input#Item_Budget(name="Item.Budget" type="hidden" value="15000")
                 .block-custome-price

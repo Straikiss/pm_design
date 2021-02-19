@@ -1,12 +1,15 @@
+.block-modal-2,
 .block-modal
   background: rgba(0,0,0,.3)
   position: fixed
-  display: none
   height: 100%
   width: 100%
   z-index: 1
   left: 0
   top: 0
+
+.block-modal
+  display: none
 
 .block-modal-inside-2,
 .block-modal-inside
@@ -19,8 +22,39 @@
   left: 0
   top: 0
   +border-radius()
-  +box-shadow()
   +padding()
+
+.block-modal-inside-3
+  background: $white
+  position: absolute
+  padding: 60px
+  width: 550px 
+  height: 250px
+  margin: auto
+  bottom: 0
+  right: 0
+  left: 0
+  top: 0
+  +border-radius()
+
+  .block-modal-inside-btn
+    margin-right: -30px
+    position: relative
+    margin-top: -30px
+
+.start-button
+  position: relative
+  color: $purple
+  width: auto
+
+  &:hover
+    +opacity()
+
+.modal-svg
+  position: absolute
+  height: 210px
+  left: 15px
+  top: 15px
 
 .block-modal-inside
   height: 487px
