@@ -77,8 +77,8 @@ html(lang="ru")
                     label(for="Item_ContentBy_Advertiser" onclick="ImagePreviewHide()") 
                       <i class="bi bi-star svg-3"></i> Избранные
               .col-xl-3.offset-xl-3.col-lg-3.offset-lg-3.col-md-4.col-sm-4
-                .block-blogger-link-block(onclick="openbox('settings-filtr'); return false")
-                  a.block-blogger-link-settings(href="#")
+                .block-blogger-link-block
+                  button.block-blogger-link-settings(onclick="openbox('settings-filtr');")
                     <i class="bi bi-sliders svg-3"></i> Настройки
             .settings-filtr(style="display:none;")
               .row 
@@ -202,7 +202,7 @@ html(lang="ru")
                       label(for="CampType9")
                         input.input-radio(type="radio" id="CampType9" value="8")
                         span.checkmark
-                        p.create-company-select-type Путешествия/отдых
+                        p.create-company-select-type Путешествие/отдых
                     .create-company-select-type.input-select
                       label(for="CampType10")
                         input.input-radio(type="radio" id="CampType10" value="9")
@@ -226,9 +226,9 @@ html(lang="ru")
                     br.br-none
                   .row
                     .col-6
-                      a.block-first-company-button(href="bloggers.html") Сбросить фильтр
+                      button.block-first-company-button(onclick="openbox('settings-filtr');") Сбросить фильтр
                     .col-6
-                      a.create-company-button(href="#" onclick="openbox('settings-filtr'); return false") Применить       
+                      button.create-company-button(onclick="openbox('settings-filtr');") Применить
             #ChangeImagePreviewHide
             #BlockCreateSelf.none
               .row

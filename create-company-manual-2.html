@@ -80,7 +80,9 @@
               </div>
             </div>
             <div class="col-xl-3 offset-xl-3 col-lg-3 offset-lg-3 col-md-4">
-              <div class="block-blogger-link-block" onclick="openbox('settings-filtr'); return false"><a class="block-blogger-link-settings" href="#"><i class="bi bi-sliders svg-3"></i> Настройки</a></div>
+              <div class="block-blogger-link-block">
+                <button class="block-blogger-link-settings" onclick="openbox('settings-filtr');"><i class="bi bi-sliders svg-3"></i> Настройки</button>
+              </div>
             </div>
           </div>
           <div class="settings-filtr" style="display:none;">
@@ -221,7 +223,7 @@
                   <div class="create-company-select-type input-select">
                     <label for="CampType9">
                       <input class="input-radio" type="radio" id="CampType9" value="8"><span class="checkmark"></span>
-                      <p class="create-company-select-type">Путешествия/отдых</p>
+                      <p class="create-company-select-type">Путешествие/отдых</p>
                     </label>
                   </div>
                   <div class="create-company-select-type input-select">
@@ -250,8 +252,12 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6"><a class="block-first-company-button" href="bloggers.html">Сбросить</a></div>
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6"><a class="create-company-button" href="#" onclick="openbox('settings-filtr'); return false">Применить           </a></div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                    <button class="block-first-company-button" onclick="openbox('settings-filtr');">Сбросить</button>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                    <button class="create-company-button" onclick="openbox('settings-filtr');">Применить           </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -262,8 +268,9 @@
                 <input class="input-def" placeholder="Поиск по нику">
               </div>
               <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-4">
-                <div class="block-blogger-link-block mb-0" onclick="openbox('bloggers-list'); return false"><a class="block-blogger-link-added" href="#">
-                     <i class="bi bi-person svg-3"></i> 15</a></div>
+                <div class="block-blogger-link-block mb-0">
+                  <button class="block-blogger-link-added" onclick="openbox('bloggers-list');"><i class="bi bi-person svg-3"></i> 15</button>
+                </div>
               </div>
             </div>
             <div class="mt-10 bloggers-list" style="display:none;">
@@ -1476,7 +1483,12 @@
       </div>
     </div>
     <script src="js/scripts.js"></script>
-    <script src="js/scroll.js"></script>
+    <script>
+      window.onscroll=function(){myFunction()};
+      var navbar = document.getElementById("search");
+      var sticky = navbar.offsetTop;
+      function myFunction(){if(window.pageYOffset >= sticky){navbar.classList.add("sticky")}else{navbar.classList.remove("sticky");}}
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
     <script>
       $(".block-blogger").click(function(){

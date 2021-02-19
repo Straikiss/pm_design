@@ -7,14 +7,6 @@ var modal=document.getElementById("video-modal-1");
 var modal=document.getElementById("video-modal-2");
 var modal=document.getElementById("chat-modal-1");
 window.onclick=function(a){if(a.target==modal){modal.style.display="none";}};
-function ChangeImage1(){document.getElementById('ImagePost').src="img/company/post/1.png";} 
-function ChangeImage2(){document.getElementById('ImagePost').src="img/company/post/2.png";} 
-function ChangeImage3(){document.getElementById('ImagePost').src="img/company/post/3.png";} 
-function ChangeImage4(){document.getElementById('ImagePost').src="img/company/post/4.png";} 
-function ChangeLinkAuto(){document.getElementById('ChangeLink').href="create-company-auto-1.html";} 
-function ChangeLinkManual(){document.getElementById('ChangeLink').href="create-company-manual-1.html";} 
-function ChangeLinkPro(){document.getElementById('ChangeLink').href="create-company-pro-1.html";} 
-function ChangeLinkCpa(){document.getElementById('ChangeLink').href="create-company-cpa-1.html";} 
 function ImagePreviewShow(){
 document.getElementById('ChangeImagePreviewHide').style.display = "block";
 document.getElementById('BlockCreateBlogger').style.display = "block";
@@ -55,3 +47,16 @@ function OpenModalStart(){
   document.getElementById('start-modal').style.display='none';
   document.getElementById('video-modal-3').style.display='block';
 }
+function CloseModal(ModalName){
+  document.getElementById(ModalName).style.display='none';
+  document.getElementById(ModalName).addEventListener('click', () => {
+    document.querySelectorAll('iframe').forEach(i => {
+        let source = i.src;
+        i.src = '';
+        i.src = source;
+    });
+  });
+}
+function ChangeImage(Link){document.getElementById('ImagePost').src=Link;} 
+function ChangeLink(Link){document.getElementById('ChangeLink').href=Link;}
+function OpenModal(ModalName){document.getElementById(ModalName).style.display='block';}

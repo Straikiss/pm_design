@@ -9,11 +9,12 @@ html(lang="ru")
     link(rel="shortcut icon" href="img/fav/pm-fav.png")
     link(rel="stylesheet" href="css/main.css")
   body
-    .block-modal#chat-modal-1(style="display:none;")
+    .block-modal#chat-modal-1
       .block-modal-inside-2
         .row
           .col-xl-12
-            button.block-modal-inside-btn(onclick="document.getElementById('chat-modal-1').style.display='none'") Закрыть
+            button.block-modal-inside-btn(onclick="CloseModal('chat-modal-1');") 
+              <i class="bi bi-x-circle svg-2"></i>
         p.input-def-title-3 Опишите промо материалы которые Вы хотите получить
         textarea.create-company-textarea(placeholder="формат, размеры, назначение")
         p.input-def-title-3.input-def-title Укажите @email
@@ -21,7 +22,7 @@ html(lang="ru")
         p.text-align-center.margin Промо материал будет отправлен на Ваш @email, в течение несколько часов бесплатно.
         .row
           .col-xl-6.offset-xl-3.col-lg-6.offset-lg-3.col-sm-6.offset-md-0.col-12
-            a.block-settings-link.ml-partner-size(href="#" onclick="document.getElementById('chat-modal-1').style.display='block'")
+            button.block-settings-link.ml-partner-size(onclick="CloseModal('chat-modal-1');")
               <i class="bi bi-envelope svg-3"></i> Заказать бесплатно    
     .header
       .container-fluid
@@ -103,7 +104,7 @@ html(lang="ru")
               <i class="bi bi-archive svg-2 color-purple"></i> Промо материалы для привлечения рекламодателей
           .col-xl-6.col-lg-6.margin
             .block-def
-              p Видео <a class="home-bloggers-title-link" href="#" onclick="openbox('show-videos-promoter'); return false">все</a>
+              p Видео <button class="home-bloggers-title-link" onclick="openbox('show-videos-promoter');">все</button>
               .row.partner-show-pc
                 .col-sm-4.col-6.add-mb-2.text-center.block-settings-post
                   span.block-settings-size 359кб
@@ -172,7 +173,7 @@ html(lang="ru")
                   a.input-def-title.mt-0.color-hover(href="partner/promoter/videos/story/pm_promoter_story_3.mp4" download) Скачать
           .col-xl-6.col-lg-6.margin
             .block-def
-              p Баннеры <a class="home-bloggers-title-link" href="#" onclick="openbox('show-images-promoter'); return false">все</a>
+              p Баннеры <button class="home-bloggers-title-link" onclick="openbox('show-images-promoter');">все</button>
               .row.partner-show-pc
                 .col-sm-4.col-6.add-mb-2.text-center
                   span.block-settings-size 373кб
@@ -204,7 +205,7 @@ html(lang="ru")
               <i class="bi bi-archive svg-2 color-purple"></i> Промо материалы для привлечения блогеров 
           .col-xl-6.col-lg-6.margin
             .block-def
-              p Видео <a class="home-bloggers-title-link" href="#" onclick="openbox('show-videos-blogger'); return false">все</a>
+              p Видео <button class="home-bloggers-title-link" onclick="openbox('show-videos-blogger');">все</button>
               .row.partner-show-pc
                 .col-sm-4.col-6.add-mb-2.text-center.block-settings-post
                   span.block-settings-size 1.75мб
@@ -257,7 +258,7 @@ html(lang="ru")
                   a.input-def-title.mt-0.color-hover(href="partner/blogger/videos/story/pm_blogger_story_3.mp4" download) Скачать
           .col-xl-6.col-lg-6.margin
             .block-def
-              p Баннеры <a class="home-bloggers-title-link" href="#" onclick="openbox('show-images-blogger'); return false">все</a>
+              p Баннеры <button class="home-bloggers-title-link" onclick="openbox('show-images-blogger');">все</button>
               .row.partner-show-pc
                 .col-sm-4.col-6.add-mb-2.text-center
                   span.block-settings-size 303кб
@@ -297,6 +298,6 @@ html(lang="ru")
               p.mb-10 Нет нужных промо?
                 .row
                   .col-xl-3.offset-xl-0.col-lg-3.offset-lg-0.col-md-4.offset-md-0.col-sm-6.offset-sm-3.col-8.offset-2
-                    a.block-settings-link(href="#" onclick="document.getElementById('chat-modal-1').style.display='block'")
+                    button.block-settings-link(onclick="OpenModal('chat-modal-1')")
                       <i class="bi bi-envelope svg-3"></i> Заказать бесплатно      
     script(src="js/scripts.js")

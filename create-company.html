@@ -70,7 +70,7 @@
 </svg>
                     </div>
                     <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
-                      <div class="block-create-company-select-box input-select" onclick="ChangeLinkAuto()">
+                      <div class="block-create-company-select-box input-select" onclick="ChangeLink('create-company-auto-1.html');">
                         <label for="smart">
                           <input class="input-radio" type="radio" id="smart" name="campType" value="0" checked><span class="checkmark"></span>
                           <p class="block-create-company-select-title">Умный подбор</p>
@@ -94,7 +94,7 @@
 </svg>
                     </div>
                     <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
-                      <div class="block-create-company-select-box input-select" onclick="ChangeLinkManual()">
+                      <div class="block-create-company-select-box input-select" onclick="ChangeLink('create-company-manual-1.html');">
                         <label for="myself">
                           <input class="input-radio" type="radio" id="myself" name="campType" value="1"><span class="checkmark"></span>
                           <p class="block-create-company-select-title">Самостоятельно</p>
@@ -120,7 +120,7 @@
 </svg>
                     </div>
                     <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
-                      <div class="block-create-company-select-box input-select" onclick="ChangeLinkPro()">
+                      <div class="block-create-company-select-box input-select" onclick="ChangeLink('create-company-pro-1.html');">
                         <label for="pro">
                           <input class="input-radio" type="radio" id="pro" name="campType" value="2"><span class="checkmark"></span>
                           <p class="block-create-company-select-title">Режим PRO</p>
@@ -137,7 +137,7 @@
 <path d="M39.873 7.77915C39.1128 6.91112 38.0296 6.43284 36.8228 6.43284H27.7111V1.20117C27.7111 0.537712 27.1734 0 26.5099 0H20.0771C19.4136 0 18.8759 0.537712 18.8759 1.20117V6.43284H7.63964L7.34592 4.23069C7.02936 1.85838 5.37775 0 3.58569 0H1.44141C0.777946 0 0.240234 0.537712 0.240234 1.20117C0.240234 1.86463 0.777946 2.40234 1.44141 2.40234H3.58569C3.97106 2.40234 4.78717 3.2172 4.96453 4.54819L8.40289 30.3365C8.55428 31.4732 9.13829 32.5374 10.0473 33.3331C10.7214 33.9234 11.5181 34.316 12.3527 34.4802C12.0127 35.1055 11.8197 35.8218 11.8197 36.5823C11.8197 39.0184 13.8013 41 16.2371 41C18.6729 41 20.6548 39.0184 20.6548 36.5823C20.6548 35.8565 20.4778 35.1718 20.1662 34.5672H26.4605C26.1489 35.1718 25.9719 35.8565 25.9719 36.5823C25.9719 39.0184 27.9535 41 30.3896 41C32.8255 41 34.8071 39.0184 34.8071 36.5823C34.8071 35.8565 34.63 35.1718 34.3188 34.5672H37.4659C38.1291 34.5672 38.6671 34.0291 38.6671 33.366C38.6671 32.7025 38.1291 32.1648 37.4659 32.1648H13.2351C12.0615 32.1648 10.9391 31.182 10.784 30.0187L10.5328 28.134H34.2494C35.3961 28.134 36.5281 27.6958 37.4371 26.9003C38.3458 26.1045 38.9299 25.0401 39.0819 23.9033L40.8045 10.9813C40.964 9.78486 40.6334 8.6475 39.873 7.77915ZM18.2525 36.5823C18.2525 37.6936 17.3485 38.5977 16.2371 38.5977C15.126 38.5977 14.222 37.6936 14.222 36.5823C14.222 35.4712 15.126 34.5672 16.2371 34.5672C17.3485 34.5672 18.2525 35.4712 18.2525 36.5823ZM32.4051 36.5823C32.4051 37.6936 31.501 38.5977 30.3896 38.5977C29.2786 38.5977 28.3746 37.6936 28.3746 36.5823C28.3746 35.4712 29.2786 34.5672 30.3896 34.5672C31.501 34.5672 32.4051 35.4712 32.4051 36.5823ZM21.2783 2.40234H25.3088V7.62025C25.3088 7.62494 25.3081 7.62932 25.3081 7.63401C25.3081 7.6387 25.3088 7.64339 25.3088 7.64809V14.0672C25.3088 14.7303 25.8465 15.2683 26.5099 15.2683H26.9335L23.3653 18.808L19.7971 15.2683H20.0771C20.7405 15.2683 21.2783 14.7303 21.2783 14.0672V2.40234ZM38.4231 10.6635L36.7005 23.5858C36.5453 24.7488 35.423 25.7317 34.2494 25.7317H10.2125L7.95995 8.83518H18.8759V12.866H16.8805C16.3938 12.866 15.9553 13.1597 15.7701 13.6095C15.5846 14.0597 15.6891 14.577 16.0347 14.9199L22.5195 21.3527C22.7534 21.5851 23.0594 21.7012 23.3653 21.7012C23.6712 21.7012 23.9771 21.5851 24.2111 21.3527L30.6959 14.9199C31.0415 14.577 31.146 14.0597 30.9605 13.6095C30.7753 13.1597 30.3368 12.866 29.8501 12.866H27.7111V8.83518H36.8228C37.327 8.83518 37.7684 9.02224 38.0656 9.36163C38.3627 9.70134 38.4897 10.1637 38.4231 10.6635Z" fill="#5C1CFF"></path>
                     </div></svg>
                     <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
-                      <div class="block-create-company-select-box input-select" onclick="ChangeLinkCpa()">
+                      <div class="block-create-company-select-box input-select" onclick="ChangeLink('create-company-cpa-1.html');">
                         <label for="cpa">
                           <input class="input-radio" type="radio" id="cpa" name="campType" value="3"><span class="checkmark"></span>
                           <p class="block-create-company-select-title">CPA</p>

@@ -82,7 +82,9 @@
                 </div>
               </div>
               <div class="col-xl-3 offset-xl-3 col-lg-3 offset-lg-3 col-md-4 col-sm-4">
-                <div class="block-blogger-link-block" onclick="openbox('settings-filtr'); return false"><a class="block-blogger-link-settings" href="#"><i class="bi bi-sliders svg-3"></i> Настройки</a></div>
+                <div class="block-blogger-link-block">
+                  <button class="block-blogger-link-settings" onclick="openbox('settings-filtr');"><i class="bi bi-sliders svg-3"></i> Настройки</button>
+                </div>
               </div>
             </div>
             <div class="settings-filtr" style="display:none;">
@@ -221,7 +223,7 @@
                     <div class="create-company-select-type input-select">
                       <label for="CampType9">
                         <input class="input-radio" type="radio" id="CampType9" value="8"><span class="checkmark"></span>
-                        <p class="create-company-select-type">Путешествия/отдых</p>
+                        <p class="create-company-select-type">Путешествие/отдых</p>
                       </label>
                     </div>
                     <div class="create-company-select-type input-select">
@@ -250,8 +252,12 @@
                     </div><br class="br-none">
                   </div>
                   <div class="row">
-                    <div class="col-6"><a class="block-first-company-button" href="bloggers.html">Сбросить фильтр</a></div>
-                    <div class="col-6"><a class="create-company-button" href="#" onclick="openbox('settings-filtr'); return false">Применить       </a></div>
+                    <div class="col-6">
+                      <button class="block-first-company-button" onclick="openbox('settings-filtr');">Сбросить фильтр</button>
+                    </div>
+                    <div class="col-6">
+                      <button class="create-company-button" onclick="openbox('settings-filtr');">Применить</button>
+                    </div>
                   </div>
                 </div>
               </div>

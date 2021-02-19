@@ -13,7 +13,7 @@
   z-index: 2
 
 .block-modal
-  display: block
+  display: none
 
 .block-modal-3
   display: none
@@ -22,6 +22,7 @@
 .block-modal-inside
   background: $white
   position: absolute
+  padding: 15px
   width: 620px 
   margin: auto
   bottom: 0
@@ -29,14 +30,13 @@
   left: 0
   top: 0
   +border-radius()
-  +padding()
 
 .block-modal-inside-3
   background: $white
   position: absolute
   padding: 60px
   width: 550px 
-  height: 250px
+  height: fit-content
   margin: auto
   bottom: 0
   right: 0
@@ -50,11 +50,11 @@
     margin-top: -30px
 
 .block-modal-inside-4
+  height: fit-content
   background: $white
   position: absolute
   padding: 60px
   width: 550px 
-  height: 320px
   margin: auto
   bottom: 0
   right: 0
@@ -104,23 +104,21 @@
   left: 15px
   top: 15px
 
+.block-modal-inside-2,
 .block-modal-inside
-  height: 487px
+  height: fit-content
 
-.block-modal-inside-2
-  height: 530px
-  
 .block-modal-inside-btn
+  margin-bottom: 15px
   background: none
   float: right
   width: auto
-  +margin-bottom()
 
   &:hover
-    color: $orange
+    color: $pink
 
 .block-modal-inside-iframe
-  height: 375px
+  height: 330px
   width: 100%
 
 .block-modal-textarea
