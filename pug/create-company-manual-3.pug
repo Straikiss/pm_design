@@ -9,6 +9,15 @@ html(lang="ru")
     link(rel="shortcut icon" href="img/fav/pm-fav.png")
     link(rel="stylesheet" href="css/main.css")
   body
+    .block-modal-3#pay-modal
+      .block-modal-inside-4
+        span.pay-modal-bg
+          <i class="bi bi-check pay-modal-svg"></i>
+        button.block-modal-inside-btn(onclick="CloseModal('pay-modal')") <i class="bi bi-x-circle svg-2"></i>
+        h1.text-center.margin Баланс успешно пополнен!
+        h2.text-center.margin В течение 12 часов Ваша рекламная кампания пройдет проверку и система запустит подбор блогеров. Всю информацию вы сможете отследить в разделе Реклама.
+        p.color-gray.text-center Службы поддержки всегда на связи! 
+        p.color-gray.text-center <i class="bi bi-emoji-smile svg"></i> Пишите, если возникнут вопросы.
     .header
       .container-fluid
         .row
@@ -87,7 +96,7 @@ html(lang="ru")
                 h2.margin.text-center Всего к оплате <span class="color-orange"> 5 000 ₽
                 .row
                   .col-xl-6.col-lg-6.col-md-6.col-sm-6.mb-15-s
-                    button.settings-button.w-100 Пополнить
+                    button.settings-button.w-100(onclick="OpenModal('pay-modal')") Пополнить
                   .col-xl-6.col-lg-6.col-md-6.col-sm-6
                     button.settings-button.w-100 Оплата с баланса
               p.input-def-title-2.mt-0 Деньги, которые Вы зачисляете на свой счет, поступают в полном объеме и идут на оплату рекламы у блогеров.

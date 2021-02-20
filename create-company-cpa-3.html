@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+    <div class="block-modal-3" id="pay-modal">
+      <div class="block-modal-inside-4"><span class="pay-modal-bg"><i class="bi bi-check pay-modal-svg"></i></span>
+        <button class="block-modal-inside-btn" onclick="CloseModal('pay-modal')"><i class="bi bi-x-circle svg-2"></i></button>
+        <h1 class="text-center margin">Баланс успешно пополнен!</h1>
+        <h2 class="text-center margin">В течение 24 часов с Вами свяжется Ваш персональный менеджер и обсудит все детали рекламной кампании.</h2>
+        <p class="color-gray text-center">Службы поддержки всегда на связи! </p>
+        <p class="color-gray text-center"><i class="bi bi-emoji-smile svg"></i> Пишите, если возникнут вопросы.</p>
+      </div>
+    </div>
     <div class="header">
       <div class="container-fluid">
         <div class="row">
@@ -73,7 +82,7 @@
                 <h2 class="margin text-center">Всего к оплате <span class="color-orange"> 20 000 ₽</h2>
                 <div class="row">
                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mb-15-s">
-                    <button class="settings-button w-100">Пополнить</button>
+                    <button class="settings-button w-100" onclick="OpenModal('pay-modal')">Пополнить</button>
                   </div>
                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                     <button class="settings-button w-100">Оплата с баланса</button>
