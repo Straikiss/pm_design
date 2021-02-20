@@ -136,6 +136,16 @@
     &::before
       +opacity()
 
+.settings-more.open
+  .created-company-svg
+    &::before
+      transform: rotate(180deg)
+  .text-left
+    color: $orange
+    .bi-caret-down
+      &::before
+        color: $orange
+
 .created-company-mobile.open
   .created-company-svg
     &::before

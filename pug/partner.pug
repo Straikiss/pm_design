@@ -33,7 +33,9 @@ html(lang="ru")
             h1.header-title
               a.heder-title-link(href="partner.html") Партнерская программа
           .col-xl-6.col-lg-6.col-md-9.col-sm-7.col-8
-            p.text-align <i class="bi bi-emoji-wink svg-3 color-purple"></i> Партнер с PostMarket!
+            .header-status
+              p.header-status-balance 0 ₽ <sup class="header-status-balance-money">5 000 ₽
+              a.header-status-pay(href="settings.html") Пополнить баланс
     .main
       .aside#hidden-element
         a.aside-logo(href="partner.html")
@@ -46,8 +48,6 @@ html(lang="ru")
           <i class="bi bi-house svg"></i> Главная
         a.aside-link(href="partner-stats.html") 
           <i class="bi bi-bar-chart svg"></i> Статистика
-        a.aside-link(href="partner-settings.html") 
-          <i class="bi bi-gear svg"></i> Настройки
         a.aside-link(href="index.html") 
           <i class="bi bi-arrow-left-right svg"></i> Рекламодатель
         a.aside-link(href="#") 
@@ -70,10 +70,6 @@ html(lang="ru")
               .col-xl-4.col-lg-5.col-md-6
                 h2.block-partner-button.color-purple.mb-0
                   <i class="bi bi-link-45deg svg-4"></i> https://postmarket.pro/pid/4556
-              .col-xl-3.offset-xl-5.col-lg-3.offset-lg-4.col-md-6
-                h2
-                  button.block-partner-button.color-purple.mb-0
-                    <i class="bi bi-wallet2 svg-4"></i> Запросить выплату
         .row
           .col-xl-6.col-lg-6
             .margin

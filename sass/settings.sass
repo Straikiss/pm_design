@@ -32,38 +32,22 @@
 .block-settings-title-unitpay 
   text-align: right
 
-.block-settings-svg
-  vertical-align: middle
-  margin-top: -2.5px
-
 .settings-image
   cursor: pointer
-  +border-image()
-  &:hover
-    +opacity()
- 
-.settings-hover 
-  justify-content: center
-  display: flex
+  img
+    +border-image()
   .home-block-inside-svg
-    position: relative
-    cursor: pointer
-    color: $purple
     &::before
-      right: 0
-  .settings-image
-    width: 35%
-  .bi-plus
-    display: block
+      color: $purple
+  &:hover
+    img
+      +opacity()
 
-.block-settings
-  .row
-    .col-6
-      min-width: 100%
-      flex: 0 0 100%
-  
 .settings-title-login
   width: auto
+
+.settings-login-overflow
+  overflow: auto
 
 .settings-btn
   background: $green-bg

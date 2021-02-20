@@ -33,71 +33,102 @@
            <i class="bi bi-gear svg"></i> Настройки</a><a class="aside-link" href="partner.html">
            <i class="bi bi-arrow-left-right svg"></i> Партнер</a><a class="aside-link" href="#">
            <i class="bi bi-box-arrow-right svg"></i> Выйти</a></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-6 block-dev col-lg-6">
-            <div class="row">
-              <div class="col-xl-4 col-lg-4 col-sm-4 col-12">
-                <p class="settings-title-login">Логин:</p>
-              </div>
-              <div class="col-xl-8 col-lg-8 col-sm-8 col-12">
-                <p class="settings-title-login text-align color-purple">STRAIKISS.WEB@GMAIL.COM</p>
-              </div>
-              <div class="col-xl-4 col-lg-5 col-sm-5 col-12">
-                <button class="settings-title-login mt-10 hover-purple bb tooltip" onclick="openbox('settings-key');">
-                  Секретный ключ: <i class="bi bi-question-circle svg color-purple"></i><span class="tooltip-text">Нужен для работы ЦПА по настройке postback уведомлений.</span></button>
-              </div>
-              <div class="col-xl-8 col-lg-7 col-sm-7 col-12">
-                <p class="settings-key settings-title-login color-purple mt-10 text-align" style="display:none;">5a94e4fb-58cb-4128-8224-8b3d46244823</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="container padding-top">
         <div class="row">
           <div class="col-xl-6 col-lg-6 col-md-12 order-xl-1 order-lg-1 order-md-2 order-sm-2 order-2">
-            <div class="block-settings block-def mb-0"> 
-              <div class="row">
-                <div class="col-xl-4 col-lg-5 col-md-3 col-sm-5 col-6">
-                  <div class="settings-hover"><img class="settings-image" src="img/avatar/1.png" draggable="false"><i class="bi bi-plus home-block-inside-svg"></i></div>
+            <div class="block-settings">
+              <div class="block-def">
+                <div class="row">
+                  <div class="col-xl-4 offset-xl-0 col-lg-4 offset-lg-0 col-md-4 offset-md-0 col-sm-4 offset-sm-0 col-6 offset-3">
+                    <div class="settings-image"><img src="img/avatar/1.png" draggable="false"><i class="bi bi-plus home-block-inside-svg"></i></div>
+                  </div>
+                  <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
+                    <div class="row">
+                      <div class="col-12">
+                        <p class="settings-title-login color-purple settings-login-overflow">STRAIKISS.WEB@GMAIL.COM</p>
+                      </div>
+                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <button class="settings-title-login mt-10 hover-purple bb tooltip" onclick="openbox('settings-key');">
+                          Секретный ключ: <i class="bi bi-question-circle svg color-purple"></i><span class="tooltip-text">Нужен для работы CPA по настройке postback уведомлений.</span></button>
+                      </div>
+                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <p class="settings-key settings-title-login color-purple mt-10 text-center" style="display:none;">5a94e4fb-58cb-4128-8224-8b3d46244823</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <p class="input-def-title">Ссылка на сайт</p>
-              <input class="input-def" placeholder="www.site.ru">
-              <p class="input-def-title">Аккаунт в Инстаграм</p>
-              <input class="input-def" placeholder="instagram_account">
-              <p class="input-def-title">Хэштэг</p>
-              <input class="input-def" placeholder="#insta_my_tag">
-              <p class="input-def-title">Регион</p>
-              <input class="input-def margin" placeholder="Введите названия и выберите город из списка">
-              <div class="settings-filtr" style="display:none;">
-                <p class="input-def-title mt-0">Название организации</p>
-                <input class="input-def" placeholder="Наименование бизнеса или личного бренда">
-                <p class="input-def-title">Юридический адрес</p>
-                <input class="input-def" placeholder="">
-                <p class="input-def-title">ИНН</p>
-                <input class="input-def" placeholder="10 цифр">
-                <p class="input-def-title">ОГРН</p>
-                <input class="input-def" placeholder="13 цифр">
-                <p class="input-def-title">КПП</p>
-                <input class="input-def" placeholder="9 цифр">
-                <p class="input-def-title">Контактный номер телефона</p>
-                <input class="input-def" placeholder="">
-                <p class="input-def-title">Название банка</p>
-                <input class="input-def" placeholder="">
-                <p class="input-def-title">БИК</p>
-                <input class="input-def" placeholder="9 цифр">
-                <p class="input-def-title">Корреспондентский счёт</p>
-                <input class="input-def" placeholder="20 цифр">
-                <p class="input-def-title">Расчётный счёт</p>
-                <input class="input-def" placeholder="20 цифр">
-              </div>
-              <button class="settings-btn">Сохранить</button>
             </div>
-            <div class="row">
-              <div class="col-xl-5 offset-xl-7 col-lg-6 offset-lg-6 col-md-4 offset-md-8 col-sm-5 offset-sm-7 col-8 offset-2 margin">
-                <button class="mt-10 hover-purple bb" onclick="openbox('settings-filtr');">
-                   <i class="bi bi-person-plus svg color-purple"></i> Для юридических лиц</button>
+            <div class="block-def margin">
+              <div class="settings-more">
+                <button class="text-left" onclick="openbox('settings-personal');">
+                  Персональные данные<i class="bi bi-caret-down created-company-svg cursor-pointer"></i></button>
+                <div class="settings-personal" style="display:none;">
+                  <p class="input-def-title mt-0">Ссылка на сайт</p>
+                  <input class="input-def" placeholder="www.site.ru">
+                  <p class="input-def-title">Аккаунт в Инстаграм</p>
+                  <input class="input-def" placeholder="instagram_account">
+                  <p class="input-def-title">Хэштэг</p>
+                  <input class="input-def" placeholder="#insta_my_tag">
+                  <p class="input-def-title">Регион</p>
+                  <input class="input-def margin" placeholder="Введите названия и выберите город из списка">
+                </div>
               </div>
+              <div class="settings-more"> 
+                <button class="text-left" onclick="openbox('settings-company');">
+                  Юридическое лицо<i class="bi bi-caret-down created-company-svg cursor-pointer"></i></button>
+                <div class="settings-company" style="display:none;">
+                  <p class="input-def-title mt-0">Название организации</p>
+                  <input class="input-def" placeholder="Наименование бизнеса или личного бренда">
+                  <p class="input-def-title">Юридический адрес</p>
+                  <input class="input-def" placeholder="">
+                  <p class="input-def-title">ИНН</p>
+                  <input class="input-def" placeholder="10 цифр">
+                  <p class="input-def-title">ОГРН</p>
+                  <input class="input-def" placeholder="13 цифр">
+                  <p class="input-def-title">КПП</p>
+                  <input class="input-def" placeholder="9 цифр">
+                  <p class="input-def-title">Контактный номер телефона</p>
+                  <input class="input-def" placeholder="">
+                  <p class="input-def-title">Название банка</p>
+                  <input class="input-def" placeholder="">
+                  <p class="input-def-title">БИК</p>
+                  <input class="input-def" placeholder="9 цифр">
+                  <p class="input-def-title">Корреспондентский счёт</p>
+                  <input class="input-def" placeholder="20 цифр">
+                  <p class="input-def-title">Расчётный счёт</p>
+                  <input class="input-def margin" placeholder="20 цифр">
+                </div>
+              </div>
+              <div class="settings-more">
+                <button class="text-left" onclick="openbox('settings-partner');">
+                  Партнер<i class="bi bi-caret-down created-company-svg cursor-pointer"></i></button>
+                <div class="settings-partner" style="display:none;"> 
+                  <p class="input-def-title mt-0">Ник</p>
+                  <input class="input-def" placeholder="Ваш ник/псевдоним">
+                  <p class="input-def-title">Метод привлечения клиентов</p>
+                  <select class="input-def">
+                    <option value="0" selected="selected">Cсылки в социальных сетях</option>
+                    <option value="1">Контекстная реклама</option>
+                    <option value="2">Реклама с помощью Facebook</option>
+                    <option value="3">Свои интернет сайты</option>
+                    <option value="4">Другое</option>
+                  </select>
+                  <p class="input-def-title">Введите средство связи, по которому с Вами в течении нескольких часов свяжется менеджер и поможет начать работу</p>
+                  <select class="input-def">
+                    <option value="0" selected="selected">Telegram</option>
+                    <option value="1">WhatsApp</option>
+                    <option value="2">Skype</option>
+                  </select>
+                  <p class="input-def-title">Аккаунт или номер телефона для связи</p>
+                  <input class="input-def" placeholder="@telegram или +79001234567">
+                  <p class="input-def-title">Email</p>
+                  <input class="input-def" placeholder="email@mail.ru">
+                </div>
+              </div>
+            </div>
+            <div class="margin">
+              <button class="settings-btn">Сохранить</button>
             </div>
           </div>
           <div class="col-xl-6 col-lg-6 col-md-12 order-1">
@@ -152,5 +183,11 @@
       </div>
     </div>
     <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script>
+      $(document).on('click', '.text-left', function(){
+        $(this).parents('.settings-more').toggleClass('open');
+      }); 
+    </script>
   </body>
 </html>

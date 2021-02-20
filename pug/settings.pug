@@ -41,62 +41,91 @@ html(lang="ru")
           <i class="bi bi-arrow-left-right svg"></i> Партнер
         a.aside-link(href="#") 
           <i class="bi bi-box-arrow-right svg"></i> Выйти
-      .container
-        .row
-          .col-xl-6.block-dev.col-lg-6
-            .row
-              .col-xl-4.col-lg-4.col-sm-4.col-12
-                p.settings-title-login Логин:
-              .col-xl-8.col-lg-8.col-sm-8.col-12
-                p.settings-title-login.text-align.color-purple STRAIKISS.WEB@GMAIL.COM
-              .col-xl-4.col-lg-5.col-sm-5.col-12
-                button.settings-title-login.mt-10.hover-purple.bb.tooltip(onclick="openbox('settings-key');") Секретный ключ: 
-                  <i class="bi bi-question-circle svg color-purple"></i>
-                  span.tooltip-text Нужен для работы ЦПА по настройке postback уведомлений.
-              .col-xl-8.col-lg-7.col-sm-7.col-12
-                p.settings-key.settings-title-login.color-purple.mt-10.text-align(style="display:none;") 5a94e4fb-58cb-4128-8224-8b3d46244823
+      .container.padding-top
         .row
           .col-xl-6.col-lg-6.col-md-12.order-xl-1.order-lg-1.order-md-2.order-sm-2.order-2
-            .block-settings.block-def.mb-0 
-              .row
-                .col-xl-4.col-lg-5.col-md-3.col-sm-5.col-6
-                  .settings-hover
-                    img.settings-image(src="img/avatar/1.png" draggable="false")
-                    <i class="bi bi-plus home-block-inside-svg"></i>
-              p.input-def-title Ссылка на сайт
-              input.input-def(placeholder="www.site.ru")
-              p.input-def-title Аккаунт в Инстаграм
-              input.input-def(placeholder="instagram_account")
-              p.input-def-title Хэштэг
-              input.input-def(placeholder="#insta_my_tag")
-              p.input-def-title Регион
-              input.input-def.margin(placeholder="Введите названия и выберите город из списка")
-              .settings-filtr(style="display:none;")
-                p.input-def-title.mt-0 Название организации
-                input.input-def(placeholder="Наименование бизнеса или личного бренда")
-                p.input-def-title Юридический адрес
-                input.input-def(placeholder="")
-                p.input-def-title ИНН
-                input.input-def(placeholder="10 цифр")
-                p.input-def-title ОГРН
-                input.input-def(placeholder="13 цифр")
-                p.input-def-title КПП
-                input.input-def(placeholder="9 цифр")
-                p.input-def-title Контактный номер телефона
-                input.input-def(placeholder="")
-                p.input-def-title Название банка
-                input.input-def(placeholder="")
-                p.input-def-title БИК
-                input.input-def(placeholder="9 цифр")
-                p.input-def-title Корреспондентский счёт
-                input.input-def(placeholder="20 цифр")
-                p.input-def-title Расчётный счёт
-                input.input-def(placeholder="20 цифр")
+            .block-settings
+              .block-def
+                .row
+                  .col-xl-4.offset-xl-0.col-lg-4.offset-lg-0.col-md-4.offset-md-0.col-sm-4.offset-sm-0.col-6.offset-3
+                    .settings-image
+                      img(src="img/avatar/1.png" draggable="false")
+                      <i class="bi bi-plus home-block-inside-svg"></i>
+                  .col-xl-8.col-lg-8.col-md-8.col-sm-8
+                    .row
+                      .col-12
+                        p.settings-title-login.color-purple.settings-login-overflow STRAIKISS.WEB@GMAIL.COM
+                      .col-xl-12.col-lg-12.col-md-12.col-sm-12.col-12
+                        button.settings-title-login.mt-10.hover-purple.bb.tooltip(onclick="openbox('settings-key');") Секретный ключ: 
+                          <i class="bi bi-question-circle svg color-purple"></i>
+                          span.tooltip-text Нужен для работы CPA по настройке postback уведомлений.
+                      .col-xl-12.col-lg-12.col-md-12.col-sm-12.col-12
+                        p.settings-key.settings-title-login.color-purple.mt-10.text-center(style="display:none;") 5a94e4fb-58cb-4128-8224-8b3d46244823
+            .block-def.margin
+              .settings-more
+                button.text-left(onclick="openbox('settings-personal');") Персональные данные
+                  <i class="bi bi-caret-down created-company-svg cursor-pointer"></i>
+                .settings-personal(style="display:none;")
+                  p.input-def-title.mt-0 Ссылка на сайт
+                  input.input-def(placeholder="www.site.ru")
+                  p.input-def-title Аккаунт в Инстаграм
+                  input.input-def(placeholder="instagram_account")
+                  p.input-def-title Хэштэг
+                  input.input-def(placeholder="#insta_my_tag")
+                  p.input-def-title Регион
+                  input.input-def.margin(placeholder="Введите названия и выберите город из списка")
+              .settings-more 
+                button.text-left(onclick="openbox('settings-company');") Юридическое лицо
+                  <i class="bi bi-caret-down created-company-svg cursor-pointer"></i>
+                .settings-company(style="display:none;")
+                  p.input-def-title.mt-0 Название организации
+                  input.input-def(placeholder="Наименование бизнеса или личного бренда")
+                  p.input-def-title Юридический адрес
+                  input.input-def(placeholder="")
+                  p.input-def-title ИНН
+                  input.input-def(placeholder="10 цифр")
+                  p.input-def-title ОГРН
+                  input.input-def(placeholder="13 цифр")
+                  p.input-def-title КПП
+                  input.input-def(placeholder="9 цифр")
+                  p.input-def-title Контактный номер телефона
+                  input.input-def(placeholder="")
+                  p.input-def-title Название банка
+                  input.input-def(placeholder="")
+                  p.input-def-title БИК
+                  input.input-def(placeholder="9 цифр")
+                  p.input-def-title Корреспондентский счёт
+                  input.input-def(placeholder="20 цифр")
+                  p.input-def-title Расчётный счёт
+                  input.input-def.margin(placeholder="20 цифр")
+              .settings-more
+                button.text-left(onclick="openbox('settings-partner');") Партнер
+                  <i class="bi bi-caret-down created-company-svg cursor-pointer"></i>
+                .settings-partner(style="display:none;")  
+                  p.input-def-title.mt-0 Ник
+                  input.input-def(placeholder="Ваш ник/псевдоним")
+                  p.input-def-title Метод привлечения клиентов
+                  select.input-def
+                    option(value="0" selected="selected") Cсылки в социальных сетях
+                    option(value="1") Контекстная реклама
+                    option(value="2") Реклама с помощью Facebook
+                    option(value="3") Свои интернет сайты
+                    option(value="4") Другое
+                  p.input-def-title Введите средство связи, по которому с Вами в течении нескольких часов свяжется менеджер и поможет начать работу
+                  select.input-def
+                    option(value="0" selected="selected") Telegram
+                    option(value="1") WhatsApp
+                    option(value="2") Skype
+                  p.input-def-title Аккаунт или номер телефона для связи
+                  input.input-def(placeholder="@telegram или +79001234567")
+                  p.input-def-title Email
+                  input.input-def(placeholder="email@mail.ru")
+            .margin
               button.settings-btn Сохранить
-            .row
-              .col-xl-5.offset-xl-7.col-lg-6.offset-lg-6.col-md-4.offset-md-8.col-sm-5.offset-sm-7.col-8.offset-2.margin
-                button.mt-10.hover-purple.bb(onclick="openbox('settings-filtr');") 
-                  <i class="bi bi-person-plus svg color-purple"></i> Для юридических лиц
+            //- .row
+            //-   .col-xl-5.offset-xl-7.col-lg-6.offset-lg-6.col-md-4.offset-md-8.col-sm-5.offset-sm-7.col-8.offset-2.margin
+            //-     button.mt-10.hover-purple.bb(onclick="openbox('settings-filtr');") 
+            //-       <i class="bi bi-person-plus svg color-purple"></i> Для юридических лиц
           .col-xl-6.col-lg-6.col-md-12.order-1
             .block-settings.block-def
               .row
@@ -144,3 +173,8 @@ html(lang="ru")
               a.settings-link(href="https://postmarket.pro/privacyPolicy" target="_blank") Политика приватности
                 <i class="bi bi-arrow-right-short block-settings-link-svg color-purple"></i>
     script(src="js/scripts.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")  
+    script.
+      $(document).on('click', '.text-left', function(){
+        $(this).parents('.settings-more').toggleClass('open');
+      }); 
