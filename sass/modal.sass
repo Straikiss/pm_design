@@ -1,5 +1,5 @@
-.block-modal-3,
-.block-modal-2,
+.block-modal-start,
+.block-modal-pay,
 .block-modal
   background: rgba(0,0,0,.3)
   position: fixed
@@ -8,6 +8,40 @@
   z-index: 1
   left: 0
   top: 0
+
+.block-modal-pay
+  display: none
+
+.block-modal-start-inside,
+.block-modal-pay-inside-2,
+.block-modal-pay-inside
+  background: $white
+  position: absolute
+  padding: 60px
+  width: 550px 
+  margin: auto
+  bottom: 0
+  right: 0
+  left: 0
+  top: 0
+  +border-radius()
+  .block-modal-inside-btn
+    margin-right: -30px
+    position: relative
+    margin-top: -30px
+
+.block-modal-start-inside
+  height: 245px
+
+.block-modal-pay-inside
+  height: 338px
+  .bi-check
+    display: inline-block
+
+.block-modal-pay-inside-2
+  height: 315px
+  .bi-check
+    display: inline-block
 
 .block-modal-3
   z-index: 2
@@ -30,57 +64,6 @@
   left: 0
   top: 0
   +border-radius()
-
-.block-modal-inside-stats
-  background: $white
-  position: absolute
-  padding: 15px
-  width: 620px 
-  margin: auto
-  height: fit-content
-  margin: auto
-  bottom: 0
-  right: 0
-  left: 0
-  top: 0
-  +border-radius()
-
-.block-modal-inside-3
-  background: $white
-  position: absolute
-  padding: 60px
-  width: 550px 
-  height: fit-content
-  margin: auto
-  bottom: 0
-  right: 0
-  left: 0
-  top: 0
-  +border-radius()
-
-  .block-modal-inside-btn
-    margin-right: -30px
-    position: relative
-    margin-top: -30px
-
-.block-modal-inside-4
-  height: fit-content
-  background: $white
-  position: absolute
-  padding: 60px
-  width: 550px 
-  margin: auto
-  bottom: 0
-  right: 0
-  left: 0
-  top: 0
-  +border-radius()
-  .block-modal-inside-btn
-    margin-right: -30px
-    position: relative
-    margin-top: -30px
-  .bi-check
-    display: inline-block
 
 .pay-modal-bg
   margin-top: -90px
