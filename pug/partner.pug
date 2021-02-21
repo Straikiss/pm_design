@@ -19,7 +19,7 @@ html(lang="ru")
         textarea.create-company-textarea(placeholder="формат, размеры, назначение")
         p.input-def-title-3.input-def-title Укажите @email
         input.input-def.margin(placeholder="email@mail.ru")
-        p.text-align-center.margin Промо материал будет отправлен на Ваш @email, в течение несколько часов бесплатно.
+        p.text-align-center.margin Промо материал будет отправлен на Ваш @email, <br> в течение несколько часов бесплатно.
         .row
           .col-xl-6.offset-xl-3.col-lg-6.offset-lg-3.col-sm-6.offset-md-0.col-12
             button.block-settings-link.ml-partner-size(onclick="CloseModal('chat-modal-1');")
@@ -38,18 +38,22 @@ html(lang="ru")
               a.header-status-pay(href="settings.html") Пополнить баланс
     .main
       .aside#hidden-element
-        a.aside-logo(href="partner.html")
+        a.aside-logo(href="index.html")
           <i class="aside-logo-svg"></i>
         a.aside-link.hide-2#hidden-link-2(href="#") 
           <i class="bi bi-x-circle svg"></i> Закрыть меню
         a.aside-link.aside-link-create(href="create-company.html") 
           <i class="bi bi-plus-circle svg"></i> Запустить рекламу
-        a.aside-link.aside-link-active(href="partner.html") 
+        a.aside-link(href="index.html")
           <i class="bi bi-house svg"></i> Главная
-        a.aside-link(href="partner-stats.html") 
-          <i class="bi bi-bar-chart svg"></i> Статистика
-        a.aside-link(href="index.html") 
-          <i class="bi bi-arrow-left-right svg"></i> Рекламодатель
+        a.aside-link(href="company.html") 
+          <i class="bi bi-bullseye svg"></i> Реклама 
+        a.aside-link(href="bloggers.html") 
+          <i class="bi bi-people svg"></i> Блогеры 
+        a.aside-link(href="settings.html") 
+          <i class="bi bi-gear svg"></i> Настройки
+        a.aside-link.aside-link-active(href="partner.html") 
+          <i class="bi bi-briefcase svg"></i> Партнер
         a.aside-link(href="#") 
           <i class="bi bi-box-arrow-right svg"></i> Выйти
       .container
@@ -72,11 +76,18 @@ html(lang="ru")
                   <i class="bi bi-link-45deg svg-4"></i> https://postmarket.pro/pid/4556
         .row
           .col-xl-6.col-lg-6
-            .margin
-              p.block-partner-body Если Вы агентство или СММ, то есть несколько сценариев работы, которые Вы можете использовать, чтобы получить свой процент со всех оплат Ваших клиентов.
-              p.block-partner-body 1. Если Вы намерены сами создавать кампании для своих клиентов в одном личном кабинете, то Вам нужно перейти по Вашей ссылке и зарегистрировать новый аккаунт (не тот, что у Вас сейчас, под которым Вы сейчас зашли как партнер) и уже в этом аккаунте заводить все рекламные кампании Ваших клиентов, пополнить баланс, а Ваш процент будет отображаться тут.
-              p.block-partner-body 2. Вам достаточно давать ссылку Вашим клиентам, они будут сами регистрироваться, создавать кампании, а Ваш процент будет отображаться у Вас на балансе.
-              p Оба варианта Вы можете совмещать между собой.
+            .block-def.margin
+              p Если Вы агентство или СММ, то есть несколько сценариев работы, которые Вы можете использовать, чтобы получить свой процент со всех оплат Ваших клиентов. Оба варианта Вы можете совмещать между собой.
+              .settings-more
+                button.text-left(onclick="openbox('settings-first-plan');") Первый сценарий
+                  <i class="bi bi-caret-down created-company-svg cursor-pointer"></i>
+                .settings-first-plan(style="display:none;")
+                  p Если Вы намерены сами создавать кампании для своих клиентов в одном личном кабинете, то Вам нужно перейти по Вашей ссылке и зарегистрировать новый аккаунт (не тот, что у Вас сейчас, под которым Вы сейчас зашли как партнер) и уже в этом аккаунте заводить все рекламные кампании Ваших клиентов, пополнить баланс, а Ваш процент будет отображаться тут.
+              .settings-more
+                button.text-left(onclick="openbox('settings-second-plan');") Второй сценарий
+                  <i class="bi bi-caret-down created-company-svg cursor-pointer"></i>
+                .settings-second-plan(style="display:none;")
+                  p Вам достаточно давать ссылку Вашим клиентам, они будут сами регистрироваться, создавать кампании, а Ваш процент будет отображаться у Вас на балансе.
           .col-xl-6.col-lg-6
             .row
               .col-xl-6.col-lg-6.col-md-6.col-sm-6
@@ -85,8 +96,8 @@ html(lang="ru")
                     <i class="bi bi-bar-chart svg color-purple"></i> Статистика
                   p.block-partner-body-2 Блогеров: <span class="color-purple">0
                   p.block-partner-body-2 Рекламодателей: <span class="color-purple">0
-                  p Партнеров: <span class="color-purple">0
-                  br.br-none-2
+                  p.block-partner-body-2 Партнеров: <span class="color-purple">0
+                  button.w-auto.color-purple(onclick="openbox('settings-stats');") Полная статистика
               .col-xl-6.col-lg-6.col-md-6.col-sm-6
                 .block-def.margin
                   p.block-settings-stats 
@@ -95,6 +106,49 @@ html(lang="ru")
                   p.block-partner-body-2 Баланс: <span class="color-orange">0 ₽
                   p.block-partner-body-2 В ожидании: <span class="color-orange">0 ₽
                   p За месяц: 0 ₽
+          .col-xl-12.partner-size.settings-stats(style="display:none;")
+            h2.margin 
+              <i class="bi bi-calendar svg-2 color-purple"></i> с 20.20.20 по 21.21.21
+          .col-xl-12.partner-size.settings-stats(style="display:none;")
+            .partner-stats
+              .table-size
+                table.table
+                  tr
+                    th Переходов
+                    th Рекламодателей
+                    th Блогеров
+                    th Доход
+                    th Дата
+                  tr
+                    td.color-purple 1000
+                    td.color-purple 100
+                    td.color-purple 100
+                    td.color-purple 1.000₽
+                    td.color-purple 20.20.20
+                  tr
+                    td.color-purple 1000
+                    td.color-purple 100
+                    td.color-purple 100
+                    td.color-purple 1.000₽
+                    td.color-purple 20.20.20
+                  tr
+                    td.color-purple 1000
+                    td.color-purple 100
+                    td.color-purple 100
+                    td.color-purple 1.000₽
+                    td.color-purple 20.20.20
+                  tr
+                    td.color-purple 1000
+                    td.color-purple 100
+                    td.color-purple 100
+                    td.color-purple 1.000₽
+                    td.color-purple 20.20.20
+                  tr
+                    td.color-purple 1000
+                    td.color-purple 100
+                    td.color-purple 100
+                    td.color-purple 1.000₽
+                    td.color-purple 20.20.20
           .col-xl-12
             h2.home-block-title 
               <i class="bi bi-archive svg-2 color-purple"></i> Промо материалы для привлечения рекламодателей
@@ -297,3 +351,8 @@ html(lang="ru")
                     button.block-settings-link(onclick="OpenModal('chat-modal-1')")
                       <i class="bi bi-envelope svg-3"></i> Заказать бесплатно      
     script(src="js/scripts.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")  
+    script.
+      $(document).on('click', '.text-left', function(){
+        $(this).parents('.settings-more').toggleClass('open');
+      }); 

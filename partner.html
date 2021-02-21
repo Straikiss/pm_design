@@ -21,7 +21,7 @@
         <textarea class="create-company-textarea" placeholder="формат, размеры, назначение"></textarea>
         <p class="input-def-title-3 input-def-title">Укажите @email</p>
         <input class="input-def margin" placeholder="email@mail.ru">
-        <p class="text-align-center margin">Промо материал будет отправлен на Ваш @email, в течение несколько часов бесплатно.</p>
+        <p class="text-align-center margin">Промо материал будет отправлен на Ваш @email, <br> в течение несколько часов бесплатно.</p>
         <div class="row">
           <div class="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-sm-6 offset-md-0 col-12">
             <button class="block-settings-link ml-partner-size" onclick="CloseModal('chat-modal-1');"><i class="bi bi-envelope svg-3"></i> Заказать бесплатно    </button>
@@ -45,12 +45,13 @@
       </div>
     </div>
     <div class="main">
-      <div class="aside" id="hidden-element"><a class="aside-logo" href="partner.html"><i class="aside-logo-svg"></i></a><a class="aside-link hide-2" id="hidden-link-2" href="#">
+      <div class="aside" id="hidden-element"><a class="aside-logo" href="index.html"><i class="aside-logo-svg"></i></a><a class="aside-link hide-2" id="hidden-link-2" href="#">
            <i class="bi bi-x-circle svg"></i> Закрыть меню</a><a class="aside-link aside-link-create" href="create-company.html">
-           <i class="bi bi-plus-circle svg"></i> Запустить рекламу</a><a class="aside-link aside-link-active" href="partner.html">
-           <i class="bi bi-house svg"></i> Главная</a><a class="aside-link" href="partner-stats.html">
-           <i class="bi bi-bar-chart svg"></i> Статистика</a><a class="aside-link" href="index.html">
-           <i class="bi bi-arrow-left-right svg"></i> Рекламодатель</a><a class="aside-link" href="#">
+           <i class="bi bi-plus-circle svg"></i> Запустить рекламу</a><a class="aside-link" href="index.html"><i class="bi bi-house svg"></i> Главная</a><a class="aside-link" href="company.html">
+           <i class="bi bi-bullseye svg"></i> Реклама </a><a class="aside-link" href="bloggers.html">
+           <i class="bi bi-people svg"></i> Блогеры </a><a class="aside-link" href="settings.html">
+           <i class="bi bi-gear svg"></i> Настройки</a><a class="aside-link aside-link-active" href="partner.html">
+           <i class="bi bi-briefcase svg"></i> Партнер</a><a class="aside-link" href="#">
            <i class="bi bi-box-arrow-right svg"></i> Выйти</a></div>
       <div class="container">
         <div class="row">
@@ -78,11 +79,22 @@
         </div>
         <div class="row">
           <div class="col-xl-6 col-lg-6">
-            <div class="margin">
-              <p class="block-partner-body">Если Вы агентство или СММ, то есть несколько сценариев работы, которые Вы можете использовать, чтобы получить свой процент со всех оплат Ваших клиентов.</p>
-              <p class="block-partner-body">1. Если Вы намерены сами создавать кампании для своих клиентов в одном личном кабинете, то Вам нужно перейти по Вашей ссылке и зарегистрировать новый аккаунт (не тот, что у Вас сейчас, под которым Вы сейчас зашли как партнер) и уже в этом аккаунте заводить все рекламные кампании Ваших клиентов, пополнить баланс, а Ваш процент будет отображаться тут.</p>
-              <p class="block-partner-body">2. Вам достаточно давать ссылку Вашим клиентам, они будут сами регистрироваться, создавать кампании, а Ваш процент будет отображаться у Вас на балансе.</p>
-              <p>Оба варианта Вы можете совмещать между собой.</p>
+            <div class="block-def margin">
+              <p>Если Вы агентство или СММ, то есть несколько сценариев работы, которые Вы можете использовать, чтобы получить свой процент со всех оплат Ваших клиентов. Оба варианта Вы можете совмещать между собой.</p>
+              <div class="settings-more">
+                <button class="text-left" onclick="openbox('settings-first-plan');">
+                  Первый сценарий<i class="bi bi-caret-down created-company-svg cursor-pointer"></i></button>
+                <div class="settings-first-plan" style="display:none;">
+                  <p>Если Вы намерены сами создавать кампании для своих клиентов в одном личном кабинете, то Вам нужно перейти по Вашей ссылке и зарегистрировать новый аккаунт (не тот, что у Вас сейчас, под которым Вы сейчас зашли как партнер) и уже в этом аккаунте заводить все рекламные кампании Ваших клиентов, пополнить баланс, а Ваш процент будет отображаться тут.</p>
+                </div>
+              </div>
+              <div class="settings-more">
+                <button class="text-left" onclick="openbox('settings-second-plan');">
+                  Второй сценарий<i class="bi bi-caret-down created-company-svg cursor-pointer"></i></button>
+                <div class="settings-second-plan" style="display:none;">
+                  <p>Вам достаточно давать ссылку Вашим клиентам, они будут сами регистрироваться, создавать кампании, а Ваш процент будет отображаться у Вас на балансе.</p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-xl-6 col-lg-6">
@@ -93,7 +105,8 @@
                      <i class="bi bi-bar-chart svg color-purple"></i> Статистика</p>
                   <p class="block-partner-body-2">Блогеров: <span class="color-purple">0</p>
                   <p class="block-partner-body-2">Рекламодателей: <span class="color-purple">0</p>
-                  <p>Партнеров: <span class="color-purple">0</p><br class="br-none-2">
+                  <p class="block-partner-body-2">Партнеров: <span class="color-purple">0</p>
+                  <button class="w-auto color-purple" onclick="openbox('settings-stats');">Полная статистика</button>
                 </div>
               </div>
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
@@ -105,6 +118,60 @@
                   <p class="block-partner-body-2">В ожидании: <span class="color-orange">0 ₽</p>
                   <p>За месяц: 0 ₽</p>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-12 partner-size settings-stats" style="display:none;">
+            <h2 class="margin">
+               <i class="bi bi-calendar svg-2 color-purple"></i> с 20.20.20 по 21.21.21</h2>
+          </div>
+          <div class="col-xl-12 partner-size settings-stats" style="display:none;">
+            <div class="partner-stats">
+              <div class="table-size">
+                <table class="table">
+                  <tr>
+                    <th>Переходов</th>
+                    <th>Рекламодателей</th>
+                    <th>Блогеров</th>
+                    <th>Доход</th>
+                    <th>Дата</th>
+                  </tr>
+                  <tr>
+                    <td class="color-purple">1000</td>
+                    <td class="color-purple">100</td>
+                    <td class="color-purple">100</td>
+                    <td class="color-purple">1.000₽</td>
+                    <td class="color-purple">20.20.20</td>
+                  </tr>
+                  <tr>
+                    <td class="color-purple">1000</td>
+                    <td class="color-purple">100</td>
+                    <td class="color-purple">100</td>
+                    <td class="color-purple">1.000₽</td>
+                    <td class="color-purple">20.20.20</td>
+                  </tr>
+                  <tr>
+                    <td class="color-purple">1000</td>
+                    <td class="color-purple">100</td>
+                    <td class="color-purple">100</td>
+                    <td class="color-purple">1.000₽</td>
+                    <td class="color-purple">20.20.20</td>
+                  </tr>
+                  <tr>
+                    <td class="color-purple">1000</td>
+                    <td class="color-purple">100</td>
+                    <td class="color-purple">100</td>
+                    <td class="color-purple">1.000₽</td>
+                    <td class="color-purple">20.20.20</td>
+                  </tr>
+                  <tr>
+                    <td class="color-purple">1000</td>
+                    <td class="color-purple">100</td>
+                    <td class="color-purple">100</td>
+                    <td class="color-purple">1.000₽</td>
+                    <td class="color-purple">20.20.20</td>
+                  </tr>
+                </table>
               </div>
             </div>
           </div>
@@ -209,5 +276,11 @@
       </div>
     </div>
     <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script>
+      $(document).on('click', '.text-left', function(){
+        $(this).parents('.settings-more').toggleClass('open');
+      }); 
+    </script>
   </body>
 </html>

@@ -44,9 +44,6 @@
   +margin-bottom()
   +border-radius()
   +box-shadow()
-  &:hover
-    .block-price
-      opacity: 1
 
 .block-blogger.padding
   cursor: default
@@ -177,17 +174,17 @@
     +opacity()
 
 .block-blogger-card-favorite
+  background: $green-bg
+  color: $white
   cursor: pointer
   display: block
   margin-top: 10px 
   line-height: 35px
   height: 35px
-  color: $green
   text-align: center
   +border-image()
   &:hover
-    background: $green-bg
-    color: $white
+    +opacity()
 
 .favorite-remove
   display: none
