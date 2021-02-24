@@ -72,7 +72,6 @@
   color: $black
   display: block
   +margin-top()
-
   &:hover
     color: $orange
     .block-blogger-card-body
@@ -194,6 +193,10 @@
     display: none
   .favorite-remove
     display: block
+    
+.favorite-added.block-blogger-card-favorite,
+.company-added.block-blogger-card-favorite
+  background: $pink
 
 .company-remove
   display: none
@@ -405,6 +408,10 @@
 
 .block-blogger-card
   padding-top: 110px
+  .margin
+    .col-xl-6
+      .block-blogger-card-head, p 
+        overflow: hidden
 
 .block-blogger-card-link-avatar
   vertical-align: bottom

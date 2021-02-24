@@ -74,6 +74,12 @@
   .aside
     transform: translateX(-100%)
 
+  #alert-task, 
+  #alert-link,
+  #alert-money-false,
+  #alert-money-true
+    left: 0
+
   .main
     padding-right: 0
     padding-left: 0
@@ -126,9 +132,6 @@
     padding-left: 18px
     margin-top: -20px
     display: block 
-
-  .block-create-company-svg
-    margin-left: 0
 
   .block-publications-2
     height: auto
@@ -206,6 +209,11 @@
     margin-top: 0
 
 @media (max-width: $lg)
+  #alert-link,
+  #alert-money-false
+    text-align: center
+    width: 440px
+
   .create-company-more-story-image,
   .create-company-more-story
     height: 236.25px
@@ -246,6 +254,10 @@
 
   .block-modal-inside
     width: 510px 
+    height: 293px
+
+  .block-modal-inside-2
+    width: 510px
 
   .block-modal-inside-iframe
     height: 225px
@@ -287,11 +299,9 @@
   .mb-30-size
     +margin-bottom()
 
-  .block-modal-inside-2,
   .block-modal-inside
-    margin-right: 15px
-    margin-left: 15px
-    width: auto
+    margin-right: auto
+    margin-left: auto
 
   .bloggers-margin-size
     +margin-bottom()
@@ -307,14 +317,6 @@
     padding-top: 15px
     padding-bottom: 0
  
-  .block-modal-inside-4,
-  .block-modal-inside-3
-    padding: 30px
-    width: 440px 
-    .block-modal-inside-btn
-      margin-right: -15px
-      margin-top: -15px
-
   .block-modal-start-inside
     padding: 30px
     width: 440px 
@@ -376,12 +378,8 @@
 
   .block-modal-pay-inside,
   .block-modal-start-inside,
-  .block-modal-inside-2,
   .block-modal-inside
     padding: 15px
-
-  .block-modal-inside
-    height: fit-content
 
   .block-modal-inside-iframe
     height: 175px
@@ -424,9 +422,7 @@
 @media (max-width: $sm)
   .block-modal-pay-inside-2,
   .block-modal-pay-inside,
-  .block-modal-start-inside,
-  .block-modal-inside-4, 
-  .block-modal-inside-3
+  .block-modal-start-inside
     margin-right: 15px
     margin-left: 15px
     padding: 15px
@@ -438,6 +434,14 @@
       margin-right: 0
       margin-top: 0
 
+  .block-modal-inside
+    width: 330px
+    height: 238px
+
+  .block-modal-inside-2
+    width: 330px
+    height: 498px
+
   .block-modal-start-inside
     width: 330px
     height: 185px
@@ -447,6 +451,14 @@
     width: 330px
     height: 290px
     margin: auto
+
+  #alert-link,
+  #alert-money-false,
+  #alert-money-true
+    width: 330px
+
+  #alert-money-true
+    text-align: center
 
   .block-modal-pay-inside-2
     width: 330px

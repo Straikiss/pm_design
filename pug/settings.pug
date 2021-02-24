@@ -9,6 +9,10 @@ html(lang="ru")
     link(rel="shortcut icon" href="img/fav/pm-fav.png")
     link(rel="stylesheet" href="css/main.css")
   body
+    #alert-money-false
+      p <i class="bi bi-exclamation-circle svg"></i> Запрошенная сумма превышает доступный лимит средств!
+    #alert-money-true
+      p <i class="bi bi-check-circle svg"></i> Запрос на вывод средств успешно отправлен!
     .header
       .container-fluid
         .row
@@ -122,10 +126,6 @@ html(lang="ru")
                   input.input-def(placeholder="email@mail.ru")
             .margin
               button.settings-btn Сохранить
-            //- .row
-            //-   .col-xl-5.offset-xl-7.col-lg-6.offset-lg-6.col-md-4.offset-md-8.col-sm-5.offset-sm-7.col-8.offset-2.margin
-            //-     button.mt-10.hover-purple.bb(onclick="openbox('settings-filtr');") 
-            //-       <i class="bi bi-person-plus svg color-purple"></i> Для юридических лиц
           .col-xl-6.col-lg-6.col-md-12.order-1
             .block-settings.block-def
               .row
@@ -161,8 +161,8 @@ html(lang="ru")
                 .col-xl-6.col-lg-6.col-md-6.col-sm-6.col-12
                   p.block-settings-title-unitpay 
                     <i class="bi bi-shield-check svg color-purple"></i> Доступно 5 000 ₽ 
-              input.input-def.text-center(placeholder="Сумма к выводу ₽")
-              button.settings-button Вывести
+              input#input.input-def.text-center(placeholder="Сумма к выводу ₽")
+              button.settings-button(onclick="GetMoney();") Вывести
             .block-settings.block-def
               p.block-settings-title-links 
                 <i class="bi bi-archive svg color-purple"></i> Полезные ссылки 

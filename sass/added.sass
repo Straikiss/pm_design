@@ -42,15 +42,20 @@ ul li:after
   right: 0
 
 ul li a 
-  text-decoration: none
-  display: flex
-  align-items: center
   flex-direction: column
+  text-decoration: none
+  cursor: not-allowed
+  align-items: center
   color: inherit
+  display: flex
 
 ul li.active .number 
   background: $purple-bg
   color: $white
+
+ul li.active 
+  a
+    cursor: pointer
 
 ul li:hover
   +opacity()

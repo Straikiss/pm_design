@@ -55,3 +55,38 @@ label
 .input-radio:checked ~ .checkmark
   background: $purple-bg
   opacity: 1
+
+#alert-money-true,
+#alert-money-false,
+#alert-link,
+#alert-task
+  background: $purple-bg
+  visibility: hidden
+  position: fixed
+  color: $white
+  padding: 15px
+  margin: auto
+  left: 225px
+  z-index: 2
+  right: 0
+  top: 95px
+  +border-radius()
+
+#alert-task
+  width: 310px
+
+#alert-link
+  width: 501px
+
+#alert-money-false
+  width: 496px
+
+#alert-money-true
+  background: $green-bg
+  width: 396px
+
+#alert-money-true.alert-open,
+#alert-money-false.alert-open,
+#alert-task.alert-open,
+#alert-link.alert-open
+  visibility: visible

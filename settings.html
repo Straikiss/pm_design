@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+    <div id="alert-money-false">
+      <p><i class="bi bi-exclamation-circle svg"></i> Запрошенная сумма превышает доступный лимит средств!</p>
+    </div>
+    <div id="alert-money-true">
+      <p><i class="bi bi-check-circle svg"></i> Запрос на вывод средств успешно отправлен!</p>
+    </div>
     <div class="header">
       <div class="container-fluid">
         <div class="row">
@@ -168,8 +174,8 @@
                      <i class="bi bi-shield-check svg color-purple"></i> Доступно 5 000 ₽ </p>
                 </div>
               </div>
-              <input class="input-def text-center" placeholder="Сумма к выводу ₽">
-              <button class="settings-button">Вывести</button>
+              <input class="input-def text-center" id="input" placeholder="Сумма к выводу ₽">
+              <button class="settings-button" onclick="GetMoney();">Вывести</button>
             </div>
             <div class="block-settings block-def">
               <p class="block-settings-title-links">
