@@ -13,6 +13,8 @@ html(lang="ru")
       p <i class="bi bi-exclamation-circle svg"></i> Запрошенная сумма превышает доступный лимит средств!
     #alert-money-true
       p <i class="bi bi-check-circle svg"></i> Запрос на вывод средств успешно отправлен!
+    #alert-money-pay
+      p <i class="bi bi-exclamation-circle svg"></i> Минимальная сумма пополнения 500₽!
     .header
       .container-fluid
         .row
@@ -78,7 +80,7 @@ html(lang="ru")
                   input.input-def(placeholder="#insta_my_tag")
                   p.input-def-title Регион
                   input.input-def.margin(placeholder="Введите названия и выберите город из списка")
-              .settings-more 
+              .settings-more
                 button.text-left(onclick="openbox('settings-company');") Юридическое лицо
                   <i class="bi bi-caret-down created-company-svg cursor-pointer"></i>
                 .settings-company(style="display:none;")
@@ -135,7 +137,7 @@ html(lang="ru")
                 .col-xl-6.col-lg-6.col-md-6.col-sm-6.col-12
                   p.block-settings-title-unitpay 
                     <i class="bi bi-shield-check svg color-purple"></i> UnitPay Касса
-              input.input-def.text-center(placeholder="Сумма пополнения ₽")
+              input#input-2.input-def.text-center(placeholder="Сумма пополнения ₽")
               .row
                 .col-xl-3.col-lg-3.col-md-3.col-sm-3.col-4
                   img.payment(src="img/payment/mastercard.png" draggable="false")
@@ -152,7 +154,7 @@ html(lang="ru")
                   img.payment(src="img/payment/apple.png" draggable="false")
                 .col-xl-3.col-lg-3.col-md-3.col-sm-3.col-4
                   img.payment(src="img/payment/google.png" draggable="false")
-              button.settings-button Пополнить
+              button.settings-button(onclick="PayMoney();") Пополнить
             .block-settings.block-def
               .row
                 .col-xl-6.col-lg-6.col-md-6.col-sm-6.col-12

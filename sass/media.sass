@@ -77,7 +77,8 @@
   #alert-task, 
   #alert-link,
   #alert-money-false,
-  #alert-money-true
+  #alert-money-true,
+  #alert-money-pay
     left: 0
 
   .main
@@ -328,20 +329,23 @@
   .block-modal-pay-inside
     padding: 30px
     width: 440px 
-    height: 301px
+    height: 331px
     .block-modal-inside-btn
       margin-right: -15px
-      margin-top: -15px
+      margin-top: -45px
+    .pay-modal-bg
+      margin-top: -60px
 
   .block-modal-pay-inside-2
     padding: 30px
     width: 440px 
-    height: 255px
+    height: 285px
     .block-modal-inside-btn
       margin-right: -15px
-      margin-top: -15px
+      margin-top: -45px
+    .pay-modal-bg
+      margin-top: -60px
 
-  .pay-modal-bg,
   .modal-svg
     display: none
 
@@ -429,7 +433,6 @@
     width: auto
     h1.margin
       margin-bottom: 15px
-      margin-left: 23px
     .block-modal-inside-btn
       margin-right: 0
       margin-top: 0
@@ -443,27 +446,46 @@
     height: 498px
 
   .block-modal-start-inside
+    margin-right: auto
+    margin-left: auto
     width: 330px
-    height: 185px
-    margin: auto
+    height: 196px
+    .block-modal-inside-btn
+      margin-top: -45px
+    h1
+      margin-left: 23px
 
   .block-modal-pay-inside
+    margin-right: auto
+    margin-left: auto
     width: 330px
     height: 290px
-    margin: auto
+    .block-modal-inside-btn
+      margin-right: 0
+      margin-top: -45px
+    .pay-modal-bg
+      margin-top: -45px
 
   #alert-link,
   #alert-money-false,
-  #alert-money-true
+  #alert-money-true,
+  #alert-money-pay
     width: 330px
 
-  #alert-money-true
+  #alert-money-true,
+  #alert-money-pay
     text-align: center
 
   .block-modal-pay-inside-2
+    margin-right: auto
+    margin-left: auto
     width: 330px
-    height: 244px
-    margin: auto
+    height: 247px
+    .block-modal-inside-btn
+      margin-right: 0
+      margin-top: -45px
+    .pay-modal-bg
+      margin-top: -45px
 
   .bloggers-list-inside
     max-height: calc(100vh - 360px)
@@ -598,3 +620,25 @@
 
   .payment-none-2
     display: block
+
+  .block-modal-start-inside .pay-modal-bg
+    background: $green-bg
+    display: flex
+    margin-top: -45px
+    .bi-gem
+      &::before
+        vertical-align: bottom
+        margin-top: 17.5px
+        font-size: 25px
+        color: $white
+        height: 40px
+  
+  .block-modal-pay-inside-2,
+  .block-modal-pay-inside,
+  .block-modal-start
+    h1 
+      font-size: 17px
+    h2
+      font-size: 15px
+    p 
+      font-size: 14px

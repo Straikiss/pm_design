@@ -61,46 +61,63 @@ function ChangeImage(Link){document.getElementById('ImagePost').src=Link;}
 function ChangeLink(Link){document.getElementById('ChangeLink').href=Link;}
 function OpenModal(ModalName){document.getElementById(ModalName).style.display='block';}
 
-function OpenAlert(AlertName){
-  var Alert = document.getElementById(AlertName);
-  Alert.className = "alert-open";
-  setTimeout(function(){Alert.className = Alert.className.replace("alert-open", "");}, 2000);
+function OpenAlert(AlertName)
+{
+  var Alert = document.getElementById(AlertName)
+  Alert.className = 'alert-open'
+  setTimeout(function()
+  {
+    Alert.className = Alert.className.replace('alert-open', '')
+  }, 2000)
 }
 
-function NextStep(NextStepUrl){
-  var Textarea = document.getElementById("textarea");
-  var Input1 = document.getElementById("input-1");
-  var Input2 = document.getElementById("input-2");
+function NextStep(NextStepUrl)
+{
+  var Textarea = document.getElementById('textarea')
+  var Input1 = document.getElementById('input-1')
+  var Input2 = document.getElementById('input-2')
 
-  if(Textarea.value == "")
+  if(Textarea.value == '') 
   {
-    OpenAlert('alert-task');
-    Textarea.scrollIntoView({block: "center"});
+    OpenAlert('alert-task')
+    Textarea.scrollIntoView({block: 'center'})
     Textarea.focus()
-  } 
-  else if(Input1.value == "" && Input2.value == ""){
-    OpenAlert('alert-link');
-    if(Input1.value == ""){
-      Input1.scrollIntoView({block: "center"});
+  }
+  else if(Input1.value == '' && Input2.value == '')
+  {
+    OpenAlert('alert-link')
+    if(Input1.value == '')
+    {
+      Input1.scrollIntoView({block: 'center'})
       Input1.focus()
     }
-    else{
-      Input2.scrollIntoView({block: "center"});
+    else
+    {
+      Input2.scrollIntoView({block: 'center'})
       Input2.focus()
     }
   }
-  else {
-    location.href = NextStepUrl;
+  else 
+    location.href = NextStepUrl
+}
+
+function PayMoney()
+{
+  var Input2 = document.getElementById('input-2')
+  if(Input2.value < 500)
+  {
+    OpenAlert('alert-money-pay')
+    Input2.value = '500'
+    Input2.focus()
   }
 }
 
-function GetMoney(){
-  var Input = document.getElementById("input");
-  if(Input.value > 5000){
-    OpenAlert('alert-money-false');
-  }
-  if(Input.value >=1 && Input.value <= 5000){
-    OpenAlert('alert-money-true');
-  }
-  Input.value = '';
+function GetMoney()
+{
+  var Input = document.getElementById('input')
+  if(Input.value >=1 && Input.value <= 5000)
+    OpenAlert('alert-money-true')
+  if(Input.value > 5000)
+    OpenAlert('alert-money-false')
+  Input.value = ''
 }
