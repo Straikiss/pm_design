@@ -13,8 +13,22 @@ html(lang="ru")
       p <i class="bi bi-exclamation-circle svg"></i> Запрошенная сумма превышает доступный лимит средств!
     #alert-money-true
       p <i class="bi bi-check-circle svg"></i> Запрос на вывод средств успешно отправлен!
+    #alert-money-request
+      p <i class="bi bi-exclamation-circle svg"></i> У Вас уже есть запрос выплаты, дождитесь его исполнения!
     #alert-money-pay
       p <i class="bi bi-exclamation-circle svg"></i> Минимальная сумма пополнения 500₽!
+    .block-modal#request-modal
+      .block-modal-request-inside
+        button.block-modal-inside-btn(onclick="CloseModal('request-modal');") 
+          <i class="bi bi-x-circle svg-2"></i>
+        input#input-request.input-def.margin(placeholder="Введите номер карты: 16-20 цифр")
+        .row 
+          .col-xl-4.offset-xl-4.col-lg-4.offset-lg-4.col-md-4.offset-md-4.col-sm-4.offset-sm-4.offset-0.col-6
+            button.block-create-company-link(onclick="CheckGetMoney();") 
+              <i class="bi bi-plus-circle svg-3"></i> Вывести
+          .col-xl-4.col-lg-4.col-md-4.col-sm-4.col-6
+            button.created-company-delete(onclick="CloseModal('request-modal');") 
+              <i class="bi bi-x-circle svg-3"></i> Отмена
     .header
       .container-fluid
         .row

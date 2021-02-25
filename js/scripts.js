@@ -116,8 +116,20 @@ function GetMoney()
 {
   var Input = document.getElementById('input')
   if(Input.value >=1 && Input.value <= 5000)
-    OpenAlert('alert-money-true')
+    OpenModal('request-modal')
   if(Input.value > 5000)
     OpenAlert('alert-money-false')
   Input.value = ''
+}
+
+function CheckGetMoney()
+{
+  var InputRequest = document.getElementById('input-request')
+  if(InputRequest.value == '')
+    InputRequest.focus()
+  else
+  {
+    OpenAlert('alert-money-true')
+    CloseModal('request-modal')
+  }
 }

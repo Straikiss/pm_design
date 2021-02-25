@@ -15,8 +15,28 @@
     <div id="alert-money-true">
       <p><i class="bi bi-check-circle svg"></i> Запрос на вывод средств успешно отправлен!</p>
     </div>
+    <div id="alert-money-request">
+      <p><i class="bi bi-exclamation-circle svg"></i> У Вас уже есть запрос выплаты, дождитесь его исполнения!</p>
+    </div>
     <div id="alert-money-pay">
       <p><i class="bi bi-exclamation-circle svg"></i> Минимальная сумма пополнения 500₽!</p>
+    </div>
+    <div class="block-modal" id="request-modal">
+      <div class="block-modal-request-inside">
+        <button class="block-modal-inside-btn" onclick="CloseModal('request-modal');">
+           <i class="bi bi-x-circle svg-2"></i></button>
+        <input class="input-def margin" id="input-request" placeholder="Введите номер карты: 16-20 цифр">
+        <div class="row"> 
+          <div class="col-xl-4 offset-xl-4 col-lg-4 offset-lg-4 col-md-4 offset-md-4 col-sm-4 offset-sm-4 offset-0 col-6">
+            <button class="block-create-company-link" onclick="CheckGetMoney();">
+               <i class="bi bi-plus-circle svg-3"></i> Вывести</button>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6">
+            <button class="created-company-delete" onclick="CloseModal('request-modal');">
+               <i class="bi bi-x-circle svg-3"></i> Отмена</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="header">
       <div class="container-fluid">
