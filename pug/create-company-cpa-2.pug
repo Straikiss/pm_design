@@ -15,19 +15,18 @@ html(lang="ru")
       .container-fluid
         .row
           .col-xl-6.col-lg-6.col-md-3.col-sm-5.col-4
-            a.header-link#hidden-link(href="#") 
+            .header-link#hidden-link 
               <i class="bi bi-list svg-3"></i> Меню
-            h1.header-title
-              a.heder-title-link(href="create-company-cpa-2.html") Новая рекламная кампания - Таргетинг
+            h1.header-title Новая рекламная кампания - Таргетинг
           .col-xl-6.col-lg-6.col-md-9.col-sm-7.col-8
             .header-status
               p.header-status-balance 0 ₽ <sup class="header-status-balance-money">5 000 ₽
               a.header-status-pay(href="settings.html") Пополнить баланс
     .main
       .aside#hidden-element
-        a.aside-logo(href="index.html")
+        .aside-logo
           <i class="aside-logo-svg"></i>
-        a.aside-link.hide-2#hidden-link-2(href="#") 
+        .aside-link.hide-2#hidden-link-2
           <i class="bi bi-x-circle svg"></i> Закрыть меню
         a.aside-link.aside-link-create(href="create-company.html") 
           <i class="bi bi-plus-circle svg"></i> Запустить рекламу
@@ -168,7 +167,7 @@ html(lang="ru")
             .col-xl-6.col-lg-6.col-md-12
               p.input-def-title.input-def-title-3.mt-0.tooltip.w-100  Выбор цели 
                 <i class="bi bi-question-circle svg color-purple"></i>
-                span.tooltip-text Платите только за реальные действия. Минимальная цена за 1 переход/тап - 15р, минимальная цена за 1 цель - 50р
+                span.tooltip-text Вы можете выбрать тип цели - оплата за тапы/переходы, если Вы рекламируете Вашу страницу в Инстаграм или за действия на Вашем сайте, если продвигаете внешнюю ссылку.
               .row
                 .col-xl-6.col-lg-7.col-md-6.col-sm-7
                   .create-company-select-type.input-select.mt-0(onclick="ChangeCofusTap()")
@@ -225,4 +224,3 @@ html(lang="ru")
                 .col-5.offset-2
                   a.block-create-company-link(href="create-company-cpa-3.html") Готово
     script(src="js/scripts.js")
-    script(src="js/index.js")

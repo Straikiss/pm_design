@@ -13,19 +13,18 @@ html(lang="ru")
       .container-fluid
         .row
           .col-xl-6.col-lg-6.col-md-3.col-sm-5.col-4
-            a.header-link#hidden-link(href="#") 
+            .header-link#hidden-link
               <i class="bi bi-list svg-3"></i> Меню
-            h1.header-title
-              a.heder-title-link(href="created-company-auto-done.html") Рекламная кампания - Подробно
+            h1.header-title Рекламная кампания - Подробно
           .col-xl-6.col-lg-6.col-md-9.col-sm-7.col-8
             .header-status
               p.header-status-balance 0 ₽ <sup class="header-status-balance-money">5 000 ₽
               a.header-status-pay(href="settings.html") Пополнить баланс
     .main
       .aside#hidden-element
-        a.aside-logo(href="index.html")
+        .aside-logo
           <i class="aside-logo-svg"></i>
-        a.aside-link.hide-2#hidden-link-2(href="#") 
+        .aside-link.hide-2#hidden-link-2 
           <i class="bi bi-x-circle svg"></i> Закрыть меню
         a.aside-link.aside-link-create(href="create-company.html") 
           <i class="bi bi-plus-circle svg"></i> Запустить рекламу
@@ -121,6 +120,20 @@ html(lang="ru")
               p.mb-10.color-gray Регион: <span class="float-right color-black">Россия
               p.mb-10.color-gray Тематика: <span class="float-right color-black">Любая
               br
+          | <!-- переход/тап по ссылке -->
+          .col-xl-6.col-lg-6.margin 
+            .block-def 
+              h2
+                <i class="bi bi-award svg-2 color-purple"></i> Цель рекламной кампании
+              p.mt-20.color-gray Переход/тап по ссылке/профилю: <span class="float-right color-black">15₽
+          | <!-- цель -->
+          .col-xl-6.col-lg-6.margin 
+            .block-def 
+              h2
+                <i class="bi bi-award svg-2 color-purple"></i> Цель рекламной кампании
+              p.mt-20.color-gray.tooltip.w-100 Достижение цели на сайте: <i class="bi bi-question-circle svg color-purple"></i> 
+                <span class="tooltip-text"> Цель на сайте может быть как: регистрация, пополнение баланса, покупка, добавление комментария.</span>
+                <span class="float-right color-black">50₽
           .col-12.margin
             .block-def 
               h2 
@@ -145,7 +158,7 @@ html(lang="ru")
                   th Переходов/Тапов
                   th Цель
                   th Цена
-                  - for (i = 0; i < 10; i++)
+                  - for (i = 0; i < 3; i++)
                     tr
                       td                         
                         .created-company-table-flex
@@ -167,7 +180,7 @@ html(lang="ru")
                       td 100
                       td <i class="bi bi-dash svg color-purple"></i>
                       td 1.000₽
-            - for (i = 0; i < 10; i++)
+            - for (i = 0; i < 3; i++)
               .created-company-mobile
                 .created-company-mobile-inside         
                   .created-company-table-flex

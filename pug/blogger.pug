@@ -9,23 +9,30 @@ html(lang="ru")
     link(rel="shortcut icon" href="img/fav/pm-fav.png")
     link(rel="stylesheet" href="css/main.css")
   body
+    #alert-add-to-favorite
+      p <i class="bi bi-check-circle svg"></i> Блогер добавлен в избранное для быстрого поиска в списке блогеров и при создании рекламной кампании в ручном режиме!
+    #alert-remove-from-favorite
+      p <i class="bi bi-x-circle svg"></i> Блогер убран из избранное для быстрого поиска в списке блогеров и при создании рекламной кампании в ручном режиме!
+    #alert-add-to-company
+      p <i class="bi bi-check-circle svg"></i> Блогер добавлен в Вашу уже созданную кампанию!
+    #alert-remove-from-company
+      p <i class="bi bi-x-circle svg"></i> Блогер убран из Вашей уже созданной кампанию!
     .header
       .container-fluid
         .row
           .col-xl-6.col-lg-6.col-md-3.col-sm-5.col-4
-            a.header-link#hidden-link(href="#") 
+            .header-link#hidden-link
               <i class="bi bi-list svg-3"></i> Меню
-            h1.header-title
-              a.heder-title-link(href="blogger.html") Блогер
+            h1.header-title Блогер
           .col-xl-6.col-lg-6.col-md-9.col-sm-7.col-8
             .header-status
               p.header-status-balance 0 ₽ <sup class="header-status-balance-money">5 000 ₽
               a.header-status-pay(href="settings.html") Пополнить баланс
     .main
       .aside#hidden-element
-        a.aside-logo(href="index.html")
+        .aside-logo
           <i class="aside-logo-svg"></i>
-        a.aside-link.hide-2#hidden-link-2(href="#") 
+        .aside-link.hide-2#hidden-link-2
           <i class="bi bi-x-circle svg"></i> Закрыть меню
         a.aside-link.aside-link-create(href="create-company.html") 
           <i class="bi bi-plus-circle svg"></i> Запустить рекламу
@@ -57,15 +64,15 @@ html(lang="ru")
                   .row
                     .col-xl-6.col-lg-6
                       span.favorite.block-blogger-card-favorite
-                        span.favorite-add
+                        span.favorite-add(onclick="OpenAlert('alert-add-to-favorite');")
                           <i class="bi bi-plus-circle svg-4"></i> в избранное
-                        span.favorite-remove
+                        span.favorite-remove(onclick="OpenAlert('alert-remove-from-favorite');")
                           <i class="bi bi-x-circle svg-4"></i> из избранного
                     .col-xl-6.col-lg-6
                       span.company.block-blogger-card-favorite
-                        span.company-add
+                        span.company-add(onclick="OpenAlert('alert-add-to-company');")
                           <i class="bi bi-plus-circle svg-4"></i> в кампанию
-                        span.company-remove
+                        span.company-remove(onclick="OpenAlert('alert-remove-from-company');")
                           <i class="bi bi-x-circle svg-4"></i> из кампании
                   p.block-blogger-card-head.block-select-city-body Имя аккаунта
                   p Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎
@@ -103,7 +110,9 @@ html(lang="ru")
                       p.block-blogger-card-head
                         <i class="bi bi-briefcase svg-mr svg color-purple"></i> Личный блог
                       p.block-blogger-card-body-2 Тематика
-                  p.block-blogger-card-head.block-select-city-body Стоимость
+                  p.block-blogger-card-head.block-select-city-body.tooltip.w-100 Стоимость 
+                    <i class="bi bi-question-circle svg color-purple"></i>
+                    span.tooltip-text Цена формируется исходя из просмотров рекламы реальной, не ненакрученной аудитории блогера.
                   .row
                     .col-xl-6.col-lg-6.col-md-6.col-sm-6.col-12
                       .block-blogger-card-price

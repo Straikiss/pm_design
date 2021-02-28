@@ -13,19 +13,18 @@ html(lang="ru")
       .container-fluid
         .row
           .col-xl-6.col-lg-6.col-md-3.col-sm-5.col-4
-            a.header-link#hidden-link(href="#") 
+            .header-link#hidden-link
               <i class="bi bi-list svg-3"></i> Меню
-            h1.header-title
-              a.heder-title-link(href="created-company-auto-not-paid.html") Рекламная кампания - Подробно
+            h1.header-title Рекламная кампания - Подробно
           .col-xl-6.col-lg-6.col-md-9.col-sm-7.col-8
             .header-status
               p.header-status-balance 0 ₽ <sup class="header-status-balance-money">5 000 ₽
               a.header-status-pay(href="settings.html") Пополнить баланс
     .main
       .aside#hidden-element
-        a.aside-logo(href="index.html")
+        .aside-logo
           <i class="aside-logo-svg"></i>
-        a.aside-link.hide-2#hidden-link-2(href="#") 
+        .aside-link.hide-2#hidden-link-2
           <i class="bi bi-x-circle svg"></i> Закрыть меню
         a.aside-link.aside-link-create(href="create-company.html") 
           <i class="bi bi-plus-circle svg"></i> Запустить рекламу
@@ -142,7 +141,7 @@ html(lang="ru")
             .block-def-4
               h2.margin Выбранные блогеры для рекламы <span class=" blogger-span"> 15
               .row
-                - for (i=0; i < 15; i++)
+                - for (i=0; i < 3; i++)
                   .col-xl-4.col-lg-6.col-md-6
                     .block-blogger.padding
                       .row
@@ -177,6 +176,9 @@ html(lang="ru")
                               p.mb-5.text-align Путешествия/отдых
                             .col-12
                               p.block-blogger-see Рекламу увидят: 153 чел.
+                .col-xl-2.offset-xl-5.col-lg-2.offset-lg-5.col-md-4.offset-md-4.col-sm-4.offset-sm-4.col-6.offset-3.margin
+                  button.created-company-edit 
+                    <i class="bi bi-arrow-repeat svg-3"></i> Больше
           .col-xl-2.offset-xl-10.col-lg-2.offset-lg-10.col-md-3.offset-md-9.col-sm-4.offset-sm-8.col-6.offset-6.margin 
             a.created-company-delete(href="") 
               <i class="bi bi-archive svg-3"></i> Удалить

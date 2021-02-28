@@ -13,19 +13,18 @@ html(lang="ru")
       .container-fluid
         .row
           .col-xl-6.col-lg-6.col-md-3.col-sm-5.col-4
-            a.header-link#hidden-link(href="#") 
+            .header-link#hidden-link
               <i class="bi bi-list svg-3"></i> Меню
-            h1.header-title
-              a.heder-title-link(href="create-company.html") Новая рекламная кампания
+            h1.header-title Новая рекламная кампания
           .col-xl-6.col-lg-6.col-md-9.col-sm-7.col-8
             .header-status
               p.header-status-balance 0 ₽ <sup class="header-status-balance-money">5 000 ₽
               a.header-status-pay(href="settings.html") Пополнить баланс
     .main
       .aside#hidden-element
-        a.aside-logo(href="index.html")
+        .aside-logo
           <i class="aside-logo-svg"></i>
-        a.aside-link.hide-2#hidden-link-2(href="#") 
+        .aside-link.hide-2#hidden-link-2 
           <i class="bi bi-x-circle svg"></i> Закрыть меню
         a.aside-link.aside-link-create(href="create-company.html") 
           <i class="bi bi-plus-circle svg"></i> Запустить рекламу
@@ -92,7 +91,9 @@ html(lang="ru")
                           span.checkmark
                           p.block-create-company-select-title Умный подбор
                           p.block-create-company-select-text Система PostMarket автоматически подберет лучших Вам блогеров согласно Вашим параметрам и требованиям к рекламной кампании.
-                          p.color-gray.block-create-company-select-title-2 Бюджет от: 4 990₽
+                          p.color-gray.block-create-company-select-title-2.tooltip.w-100 Бюджет от: 4 990₽ 
+                            <i class="bi bi-question-circle svg color-purple"></i>
+                              span.tooltip-text Бюджет - это минимальная сумма пополнения кампании.
                 .block-create-company-select
                   .row
                     .col-xl-2.col-lg-2.col-md-2.col-sm-2.col-2
@@ -112,7 +113,9 @@ html(lang="ru")
                           span.checkmark
                           p.block-create-company-select-title Самостоятельно
                           p.block-create-company-select-text Вы сами подберете понравившихся блогеров. Для этого нажмите Выбрать исполнителей и добавьте понравившихся.
-                          p.color-gray.block-create-company-select-title-2 Бюджет от: 4 990₽
+                          p.color-gray.block-create-company-select-title-2.tooltip.w-100 Бюджет от: 4 990₽ 
+                            <i class="bi bi-question-circle svg color-purple"></i>
+                              span.tooltip-text Бюджет - это минимальная сумма пополнения кампании.
                 .block-create-company-select
                   .row
                     .col-xl-2.col-lg-2.col-md-2.col-sm-2.col-2
@@ -134,7 +137,9 @@ html(lang="ru")
                           span.checkmark
                           p.block-create-company-select-title Режим PRO
                           p.block-create-company-select-text Хотите, чтобы рекламная кампания прошла с максимальным эффектом? Доверьте создание профессионалам PostMarket.
-                          p.color-gray.block-create-company-select-title-2 Бюджет от: 15 000₽
+                          p.color-gray.block-create-company-select-title-2.tooltip.w-100 Бюджет от: 15 000₽ 
+                            <i class="bi bi-question-circle svg color-purple"></i>
+                              span.tooltip-text Бюджет - это минимальная сумма пополнения кампании. Все услуги по созданию кампании нашими специалистами бесплатны.
                 .block-create-company-select
                   .row
                     .col-xl-2.col-lg-2.col-md-2.col-sm-2.col-2
@@ -147,8 +152,10 @@ html(lang="ru")
                           input.input-radio(type="radio" id="cpa" name="campType" value="3")
                           span.checkmark
                           p.block-create-company-select-title CPA
-                          p.block-create-company-select-text Платите за конкретный результат. Выберите за что платить сами. За клики, переходы или за свои собственные цели, такие как регистрации или продажи. Регион только Россия или Москва.
-                          p.color-gray.block-create-company-select-title-2 Бюджет от: 20 000₽
+                          p.block-create-company-select-text Реклама в режиме CPA - самая выгодная модель сотрудничества с блогерами, которая не несет никаких финансовых рисков. Вы платите за конкретный результат, а не за факт рекламы. Рекламный бюджет идёт только на оплату нужных Вам целей (продаж, регистраций и т.д.). Активный срок рекламной кампании 3 недели. После чего Вы можете вывести оставшиеся деньги с депозита или продлить кампанию.
+                          p.color-gray.block-create-company-select-title-2.tooltip.w-100 Бюджет от: 20 000₽ 
+                            <i class="bi bi-question-circle svg color-purple"></i>
+                              span.tooltip-text Бюджет - это минимальная сумма пополнения рекламной кампании, которая будет расходоваться по факту достижения целей.
             .col-xl-4.offset-xl-1.col-lg-4.offset-lg-1.col-md-12
               .block-create-company-3.margin
                   <svg width="280" height="450" viewBox="0 0 249 452" fill="none">
