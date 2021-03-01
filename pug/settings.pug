@@ -124,12 +124,13 @@ html(lang="ru")
                   p.input-def-title.mt-0 Ник
                   input.input-def(placeholder="Ваш ник/псевдоним")
                   p.input-def-title Метод привлечения клиентов
-                  select.input-def
+                  select.input-def(onchange="AddMoreTarget(this)")
                     option(value="0" selected="selected") Cсылки в социальных сетях
                     option(value="1") Контекстная реклама
                     option(value="2") Реклама с помощью Facebook
                     option(value="3") Свои интернет сайты
                     option(value="4") Другое
+                  input.input-def.mt-10#target(style="display: none;" placeholder="Опишите свой способ привлечения клиентов")
                   p.input-def-title Введите средство связи, по которому с Вами в течении нескольких часов свяжется менеджер и поможет начать работу
                   select.input-def
                     option(value="0" selected="selected") Telegram

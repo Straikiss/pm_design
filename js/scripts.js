@@ -151,3 +151,15 @@ function SendPromo()
     OpenAlert('alert-send-promo')
   }
 }
+
+function AddMoreTarget(Value)
+{
+  var Target = document.getElementById('target')
+  if(Value.value == 4)
+    Target.style.display = 'block'
+  else 
+  {
+    Target.style.display = 'none'
+    Target.value = ''
+  }
+}

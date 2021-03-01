@@ -9,6 +9,10 @@ html(lang="ru")
     link(rel="shortcut icon" href="img/fav/pm-fav.png")
     link(rel="stylesheet" href="css/main.css")
   body
+    #alert-task
+      p <i class="bi bi-exclamation-circle svg"></i> Заполните поле описание задачи!
+    #alert-link
+      p <i class="bi bi-exclamation-circle svg"></i> Введите профиль в инстаграм или ссылку на внешний сайт!  
     .header
       .container-fluid
         .row
@@ -105,7 +109,7 @@ html(lang="ru")
                       span.checkmark
                       p Свой вариант
                 p.input-def-title.input-def-title-3 Описание задачи
-                textarea.create-company-textarea(placeholder="Опишите дополнительные пожелания к выполнению задачи.")
+                textarea#textarea.create-company-textarea(placeholder="Опишите дополнительные пожелания к выполнению задачи.")
                 p.input-def-title.input-def-title-3 Текст публикации (не обязательно)
                 textarea.create-company-textarea(placeholder="Конкретный текст публикации.")
                 p.input-def-title.input-def-title-3 Фото или видео для публикации (не обязательно)
@@ -123,11 +127,11 @@ html(lang="ru")
                             <i class="bi bi-x create-company-svg top-30"></i>
                 p.input-def-title-2 Фото: .jpg, .png, .gif 600x600, 720x1280, 600x1067 (не больше 100MB) <br> Видео: .mp4 900x1600, 720x1280, 600x1067 (не больше 100MB)
                 p.input-def-title Профиль в Инстаграм (не обязательно)
-                input.input-def(placeholder="instagram")
+                input#input-1.input-def(placeholder="instagram")
                 p.input-def-title.tooltip.w-100 Ссылка на сайт 
                   <i class="bi bi-question-circle svg color-purple"></i>
                   span.tooltip-text Если Вы хотите указать сайт, то Вас смогут рекламировать только блогеры с аудиторией от 10 000 подписчиков.
-                input.input-def(placeholder="https://site.ru")
+                input#input-2.input-def(placeholder="https://site.ru")
                 p.input-def-title-2 Вы можете прорекламировать ссылку на свой сайт, которую блогер добавит в шапку своего профиля. Стоимость рекламы увеличится на 15%.
                 p.input-def-title Хэштег (не обязательно)
                 input.input-def(placeholder="#hashtag")
@@ -165,5 +169,5 @@ html(lang="ru")
                 .col-5
                   a.block-create-company-link(href="create-company.html") Назад
                 .col-5.offset-2
-                  a.block-create-company-link(href="create-company-cpa-2.html") Далее
+                  button.block-create-company-link(onclick="NextStep('create-company-cpa-2.html');") Далее
     script(src="js/scripts.js")

@@ -149,15 +149,15 @@ html(lang="ru")
                         span.checkmark
                         p Выбрать дату
                 input.input-def.mt-10(placeholder="11.11.2021")
-                p.input-def-title.input-def-title-3 Срок до
+                p.input-def-title.input-def-title-3 Срок действия
                 .row
-                  .col-xl-5.col-lg-6.col-md-5.col-sm-6
+                  .col-xl-6.col-lg-7.col-md-5.col-sm-6
                     .create-company-select-type.input-select.mt-0
                       label(for="CampTypeEnd1")
                         input.input-radio(type="radio" id="CampTypeEnd1" name="CampTypeEnd" value="0" checked)
                         span.checkmark
-                        p Без срока
-                  .col-xl-6.ml-m-2.col-lg-7.col-md-5.col-sm-5
+                        p Минимум (3 недели)
+                  .col-xl-6.ml-m-2.col-lg-5.col-md-5.col-sm-5
                     .create-company-select-type.input-select.mt-0
                       label(for="CampTypeEnd2")
                         input.input-radio(type="radio" id="CampTypeEnd2" name="CampTypeEnd" value="1")
@@ -181,9 +181,30 @@ html(lang="ru")
                       input.input-radio(type="radio" id="CampTypeFocus2" name="CampTypeFocus" value="1")
                       span.checkmark
                       p Цена за цель
-              input.input-def.text-center.mb-10.mt-10#ChangeFocus(placeholder="15")
-              #ChangeImagePreviewHide.none
-                p.text-center.margin
+              input.input-def.text-center.margin.mt-10#ChangeFocus(placeholder="15")
+              #ChangeImagePreviewHide.none.margin
+                .row 
+                  .col-6
+                    p.input-def-title.mt-0 Цель на сайте
+                    select.input-def(onchange="AddMoreTarget(this)")
+                      option(value="0" selected="selected") Регистрация
+                      option(value="1") Продажа
+                      option(value="2") Депозит
+                      option(value="3") Заполнение формы
+                      option(value="4") Другое
+                  .col-6
+                    p.input-def-title.mt-0 Тип связи
+                    select.input-def
+                      option(value="0" selected="selected") Telegram
+                      option(value="1") WhatsApp
+                      option(value="2") Viber
+                      option(value="3") Звонок
+                input.input-def.mt-10#target(style="display: none;" placeholder="Опишите другую цель на Вашем сайте")
+                p.input-def-title Телефона для связи
+                input.input-def(placeholder="+7 977 777 77 77")
+                p.input-def-title.input-def-title-3 Описание цели (не обязательно)
+                textarea.create-company-textarea.mb-10(placeholder="Опишите дополнительные пожелания к выполнению цели.")
+                p.text-center
                   a.bb.input-def-title.mt-0(href="http://postmarket.pro/article/cpa-manual" target="_blank") Инструкция по настройке postback уведомлений
               h2.mb-10 Бюджет
               .who-performs.margin
@@ -216,6 +237,8 @@ html(lang="ru")
                   <span class="irs-handle single" style="left: 0%;"><i></i><i></i><i></i></span>
                 </span>
                 input.js-range-slider.irs-hidden-input(type="text" name="my_range" value="" tabindex="-1" readonly="")
+              .block-create-company-3-bg.margin
+                p.text-center Реклама в режиме CPA не несет никаких финансовых рисков - Вы платите за фактический результат, а не за рекламу. Ваши деньги пойдут только на оплату нужных Вам целей(продаж, регистраций). Кампания активна 3 недели, после чего Вы можете вывести оставшиеся деньги с депозита или продлить кампанию!
           .row.mt-30
             .col-xl-6.col-lg-6.col-md-12
               .row

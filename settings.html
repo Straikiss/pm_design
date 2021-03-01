@@ -139,13 +139,14 @@
                   <p class="input-def-title mt-0">Ник</p>
                   <input class="input-def" placeholder="Ваш ник/псевдоним">
                   <p class="input-def-title">Метод привлечения клиентов</p>
-                  <select class="input-def">
+                  <select class="input-def" onchange="AddMoreTarget(this)">
                     <option value="0" selected="selected">Cсылки в социальных сетях</option>
                     <option value="1">Контекстная реклама</option>
                     <option value="2">Реклама с помощью Facebook</option>
                     <option value="3">Свои интернет сайты</option>
                     <option value="4">Другое</option>
                   </select>
+                  <input class="input-def mt-10" id="target" style="display: none;" placeholder="Опишите свой способ привлечения клиентов">
                   <p class="input-def-title">Введите средство связи, по которому с Вами в течении нескольких часов свяжется менеджер и поможет начать работу</p>
                   <select class="input-def">
                     <option value="0" selected="selected">Telegram</option>
