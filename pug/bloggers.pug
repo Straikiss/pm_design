@@ -18,7 +18,7 @@ html(lang="ru")
             h1.header-title Блогеры
           .col-xl-6.col-lg-6.col-md-9.col-sm-7.col-8
             .header-status
-              p.header-status-balance 0 ₽ <sup class="header-status-balance-money">5 000 ₽
+              p.header-status-balance 5000₽
               a.header-status-pay(href="settings.html") Пополнить баланс
     .main
       .aside#hidden-element
@@ -222,12 +222,11 @@ html(lang="ru")
                         input.input-radio(type="radio" id="CampType13" value="12")
                         span.checkmark
                         p.create-company-select-type Авто/Мото
-                    br.br-none
+                    p.input-def-title.input-def-title-3 По региону
+                    input.input-def(placeholder="Например: Москва")
                   .row
-                    .col-6
+                    .col-6.offset-6
                       button.block-first-company-button(onclick="openbox('settings-filtr');") Сбросить фильтр
-                    .col-6
-                      button.create-company-button(onclick="openbox('settings-filtr');") Применить
             #ChangeImagePreviewHide
             #BlockCreateSelf.none
               .row

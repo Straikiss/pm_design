@@ -16,7 +16,7 @@ html(lang="ru")
     .block-modal#chat-modal-1
       .block-modal-inside-2
         .row
-          .col-xl-12
+          .col-12
             button.block-modal-inside-btn(onclick="CloseModal('chat-modal-1');") 
               <i class="bi bi-x-circle svg-2"></i>
         p.input-def-title-3 Опишите промо материалы которые Вы хотите получить
@@ -31,13 +31,13 @@ html(lang="ru")
     .header
       .container-fluid
         .row
-          .col-xl-6.col-lg-6.col-md-3.col-sm-5.col-4
+          .col-lg-6.col-md-3.col-sm-5.col-4
             .header-link#hidden-link
               <i class="bi bi-list svg-3"></i> Меню
             h1.header-title Партнерская программа
-          .col-xl-6.col-lg-6.col-md-9.col-sm-7.col-8
+          .col-lg-6.col-md-9.col-sm-7.col-8
             .header-status
-              p.header-status-balance 0 ₽ <sup class="header-status-balance-money">5 000 ₽
+              p.header-status-balance 5000 ₽
               a.header-status-pay(href="settings.html") Пополнить баланс
     .main
       .aside#hidden-element
@@ -61,24 +61,24 @@ html(lang="ru")
           <i class="bi bi-box-arrow-right svg"></i> Выйти
       .container
         .row
-          .col-xl-6.col-lg-6
+          .col-lg-6
             .block-partner.block-def
               p.font-size-14 
                 <i class="bi bi-percent svg color-purple"></i> Тип привлечения рекламодателей
               h2.block-partner-title Процент с оплат кампаний <span class="color-purple">20%</span>
-          .col-xl-6.col-lg-6
+          .col-lg-6
             .block-partner-2.block-def
               p.font-size-14
                 <i class="bi bi-percent svg color-purple"></i> Тип привлечения блогеров
               h2.block-partner-title Процент с дохода блогера <span class="color-purple">10%</span>
-          .col-xl-12
+          .col-12
             p Ваша реферальная/партнерская ссылка
             .row.margin
               .col-xl-4.col-lg-5.col-md-6
                 button.block-partner-button.mb-0(onclick="OpenAlert('alert-copy-link');")
                   <i class="bi bi-link-45deg svg-4"></i> https://postmarket.pro/pid/4556
         .row
-          .col-xl-6.col-lg-6
+          .col-lg-6
             .block-def.margin
               p Если Вы агентство или СММ, то есть несколько сценариев работы, которые Вы можете использовать, чтобы получить свой процент со всех оплат Ваших клиентов. Оба варианта Вы можете совмещать между собой.
               .settings-more
@@ -91,9 +91,9 @@ html(lang="ru")
                   <i class="bi bi-caret-down created-company-svg cursor-pointer"></i>
                 .settings-second-plan(style="display:none;")
                   p Вам достаточно давать ссылку Вашим клиентам, они будут сами регистрироваться, создавать кампании, а Ваш процент будет отображаться у Вас на балансе.
-          .col-xl-6.col-lg-6
+          .col-lg-6
             .row
-              .col-xl-6.col-lg-6.col-md-6.col-sm-6
+              .col-sm-6
                 .block-def.margin
                   p.block-settings-stats 
                     <i class="bi bi-bar-chart svg color-purple"></i> Статистика
@@ -101,7 +101,7 @@ html(lang="ru")
                   p.block-partner-body-2 Рекламодателей: <span class="color-purple">0
                   p.block-partner-body-2 Партнеров: <span class="color-purple">0
                   button.w-auto.color-purple(onclick="openbox('settings-stats');") Полная статистика
-              .col-xl-6.col-lg-6.col-md-6.col-sm-6
+              .col-sm-6
                 .block-def.margin
                   p.block-settings-stats 
                     <i class="bi bi-wallet svg color-purple"></i> Доход
@@ -109,10 +109,10 @@ html(lang="ru")
                   p.block-partner-body-2 Баланс: <span class="color-orange">0 ₽
                   p.block-partner-body-2 В ожидании: <span class="color-orange">0 ₽
                   p За месяц: 0 ₽
-          .col-xl-12.partner-size.settings-stats(style="display:none;")
+          .col-12.partner-size.settings-stats(style="display:none;")
             h2.margin 
               <i class="bi bi-calendar svg-2 color-purple"></i> с 20.20.20 по 21.21.21
-          .col-xl-12.partner-size.settings-stats(style="display:none;")
+          .col-12.partner-size.settings-stats(style="display:none;")
             .partner-stats
               .table-size
                 table.table
@@ -152,10 +152,10 @@ html(lang="ru")
                     td.color-purple 100
                     td.color-purple 1.000₽
                     td.color-purple 20.20.20
-          .col-xl-12
+          .col-12
             h2.home-block-title 
               <i class="bi bi-archive svg-2 color-purple"></i> Промо материалы для привлечения рекламодателей
-          .col-xl-6.col-lg-6.margin
+          .col-lg-6.margin
             .block-def
               p Видео <button class="home-bloggers-title-link" onclick="openbox('show-videos-promoter');">все</button>
               .row.partner-show-pc
@@ -224,7 +224,7 @@ html(lang="ru")
                   span.block-settings-size 619кб
                   img.border-radius(src="partner/promoter/videos/preview/pm_promoter_preview_8.png" draggable="false")
                   a.input-def-title.mt-0.color-hover(href="partner/promoter/videos/story/pm_promoter_story_3.mp4" download) Скачать
-          .col-xl-6.col-lg-6.margin
+          .col-lg-6.margin
             .block-def
               p Баннеры <button class="home-bloggers-title-link" onclick="openbox('show-images-promoter');">все</button>
               .row.partner-show-pc
@@ -253,10 +253,10 @@ html(lang="ru")
                   span.block-settings-size 70.6кб
                   img.border-radius(src="partner/promoter/images/pm_promoter_banner_3.jpg" draggable="false")
                   a.input-def-title.mt-0.color-hover(href="partner/promoter/images/pm_promoter_banner_3.jpg" download) Скачать 
-          .col-xl-12
+          .col-12
             h2.home-block-title 
               <i class="bi bi-archive svg-2 color-purple"></i> Промо материалы для привлечения блогеров 
-          .col-xl-6.col-lg-6.margin
+          .col-lg-6.margin
             .block-def
               p Видео <button class="home-bloggers-title-link" onclick="openbox('show-videos-blogger');">все</button>
               .row.partner-show-pc
@@ -309,7 +309,7 @@ html(lang="ru")
                   span.block-settings-size 1.10мб
                   img.border-radius(src="partner/blogger/videos/preview/pm_blogger_preview_3.png" draggable="false")
                   a.input-def-title.mt-0.color-hover(href="partner/blogger/videos/story/pm_blogger_story_3.mp4" download) Скачать
-          .col-xl-6.col-lg-6.margin
+          .col-lg-6.margin
             .block-def
               p Баннеры <button class="home-bloggers-title-link" onclick="openbox('show-images-blogger');">все</button>
               .row.partner-show-pc
@@ -346,7 +346,7 @@ html(lang="ru")
                   span.block-settings-size 492кб
                   img.border-radius(src="partner/blogger/images/pm_blogger_banner_4.jpg" draggable="false")
                   a.input-def-title.mt-0.color-hover(href="partner/blogger/images/pm_blogger_banner_4.jpg" download) Скачать
-          .col-xl-12
+          .col-12
             .margin.text-align-center-size
               p.mb-10 Нет нужных промо?
                 .row

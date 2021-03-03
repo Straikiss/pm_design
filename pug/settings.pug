@@ -32,13 +32,13 @@ html(lang="ru")
     .header
       .container-fluid
         .row
-          .col-xl-6.col-lg-6.col-md-3.col-sm-5.col-4
+          .col-lg-6.col-md-3.col-sm-5.col-4
             .header-link#hidden-link 
               <i class="bi bi-list svg-3"></i> Меню
             h1.header-title Настройки
-          .col-xl-6.col-lg-6.col-md-9.col-sm-7.col-8
+          .col-lg-6.col-md-9.col-sm-7.col-8
             .header-status
-              p.header-status-balance 0 ₽ <sup class="header-status-balance-money">5 000 ₽
+              p.header-status-balance 5000₽
               a.header-status-pay(href="settings.html") Пополнить баланс
     .main
       .aside#hidden-element
@@ -70,15 +70,15 @@ html(lang="ru")
                     .settings-image
                       img(src="img/avatar/1.png" draggable="false")
                       <i class="bi bi-plus home-block-inside-svg"></i>
-                  .col-xl-8.col-lg-8.col-md-8.col-sm-8
+                  .col-sm-8
                     .row
                       .col-12
                         p.settings-title-login.color-purple.settings-login-overflow STRAIKISS.WEB@GMAIL.COM
-                      .col-xl-12.col-lg-12.col-md-12.col-sm-12.col-12
-                        button.settings-title-login.mt-10.hover-purple.bb.tooltip(onclick="openbox('settings-key');") Секретный ключ: 
+                      .col-12
+                        button.settings-title-login.hover-purple.bb.tooltip(onclick="openbox('settings-key');") Секретный ключ: 
                           <i class="bi bi-question-circle svg color-purple"></i>
                           span.tooltip-text Нужен для работы CPA по настройке postback уведомлений.
-                      .col-xl-12.col-lg-12.col-md-12.col-sm-12.col-12
+                      .col-12
                         p.settings-key.settings-title-login.color-purple.mt-10.text-center(style="display:none;") 5a94e4fb-58cb-4128-8224-8b3d46244823
             .block-def.margin
               .settings-more
@@ -142,39 +142,39 @@ html(lang="ru")
                   input.input-def(placeholder="email@mail.ru")
             .margin
               button.settings-btn Сохранить
-          .col-xl-6.col-lg-6.col-md-12.order-1
+          .col-lg-6.col-md-12.order-1
             .block-settings.block-def
               .row
-                .col-xl-6.col-lg-6.col-md-6.col-sm-6.col-12
+                .col-sm-6.col-12
                   p.block-settings-title-balance 
                     <i class="bi bi-wallet2 svg color-purple"></i> Пополнить баланс
-                .col-xl-6.col-lg-6.col-md-6.col-sm-6.col-12
+                .col-sm-6.col-12
                   p.block-settings-title-unitpay 
                     <i class="bi bi-shield-check svg color-purple"></i> UnitPay Касса
               input#input-2.input-def.text-center(placeholder="Сумма пополнения ₽")
               .row
-                .col-xl-3.col-lg-3.col-md-3.col-sm-3.col-4
+                .col-sm-3.col-4
                   img.payment(src="img/payment/mastercard.png" draggable="false")
-                .col-xl-3.col-lg-3.col-md-3.col-sm-3.col-4
+                .col-sm-3.col-4
                   img.payment(src="img/payment/yandex.png" draggable="false")
-                .col-xl-3.col-lg-3.col-md-3.col-sm-3.col-4
+                .col-sm-3.col-4
                   img.payment(src="img/payment/sberbank.png" draggable="false")
-                .col-xl-3.col-lg-3.col-md-3.col-sm-3.col-4.payment-none
+                .col-sm-3.col-4.payment-none
                   img.payment(src="img/payment/visa.png" draggable="false")
               .row
-                .col-xl-3.col-lg-3.col-md-3.col-sm-3.col-4.payment-none-2
+                .col-sm-3.col-4.payment-none-2
                   img.payment(src="img/payment/visa.png" draggable="false")
                 .col-xl-3.offset-xl-3.col-lg-3.offset-lg-3.col-md-3.offset-md-3.col-sm-3.offset-sm-3.col-4
                   img.payment(src="img/payment/apple.png" draggable="false")
-                .col-xl-3.col-lg-3.col-md-3.col-sm-3.col-4
+                .col-sm-3.col-4
                   img.payment(src="img/payment/google.png" draggable="false")
               button.settings-button(onclick="PayMoney();") Пополнить
             .block-settings.block-def
               .row
-                .col-xl-6.col-lg-6.col-md-6.col-sm-6.col-12
+                .col-sm-6.col-12
                   p.block-settings-title-balance 
                     <i class="bi bi-wallet2 svg color-purple"></i> Вывести средства
-                .col-xl-6.col-lg-6.col-md-6.col-sm-6.col-12
+                .col-sm-6.col-12
                   p.block-settings-title-unitpay 
                     <i class="bi bi-shield-check svg color-purple"></i> Доступно 5 000 ₽ 
               input#input.input-def.text-center(placeholder="Сумма к выводу ₽")

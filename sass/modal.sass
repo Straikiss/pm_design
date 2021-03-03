@@ -23,7 +23,7 @@
   margin: auto
   bottom: 0
   right: 0
-  left: 0
+  left: 225px
   top: 0
   +border-radius()
   .block-modal-inside-btn
@@ -61,7 +61,7 @@
   margin: auto
   bottom: 0
   right: 0
-  left: 0
+  left: 225px
   top: 0
   +border-radius()
 
@@ -142,3 +142,12 @@
   border-bottom: 1px solid $purple
   &:hover
     border-bottom: 1px solid $orange
+
+@media (max-width: $xl)
+  .block-modal-start-inside,
+  .block-modal-pay-inside-2,
+  .block-modal-pay-inside,
+  .block-modal-request-inside,
+  .block-modal-inside-2,
+  .block-modal-inside
+    left: 0

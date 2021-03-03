@@ -165,8 +165,6 @@ html(lang="ru")
                     <span class="irs-handle single" style="left: 95%;"></span>
                   </span>
                   input.js-range-slider.irs-hidden-input(type="text" name="my_range" value="" tabindex="-1" readonly="")
-                  p.input-def-title.input-def-title-3 По региону
-                  input.input-def(placeholder="Например: Москва")
               .col-xl-6.col-lg-6.col-md-6
                 .block-def
                   p.input-def-title.input-def-title-3.mt-0 Тематика аккаунта
@@ -235,11 +233,11 @@ html(lang="ru")
                       input.input-radio(type="radio" id="CampType13" value="12")
                       span.checkmark
                       p.create-company-select-type Авто/Мото
+                  p.input-def-title.input-def-title-3 По региону
+                  input.input-def(placeholder="Например: Москва")
                 .row
-                  .col-xl-6.col-lg-6.col-md-6.col-sm-6
-                    button.block-first-company-button(onclick="openbox('settings-filtr');") Сбросить
-                  .col-xl-6.col-lg-6.col-md-6.col-sm-6
-                    button.create-company-button(onclick="openbox('settings-filtr');") Применить           
+                  .col-6.offset-6
+                    button.block-first-company-button(onclick="openbox('settings-filtr');") Сбросить фильтр       
           #search.search.margin
             .row
               .col-xl-9.col-lg-9.col-md-8.col-sm-8.col-8

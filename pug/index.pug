@@ -46,13 +46,13 @@ html(lang="ru")
     .header
       .container-fluid
         .row
-          .col-xl-6.col-lg-6.col-md-3.col-sm-5.col-4
+          .col-lg-6.col-md-3.col-sm-5.col-4
             .header-link#hidden-link
               <i class="bi bi-list svg-3"></i> Меню
             h1.header-title Главная
-          .col-xl-6.col-lg-6.col-md-9.col-sm-7.col-8
+          .col-lg-6.col-md-9.col-sm-7.col-8
             .header-status
-              p.header-status-balance 0 ₽ <sup class="header-status-balance-money">5 000 ₽
+              p.header-status-balance 5000₽
               a.header-status-pay(href="settings.html") Пополнить баланс
     .main
       .aside#hidden-element
@@ -76,71 +76,68 @@ html(lang="ru")
           <i class="bi bi-box-arrow-right svg"></i> Выйти
       .container
         .row
-          .col-xl-7.col-lg-7.col-md-12
+          .col-lg-7.col-md-12
             .home-bloggers
               h2.home-bloggers-title Проверенных блогеров <a href="bloggers.html" class="color-purple"> 34 500
                 a.home-bloggers-title-link(href="bloggers.html") все
               .row
                 - for(i = 0; i < 8; i++)
-                  .col-xl-3.col-lg-3.col-md-3.col-sm-3.col-6
+                  .col-sm-3.col-6
                     a.home-bloggers-block(href="blogger.html")
                       p.home-bloggers-block-text Ksenia Dondukova
                       img.home-bloggers-block-image(src="img/bloggers/2.png" draggable="false")
                       p.home-bloggers-block-text 17 806
                       .home-bloggers-block-icons
-                        <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-                        <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-                        <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-                        <i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
-                        <i class="bi bi-star home-bloggers-block-icons-svg"></i>
-          .col-xl-5.col-lg-5
+                        - for(j = 0; j < 5; j++)
+                          <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+          .col-lg-5
             .row
-              .col-xl-12
+              .col-12
                 .home-company-create
                   h2.home-company-create-title Создайте рекламную кампанию. 
                   p.home-company-create-text Заполните форму, укажите все требуемые параметры и запустите рекламную кампанию.
                   a.home-company-create-button(href="create-company.html") Создать
-              .col-xl-6.col-lg-6.col-md-6.col-sm-6
+              .col-sm-6
                 .home-company
                   <i class="home-company-clock"></i>
                   h2.home-company-title Быстрое создание рекламной кампании!
                   p Быстрый старт Вашей рекламной кампании.
-              .col-xl-6.col-lg-6.col-md-6.col-sm-6
+              .col-sm-6
                 .home-company-2
                   <i class="home-company-search"></i>
                   h2.home-company-title PostMarket подберет блогеров для Вас.
                   p Не тратьте свое время на поиски блогеров.
-          .col-xl-12
+          .col-12
             h2.home-block-title
               <i class="bi bi-award svg-2 color-purple"></i> Лучший инструмент 2020 года по версии Russian Ad Solution
-          .col-xl-4.col-lg-4.col-md-4.col-sm-6
+          .col-md-4.col-sm-6
             .home-block
               img.home-block-inside-image(src="img/home/preview/1.png" draggable="false")
               p.home-block-inside-text Создайте рекламную кампанию в своем личном кабинете.
-          .col-xl-4.col-lg-4.col-md-4.col-sm-6
+          .col-md-4.col-sm-6
             .home-block
               img.home-block-inside-image(src="img/home/preview/2.png" draggable="false")
               p.home-block-inside-text PostMarket подберет лучших блогеров для Вашей кампании.
-          .col-xl-4.col-lg-4.col-md-4.col-sm-6
+          .col-md-4.col-sm-6
             .home-block
               img.home-block-inside-image(src="img/home/preview/3.png" draggable="false")
               p.home-block-inside-text Вас рекомендуют лидеры, которым доверяют Ваши клиенты.
-          .col-xl-12
+          .col-12
             h2.home-block-title
               <i class="bi bi-newspaper svg-2 color-purple"></i> Информационные материалы PostMarket
-          .col-xl-4.col-lg-4.col-md-4.col-sm-6
+          .col-md-4.col-sm-6
             .home-block-2.cursor-pointer(onclick="OpenModal('video-modal-1');")
               .home-block-inside
                 img.home-block-inside-image(src="img/home/case/1.png" draggable="false")
                 <i class="bi bi-play home-block-inside-svg"></i>
                 p.home-block-inside-text Обзор сервиса маркетологом Дамиром Халиловым
-          .col-xl-4.col-lg-4.col-md-4.col-sm-6
+          .col-md-4.col-sm-6
             .home-block-2.cursor-pointer(onclick="OpenModal('video-modal-2');")
               .home-block-inside
                 img.home-block-inside-image(src="img/home/case/2.png" draggable="false")
                 <i class="bi bi-play home-block-inside-svg"></i>
                 p.home-block-inside-text Обзор сервиса маркетологом Антоном Сабуровым
-          .col-xl-4.col-lg-4.col-md-4.col-sm-6
+          .col-md-4.col-sm-6
             .home-block-2.cursor-pointer(onclick="window.open('https://www.cossa.ru/cases/279524/','_blank');")
               .home-block-inside
                 img.home-block-inside-image(src="img/home/case/3.png" draggable="false")
