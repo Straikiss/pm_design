@@ -51,63 +51,70 @@
           <div class="row">
             <div class="col-lg-6">
               <div class="block-create-company">
-                <p class="input-def-title input-def-title-3 mt-0">Пол блогера</p>
+                <p class="input-def-title input-def-title-3 mt-0 tooltip w-100">
+                   Выбор цели <i class="bi bi-question-circle svg color-purple"></i><span class="tooltip-text">Вы можете выбрать тип цели - оплата за тапы/переходы, если Вы рекламируете Вашу страницу в Инстаграм или за действия на Вашем сайте, если продвигаете внешнюю ссылку.</span></p>
                 <div class="row">
-                  <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4">
-                    <div class="create-company-select-type mt-0 input-select">
-                      <label for="CampTypeGender1">
-                        <input class="input-radio" type="radio" id="CampTypeGender1" name="CampTypeGender" value="0" checked><span class="checkmark"></span>
-                        <p>Любой</p>
+                  <div class="col-xl-6 col-lg-7 col-md-6 col-sm-7">
+                    <div class="create-company-select-type input-select mt-0" onclick="ChangeCofusTap()">
+                      <label for="CampTypeFocus1">
+                        <input class="input-radio" type="radio" id="CampTypeFocus1" name="CampTypeFocus" value="0" checked><span class="checkmark"></span>
+                        <p>Цена за переход/тап</p>
                       </label>
                     </div>
                   </div>
-                  <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4">
-                    <div class="create-company-select-type mt-0 input-select ml-m">
-                      <label for="CampTypeGender2">
-                        <input class="input-radio" type="radio" id="CampTypeGender2" name="CampTypeGender" value="1"><span class="checkmark"></span>
-                        <p>Женский</p>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4">
-                    <div class="create-company-select-type mt-0 input-select ml-m-2">
-                      <label for="CampTypeGender3">
-                        <input class="input-radio" type="radio" id="CampTypeGender3" name="CampTypeGender" value="2"><span class="checkmark"></span>
-                        <p>Мужской</p>
+                  <div class="col-xl-6 col-lg-5 col-md-6 col-sm-5 ml-m-2">
+                    <div class="create-company-select-type input-select mt-0" onclick="ChangeCofusFocus()">
+                      <label for="CampTypeFocus2">
+                        <input class="input-radio" type="radio" id="CampTypeFocus2" name="CampTypeFocus" value="1"><span class="checkmark"></span>
+                        <p>Цена за цель</p>
                       </label>
                     </div>
                   </div>
                 </div>
-                <p class="input-def-title input-def-title-3">Пол целевой аудитории</p>
-                <div class="row">
-                  <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4">
-                    <div class="create-company-select-type mt-0 input-select">
-                      <label for="CampTypeTarget1">
-                        <input class="input-radio" type="radio" id="CampTypeTarget1" name="CampTypeTarget" value="0" checked><span class="checkmark"></span>
-                        <p>Любой</p>
-                      </label>
+                <input class="input-def text-center margin mt-10" id="ChangeFocus" placeholder="15">
+                <div class="none margin" id="ChangeImagePreviewHide">
+                  <p class="input-def-title mt-0">Цель на сайте</p>
+                  <select class="input-def" onchange="AddMoreTarget(this)">
+                    <option value="0" selected="selected">Регистрация</option>
+                    <option value="1">Продажа</option>
+                    <option value="2">Депозит</option>
+                    <option value="3">Заполнение формы</option>
+                    <option value="4">Другое</option>
+                  </select>
+                  <input class="input-def mt-10" id="target-2" style="display: none;" placeholder="Опишите другую цель на сайте">
+                  <div id="target" style="display: none;">
+                    <div class="row margin">
+                      <div class="col-xl-6 col-lg-7 col-md-5 col-sm-6 mt-10">
+                        <div class="create-company-select-type input-select mt-0">
+                          <label for="CampTypeEndtarget1">
+                            <input class="input-radio" type="radio" id="CampTypeEndtarget1" name="CampTypeEndtarget1" value="0" checked><span class="checkmark"></span>
+                            <p>Процент от пополнения</p>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-5 col-md-5 col-sm-5 mt-10">
+                        <div class="create-company-select-type input-select mt-0">
+                          <label for="CampTypeEndtarget2">
+                            <input class="input-radio" type="radio" id="CampTypeEndtarget2" name="CampTypeEndtarget2" value="1"><span class="checkmark"></span>
+                            <p>Фиксированная цена</p>
+                          </label>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4">
-                    <div class="create-company-select-type mt-0 input-select ml-m">
-                      <label for="CampTypeTarget2">
-                        <input class="input-radio" type="radio" id="CampTypeTarget2" name="CampTypeTarget" value="1"><span class="checkmark"></span>
-                        <p>Женский</p>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4">
-                    <div class="create-company-select-type mt-0 input-select ml-m-2">
-                      <label for="CampTypeTarget3">
-                        <input class="input-radio" type="radio" id="CampTypeTarget3" name="CampTypeTarget" value="2"><span class="checkmark"></span>
-                        <p>Мужской</p>
-                      </label>
-                    </div>
-                  </div>
+                  <p class="input-def-title input-def-title-3">Описание цели (не обязательно)</p>
+                  <textarea class="create-company-textarea margin" placeholder="Опишите дополнительные пожелания к выполнению цели."></textarea>
+                  <p class="input-def-title mt-0">Тип связи</p>
+                  <select class="input-def">
+                    <option value="0" selected="selected">Telegram</option>
+                    <option value="1">WhatsApp</option>
+                    <option value="2">Viber</option>
+                    <option value="3">Звонок</option>
+                  </select>
+                  <p class="input-def-title">Телефона для связи</p>
+                  <input class="input-def mb-10" placeholder="+7 977 777 77 77">
                 </div>
-                <p class="input-def-title">Выберите тематики блогов</p>
-                <input class="input-def" placeholder="Выберите тематики блогов">
-                <p class="input-def-title">Выберите регион где Вас рекламировать</p>
+                <p class="input-def-title mt-0">Выберите регион где Вас рекламировать</p>
                 <div class="create-company-select-type mt-0 input-select">
                   <label for="CampTypeLocation1">
                     <input class="input-radio" type="radio" id="CampTypeLocation1" name="CampTypeLocation" value="0" checked><span class="checkmark"></span>
@@ -118,25 +125,6 @@
                   <label for="CampTypeLocation2">
                     <input class="input-radio" type="radio" id="CampTypeLocation2" name="CampTypeLocation" value="1"><span class="checkmark"></span>
                     <p>Москва</p>
-                  </label>
-                </div>
-                <p class="input-def-title input-def-title-3">Подобрать по количеству подписчиков</p>
-                <div class="create-company-select-type mt-0 input-select">
-                  <label for="CampTypeBloggers1">
-                    <input class="input-radio" type="radio" id="CampTypeBloggers1" name="CampTypeBloggers" value="0" checked><span class="checkmark"></span>
-                    <p>Среднее число подписчиков</p>
-                  </label>
-                </div>
-                <div class="create-company-select-type input-select">
-                  <label for="CampTypeBloggers2">
-                    <input class="input-radio" type="radio" id="CampTypeBloggers2" name="CampTypeBloggers" value="1"><span class="checkmark"></span>
-                    <p>Больше подписчиков <span class="input-def-title">(будет меньше блогеров)</p>
-                  </label>
-                </div>
-                <div class="create-company-select-type input-select">
-                  <label for="CampTypeBloggers3">
-                    <input class="input-radio" type="radio" id="CampTypeBloggers3" name="CampTypeBloggers" value="2"><span class="checkmark"></span>
-                    <p>Меньше подписчиков <span class="input-def-title">(будет больше блогеров)</p>
                   </label>
                 </div>
                 <p class="input-def-title input-def-title-3">Дата запуска кампании</p>
@@ -182,56 +170,7 @@
               </div>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-12">
-              <p class="input-def-title input-def-title-3 mt-0 tooltip w-100">
-                 Выбор цели <i class="bi bi-question-circle svg color-purple"></i><span class="tooltip-text">Вы можете выбрать тип цели - оплата за тапы/переходы, если Вы рекламируете Вашу страницу в Инстаграм или за действия на Вашем сайте, если продвигаете внешнюю ссылку.</span></p>
-              <div class="row">
-                <div class="col-xl-6 col-lg-7 col-md-6 col-sm-7">
-                  <div class="create-company-select-type input-select mt-0" onclick="ChangeCofusTap()">
-                    <label for="CampTypeFocus1">
-                      <input class="input-radio" type="radio" id="CampTypeFocus1" name="CampTypeFocus" value="0" checked><span class="checkmark"></span>
-                      <p>Цена за переход/тап</p>
-                    </label>
-                  </div>
-                </div>
-                <div class="col-xl-6 col-lg-5 col-md-6 col-sm-5 ml-m-2">
-                  <div class="create-company-select-type input-select mt-0" onclick="ChangeCofusFocus()">
-                    <label for="CampTypeFocus2">
-                      <input class="input-radio" type="radio" id="CampTypeFocus2" name="CampTypeFocus" value="1"><span class="checkmark"></span>
-                      <p>Цена за цель</p>
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <input class="input-def text-center margin mt-10" id="ChangeFocus" placeholder="15">
-              <div class="none margin" id="ChangeImagePreviewHide">
-                <div class="row"> 
-                  <div class="col-6">
-                    <p class="input-def-title mt-0">Цель на сайте</p>
-                    <select class="input-def" onchange="AddMoreTarget(this)">
-                      <option value="0" selected="selected">Регистрация</option>
-                      <option value="1">Продажа</option>
-                      <option value="2">Депозит</option>
-                      <option value="3">Заполнение формы</option>
-                      <option value="4">Другое</option>
-                    </select>
-                  </div>
-                  <div class="col-6">
-                    <p class="input-def-title mt-0">Тип связи</p>
-                    <select class="input-def">
-                      <option value="0" selected="selected">Telegram</option>
-                      <option value="1">WhatsApp</option>
-                      <option value="2">Viber</option>
-                      <option value="3">Звонок</option>
-                    </select>
-                  </div>
-                </div>
-                <input class="input-def mt-10" id="target" style="display: none;" placeholder="Опишите другую цель на Вашем сайте">
-                <p class="input-def-title">Телефона для связи</p>
-                <input class="input-def" placeholder="+7 977 777 77 77">
-                <p class="input-def-title input-def-title-3">Описание цели (не обязательно)</p>
-                <textarea class="create-company-textarea mb-10" placeholder="Опишите дополнительные пожелания к выполнению цели."></textarea>
-                <p class="text-center"><a class="bb input-def-title mt-0" href="http://postmarket.pro/article/cpa-manual" target="_blank">Инструкция по настройке postback уведомлений</a></p>
-              </div>
+              <p class="text-center margin"><a class="bb input-def-title mt-0" href="http://postmarket.pro/article/cpa-manual" target="_blank">Инструкция по настройке postback уведомлений</a></p>
               <h2 class="mb-10">Бюджет</h2>
               <div class="who-performs margin">
                 <div class="form-group app-state-contentby_publisher">
