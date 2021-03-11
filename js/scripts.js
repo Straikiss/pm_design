@@ -155,11 +155,19 @@ function SendPromo()
 function AddMoreTarget(Value)
 {
   var Target = document.getElementById('target')
-  if(Value.value == 4)
+  var TargetTwo = document.getElementById('target-2')
+  if(Value.value == 1 || Value.value == 2)
     Target.style.display = 'block'
-  else 
+  else
   {
     Target.style.display = 'none'
     Target.value = ''
+  }
+  if(Value.value == 4)
+    TargetTwo.style.display = 'block'
+  else 
+  {
+    TargetTwo.style.display = 'none'
+    TargetTwo.value = ''
   }
 }
