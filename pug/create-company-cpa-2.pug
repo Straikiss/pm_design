@@ -81,8 +81,10 @@ html(lang="ru")
                         input.input-radio(type="radio" id="CampTypeFocus2" name="CampTypeFocus" value="1")
                         span.checkmark
                         p Цена за цель
-                input.input-def.text-center.margin.mt-10#ChangeFocus(placeholder="15")
+                input.input-def.text-center.mt-10#ChangeFocus(placeholder="15")
                 #ChangeImagePreviewHide.none.margin
+                  p.text-center.margin.mt-10
+                    a.bb.input-def-title(href="http://postmarket.pro/article/cpa-manual" target="_blank") Инструкция по настройке postback уведомлений
                   p.input-def-title.mt-0 Цель на сайте
                   select.input-def(onchange="AddMoreTarget(this)")
                     option(value="0" selected="selected") Регистрация
@@ -115,7 +117,7 @@ html(lang="ru")
                     option(value="3") Звонок
                   p.input-def-title Телефона для связи
                   input.input-def.mb-10(placeholder="+7 977 777 77 77")
-                p.input-def-title.mt-0 Выберите регион где Вас рекламировать
+                p.input-def-title Выберите регион где Вас рекламировать
                 .create-company-select-type.mt-0.input-select
                   label(for="CampTypeLocation1")
                     input.input-radio(type="radio" id="CampTypeLocation1" name="CampTypeLocation" value="0" checked)
@@ -157,8 +159,6 @@ html(lang="ru")
                         p Выбрать срок
                 input.input-def.mt-10(placeholder="11.11.2021")
             .col-xl-6.col-lg-6.col-md-12
-              p.text-center.margin
-                a.bb.input-def-title.mt-0(href="http://postmarket.pro/article/cpa-manual" target="_blank") Инструкция по настройке postback уведомлений
               h2.mb-10 Бюджет
               .who-performs.margin
                 .form-group.app-state-contentby_publisher
