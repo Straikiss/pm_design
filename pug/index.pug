@@ -74,6 +74,14 @@ html(lang="ru")
           <i class="bi bi-briefcase svg"></i> Партнер
         a.aside-link(href="#") 
           <i class="bi bi-box-arrow-right svg"></i> Выйти
+        <div>
+          <input type="checkbox" class="checkbox" id="chk" />
+          <label class="label" for="chk">
+            <i class="bi bi-gear svg"></i>
+            <i class="bi bi-gear svg"></i>
+            <div class="ball"></div>
+          </label>
+        </div>
       .container
         .row
           .col-lg-7.col-md-12
@@ -112,7 +120,7 @@ html(lang="ru")
               <i class="bi bi-award svg-2 color-purple"></i> Покупайте результат в PostMarket с гарантией 100%
           .col-md-4.col-sm-6
             .home-block-2.cursor-pointer(onclick="window.open('create-company-cpa-1.html','_self');")
-              img.home-block-inside-image(src="img/home/preview/1.png" draggable="false")
+              img.home-block-inside-image(src="img/home/preview/1.png" draggable="false" height="223")
               <i class="bi bi-plus home-block-inside-svg color-purple"></i>
               p.home-block-inside-text Выбирайте цель сами за что Вы готовы платить! За регистрации, продажи, установки, заполнение формы. 
           .col-md-4.col-sm-6
@@ -146,4 +154,3 @@ html(lang="ru")
                 img.home-block-inside-image(src="img/home/case/3.png" draggable="false")
                 <i class="bi bi-arrow-right-short home-block-inside-svg"></i>
                 p.home-block-inside-text Кейс маркетингового агенства cossa.ru с PostMarket
-    script(src="js/scripts.js")
