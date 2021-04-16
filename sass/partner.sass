@@ -22,7 +22,7 @@
   color: $white
   height: 44px
   font-size: 17px
-  +border-radius()
+  +border-image()
   +margin-bottom()
   +box-shadow()
   &:hover
@@ -36,7 +36,7 @@
   color: $white
   width: 100%
   height: 44px
-  +border-radius()
+  +border-image()
   +box-shadow()
   &:hover
     +opacity()
@@ -50,9 +50,6 @@
 .block-settings-stats
   +margin-bottom()
 
-.partner-stats
-  text-align: center
-  +margin-bottom()
      
 .blcok-settings-select
   padding-left: 10px
@@ -79,7 +76,7 @@
 .partner-stats 
   text-align: center
   background: $white
-  border-radius: 15px
+  +margin-bottom()
   +margin-bottom()
   +box-shadow()
 

@@ -97,18 +97,18 @@ html(lang="ru")
                 .block-def.margin
                   p.block-settings-stats 
                     <i class="bi bi-bar-chart svg color-purple"></i> Статистика
-                  p.block-partner-body-2 Блогеров: <span class="color-purple">0
-                  p.block-partner-body-2 Рекламодателей: <span class="color-purple">0
-                  p.block-partner-body-2 Партнеров: <span class="color-purple">0
+                  p.block-partner-body-2 Рекламодателей: <span class="color-purple float-right">15  
+                  p.block-partner-body-2 Блогеров: <span class="color-purple float-right">10
+                  p.block-partner-body-2 Партнеров: <span class="color-purple float-right">5
                   button.w-auto.color-purple(onclick="openbox('settings-stats');") Полная статистика
               .col-sm-6
                 .block-def.margin
                   p.block-settings-stats 
                     <i class="bi bi-wallet svg color-purple"></i> Доход
-                  p.block-partner-body-2 Всего: <span class="color-green">0 ₽
-                  p.block-partner-body-2 Баланс: <span class="color-orange">0 ₽
-                  p.block-partner-body-2 В ожидании: <span class="color-orange">0 ₽
-                  p За месяц: 0 ₽
+                  p.block-partner-body-2 В ожидании: <span class="color-orange float-right">300 ₽
+                  p.block-partner-body-2 За месяц: <span class="color-orange float-right">750 ₽
+                  p.block-partner-body-2 Заработано: <span class="color-purple float-right">1200 ₽
+                  p Баланс: <span class="color-green float-right">5000 ₽
           .col-12.partner-size.settings-stats(style="display:none;")
             h2.margin 
               <i class="bi bi-calendar svg-2 color-purple"></i> с 20.20.20 по 21.21.21
@@ -120,17 +120,13 @@ html(lang="ru")
                     th Переходов
                     th Рекламодателей
                     th Блогеров
+                    th партнеров
                     th Доход
                     th Дата
                   tr
                     td.color-purple 1000
                     td.color-purple 100
                     td.color-purple 100
-                    td.color-purple 1.000₽
-                    td.color-purple 20.20.20
-                  tr
-                    td.color-purple 1000
-                    td.color-purple 100
                     td.color-purple 100
                     td.color-purple 1.000₽
                     td.color-purple 20.20.20
@@ -138,16 +134,26 @@ html(lang="ru")
                     td.color-purple 1000
                     td.color-purple 100
                     td.color-purple 100
+                    td.color-purple 100
                     td.color-purple 1.000₽
                     td.color-purple 20.20.20
                   tr
                     td.color-purple 1000
                     td.color-purple 100
                     td.color-purple 100
+                    td.color-purple 100
                     td.color-purple 1.000₽
                     td.color-purple 20.20.20
                   tr
                     td.color-purple 1000
+                    td.color-purple 100
+                    td.color-purple 100
+                    td.color-purple 100
+                    td.color-purple 1.000₽
+                    td.color-purple 20.20.20
+                  tr
+                    td.color-purple 1000
+                    td.color-purple 100
                     td.color-purple 100
                     td.color-purple 100
                     td.color-purple 1.000₽
