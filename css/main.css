@@ -2898,7 +2898,7 @@ input:checked + .slider:before {
   color: #adb5bd; }
 
 .slider.round {
-  border-radius: 0; }
+  border-radius: 10px; }
 
 .slider.round:before {
   border-radius: 50%; }
@@ -3089,14 +3089,22 @@ input:checked + .slider:before {
   cursor: pointer;
   opacity: 0; }
 
-.checkmark {
+.checkmark-2 {
   position: absolute;
   height: calc(100% - 30px);
   width: calc(100% - 30px);
   color: #fff !important; }
 
+.checkmark {
+  background: #adb5bd;
+  position: absolute;
+  border-radius: 50%;
+  opacity: .3;
+  height: 20px;
+  width: 20px; }
+
 @media (max-width: 575px) {
-  .checkmark {
+  .checkmark-2 {
     height: calc(100% - 15px); } }
 
 label {
@@ -3105,8 +3113,12 @@ label {
 .input-select p {
   margin-left: 30px; }
 
-.input-radio:checked ~ .checkmark {
+.input-radio:checked ~ .checkmark-2 {
   box-shadow: 0 0 3px #6f42c1; }
+
+.input-radio:checked ~ .checkmark {
+  background: linear-gradient(268.83deg, #aa53fe 1.58%, #790ee1 99.84%);
+  opacity: 1; }
 
 #alert-remove-from-company,
 #alert-add-to-company,
@@ -3126,11 +3138,11 @@ label {
   color: #fff;
   padding: 15px;
   margin: auto;
-  left: 225px;
   z-index: 2;
   right: 0;
+  left: 0;
   top: 95px;
-  border-radius: 0; }
+  border-radius: 5px; }
 
 #alert-task {
   width: 310px; }
@@ -3412,7 +3424,7 @@ label {
   color: #fff;
   line-height: 44px;
   margin-top: 30px;
-  border-radius: 0;
+  border-radius: 5px;
   box-shadow: 0 0 10px #dee2e6;
   font-size: 15px; }
   .block-first-company-button:hover {
@@ -3652,7 +3664,8 @@ label {
   line-height: 35px;
   height: 35px;
   text-align: center;
-  border-radius: 5px; }
+  border-radius: 5px;
+  box-shadow: 0 0 10px #dee2e6; }
   .block-blogger-card-favorite:hover {
     opacity: .9; }
 
@@ -4254,7 +4267,8 @@ label {
   box-shadow: 0 0 10px #dee2e6; }
 
 .table-size {
-  overflow-x: auto; }
+  overflow-x: auto;
+  box-shadow: 0 0 10px #dee2e6; }
 
 .table {
   border-spacing: 0;
@@ -4293,9 +4307,9 @@ label {
   margin: auto;
   bottom: 0;
   right: 0;
-  left: 225px;
+  left: 0;
   top: 0;
-  border-radius: 0; }
+  border-radius: 5px; }
   .block-modal-start-inside .block-modal-inside-btn,
   .block-modal-pay-inside-2 .block-modal-inside-btn,
   .block-modal-pay-inside .block-modal-inside-btn {
@@ -4333,7 +4347,7 @@ label {
   margin: auto;
   bottom: 0;
   right: 0;
-  left: 225px;
+  left: 0;
   top: 0;
   border-radius: 5px; }
 
@@ -4569,7 +4583,7 @@ input::placeholder {
   display: block;
   height: 44px;
   color: #fff;
-  border-radius: 0;
+  border-radius: 5px;
   margin-top: 30px;
   box-shadow: 0 0 10px #dee2e6;
   font-size: 15px; }
@@ -4953,7 +4967,8 @@ ul li .text {
   flex-direction: row;
   background: #f8f9fa;
   height: 44px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  box-shadow: 0 0 10px #dee2e6; }
 
 .who-performs .form-group {
   width: 50%;
@@ -5671,4 +5686,6 @@ ul li .text {
   .block-modal-pay-inside-2 p,
   .block-modal-pay-inside p,
   .block-modal-start p {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .block-create-company-steps .block-create-company-2 {
+    display: none; } }

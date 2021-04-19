@@ -37,15 +37,22 @@
   cursor: pointer
   opacity: 0
 
-.checkmark 
+.checkmark-2
   position: absolute
   height: calc(100% - 30px)
   width: calc(100% - 30px)
-  // display: block
   color: #fff !important
 
+.checkmark 
+  background: $gray-text
+  position: absolute
+  border-radius: 50%
+  opacity: .3
+  height: 20px
+  width: 20px
+
 @media (max-width: 575px)
-  .checkmark 
+  .checkmark-2
     height: calc(100% - 15px)
 
 label
@@ -55,9 +62,12 @@ label
   p
     margin-left: 30px
 
-.input-radio:checked ~ .checkmark
+.input-radio:checked ~ .checkmark-2
   box-shadow: 0 0 3px $purple
-  // opacity: 1
+
+.input-radio:checked ~ .checkmark
+  background: $purple-bg
+  opacity: 1
 
 #alert-remove-from-company,
 #alert-add-to-company,
@@ -77,11 +87,11 @@ label
   color: $white
   padding: 15px
   margin: auto
-  left: 225px
   z-index: 2
   right: 0
+  left: 0
   top: 95px
-  +border-radius()
+  +border-image()
 
 #alert-task
   width: 310px
