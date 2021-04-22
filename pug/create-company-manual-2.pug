@@ -94,6 +94,26 @@ html(lang="ru")
             .row        
               .col-xl-6.col-lg-6.col-md-6.mb-30-filts-size
                 .block-def
+                  | <!-- BEGIN SOCIAL SELECT -->
+                  p.input-def-title.input-def-title-3.mt-0 Выбор социальной сети
+                  .row
+                    .col-lg-6
+                      label(for="instagram")  
+                        input.input-radio(type="radio" id="instagram" name="Item.SocialNetworksSelected" value="0" checked)
+                        .checkmark-2
+                        .block-def-5.margin
+                          img(src="img/social/instagram.png" draggable="false")
+                          .block-create-company-select-box.input-select
+                            p.block-create-company-select-title Instagram
+                    .col-lg-6
+                      label(for="tiktok")  
+                        input.input-radio(type="radio" id="tiktok" name="Item.SocialNetworksSelected" value="1")
+                        .checkmark-2
+                        .block-def-5.margin
+                          img(src="img/social/tiktok.png" draggable="false")
+                          .block-create-company-select-box.input-select
+                            p.block-create-company-select-title TikTok
+                    | <!-- END SOCIAL SELECT -->
                   p.input-def-title.input-def-title-3.mt-0 Пол блогера
                   .create-company-select-type.input-select
                     label(for="CampTypeGender1")
@@ -148,23 +168,6 @@ html(lang="ru")
                       input.input-radio(type="radio" id="CampTypeRate2" name="CampTypeRate" value="1")
                       span.checkmark
                       p Сначала Средняя
-                  p.input-def-title.input-def-title-3 CPM
-                  <span class="irs irs--big js-irs-0">
-                    <span class="irs">
-                      <span class="irs-line" tabindex="0"></span>
-                      <span class="irs-min" style="display: none; visibility: hidden;">0</span>
-                      <span class="irs-max" style="display: none; visibility: visible;">1</span>
-                      <span class="irs-from" style="visibility: hidden;">0</span>
-                      <span class="irs-to" style="visibility: hidden;">0</span>
-                      <span class="irs-single" style="left: 1.25%;">0</span>
-                      <span class="irs-single" style="left: 94.5%;">3 000</span>
-                    </span>
-                    <span class="irs-grid"></span>
-                    <span class="irs-bar irs-bar--single" style="left: 0px; width: 3.69458%;"></span>
-                    <span class="irs-handle single" style="left: 0%;"></span>
-                    <span class="irs-handle single" style="left: 95%;"></span>
-                  </span>
-                  input.js-range-slider.irs-hidden-input(type="text" name="my_range" value="" tabindex="-1" readonly="")
               .col-xl-6.col-lg-6.col-md-6
                 .block-def
                   p.input-def-title.input-def-title-3.mt-0 Тематика аккаунта
@@ -253,14 +256,17 @@ html(lang="ru")
                     - for(i=0; i < 10; i++)
                       .col-xl-12.col-lg-12.col-md-12
                         .block-blogger
-                          <i class="bi bi-x added home-block-inside-svg color-purple"></i>
-                          .block-price
-                            p <i class="bi bi-tag svg"></i> 20 000₽ за сторис 
-                            p.block-price-margin 20 000₽ за пост
+                          | <!-- BEGIN NEW DIV -->
+                          .block-blogger-add
+                            <i class="bi bi-x added home-block-inside-svg color-purple"></i>
+                          | <!-- END NEW DIV -->
                           .row
                             .col-xl-4.col-lg-4.col-md-4.col-sm-4
                               .flex
                                 a(href="blogger.html")
+                                  | <!-- BEGIN BLOGGER SOCIAL -->
+                                  img.block-blogger-social(src="img/social/instagram.png" draggable="false")
+                                  | <!-- END BLOGGER SOCIAL -->
                                   img.block-blogger-avatar(src="img/blogger-card/1.png" draggable="false")
                             .col-xl-8.col-lg-8.col-md-8.col-sm-8
                               p.block-blogger-text.h-20.mt-0 Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎
@@ -270,7 +276,7 @@ html(lang="ru")
                                 .col-xl-7.col-lg-5.col-md-5.col-sm-5.col-5
                                   p.block-blogger-text Охват:
                                 .col-xl-5.col-lg-7.col-md-7.col-sm-7.col-7
-                                  p.block-blogger-text.text-align  1236 
+                                  p.block-blogger-text.text-align 1236 
                                 .col-xl-7.col-lg-5.col-md-5.col-sm-5.col-5
                                   p.block-blogger-text Подписчики:
                                 .col-xl-5.col-lg-7.col-md-7.col-sm-7.col-7
@@ -285,9 +291,19 @@ html(lang="ru")
                                     <i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
                                     <i class="bi bi-star home-bloggers-block-icons-svg"></i>
                                 .col-xl-5.col-lg-4.col-md-4.col-sm-5.col-4
-                                    p.block-blogger-text Тематика:
+                                  p.block-blogger-text Тематика:
                                 .col-xl-7.col-lg-8.col-md-8.col-sm-7.col-8
                                   p.block-blogger-text.text-align Путешествия/отдых 
+                                | <!-- BEGIN PRICE -->
+                                .col-xl-7.col-lg-5.col-md-5.col-sm-5.col-5
+                                  p.block-blogger-text Пост:
+                                .col-xl-5.col-lg-7.col-md-7.col-sm-7.col-7
+                                  p.block-blogger-text.text-align.color-purple 10 000 ₽  
+                                .col-xl-7.col-lg-5.col-md-5.col-sm-5.col-5
+                                  p.block-blogger-text Сторис:
+                                .col-xl-5.col-lg-7.col-md-7.col-sm-7.col-7
+                                  p.block-blogger-text.text-align.color-purple 10 000 ₽  
+                                | <!-- BEGIN PRICE -->
                 .col-xl-5.col-lg-5
                   .row.bloggers-list-p
                     .col-xl-9.col-lg-8.col-md-8.col-sm-8.col-8
@@ -318,13 +334,13 @@ html(lang="ru")
                       <i class="bi bi-check home-block-inside-svg color-purple"></i>
                       <i class="bi bi-plus home-block-inside-svg color-purple"></i>
                       <i class="bi bi-x home-block-inside-svg color-purple"></i>
-                    .block-price
-                      p <i class="bi bi-tag svg"></i> 20 000₽ за сторис 
-                      p.block-price-margin 20 000₽ за пост
                     .row
                       .col-xl-4.col-lg-4.col-md-8.ml-15.col-sm-4
                         .flex
                           a(href="blogger.html")
+                            | <!-- BEGIN BLOGGER SOCIAL -->
+                            img.block-blogger-social(src="img/social/instagram.png" draggable="false")
+                            | <!-- END BLOGGER SOCIAL -->
                             img.block-blogger-avatar(src="img/blogger-card/1.png" draggable="false")
                       .col-xl-8.col-lg-8.col-md-12.col-sm-8
                         p.block-blogger-text.h-20.mt-0 Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎
@@ -352,6 +368,16 @@ html(lang="ru")
                             p.block-blogger-text Тематика:
                           .col-xl-7.col-lg-8.col-md-8.col-sm-7.col-8
                             p.block-blogger-text.text-align Путешествия/отдых 
+                          | <!-- BEGIN PRICE -->
+                          .col-xl-7.col-lg-5.col-md-5.col-sm-5.col-5
+                            p.block-blogger-text Пост:
+                          .col-xl-5.col-lg-7.col-md-7.col-sm-7.col-7
+                            p.block-blogger-text.text-align.color-purple 10 000 ₽  
+                          .col-xl-7.col-lg-5.col-md-5.col-sm-5.col-5
+                            p.block-blogger-text Сторис:
+                          .col-xl-5.col-lg-7.col-md-7.col-sm-7.col-7
+                            p.block-blogger-text.text-align.color-purple 10 000 ₽  
+                          | <!-- BEGIN PRICE -->
     script(src="js/scripts.js")
     script.
       window.onscroll=function(){myFunction()};

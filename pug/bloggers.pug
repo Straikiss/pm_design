@@ -83,6 +83,26 @@ html(lang="ru")
               .row 
                 .col-xl-6.col-lg-6.col-md-6.bloggers-margin-size
                   .block-def
+                    | <!-- BEGIN SOCIAL SELECT -->
+                    p.input-def-title.input-def-title-3.mt-0 Выбор социальной сети
+                    .row
+                      .col-lg-6
+                        label(for="instagram")  
+                          input.input-radio(type="radio" id="instagram" name="Item.SocialNetworksSelected" value="0" checked)
+                          .checkmark-2
+                          .block-def-5.margin
+                            img(src="img/social/instagram.png" draggable="false")
+                            .block-create-company-select-box.input-select
+                              p.block-create-company-select-title Instagram
+                      .col-lg-6
+                        label(for="tiktok")  
+                          input.input-radio(type="radio" id="tiktok" name="Item.SocialNetworksSelected" value="1")
+                          .checkmark-2
+                          .block-def-5.margin
+                            img(src="img/social/tiktok.png" draggable="false")
+                            .block-create-company-select-box.input-select
+                              p.block-create-company-select-title TikTok
+                      | <!-- END SOCIAL SELECT -->
                     p.input-def-title.input-def-title-3.mt-0 Пол блогера
                     .create-company-select-type.input-select
                       label(for="CampTypeGender1")
@@ -137,23 +157,6 @@ html(lang="ru")
                         input.input-radio(type="radio" id="CampTypeRate2" name="CampTypeRate" value="1")
                         span.checkmark
                         p Сначала Средняя
-                    p.input-def-title.input-def-title-3 CPM
-                    <span class="irs irs--big js-irs-0">
-                      <span class="irs">
-                        <span class="irs-line" tabindex="0"></span>
-                        <span class="irs-min" style="display: none; visibility: hidden;">0</span>
-                        <span class="irs-max" style="display: none; visibility: visible;">1</span>
-                        <span class="irs-from" style="visibility: hidden;">0</span>
-                        <span class="irs-to" style="visibility: hidden;">0</span>
-                        <span class="irs-single" style="left: 1.25%;">0</span>
-                        <span class="irs-single" style="left: 94.5%;">3 000</span>
-                      </span>
-                      <span class="irs-grid"></span>
-                      <span class="irs-bar irs-bar--single" style="left: 0px; width: 3.69458%;"></span>
-                      <span class="irs-handle single" style="left: 0%;"></span>
-                      <span class="irs-handle single" style="left: 95%;"></span>
-                    </span>
-                    input.js-range-slider.irs-hidden-input(type="text" name="my_range" value="" tabindex="-1" readonly="")
                 .col-xl-6.col-lg-6.col-md-6
                   .block-def
                     p.input-def-title.input-def-title-3.mt-0 Тематика аккаунта
@@ -243,6 +246,9 @@ html(lang="ru")
                         .col-xl-4.offset-xl-0.col-lg-4.offset-lg-0.col-md-6.offset-md-3.col-sm-4
                           .flex
                             a(href="blogger.html")
+                              | <!-- BEGIN BLOGGER SOCIAL -->
+                              img.block-blogger-social(src="img/social/instagram.png" draggable="false")
+                              | <!-- END BLOGGER SOCIAL -->
                               img.block-blogger-avatar(src="img/blogger-card/1.png" draggable="false")
                         .col-xl-8.col-lg-8.col-md-12.col-sm-8
                           p.block-blogger-text.mt-0.h-20 Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎

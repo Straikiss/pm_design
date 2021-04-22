@@ -12,11 +12,11 @@
     <div class="header">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-xl-6 col-lg-6 col-md-3 col-sm-5 col-4">
+          <div class="col-lg-6 col-md-3 col-sm-5 col-4">
             <div class="header-link" id="hidden-link"><i class="bi bi-list svg-3"></i> Меню</div>
             <h1 class="header-title">Новая рекламная кампания - Таргетинг</h1>
           </div>
-          <div class="col-xl-6 col-lg-6 col-md-9 col-sm-7 col-8">
+          <div class="col-lg-6 col-md-9 col-sm-7 col-8">
             <div class="header-status">
               <p class="header-status-balance">0 ₽ <sup class="header-status-balance-money">5 000 ₽</p><a class="header-status-pay" href="settings.html">Пополнить баланс</a>
             </div>
@@ -62,7 +62,32 @@
           </div>
           <div class="row">
             <div class="col-lg-6">
-              <div class="block-create-company">
+              <div class="block-create-company"><!-- BEGIN SOCIAL SELECT -->
+                <p class="input-def-title input-def-title-3 mt-0">Выбор социальной сети</p>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <label for="instagram"> 
+                      <input class="input-radio" type="radio" id="instagram" name="Item.SocialNetworksSelected" value="0" checked>
+                      <div class="checkmark-2"></div>
+                      <div class="block-def-5 margin"><img src="img/social/instagram.png" draggable="false">
+                        <div class="block-create-company-select-box input-select">
+                          <p class="block-create-company-select-title">Instagram</p>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-lg-6">
+                    <label for="tiktok"> 
+                      <input class="input-radio" type="radio" id="tiktok" name="Item.SocialNetworksSelected" value="1">
+                      <div class="checkmark-2"></div>
+                      <div class="block-def-5 margin"><img src="img/social/tiktok.png" draggable="false">
+                        <div class="block-create-company-select-box input-select">
+                          <p class="block-create-company-select-title">TikTok</p>
+                        </div>
+                      </div>
+                    </label>
+                  </div><!-- END SOCIAL SELECT -->
+                </div>
                 <p class="input-def-title input-def-title-3 mt-0">Пол блогера</p>
                 <div class="row">
                   <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4">
@@ -162,8 +187,8 @@
                 <input class="input-def mt-10" placeholder="11.11.2021">
               </div>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-12">
-              <h2 class="mb-10">Бюджет</h2>
+            <div class="col-lg-6 col-md-12"><!-- BEGIN PRICE AMOUNT -->
+              <p class="input-def-title input-def-title-3 mt-0">Бюджет</p><!-- END PRICE AMOUNT -->
               <div class="who-performs margin">
                 <div class="form-group app-state-contentby_publisher">
                   <input class="app-trigger-contentfor" id="Item_PublicationKind_Any" name="Item.PublicationKind" type="radio" value="0" checked>

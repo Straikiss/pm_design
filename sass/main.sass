@@ -204,6 +204,26 @@ button
   +border-radius()
   +box-shadow()
 
+.block-def-5
+  background: $white
+  line-height: 34px
+  padding: 5px
+  +box-shadow()
+  img 
+    width: 35px
+    float: left
+  .block-create-company-select-title
+    margin-left: 55px
+
+.block-blogger-social 
+  width: 35px
+  position: relative
+  margin-bottom: -35px
+
+.fixed-height
+  height: 200px
+  object-fit: cover
+
 .sticky 
   background: $white
   padding-bottom: 10px
@@ -215,12 +235,12 @@ button
 
 .bloggers-list-inside
   overflow-x: hidden
-  max-height: 220px
+  max-height: 228px
   overflow-y: auto
   
 .last-child
   .col-xl-12
-    margin-bottom: 30px
+    margin-bottom: 15px
     .block-blogger
       &:last-of-type
         margin-bottom: 0
@@ -318,6 +338,10 @@ td, .float-right
 
 .block-blogger-add
   cursor: pointer
+  position: absolute
+  right: 0
+  top: 0
+  z-index: 1
 
 .block-blogger-add.block-blogger-added
   .bi-plus
@@ -472,7 +496,7 @@ input:checked + .slider:before
 .block-list-company-more
   .bi-plus
     display: block
-  
+
 @import header 
 @import aside 
 @import tooltip 
