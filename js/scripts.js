@@ -47,6 +47,13 @@ function OpenModalStart(){
   document.getElementById('start-modal').style.display='none';
   document.getElementById('video-modal-3').style.display='block';
 }
+function RateBloggers(){
+  document.getElementById('start-modal').style.display='none';
+
+  var ratebloggers = document.getElementById('ratebloggers');
+  ratebloggers.scrollIntoView({block: 'center'})
+}
+
 function CloseModal(ModalName){
   document.getElementById(ModalName).style.display='none';
   document.getElementById(ModalName).addEventListener('click', () => {
