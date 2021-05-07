@@ -1,1 +1,1 @@
-https://straikiss.github.io/DESIGN_PM/
+https://straikiss.github.io/pm_design/
