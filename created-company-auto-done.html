@@ -9,6 +9,24 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+    <div class="block-modal-start" id="start-modal">
+      <div class="block-modal-start-inside"><svg class="modal-svg" viewBox="0 0 223 90" fill="none">
+<circle cx="32" cy="81" r="2.5" stroke="#FFE000"></circle>
+<circle cx="29" cy="14" r="2.5" stroke="#852BF9"></circle>
+<circle cx="202" cy="5" r="4.5" stroke="#FFE000"></circle>
+<rect x="146.243" y="9" width="6" height="6" transform="rotate(45 146.243 9)" fill="#8E03E2"></rect>
+<rect x="176.243" y="70" width="6" height="6" transform="rotate(45 176.243 70)" fill="#FFE000"></rect>
+<rect x="11.0449" y="80.127" width="8" height="8" transform="rotate(81.7944 11.0449 80.127)" fill="#852BF9"></rect>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.99993 0C7.36875 0 6.85708 0.511674 6.85708 1.14286V6.85754H1.14286C0.511675 6.85754 0 7.36921 0 8.00039C0 8.63158 0.511674 9.14325 1.14286 9.14325H6.85708V14.8571C6.85708 15.4883 7.36875 16 7.99993 16C8.63112 16 9.14279 15.4883 9.14279 14.8571V9.14325H14.8571C15.4883 9.14325 16 8.63158 16 8.00039C16 7.36921 15.4883 6.85754 14.8571 6.85754H9.14279V1.14286C9.14279 0.511675 8.63112 0 7.99993 0Z" fill="#FFE000"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M217 75C216.527 75 216.143 75.3838 216.143 75.8571V80.1434H211.857C211.384 80.1434 211 80.5271 211 81.0005C211 81.4739 211.384 81.8576 211.857 81.8576H216.143V86.1429C216.143 86.6162 216.527 87 217 87C217.473 87 217.857 86.6162 217.857 86.1429V81.8576H222.143C222.616 81.8576 223 81.4739 223 81.0005C223 80.5271 222.616 80.1434 222.143 80.1434H217.857V75.8571C217.857 75.3838 217.473 75 217 75Z" fill="#8E03E2"></path>
+</svg><span class="pay-modal-bg"><i class="bi bi-gem"></i></span>
+        <button class="block-modal-inside-btn" onclick="CloseModal('start-modal');">
+           <i class="bi bi-x-circle svg-2"></i></button>
+        <h1 class="text-center margin">Оцените работу блогеров по Вашей рекламе!</h1>
+        <h2 class="text-center">
+          Мы будем рады узнать качество выполнения работы каждого блогера по Вашей рекламной кампании. <button class="start-button" onclick="RateBloggers();"> Оценить</button>.</h2>
+      </div>
+    </div>
     <div class="header">
       <div class="container-fluid">
         <div class="row">
@@ -184,8 +202,8 @@
             </div>
           </div><!-- ручной подбор --> 
           <div class="col-xl-12 margin">
-            <div class="block-def-4"> 
-              <h2 class="margin">Выбранные блогеры для рекламы <span class=" blogger-span"> 15</h2>
+            <div class="block-def-4 margin">
+              <h2 class="margin">Выбранные блогеры для рекламы <span class="blogger-span"> 15</h2>
               <div class="row">
                 <div class="col-xl-4 col-lg-6 col-md-6">
                   <div class="block-blogger padding">
@@ -322,15 +340,106 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-2 offset-xl-5 col-lg-2 offset-lg-5 col-md-4 offset-md-4 col-sm-4 offset-sm-4 col-6 offset-3 margin">
-                  <button class="created-company-edit">
-                     <i class="bi bi-arrow-repeat svg-3"></i> Больше</button>
+              </div>
+            </div>
+            <div class="block-def-4">
+              <h2 class="margin">Блогеры отклонили или просрочили рекламную заявку <span class="blogger-span"> 2</h2>
+              <div class="row">
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                  <div class="block-blogger padding">
+                    <div class="row">
+                      <div class="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-6 offset-sm-3 col-6 offset-3"><a href="blogger.html"><img class="block-blogger-avatar" src="img/blogger-card/1.png" draggable="false"></a></div>
+                      <div class="col-xl-12">
+                        <p class="mb-5 h-20 text-center">Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎</p>
+                        <p class="mb-5 h-20 text-center"> <a class="block-blogger-card-link" href="https://www.instagram.com/ksesimaa_/" target="_blank">@ksesimaa_</a></p>
+                        <div class="row">  
+                          <div class="col-6">
+                            <p class="mb-5">Охват:</p>
+                          </div>
+                          <div class="col-6">
+                            <p class="mb-5 text-align"> 1236 </p>
+                          </div>
+                          <div class="col-6">
+                            <p class="mb-5">Подписчики:</p>
+                          </div>
+                          <div class="col-6">
+                            <p class="mb-5 text-align">4 334                                           </p>
+                          </div>
+                          <div class="col-xl-6 col-lg-5 col-md-6 col-sm-6 col-6">
+                            <p class="mb-5">Качество:</p>
+                          </div>
+                          <div class="col-xl-6 col-lg-7 col-md-6 col-sm-6 col-6">
+                            <div class="block-icons color-purple text-align mb-5"><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+<i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+<i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+<i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
+<i class="bi bi-star home-bloggers-block-icons-svg"></i>
+                            </div>
+                          </div>
+                          <div class="col-4">
+                            <p class="mb-5">Тематика:</p>
+                          </div>
+                          <div class="col-8">
+                            <p class="mb-5 text-align">Путешествия/отдых</p>
+                          </div>
+                          <div class="col-12">
+                            <p class="block-blogger-see">Рекламу увидят: 153 чел.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                  <div class="block-blogger padding">
+                    <div class="row">
+                      <div class="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-6 offset-sm-3 col-6 offset-3"><a href="blogger.html"><img class="block-blogger-avatar" src="img/blogger-card/1.png" draggable="false"></a></div>
+                      <div class="col-xl-12">
+                        <p class="mb-5 h-20 text-center">Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎</p>
+                        <p class="mb-5 h-20 text-center"> <a class="block-blogger-card-link" href="https://www.instagram.com/ksesimaa_/" target="_blank">@ksesimaa_</a></p>
+                        <div class="row">  
+                          <div class="col-6">
+                            <p class="mb-5">Охват:</p>
+                          </div>
+                          <div class="col-6">
+                            <p class="mb-5 text-align"> 1236 </p>
+                          </div>
+                          <div class="col-6">
+                            <p class="mb-5">Подписчики:</p>
+                          </div>
+                          <div class="col-6">
+                            <p class="mb-5 text-align">4 334                                           </p>
+                          </div>
+                          <div class="col-xl-6 col-lg-5 col-md-6 col-sm-6 col-6">
+                            <p class="mb-5">Качество:</p>
+                          </div>
+                          <div class="col-xl-6 col-lg-7 col-md-6 col-sm-6 col-6">
+                            <div class="block-icons color-purple text-align mb-5"><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+<i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+<i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+<i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
+<i class="bi bi-star home-bloggers-block-icons-svg"></i>
+                            </div>
+                          </div>
+                          <div class="col-4">
+                            <p class="mb-5">Тематика:</p>
+                          </div>
+                          <div class="col-8">
+                            <p class="mb-5 text-align">Путешествия/отдых</p>
+                          </div>
+                          <div class="col-12">
+                            <p class="block-blogger-see">Рекламу увидят: 153 чел.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-12 margin">
-            <h2 class="margin">
+            <h2 class="margin" id="ratebloggers">
                <i class="bi bi-check2-square svg-2 color-purple"></i> Выполнили задачу <span class="created-company-count"> 500</h2>
             <div class="table-size created-company-pc">
               <table class="created-company-table">
