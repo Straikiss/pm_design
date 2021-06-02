@@ -12,52 +12,65 @@
     <div class="block-modal" id="video-modal-1">
       <div class="block-modal-inside">
         <button class="block-modal-inside-btn" onclick="CloseModal('video-modal-1');">
-           <i class="bi bi-x-circle svg-2"></i></button>
+          <i class="bi bi-x-circle svg-2"></i>
+        </button>
         <iframe class="block-modal-inside-iframe" src="https://www.youtube.com/embed/5juX944Pos8" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
     <div class="block-modal" id="video-modal-2">
       <div class="block-modal-inside">
         <button class="block-modal-inside-btn" onclick="CloseModal('video-modal-2');">
-           <i class="bi bi-x-circle svg-2"></i></button>
+          <i class="bi bi-x-circle svg-2"></i>
+        </button>
         <iframe class="block-modal-inside-iframe" src="https://www.youtube.com/embed/hpbNqUY2LQo" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
-    <div class="block-modal" id="video-modal-3">
+    <div class="block-modal" id="video-modal-3" style="display: block;">
       <div class="block-modal-inside">
+        <h2 style="display: inline-block;">Создание рекламной кампании</h2>
         <button class="block-modal-inside-btn" onclick="CloseModal('video-modal-3');">
-           <i class="bi bi-x-circle svg-2"></i></button>
+          <i class="bi bi-x-circle svg-2"></i>
+        </button>
         <iframe class="block-modal-inside-iframe" src="https://www.youtube.com/embed/b8OlblFwOYs" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
-    <div class="block-modal-start" id="start-modal">
-      <div class="block-modal-start-inside"><svg class="modal-svg" viewBox="0 0 223 90" fill="none">
-<circle cx="32" cy="81" r="2.5" stroke="#FFE000"></circle>
-<circle cx="29" cy="14" r="2.5" stroke="#852BF9"></circle>
-<circle cx="202" cy="5" r="4.5" stroke="#FFE000"></circle>
-<rect x="146.243" y="9" width="6" height="6" transform="rotate(45 146.243 9)" fill="#8E03E2"></rect>
-<rect x="176.243" y="70" width="6" height="6" transform="rotate(45 176.243 70)" fill="#FFE000"></rect>
-<rect x="11.0449" y="80.127" width="8" height="8" transform="rotate(81.7944 11.0449 80.127)" fill="#852BF9"></rect>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M7.99993 0C7.36875 0 6.85708 0.511674 6.85708 1.14286V6.85754H1.14286C0.511675 6.85754 0 7.36921 0 8.00039C0 8.63158 0.511674 9.14325 1.14286 9.14325H6.85708V14.8571C6.85708 15.4883 7.36875 16 7.99993 16C8.63112 16 9.14279 15.4883 9.14279 14.8571V9.14325H14.8571C15.4883 9.14325 16 8.63158 16 8.00039C16 7.36921 15.4883 6.85754 14.8571 6.85754H9.14279V1.14286C9.14279 0.511675 8.63112 0 7.99993 0Z" fill="#FFE000"></path>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M217 75C216.527 75 216.143 75.3838 216.143 75.8571V80.1434H211.857C211.384 80.1434 211 80.5271 211 81.0005C211 81.4739 211.384 81.8576 211.857 81.8576H216.143V86.1429C216.143 86.6162 216.527 87 217 87C217.473 87 217.857 86.6162 217.857 86.1429V81.8576H222.143C222.616 81.8576 223 81.4739 223 81.0005C223 80.5271 222.616 80.1434 222.143 80.1434H217.857V75.8571C217.857 75.3838 217.473 75 217 75Z" fill="#8E03E2"></path>
-</svg><span class="pay-modal-bg"><i class="bi bi-gem"></i></span>
+    <!-- <div class="block-modal-start" id="start-modal">
+      <div class="block-modal-start-inside">
+        <svg class="modal-svg" viewBox="0 0 223 90" fill="none">
+          <circle cx="32" cy="81" r="2.5" stroke="#FFE000"></circle>
+          <circle cx="29" cy="14" r="2.5" stroke="#852BF9"></circle>
+          <circle cx="202" cy="5" r="4.5" stroke="#FFE000"></circle>
+          <rect x="146.243" y="9" width="6" height="6" transform="rotate(45 146.243 9)" fill="#8E03E2"></rect>
+          <rect x="176.243" y="70" width="6" height="6" transform="rotate(45 176.243 70)" fill="#FFE000"></rect>
+          <rect x="11.0449" y="80.127" width="8" height="8" transform="rotate(81.7944 11.0449 80.127)" fill="#852BF9"></rect>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99993 0C7.36875 0 6.85708 0.511674 6.85708 1.14286V6.85754H1.14286C0.511675 6.85754 0 7.36921 0 8.00039C0 8.63158 0.511674 9.14325 1.14286 9.14325H6.85708V14.8571C6.85708 15.4883 7.36875 16 7.99993 16C8.63112 16 9.14279 15.4883 9.14279 14.8571V9.14325H14.8571C15.4883 9.14325 16 8.63158 16 8.00039C16 7.36921 15.4883 6.85754 14.8571 6.85754H9.14279V1.14286C9.14279 0.511675 8.63112 0 7.99993 0Z" fill="#FFE000"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M217 75C216.527 75 216.143 75.3838 216.143 75.8571V80.1434H211.857C211.384 80.1434 211 80.5271 211 81.0005C211 81.4739 211.384 81.8576 211.857 81.8576H216.143V86.1429C216.143 86.6162 216.527 87 217 87C217.473 87 217.857 86.6162 217.857 86.1429V81.8576H222.143C222.616 81.8576 223 81.4739 223 81.0005C223 80.5271 222.616 80.1434 222.143 80.1434H217.857V75.8571C217.857 75.3838 217.473 75 217 75Z" fill="#8E03E2"></path>
+        </svg>
+        <span class="pay-modal-bg">
+          <i class="bi bi-gem"></i>
+        </span>
         <button class="block-modal-inside-btn" onclick="CloseModal('start-modal');">
-           <i class="bi bi-x-circle svg-2"></i></button>
+          <i class="bi bi-x-circle svg-2"></i>
+        </button>
         <h1 class="text-center margin">Добро пожаловать в PostMarket!</h1>
-        <h2 class="text-center">
-          Будем рады нашему с Вами сотрудничеству. А для того, чтобы Вам работать с нами было легко, посмотрите это <button class="start-button" onclick="OpenModalStart();"> видео</button>.</h2>
+        <h2 class="text-center">Будем рады нашему с Вами сотрудничеству. А для того, чтобы Вам работать с нами было легко, посмотрите это 
+          <button class="start-button" onclick="OpenModalStart();"> видео</button>.
+        </h2>
       </div>
-    </div>
+    </div> -->
     <div class="header">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-6 col-md-3 col-sm-5 col-4">
-            <div class="header-link" id="hidden-link"><i class="bi bi-list svg-3"></i> Меню</div>
+            <div class="header-link" id="hidden-link">
+              <i class="bi bi-list svg-3"></i>
+            </div>
             <h1 class="header-title">Главная</h1>
           </div>
           <div class="col-lg-6 col-md-9 col-sm-7 col-8">
             <div class="header-status">
-              <p class="header-status-balance">5000₽</p><a class="header-status-pay" href="settings.html">Пополнить баланс</a>
+              <p class="header-status-balance">25000₽</p>
+              <a class="header-status-pay" href="settings.html">Пополнить баланс</a>
             </div>
           </div>
         </div>
@@ -65,125 +78,241 @@
     </div>
     <div class="main">
       <div class="aside" id="hidden-element">
-        <div class="aside-logo"><i class="aside-logo-svg"></i></div>
+        <div class="aside-logo">
+          <p class="header-status-balance"> 
+            <i class="bi bi-wallet svg"></i> 25000₽ 
+            <a class="header-status-pay" href="settings.html">Пополнить</a>
+          </p>
+        </div>
         <div class="aside-link hide-2" id="hidden-link-2">
-           <i class="bi bi-x-circle svg"></i> Закрыть меню</div><a class="aside-link aside-link-create" href="create-company.html">
-           <i class="bi bi-plus-circle svg"></i> Запустить рекламу</a><a class="aside-link aside-link-active" href="index.html"><i class="bi bi-house svg"></i> Главная</a><a class="aside-link" href="company.html">
-           <i class="bi bi-bullseye svg"></i> Реклама </a><a class="aside-link" href="bloggers.html">
-           <i class="bi bi-people svg"></i> Блогеры </a><a class="aside-link" href="settings.html">
-           <i class="bi bi-gear svg"></i> Настройки</a><a class="aside-link" href="partner.html">
-           <i class="bi bi-briefcase svg"></i> Партнер</a><a class="aside-link" href="#">
-           <i class="bi bi-box-arrow-right svg"></i> Выйти</a>
+          <i class="bi bi-x-circle svg"></i> Закрыть меню
+        </div>
+        <a class="aside-link aside-link-create" href="create-company.html">
+          <i class="bi bi-plus-circle svg"></i> Запустить рекламу
+        </a>
+        <a class="aside-link aside-link-active" href="index.html">
+          <i class="bi bi-house svg"></i> Главная
+        </a> 
+        <a class="aside-link" href="company.html">
+          <i class="bi bi-bullseye svg"></i> Реклама 
+        </a>
+        <a class="aside-link" href="bloggers.html">
+          <i class="bi bi-people svg"></i> Блогеры 
+        </a>
+        <a class="aside-link" href="settings.html">
+          <i class="bi bi-gear svg"></i> Настройки
+        </a>
+        <a class="aside-link" href="partner.html">
+          <i class="bi bi-briefcase svg"></i> Партнер
+        </a>
+        <a class="aside-link" href="#">
+          <i class="bi bi-box-arrow-right svg"></i> Выйти
+        </a>
+        <i class="aside-logo-svg"></i>
       </div>
       <div class="container">
         <div class="row">
           <div class="col-lg-7 col-md-12">
-            <div class="home-bloggers">
-              <h2 class="home-bloggers-title">Проверенных блогеров <a href="bloggers.html" class="color-purple"> 34 500<a class="home-bloggers-title-link" href="bloggers.html">все</a></h2>
+            <div class="home-bloggers" style="margin-top: 30px;">
+              <h2 class="home-bloggers-title">Проверенных блогеров 
+                <a class="color-purple" href="bloggers.html">34 500</a>
+                <a class="home-bloggers-title-link" href="bloggers.html">все</a>
+              </h2>
               <div class="row">
-                <div class="col-sm-3 col-6"><a class="home-bloggers-block" href="blogger.html">
-                    <p class="home-bloggers-block-text">Ksenia Dondukova</p><img class="home-bloggers-block-image" src="img/bloggers/2.png" draggable="false">
+                <div class="col-sm-3 col-6">
+                  <a class="home-bloggers-block" href="blogger.html">
+                    <p class="home-bloggers-block-text">Ksenia Dondukova</p>
+                    <img class="home-bloggers-block-image" src="img/bloggers/2.png" draggable="false">
                     <p class="home-bloggers-block-text">17 806</p>
-                    <div class="home-bloggers-block-icons"><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-                    </div></a></div>
-                <div class="col-sm-3 col-6"><a class="home-bloggers-block" href="blogger.html">
-                    <p class="home-bloggers-block-text">Ksenia Dondukova</p><img class="home-bloggers-block-image" src="img/bloggers/2.png" draggable="false">
+                    <div class="home-bloggers-block-icons">
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-sm-3 col-6">
+                  <a class="home-bloggers-block" href="blogger.html">
+                    <p class="home-bloggers-block-text">Ksenia Dondukova</p>
+                    <img class="home-bloggers-block-image" src="img/bloggers/2.png" draggable="false">
                     <p class="home-bloggers-block-text">17 806</p>
-                    <div class="home-bloggers-block-icons"><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-                    </div></a></div>
-                <div class="col-sm-3 col-6"><a class="home-bloggers-block" href="blogger.html">
-                    <p class="home-bloggers-block-text">Ksenia Dondukova</p><img class="home-bloggers-block-image" src="img/bloggers/2.png" draggable="false">
+                    <div class="home-bloggers-block-icons">
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-sm-3 col-6">
+                  <a class="home-bloggers-block" href="blogger.html">
+                    <p class="home-bloggers-block-text">Ksenia Dondukova</p>
+                    <img class="home-bloggers-block-image" src="img/bloggers/2.png" draggable="false">
                     <p class="home-bloggers-block-text">17 806</p>
-                    <div class="home-bloggers-block-icons"><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-                    </div></a></div>
-                <div class="col-sm-3 col-6"><a class="home-bloggers-block" href="blogger.html">
-                    <p class="home-bloggers-block-text">Ksenia Dondukova</p><img class="home-bloggers-block-image" src="img/bloggers/2.png" draggable="false">
+                    <div class="home-bloggers-block-icons">
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-sm-3 col-6">
+                  <a class="home-bloggers-block" href="blogger.html">
+                    <p class="home-bloggers-block-text">Ksenia Dondukova</p>
+                    <img class="home-bloggers-block-image" src="img/bloggers/2.png" draggable="false">
                     <p class="home-bloggers-block-text">17 806</p>
-                    <div class="home-bloggers-block-icons"><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-                    </div></a></div>
-                <div class="col-sm-3 col-6"><a class="home-bloggers-block" href="blogger.html">
-                    <p class="home-bloggers-block-text">Ksenia Dondukova</p><img class="home-bloggers-block-image" src="img/bloggers/2.png" draggable="false">
+                    <div class="home-bloggers-block-icons">
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-sm-3 col-6">
+                  <a class="home-bloggers-block" href="blogger.html">
+                    <p class="home-bloggers-block-text">Ksenia Dondukova</p>
+                    <img class="home-bloggers-block-image" src="img/bloggers/2.png" draggable="false">
                     <p class="home-bloggers-block-text">17 806</p>
-                    <div class="home-bloggers-block-icons"><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-                    </div></a></div>
-                <div class="col-sm-3 col-6"><a class="home-bloggers-block" href="blogger.html">
-                    <p class="home-bloggers-block-text">Ksenia Dondukova</p><img class="home-bloggers-block-image" src="img/bloggers/2.png" draggable="false">
+                    <div class="home-bloggers-block-icons">
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-sm-3 col-6">
+                  <a class="home-bloggers-block" href="blogger.html">
+                    <p class="home-bloggers-block-text">Ksenia Dondukova</p>
+                    <img class="home-bloggers-block-image" src="img/bloggers/2.png" draggable="false">
                     <p class="home-bloggers-block-text">17 806</p>
-                    <div class="home-bloggers-block-icons"><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-                    </div></a></div>
-                <div class="col-sm-3 col-6"><a class="home-bloggers-block" href="blogger.html">
-                    <p class="home-bloggers-block-text">Ksenia Dondukova</p><img class="home-bloggers-block-image" src="img/bloggers/2.png" draggable="false">
+                    <div class="home-bloggers-block-icons">
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-sm-3 col-6">
+                  <a class="home-bloggers-block" href="blogger.html">
+                    <p class="home-bloggers-block-text">Ksenia Dondukova</p>
+                    <img class="home-bloggers-block-image" src="img/bloggers/2.png" draggable="false">
                     <p class="home-bloggers-block-text">17 806</p>
-                    <div class="home-bloggers-block-icons"><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-                    </div></a></div>
-                <div class="col-sm-3 col-6"><a class="home-bloggers-block" href="blogger.html">
-                    <p class="home-bloggers-block-text">Ksenia Dondukova</p><img class="home-bloggers-block-image" src="img/bloggers/2.png" draggable="false">
+                    <div class="home-bloggers-block-icons">
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-sm-3 col-6">
+                  <a class="home-bloggers-block" href="blogger.html">
+                    <p class="home-bloggers-block-text">Ksenia Dondukova</p>
+                    <img class="home-bloggers-block-image" src="img/bloggers/2.png" draggable="false">
                     <p class="home-bloggers-block-text">17 806</p>
-                    <div class="home-bloggers-block-icons"><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-                    </div></a></div>
+                    <div class="home-bloggers-block-icons">
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                      <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-lg-5">
             <div class="row">
               <div class="col-12">
-                <div class="home-company-create">
-                  <h2 class="home-company-create-title">Создайте рекламную кампанию. </h2>
-                  <p class="home-company-create-text">Заполните форму, укажите все требуемые параметры и запустите рекламную кампанию.</p><a class="home-company-create-button" href="create-company.html">Создать</a>
+                <div class="home-company-create" style="margin-top: 30px;">
+                  <h2 class="home-company-create-title">Создайте рекламную кампанию.</h2>
+                  <p class="home-company-create-text">Заполните форму, укажите все требуемые параметры и запустите рекламную кампанию.</p>
+                  <a class="home-company-create-button" href="create-company.html">Создать</a>
                 </div>
               </div>
-              <div class="col-sm-6">
-                <div class="home-company"><i class="home-company-clock"></i>
-                  <h2 class="home-company-title">Быстрое создание рекламной кампании!</h2>
-                  <p>Быстрый старт Вашей рекламной кампании.</p>
+              <div class="col-12">
+                <div class="block-def">
+                  <!-- <i class="home-company-clock"></i> -->
+                  <!-- <h2 class="home-company-title">Быстрое создание рекламной кампании!</h2> -->
+                  <iframe style="height:224px;" class="block-modal-inside-iframe" src="https://www.youtube.com/embed/b8OlblFwOYs" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
               </div>
-              <div class="col-sm-6">
-                <div class="home-company-2"><i class="home-company-search"></i>
+              <!-- <div class="col-sm-6">
+                <div class="home-company-2">
+                  <i class="home-company-search"></i>
                   <h2 class="home-company-title">PostMarket подберет блогеров для Вас.</h2>
                   <p>Не тратьте свое время на поиски блогеров.</p>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="col-12">
-            <h2 class="home-block-title"><i class="bi bi-award svg-2 color-purple"></i> Покупайте результат в PostMarket с гарантией 100%</h2>
+            <h2 class="home-block-title">
+              <i class="bi bi-award svg-2 color-purple"></i> Покупайте результат в PostMarket с гарантией 100%
+            </h2>
           </div>
           <div class="col-md-4 col-sm-6">
-            <div class="home-block-2 cursor-pointer" onclick="window.open('create-company-cpa-1.html','_self');"><img class="home-block-inside-image" src="img/home/preview/1.png" draggable="false" height="223"><i class="bi bi-plus home-block-inside-svg color-purple"></i>
-              <p class="home-block-inside-text">Выбирайте цель сами за что Вы готовы платить! За регистрации, продажи, установки, заполнение формы. </p>
+            <div class="home-block-2 cursor-pointer" onclick="window.open('create-company-cpa-1.html','_self');">
+              <img class="home-block-inside-image" src="img/home/preview/1.png" draggable="false" height="223">
+              <i class="bi bi-plus home-block-inside-svg color-purple"></i>
+              <p class="home-block-inside-text">Выбирайте цель сами за что Вы готовы платить! За регистрации, продажи, установки, заполнение формы.</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6">
-            <div class="home-block-2 cursor-pointer" onclick="window.open('create-company-cpa-1.html','_self');"><img class="home-block-inside-image" src="img/home/preview/2.png" draggable="false"><i class="bi bi-plus home-block-inside-svg color-purple"></i>
+            <div class="home-block-2 cursor-pointer" onclick="window.open('create-company-cpa-1.html','_self');">
+              <img class="home-block-inside-image" src="img/home/preview/2.png" draggable="false">
+              <i class="bi bi-plus home-block-inside-svg color-purple"></i>
               <p class="home-block-inside-text">Мы бесплатно готовим под Вас взрывную рекламную кампанию для максимального количества полученных целей.</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6">
-            <div class="home-block-2 cursor-pointer" onclick="window.open('create-company-cpa-1.html','_self');"><img class="home-block-inside-image" src="img/home/preview/3.png" draggable="false"><i class="bi bi-plus home-block-inside-svg color-purple"></i>
+            <div class="home-block-2 cursor-pointer" onclick="window.open('create-company-cpa-1.html','_self');">
+              <img class="home-block-inside-image" src="img/home/preview/3.png" draggable="false">
+              <i class="bi bi-plus home-block-inside-svg color-purple"></i>
               <p class="home-block-inside-text">Деньги с Вашего депозита списываются только за достигнутые цели! Оставшиеся средства Вы можете вернуть себе на карту.</p>
             </div>
           </div>
           <div class="col-12">
-            <h2 class="home-block-title"><i class="bi bi-newspaper svg-2 color-purple"></i> Информационные материалы PostMarket</h2>
+            <h2 class="home-block-title">
+              <i class="bi bi-newspaper svg-2 color-purple"></i> Информационные материалы PostMarket
+            </h2>
           </div>
           <div class="col-md-4 col-sm-6">
             <div class="home-block-2 cursor-pointer" onclick="OpenModal('video-modal-1');">
-              <div class="home-block-inside"><img class="home-block-inside-image" src="img/home/case/1.png" draggable="false"><i class="bi bi-play home-block-inside-svg"></i>
+              <div class="home-block-inside">
+                <img class="home-block-inside-image" src="img/home/case/1.png" draggable="false">
+                <i class="bi bi-play home-block-inside-svg"></i>
                 <p class="home-block-inside-text">Обзор сервиса маркетологом Дамиром Халиловым</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 col-sm-6">
             <div class="home-block-2 cursor-pointer" onclick="OpenModal('video-modal-2');">
-              <div class="home-block-inside"><img class="home-block-inside-image" src="img/home/case/2.png" draggable="false"><i class="bi bi-play home-block-inside-svg"></i>
+              <div class="home-block-inside">
+                <img class="home-block-inside-image" src="img/home/case/2.png" draggable="false">
+                <i class="bi bi-play home-block-inside-svg"></i>
                 <p class="home-block-inside-text">Обзор сервиса маркетологом Антоном Сабуровым</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 col-sm-6">
             <div class="home-block-2 cursor-pointer" onclick="window.open('https://www.cossa.ru/cases/279524/','_blank');">
-              <div class="home-block-inside"><img class="home-block-inside-image" src="img/home/case/3.png" draggable="false"><i class="bi bi-arrow-right-short home-block-inside-svg"></i>
+              <div class="home-block-inside">
+                <img class="home-block-inside-image" src="img/home/case/3.png" draggable="false">
+                <i class="bi bi-arrow-right-short home-block-inside-svg"></i>
                 <p class="home-block-inside-text">Кейс маркетингового агенства cossa.ru с PostMarket</p>
               </div>
             </div>
