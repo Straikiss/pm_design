@@ -1,8 +1,8 @@
-var myLink = document.getElementById('hidden-link');
-var myLink2 = document.getElementById('hidden-link-2');
-var myElement = document.getElementById('hidden-element');
-myLink.onclick = function(){myElement.style.transform = "translateX(0)";};
-myLink2.onclick = function(){myElement.style.transform = "translateX(-100%)";};
+function OpenMenu(){
+  let HiddenElement = document.getElementById('hidden-element');
+  HiddenElement.style.transform = (HiddenElement.style.transform == 'translateX(-100%)') ? 'translateX(0)' : 'translateX(-100%)'
+}
+
 var modal=document.getElementById("video-modal-1");
 var modal=document.getElementById("video-modal-2");
 var modal=document.getElementById("chat-modal-1");

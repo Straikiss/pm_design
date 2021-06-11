@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Рекламная кампания - Подробно - Рекламодатель - PostMarket</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="../img/fav/pm-fav.png">
+    <link rel="stylesheet" href="../css/main.css">
+  </head>
+  <body>
+    <!-- <div class="block-modal-start" id="start-modal">
+      <div class="block-modal-start-inside"><svg class="modal-svg" viewBox="0 0 223 90" fill="none">
+<circle cx="32" cy="81" r="2.5" stroke="#FFE000"></circle>
+<circle cx="29" cy="14" r="2.5" stroke="#852BF9"></circle>
+<circle cx="202" cy="5" r="4.5" stroke="#FFE000"></circle>
+<rect x="146.243" y="9" width="6" height="6" transform="rotate(45 146.243 9)" fill="#8E03E2"></rect>
+<rect x="176.243" y="70" width="6" height="6" transform="rotate(45 176.243 70)" fill="#FFE000"></rect>
+<rect x="11.0449" y="80.127" width="8" height="8" transform="rotate(81.7944 11.0449 80.127)" fill="#852BF9"></rect>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.99993 0C7.36875 0 6.85708 0.511674 6.85708 1.14286V6.85754H1.14286C0.511675 6.85754 0 7.36921 0 8.00039C0 8.63158 0.511674 9.14325 1.14286 9.14325H6.85708V14.8571C6.85708 15.4883 7.36875 16 7.99993 16C8.63112 16 9.14279 15.4883 9.14279 14.8571V9.14325H14.8571C15.4883 9.14325 16 8.63158 16 8.00039C16 7.36921 15.4883 6.85754 14.8571 6.85754H9.14279V1.14286C9.14279 0.511675 8.63112 0 7.99993 0Z" fill="#FFE000"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M217 75C216.527 75 216.143 75.3838 216.143 75.8571V80.1434H211.857C211.384 80.1434 211 80.5271 211 81.0005C211 81.4739 211.384 81.8576 211.857 81.8576H216.143V86.1429C216.143 86.6162 216.527 87 217 87C217.473 87 217.857 86.6162 217.857 86.1429V81.8576H222.143C222.616 81.8576 223 81.4739 223 81.0005C223 80.5271 222.616 80.1434 222.143 80.1434H217.857V75.8571C217.857 75.3838 217.473 75 217 75Z" fill="#8E03E2"></path>
+</svg><span class="pay-modal-bg"><i class="bi bi-gem"></i></span>
+        <button class="block-modal-inside-btn" onclick="CloseModal('start-modal');">
+           <i class="bi bi-x-circle svg-2"></i></button>
+        <h1 class="text-center margin">Оцените работу блогеров по Вашей рекламе!</h1>
+        <h2 class="text-center">
+          Мы будем рады узнать качество выполнения работы каждого блогера по Вашей рекламной кампании. <button class="start-button" onclick="RateBloggers();"> Оценить</button>.</h2>
+      </div>
+    </div> -->
+    <!-- <div class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-3 col-sm-5 col-4">
+            <div class="header-link" id="hidden-link">
+              <i class="bi bi-list svg-3"></i> Меню
+            </div>
+            <h1 class="header-title">Рекламная кампания - Подробно</h1>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-9 col-sm-7 col-8">
+            <div class="header-status">
+              <p class="header-status-balance">0 ₽ <sup class="header-status-balance-money">5 000 ₽</p><a class="header-status-pay" href="settings.html">Пополнить баланс</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="main">
+      <div class="aside" id="hidden-element">
+        <div class="aside-logo">
+          <p class="header-status-balance"> 
+            <i class="bi bi-wallet svg"></i> 5000₽ 
+            <a class="header-status-pay" href="../settings.html">Пополнить</a>
+          </p>
+        </div>
+        <div class="aside-link hide-2" id="hidden-link-2">
+          <i class="bi bi-x-circle svg"></i> Закрыть меню
+        </div>
+        <a class="aside-link aside-link-create" href="../create-company.html">
+          <i class="bi bi-plus-circle svg"></i> Запустить рекламу
+        </a>
+        <a class="aside-link" href="../index.html">
+          <i class="bi bi-house svg"></i> Главная
+        </a> 
+        <a class="aside-link aside-link-active" href="../company.html">
+          <i class="bi bi-bullseye svg"></i> Реклама 
+        </a>
+        <a class="aside-link" href="../bloggers.html">
+          <i class="bi bi-people svg"></i> Блогеры 
+        </a>
+        <a class="aside-link" href="../settings.html">
+          <i class="bi bi-gear svg"></i> Настройки
+        </a>
+        <a class="aside-link" href="../partner.html">
+          <i class="bi bi-briefcase svg"></i> Партнер
+        </a>
+        <a class="aside-link" href="#">
+          <i class="bi bi-box-arrow-right svg"></i> Выйти
+        </a>
+        <i class="aside-logo-svg"></i>
+      </div>
+      <div class="container created-company" style="padding-top: 30px;">
+        <div class="row">
+          <div class="col-xl-12 margin"> 
+            <div class="block-def">
+              <div class="row">
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-2">
+                  <div class="block-company-inside bg-done">
+                    <i class="bi bi-check2 block-company-inside-svg"></i>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-3 col-md-4 col-sm-6">
+                  <div class="created-company-title"> 
+                    <p class="color-done">Выполнено</p>
+                  </div>
+                </div>
+                <div class="col-xl-7 col-lg-8">
+                  <div class="row created-company-title-2">
+                    <div class="col-xl-4 offset-xl-8 col-lg-4 offset-lg-8 col-md-4">
+                      <a class="block-create-company-link" href="#">
+                        <i class="bi bi-arrow-repeat svg-3"></i> Возобновить
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <p class="input-def-title mb-0">Текст публикации</p>
+                  <p class="mt-10">Лима Баррето родился в Рио-де-Жанейро в бедной семье смешанной этнической принадлежности (был мулатом). Поскольку рабство в Бразилии было упразднено в 1888 году, Баррето получил доступ к высшему образованию.</p>
+                </div>
+                <div class="col-12">
+                  <p class="input-def-title mb-0">Описание задачи</p>
+                  <p class="mt-10">Лима Баррето родился в Рио-де-Жанейро в бедной семье смешанной этнической принадлежности (был мулатом). Поскольку рабство в Бразилии было упразднено в 1888 году, Баррето получил доступ к высшему образованию.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 margin"> 
+            <div class="block-def"> 
+              <h2>
+                 <i class="bi bi-wallet svg-2 color-purple"></i> Бюджет</h2>
+              <div class="create-company-line">
+                <div class="create-company-line-full"></div>
+              </div>
+              <div class="row margin"> 
+                <div class="col-6">  
+                  <p class="color-gray create-company-dot dot-purple">Оплачено <span class="float-right color-black">0 ₽</p>
+                </div>
+                <div class="col-6">   
+                  <p class="color-gray create-company-dot dot-gray">Потрачено <span class="float-right color-black">0 ₽</p>
+                </div>
+              </div>
+              <div class="row"> 
+                <div class="col-6"> 
+                  <h2><i class="bi bi-people svg-2 color-purple"></i> Аудитория</h2>
+                  <div class="create-company-line"></div>
+                  <p class="color-gray create-company-dot dot-purple mb-10">Результат <span class="float-right color-black">0</p>
+                  <p class="color-gray create-company-dot dot-gray">Прогноз <span class="float-right color-black">5 000</p>
+                </div>
+                <div class="col-6"> 
+                  <h2><i class="bi bi-person svg-2 color-purple"></i> Блогеров</h2>
+                  <div class="create-company-line"></div>
+                  <p class="color-gray create-company-dot dot-purple mb-10">Результат <span class="float-right color-black">0</p>
+                  <p class="color-gray create-company-dot dot-gray">Прогноз <span class="float-right color-black">15</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 margin">
+            <div class="block-def"> 
+              <h2>
+                 <i class="bi bi-bar-chart svg-2 color-purple"></i> Диаграмма охвата</h2>
+              <div class="row"> 
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12"><!-- место для #graphics --></div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                  <h2 class="mt-20 mb-10 created-company-count">5 000</h2>
+                  <p class="color-gray mb-10">Итоговый охват</p>
+                  <p class="color-gray create-company-dot dot-gray mb-10">Фактический охват </p>
+                  <p class="color-gray create-company-dot dot-purple">Меньше прогноза</p><br><br><br>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 margin"> 
+            <div class="block-def"> 
+              <h2>
+                 <i class="bi bi-archive svg-2 color-purple"></i> Настройки контента</h2>
+              <p class="mt-20 mb-10 color-gray">Контент предоставляет: <span class="float-right color-black">Блогер</p>
+              <p class="mb-10 color-gray">Тип публикации: <span class="float-right color-black">Пост</p>
+              <p class="mb-10 color-gray">
+                Аккаунт инстаграм: <span class="float-right"><a href="http://instagram.com/postmarket_code" target="_blank" class="color-purple">@postmarket_code</a></p>
+              <p class="mb-10 color-gray">
+                Ссылка на сайт: <span class="float-right"><a href="postmarket.pro" target="_blank" class="color-purple">postmarket.pro</a></p>
+              <p class="mb-10 color-gray">Геолокация: <span class="float-right color-black">МОСКВА</p>
+              <p class="color-gray">Хэштег: <span class="float-right color-black">#postmarket.pro</p>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 margin"> 
+            <div class="block-def"> 
+              <h2>
+                 <i class="bi bi-bullseye svg-2 color-purple"></i> Настройки таргетинга</h2>
+              <p class="mt-20 mb-10 color-gray">Пол блогера: <span class="float-right color-black">Любой</p>
+              <p class="mb-10 color-gray">Пол аудитории: <span class="float-right color-black">Любой</p>
+              <p class="mb-10 color-gray">Аудитория: <span class="float-right color-black">25 000</p>
+              <p class="mb-10 color-gray">Регион: <span class="float-right color-black">Россия</p>
+              <p class="mb-10 color-gray">Тематика: <span class="float-right color-black">Любая</p><br>
+            </div>
+          </div>
+          <div class="col-12 margin">
+            <div class="block-def"> 
+              <h2>
+                 <i class="bi bi-camera svg-2 color-purple"></i> Фото/Видео кампании</h2>
+              <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
+                  <div class="uploaded"><a href="#"><img class="uploaded-image" src="../img/blogger-card/1.png" draggable="false"></a></div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
+                  <div class="uploaded"><a href="#"><img class="uploaded-image" src="../img/blogger-card/1.png" draggable="false"></a></div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
+                  <div class="uploaded"><a href="#"><img class="uploaded-image" src="../img/blogger-card/1.png" draggable="false"></a></div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
+                  <div class="uploaded"><a href="#"><img class="uploaded-image" src="../img/blogger-card/1.png" draggable="false"></a></div>
+                </div>
+              </div>
+            </div>
+          </div><!-- PRO подбор --> 
+          <div class="col-12 margin">
+            <div class="block-def"> 
+              <h2 class="mb-10">
+                <i class="bi bi-pencil-square svg-2 color-purple"></i> Специалисты PostMarket подготовили сценарий для блогера
+              </h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolor voluptatum at delectus eligendi ratione voluptates rem nam! Officia dolore quidem ex voluptatibus quia quasi dolores modi nobis iste aliquam!</p>
+            </div>
+          </div>
+          <div class="col-12 margin">
+            <div class="block-def"> 
+              <h2>
+                <i class="bi bi-camera svg-2 color-purple"></i> Специалисты PostMarket подготовили промо материал
+              </h2>
+              <div class="row">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                  <div class="uploaded">
+                    <a href="#">
+                      <img class="uploaded-image" src="../img/blogger-card/1.png" draggable="false">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                  <div class="uploaded">
+                    <a href="#">
+                      <img class="uploaded-image" src="../img/blogger-card/1.png" draggable="false">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                  <div class="uploaded">
+                    <a href="#">
+                      <img class="uploaded-image" src="../img/blogger-card/1.png" draggable="false">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                  <div class="uploaded">
+                    <a href="#">
+                      <img class="uploaded-image" src="../img/blogger-card/1.png" draggable="false">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- ручной подбор --> 
+          <div class="col-xl-12 margin">
+            <div class="block-def-4 margin">
+              <h2 class="margin">Выбранные блогеры для рекламы <span class="blogger-span">15</h2>
+              <div class="row">
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                  <div class="block-blogger padding">
+                    <div class="row">
+                      <div class="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-6 offset-sm-3 col-6 offset-3">
+                        <a href="blogger.html">
+                          <img class="block-blogger-avatar" src="https://postmarketstorage.blob.core.windows.net/publisher-avatars/publisher41595.jpg" draggable="false">
+                        </a>
+                      </div>
+                      <div class="col-12">
+                        <p class="mb-5 h-20 text-center">Adeliya</p>
+                        <p class="mb-5 h-20 text-center"> 
+                          <a class="block-blogger-card-link" href="https://www.instagram.com/adelia.twins_1/" target="_blank">@adelia.twins_1</a>
+                        </p>
+                        <div class="row">  
+                          <div class="col-6">
+                            <p class="mb-5">Охват:</p>
+                          </div>
+                          <div class="col-6">
+                            <p class="mb-5 text-align">1236</p>
+                          </div>
+                          <div class="col-6">
+                            <p class="mb-5">Подписчики:</p>
+                          </div>
+                          <div class="col-6">
+                            <p class="mb-5 text-align">4 334</p>
+                          </div>
+                          <div class="col-xl-6 col-lg-5 col-md-6 col-sm-6 col-6">
+                            <p class="mb-5">Качество:</p>
+                          </div>
+                          <div class="col-xl-6 col-lg-7 col-md-6 col-sm-6 col-6">
+                            <div class="block-icons color-purple text-align mb-5">
+                              <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                              <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                              <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                              <i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
+                              <i class="bi bi-star home-bloggers-block-icons-svg"></i>
+                            </div>
+                          </div>
+                          <div class="col-4">
+                            <p class="mb-5">Тематики:</p>
+                          </div>
+                          <div class="col-8">
+                            <p class="mb-5 text-align">Личный блог</p>
+                            <p class="mb-5 text-align">Безнес/Финансы</p>
+                            <p class="mb-5 text-align">- не указано -</p>
+                          </div>
+                          <div class="col-12">
+                            <p class="block-blogger-see">Рекламу увидят: 153 чел.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                  <div class="block-blogger padding">
+                    <div class="row">
+                      <div class="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-6 offset-sm-3 col-6 offset-3">
+                        <a href="blogger.html">
+                          <img class="block-blogger-avatar" src="https://postmarketstorage.blob.core.windows.net/publisher-avatars/publisher41595.jpg" draggable="false">
+                        </a>
+                      </div>
+                      <div class="col-12">
+                        <p class="mb-5 h-20 text-center">Adeliya</p>
+                        <p class="mb-5 h-20 text-center"> 
+                          <a class="block-blogger-card-link" href="https://www.instagram.com/adelia.twins_1/" target="_blank">@adelia.twins_1</a>
+                        </p>
+                        <div class="row">  
+                          <div class="col-6">
+                            <p class="mb-5">Охват:</p>
+                          </div>
+                          <div class="col-6">
+                            <p class="mb-5 text-align">1236</p>
+                          </div>
+                          <div class="col-6">
+                            <p class="mb-5">Подписчики:</p>
+                          </div>
+                          <div class="col-6">
+                            <p class="mb-5 text-align">4 334</p>
+                          </div>
+                          <div class="col-xl-6 col-lg-5 col-md-6 col-sm-6 col-6">
+                            <p class="mb-5">Качество:</p>
+                          </div>
+                          <div class="col-xl-6 col-lg-7 col-md-6 col-sm-6 col-6">
+                            <div class="block-icons color-purple text-align mb-5">
+                              <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                              <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                              <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                              <i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
+                              <i class="bi bi-star home-bloggers-block-icons-svg"></i>
+                            </div>
+                          </div>
+                          <div class="col-4">
+                            <p class="mb-5">Тематики:</p>
+                          </div>
+                          <div class="col-8">
+                            <p class="mb-5 text-align">Личный блог</p>
+                            <p class="mb-5 text-align">Безнес/Финансы</p>
+                            <p class="mb-5 text-align">- не указано -</p>
+                          </div>
+                          <div class="col-12">
+                            <p class="block-blogger-see">Рекламу увидят: 153 чел.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                  <div class="block-blogger padding">
+                    <div class="row">
+                      <div class="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-6 offset-sm-3 col-6 offset-3">
+                        <a href="blogger.html">
+                          <img class="block-blogger-avatar" src="https://postmarketstorage.blob.core.windows.net/publisher-avatars/publisher41595.jpg" draggable="false">
+                        </a>
+                      </div>
+                      <div class="col-12">
+                        <p class="mb-5 h-20 text-center">Adeliya</p>
+                        <p class="mb-5 h-20 text-center"> 
+                          <a class="block-blogger-card-link" href="https://www.instagram.com/adelia.twins_1/" target="_blank">@adelia.twins_1</a>
+                        </p>
+                        <div class="row">  
+                          <div class="col-6">
+                            <p class="mb-5">Охват:</p>
+                          </div>
+                          <div class="col-6">
+                            <p class="mb-5 text-align">1236</p>
+                          </div>
+                          <div class="col-6">
+                            <p class="mb-5">Подписчики:</p>
+                          </div>
+                          <div class="col-6">
+                            <p class="mb-5 text-align">4 334</p>
+                          </div>
+                          <div class="col-xl-6 col-lg-5 col-md-6 col-sm-6 col-6">
+                            <p class="mb-5">Качество:</p>
+                          </div>
+                          <div class="col-xl-6 col-lg-7 col-md-6 col-sm-6 col-6">
+                            <div class="block-icons color-purple text-align mb-5">
+                              <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                              <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                              <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                              <i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
+                              <i class="bi bi-star home-bloggers-block-icons-svg"></i>
+                            </div>
+                          </div>
+                          <div class="col-4">
+                            <p class="mb-5">Тематики:</p>
+                          </div>
+                          <div class="col-8">
+                            <p class="mb-5 text-align">Личный блог</p>
+                            <p class="mb-5 text-align">Безнес/Финансы</p>
+                            <p class="mb-5 text-align">- не указано -</p>
+                          </div>
+                          <div class="col-12">
+                            <p class="block-blogger-see">Рекламу увидят: 153 чел.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="block-def-4">
+              <h2 class="margin">Блогеры отклонили или просрочили рекламную заявку <span class="blogger-span">2</h2>
+              <div class="row">
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                  <div class="block-blogger padding">
+                    <div class="row">
+                      <div class="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-6 offset-sm-3 col-6 offset-3">
+                        <a href="blogger.html">
+                          <img class="block-blogger-avatar" src="https://postmarketstorage.blob.core.windows.net/publisher-avatars/publisher41595.jpg" draggable="false">
+                        </a>
+                      </div>
+                      <div class="col-12">
+                        <p class="mb-5 h-20 text-center">Adeliya</p>
+                        <p class="mb-5 h-20 text-center"> 
+                          <a class="block-blogger-card-link" href="https://www.instagram.com/adelia.twins_1/" target="_blank">@adelia.twins_1</a>
+                        </p>
+                        <div class="row">  
+                          <div class="col-6">
+                            <p class="mb-5">Охват:</p>
+                          </div>
+                          <div class="col-6">
+                            <p class="mb-5 text-align">1236</p>
+                          </div>
+                          <div class="col-6">
+                            <p class="mb-5">Подписчики:</p>
+                          </div>
+                          <div class="col-6">
+                            <p class="mb-5 text-align">4 334</p>
+                          </div>
+                          <div class="col-xl-6 col-lg-5 col-md-6 col-sm-6 col-6">
+                            <p class="mb-5">Качество:</p>
+                          </div>
+                          <div class="col-xl-6 col-lg-7 col-md-6 col-sm-6 col-6">
+                            <div class="block-icons color-purple text-align mb-5">
+                              <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                              <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                              <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                              <i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
+                              <i class="bi bi-star home-bloggers-block-icons-svg"></i>
+                            </div>
+                          </div>
+                          <div class="col-4">
+                            <p class="mb-5">Тематики:</p>
+                          </div>
+                          <div class="col-8">
+                            <p class="mb-5 text-align">Личный блог</p>
+                            <p class="mb-5 text-align">Безнес/Финансы</p>
+                            <p class="mb-5 text-align">- не указано -</p>
+                          </div>
+                          <div class="col-12">
+                            <p class="block-blogger-see">Рекламу увидят: 153 чел.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                  <div class="block-blogger padding">
+                    <div class="row">
+                      <div class="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-6 offset-sm-3 col-6 offset-3">
+                        <a href="blogger.html">
+                          <img class="block-blogger-avatar" src="https://postmarketstorage.blob.core.windows.net/publisher-avatars/publisher41595.jpg" draggable="false">
+                        </a>
+                      </div>
+                      <div class="col-xl-12">
+                        <p class="mb-5 h-20 text-center">Adeliya</p>
+                        <p class="mb-5 h-20 text-center"> 
+                          <a class="block-blogger-card-link" href="https://www.instagram.com/adelia.twins_1/" target="_blank">@adelia.twins_1</a>
+                        </p>
+                        <div class="row">  
+                          <div class="col-6">
+                            <p class="mb-5">Охват:</p>
+                          </div>
+                          <div class="col-6">
+                            <p class="mb-5 text-align"> 1236 </p>
+                          </div>
+                          <div class="col-6">
+                            <p class="mb-5">Подписчики:</p>
+                          </div>
+                          <div class="col-6">
+                            <p class="mb-5 text-align">4 334</p>
+                          </div>
+                          <div class="col-xl-6 col-lg-5 col-md-6 col-sm-6 col-6">
+                            <p class="mb-5">Качество:</p>
+                          </div>
+                          <div class="col-xl-6 col-lg-7 col-md-6 col-sm-6 col-6">
+                            <div class="block-icons color-purple text-align mb-5">
+                              <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                              <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                              <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                              <i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
+                              <i class="bi bi-star home-bloggers-block-icons-svg"></i>
+                            </div>
+                          </div>
+                          <div class="col-4">
+                            <p class="mb-5">Тематики:</p>
+                          </div>
+                          <div class="col-8">
+                            <p class="mb-5 text-align">Личный блог</p>
+                            <p class="mb-5 text-align">Безнес/Финансы</p>
+                            <p class="mb-5 text-align">- не указано -</p>
+                          </div>
+                          <div class="col-12">
+                            <p class="block-blogger-see">Рекламу увидят: 153 чел.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 margin">
+            <div class="row margin" id="ratebloggers">
+              <div class="col-md-6 col-sm-12">
+                <h2 style="margin-top: 10.5px;">
+                  <i class="bi bi-check2-square svg-2 color-purple"></i> Выполнили задачу 
+                  <span class="created-company-count">500</span>
+                </h2>
+              </div>
+              <div class="col-md-6 col-sm-12 partner-show-pc">
+                <a class="float-right block-create-company-link" style="padding-left: 15px; padding-right: 15px; margin-right: 0;"  href="" download>
+                  <i class="bi bi-file-earmark-arrow-down-fill svg-3"></i> Скачать статистику в PDF
+                </a>
+              </div>
+            </div>
+            <div class="table-size created-company-pc">
+              <table class="created-company-table">
+                <tr>
+                  <th>Блогер</th>
+                  <th class="tooltip w-100">
+                    Оценка 
+                    <i class="bi bi-question-circle svg color-purple"></i>
+                    <span class="tooltip-text">Рейтинг блогера влияет на частоту показа блогера в системе и позицию показа в подборах.</span>
+                  </th>
+                  <th>Тип</th>
+                  <th>Охват</th>
+                  <th>Действия</th>
+                  <th>Цена</th>
+                  <th>Ссылка</th>
+                  <th>Результат</th>
+                  <th>Статистика</th>
+                  <tr>
+                    <td>                        
+                      <div class="created-company-table-flex">
+                        <a href="../blogger.html">
+                          <img class="uploaded-image cursor-pointer" src="https://postmarketstorage.blob.core.windows.net/publisher-avatars/publisher41595.jpg" draggable="false">
+                        </a>
+                        <div class="created-company-table-flex-inside">
+                          <p class="mb-5 created-company-table-title">Adeliya</p>
+                          <a class="block-blogger-card-link" href="https://www.instagram.com/adelia.twins_1/" target="_blank">@adelia.twins_1</a>
+                          <p class="mb-5">
+                            <i class="bi bi-people svg color-purple"></i> 500/250000
+                          </p>
+                          <p>Личный блог</p>
+                          <p>Безнес/Финансы</p>
+                          <p>- не указано -</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="block-icons color-purple">
+                        <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                        <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                        <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                        <i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
+                        <i class="bi bi-star home-bloggers-block-icons-svg"></i>
+                      </div>
+                    </td>
+                    <td>Сторис</td>
+                    <td>Ждем</td>
+                    <td>Ждем</td>
+                    <td>1.000₽</td>
+                    <td>
+                      <i class="bi bi-plus svg color-purple"></i>
+                    </td>
+                    <td>
+                      <a href="#">
+                        <i class="bi bi-image svg color-purple"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="#">
+                        <i class="bi bi-bar-chart svg color-purple"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>                        
+                      <div class="created-company-table-flex">
+                        <a href="../blogger.html">
+                          <img class="uploaded-image cursor-pointer" src="https://postmarketstorage.blob.core.windows.net/publisher-avatars/publisher41595.jpg" draggable="false">
+                        </a>
+                        <div class="created-company-table-flex-inside">
+                          <p class="mb-5 created-company-table-title">Adeliya</p>
+                          <a class="block-blogger-card-link" href="https://www.instagram.com/adelia.twins_1/" target="_blank">@adelia.twins_1</a>
+                          <p class="mb-5">
+                            <i class="bi bi-people svg color-purple"></i> 500/250000
+                          </p>
+                          <p>Личный блог</p>
+                          <p>Безнес/Финансы</p>
+                          <p>- не указано -</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="block-icons color-purple">
+                        <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                        <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                        <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                        <i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
+                        <i class="bi bi-star home-bloggers-block-icons-svg"></i>
+                      </div>
+                    </td>
+                    <td>Пост</td>
+                    <td>5000</td>
+                    <td>300</td>
+                    <td>1.000₽</td>
+                    <td>
+                      <i class="bi bi-dash svg color-purple"></i>
+                    </td>
+                    <td>
+                      <a href="#">
+                        <i class="bi bi-image svg color-purple"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="#">
+                        <i class="bi bi-bar-chart svg color-purple"></i>
+                      </a>
+                    </td>
+                  </tr>
+                </tr>
+              </table>
+            </div>
+            <div class="created-company-mobile">
+              <div class="created-company-mobile-inside">        
+                <div class="created-company-table-flex">
+                  <a href="../blogger.html">
+                    <img class="uploaded-image cursor-pointer" src="https://postmarketstorage.blob.core.windows.net/publisher-avatars/publisher41595.jpg" draggable="false">
+                  </a>
+                  <div class="created-company-table-flex-inside">
+                    <p class="mb-5 created-company-table-title">Adeliya</p>
+                    <a class="block-blogger-card-link" href="https://www.instagram.com/adelia.twins_1/" target="_blank">@adelia.twins_1</a>
+                    <p class="mb-5">
+                      <i class="bi bi-people svg color-purple"></i> 500/250000
+                    </p>
+                    <p>Личный блог</p>
+                    <p>Безнес/Финансы</p>
+                    <p>- не указано -</p>
+                  </div>
+                  <i class="bi bi-caret-down created-company-svg cursor-pointer"></i>
+                </div>
+                <p class="mt-10 color-gray tooltip w-100">
+                  Оценка: 
+                  <i class="bi bi-question-circle svg color-purple"></i>
+                  <span class="tooltip-text">Рейтинг блогера влияет на частоту показа блогера в системе и позицию показа в подборах.</span>
+                  <span class="color-purple float-right home-bloggers-block-icons">
+                    <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                    <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                    <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                    <i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
+                    <i class="bi bi-star home-bloggers-block-icons-svg"></i>
+                  </span>
+                </p>
+                <p class="mt-10 color-gray">Тип: <span class="float-right color-black">Пост</p>
+                <p class="mt-10 color-gray">Охват: <span class="float-right color-black">Ждем</p>
+                <p class="mt-10 color-gray">Действия: <span class="float-right color-black">Ждем</p>
+                <p class="mt-10 color-gray">Цена: <span class="float-right color-black">10 000 ₽</p>
+                <p class="mt-10 color-gray">
+                  Ссылка: 
+                  <span class="float-right color-black">
+                    <i class="bi bi-plus svg color-purple"></i>
+                  </span>
+                </p>
+                <p class="mt-10 color-gray">
+                  Результат: <span class="float-right color-black"><a href="#"><i class="bi bi-image svg color-purple"></i></a></p>
+                <p class="mt-10 color-gray">
+                  Статистика: <span class="float-right color-black"><a href="#"><i class="bi bi-bar-chart svg color-purple"></i></a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 offset-xl-5 col-lg-2 offset-lg-5 col-md-4 offset-md-4 col-sm-4 offset-sm-4 col-6 offset-3 margin">
+            <button class="created-company-edit">
+              <i class="bi bi-arrow-repeat svg-3"></i> Больше
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script>
+      $(document).on('click', '.bi-caret-down', function(){
+        $(this).parents('.created-company-mobile').toggleClass('open');
+      }); 
+    </script>
+  </body>
+</html>

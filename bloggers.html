@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <div class="header">
+    <!-- <div class="header">
       <div class="container-fluid">
         <div class="row">
           <div class="col-xl-6 col-lg-6 col-md-3 col-sm-5 col-4">
@@ -23,77 +23,104 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="main">
       <div class="aside" id="hidden-element">
-        <div class="aside-logo"><i class="aside-logo-svg"></i></div>
+        <div class="aside-logo">
+          <p class="header-status-balance"> 
+            <i class="bi bi-wallet svg"></i> 5000₽ 
+            <a class="header-status-pay" href="settings.html">Пополнить</a>
+          </p>
+        </div>
         <div class="aside-link hide-2" id="hidden-link-2">
-           <i class="bi bi-x-circle svg"></i> Закрыть меню</div><a class="aside-link aside-link-create" href="create-company.html">
-           <i class="bi bi-plus-circle svg"></i> Запустить рекламу</a><a class="aside-link" href="index.html"><i class="bi bi-house svg"></i> Главная</a><a class="aside-link" href="company.html">
-           <i class="bi bi-bullseye svg"></i> Реклама </a><a class="aside-link aside-link-active" href="bloggers.html">
-           <i class="bi bi-people svg"></i> Блогеры </a><a class="aside-link" href="settings.html">
-           <i class="bi bi-gear svg"></i> Настройки</a><a class="aside-link" href="partner.html">
-           <i class="bi bi-briefcase svg"></i> Партнер</a><a class="aside-link" href="#">
-           <i class="bi bi-box-arrow-right svg"></i> Выйти</a>
+          <i class="bi bi-x-circle svg"></i> Закрыть меню
+        </div>
+        <a class="aside-link aside-link-create" href="create-company.html">
+          <i class="bi bi-plus-circle svg"></i> Запустить рекламу
+        </a>
+        <a class="aside-link" href="index.html">
+          <i class="bi bi-house svg"></i> Главная
+        </a> 
+        <a class="aside-link" href="company.html">
+          <i class="bi bi-bullseye svg"></i> Реклама 
+        </a>
+        <a class="aside-link aside-link-active" href="bloggers.html">
+          <i class="bi bi-people svg"></i> Блогеры 
+        </a>
+        <a class="aside-link" href="settings.html">
+          <i class="bi bi-gear svg"></i> Настройки
+        </a>
+        <a class="aside-link" href="partner.html">
+          <i class="bi bi-briefcase svg"></i> Партнер
+        </a>
+        <a class="aside-link" href="#">
+          <i class="bi bi-box-arrow-right svg"></i> Выйти
+        </a>
+        <i class="aside-logo-svg"></i>
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-xl-7 col-lg-7 col-md-12">
-            <div class="block-select-city">
+          <div class="col-lg-7 col-md-12">
+            <div class="block-select-city" style="margin-top: 30px;">
               <p>Узнайте, сколько блогеров могут прорекламировать Вас и сколько человек увидят Вашу рекламу.</p>
               <div class="row">
-                <div class="col-xl-12">
+                <div class="col-12">
                   <input class="block-select-city-input" placeholder="Выберите город">
                 </div>
               </div>
               <div class="row">
                 <div class="col-xl-3 col-lg-4 col-md-2 col-sm-3 col-5">
                   <p class="block-select-city-body">Блогеры: </p>
-                  <p><i class="bi bi-person svg color-purple"></i> <strong>29 350</strong></p>
+                  <p><i class="bi bi-person svg color-purple"></i><strong>29 350</strong></p>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-7">
                   <p class="block-select-city-body">Охват: </p>
-                  <p><i class="bi bi-bullseye svg color-purple"></i> <strong>21 767 496</strong></p>
+                  <p><i class="bi bi-bullseye svg color-purple"></i><strong>21 767 496</strong></p>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4">
                   <p class="block-select-city-body mt-size">Аудиотория: </p>
-                  <p><i class="bi bi-people svg color-purple"></i> <strong>120 930 532</strong></p>
+                  <p><i class="bi bi-people svg color-purple"></i><strong>120 930 532</strong></p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-xl-5 col-lg-5 col-md-12">
-            <div class="home-company-create">
-              <h2 class="home-company-create-title">Создайте рекламную кампанию. </h2>
-              <p class="home-company-create-text">Заполните форму, укажите все требуемые параметры и запустите рекламную кампанию.</p><a class="home-company-create-button" href="create-company.html">Создать</a>
+          <div class="col-lg-5 col-md-12">
+            <div class="home-company-create" style="margin-top: 30px;">
+              <h2 class="home-company-create-title">Создайте рекламную кампанию.</h2>
+              <p class="home-company-create-text">Заполните форму, укажите все требуемые параметры и запустите рекламную кампанию.</p>
+              <a class="home-company-create-button" href="create-company.html">Создать</a>
             </div>
           </div>
-          <div class="col-xl-12">
+          <div class="col-12">
             <div class="row">
-              <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8">
+              <div class="col-lg-6 col-md-8 col-sm-8">
                 <div class="who-performs who-performs-2">
                   <div class="form-group app-state-contentby_publisher">
                     <input class="app-trigger-contentfor" id="Item_ContentBy_Publisher" name="Item.ContentBy" type="radio" value="0" checked>
                     <label for="Item_ContentBy_Publisher" onclick="ImagePreviewShow()">
-                       <i class="bi bi-people svg-3"></i> Все</label>
+                      <i class="bi bi-people svg-3"></i> Все
+                    </label>
                   </div>
                   <div class="form-group">
                     <input class="app-trigger-contentfor" id="Item_ContentBy_Advertiser" name="Item.ContentBy" type="radio" value="1">
                     <label for="Item_ContentBy_Advertiser" onclick="ImagePreviewHide()">
-                       <i class="bi bi-star svg-3"></i> Избранные</label>
+                      <i class="bi bi-star svg-3"></i> Избранные
+                    </label>
                   </div>
                 </div>
               </div>
               <div class="col-xl-3 offset-xl-3 col-lg-3 offset-lg-3 col-md-4 col-sm-4">
                 <div class="block-blogger-link-block">
-                  <button class="block-blogger-link-settings" onclick="openbox('settings-filtr');"><i class="bi bi-sliders svg-3"></i> Настройки</button>
+                  <button class="block-blogger-link-settings" onclick="openbox('settings-filtr');">
+                    <i class="bi bi-sliders svg-3"></i> Настройки
+                  </button>
                 </div>
               </div>
             </div>
             <div class="settings-filtr" style="display:none;">
               <div class="row"> 
-                <div class="col-xl-6 col-lg-6 col-md-6 bloggers-margin-size">
-                  <div class="block-def"><!-- BEGIN SOCIAL SELECT -->
+                <div class="col-md-6 bloggers-margin-size">
+                  <div class="block-def">
                     <p class="input-def-title input-def-title-3 mt-0">Выбор социальной сети</p>
                     <div class="row">
                       <div class="col-lg-6">
@@ -117,7 +144,7 @@
                             </div>
                           </div>
                         </label>
-                      </div><!-- END SOCIAL SELECT -->
+                      </div>
                     </div>
                     <p class="input-def-title input-def-title-3 mt-0">Пол блогера</p>
                     <div class="create-company-select-type input-select">
@@ -138,132 +165,148 @@
                         <p>Мужской</p>
                       </label>
                     </div>
-                    <p class="input-def-title input-def-title-3">Количество подписчиков</p><span class="irs irs--big js-irs-0">
-<span class="irs">
-<span class="irs-line" tabindex="0"></span>
-<span class="irs-min" style="display: none; visibility: hidden;">0</span>
-<span class="irs-max" style="display: none; visibility: visible;">1</span>
-<span class="irs-from" style="visibility: hidden;">0</span>
-<span class="irs-to" style="visibility: hidden;">0</span>
-<span class="irs-single" style="left: 1.25%;">0</span>
-<span class="irs-single" style="left: 91.5%;">2 000 000</span>
-</span>
-<span class="irs-grid"></span>
-<span class="irs-bar irs-bar--single" style="left: 0px; width: 3.69458%;"></span>
-<span class="irs-handle single" style="left: 0%;"></span>
-<span class="irs-handle single" style="left: 95%;"></span>
-</span>
+                    <p class="input-def-title input-def-title-3">Количество подписчиков</p>
+                    <span class="irs irs--big js-irs-0">
+                      <span class="irs">
+                        <span class="irs-line" tabindex="0"></span>
+                        <span class="irs-min" style="display: none; visibility: hidden;">0</span>
+                        <span class="irs-max" style="display: none; visibility: visible;">1</span>
+                        <span class="irs-from" style="visibility: hidden;">0</span>
+                        <span class="irs-to" style="visibility: hidden;">0</span>
+                        <span class="irs-single" style="left: 1.25%;">0</span>
+                        <span class="irs-single" style="left: 91.5%;">2 000 000</span>
+                      </span>
+                      <span class="irs-grid"></span>
+                      <span class="irs-bar irs-bar--single" style="left: 0px; width: 3.69458%;"></span>
+                      <span class="irs-handle single" style="left: 0%;"></span>
+                      <span class="irs-handle single" style="left: 95%;"></span>
+                    </span>
                     <input class="js-range-slider irs-hidden-input" type="text" name="my_range" value="" tabindex="-1" readonly="">
                     <div class="create-company-select-type input-select">
                       <label for="CampTypeFollowers1">
-                        <input class="input-radio" type="radio" id="CampTypeFollowers1" name="CampTypeFollowers" value="0"><span class="checkmark"></span>
+                        <input class="input-radio" type="radio" id="CampTypeFollowers1" name="CampTypeFollowers" value="0">
+                        <span class="checkmark"></span>
                         <p>По убыванию</p>
                       </label>
                     </div>
                     <div class="create-company-select-type input-select">
                       <label for="CampTypeFollowers2">
-                        <input class="input-radio" type="radio" id="CampTypeFollowers2" name="CampTypeFollowers" value="1"><span class="checkmark"></span>
+                        <input class="input-radio" type="radio" id="CampTypeFollowers2" name="CampTypeFollowers" value="1">
+                        <span class="checkmark"></span>
                         <p>По возрастанию</p>
                       </label>
                     </div>
                     <p class="input-def-title input-def-title-3">По популярности</p>
                     <div class="create-company-select-type input-select">
                       <label for="CampTypeRate1">
-                        <input class="input-radio" type="radio" id="CampTypeRate1" name="CampTypeRate" value="0"><span class="checkmark"></span>
+                        <input class="input-radio" type="radio" id="CampTypeRate1" name="CampTypeRate" value="0">
+                        <span class="checkmark"></span>
                         <p>Сначала Высокая</p>
                       </label>
                     </div>
                     <div class="create-company-select-type input-select">
                       <label for="CampTypeRate2">
-                        <input class="input-radio" type="radio" id="CampTypeRate2" name="CampTypeRate" value="1"><span class="checkmark"></span>
+                        <input class="input-radio" type="radio" id="CampTypeRate2" name="CampTypeRate" value="1">
+                        <span class="checkmark"></span>
                         <p>Сначала Средняя</p>
                       </label>
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-6">
+                <div class="col-md-6">
                   <div class="block-def">
                     <p class="input-def-title input-def-title-3 mt-0">Тематика аккаунта</p>
                     <div class="create-company-select-type input-select">
                       <label for="CampType1">
-                        <input class="input-radio" type="checkbox" id="CampType1" value="0"><span class="checkmark"></span>
+                        <input class="input-radio" type="checkbox" id="CampType1" value="0">
+                        <span class="checkmark"></span>
                         <p class="create-company-select-type">Личный блог</p>
                       </label>
                     </div>
                     <div class="create-company-select-type input-select">
                       <label for="CampType2">
-                        <input class="input-radio" type="checkbox" id="CampType2" value="1"><span class="checkmark"></span>
+                        <input class="input-radio" type="checkbox" id="CampType2" value="1">
+                        <span class="checkmark"></span>
                         <p class="create-company-select-type">Мама/Папа</p>
                       </label>
                     </div>
                     <div class="create-company-select-type input-select">
                       <label for="CampType3">
-                        <input class="input-radio" type="checkbox" id="CampType3" value="2"><span class="checkmark"></span>
+                        <input class="input-radio" type="checkbox" id="CampType3" value="2">
+                        <span class="checkmark"></span>
                         <p class="create-company-select-type">Красота и здоровье</p>
                       </label>
                     </div>
                     <div class="create-company-select-type input-select">
                       <label for="CampType4">
-                        <input class="input-radio" type="checkbox" id="CampType4" value="3"><span class="checkmark"></span>
+                        <input class="input-radio" type="checkbox" id="CampType4" value="3">
+                        <span class="checkmark"></span>
                         <p class="create-company-select-type">Бизнес/Финансы</p>
                       </label>
                     </div>
                     <div class="create-company-select-type input-select">
                       <label for="CampType5">
-                        <input class="input-radio" type="checkbox" id="CampType5" value="4"><span class="checkmark"></span>
+                        <input class="input-radio" type="checkbox" id="CampType5" value="4">
+                        <span class="checkmark"></span>
                         <p class="create-company-select-type">Психология</p>
                       </label>
                     </div>
                     <div class="create-company-select-type input-select">
                       <label for="CampType6">
-                        <input class="input-radio" type="checkbox" id="CampType6" value="5"><span class="checkmark"></span>
+                        <input class="input-radio" type="checkbox" id="CampType6" value="5">
+                        <span class="checkmark"></span>
                         <p class="create-company-select-type">Мода/Дизайн</p>
                       </label>
                     </div>
                     <div class="create-company-select-type input-select">
                       <label for="CampType7">
-                        <input class="input-radio" type="checkbox" id="CampType7" value="6"><span class="checkmark"></span>
+                        <input class="input-radio" type="checkbox" id="CampType7" value="6">
+                        <span class="checkmark"></span>
                         <p class="create-company-select-type">Музыка/Кино</p>
                       </label>
                     </div>
                     <div class="create-company-select-type input-select">
                       <label for="CampType8">
-                        <input class="input-radio" type="checkbox" id="CampType8" value="7"><span class="checkmark"></span>
+                        <input class="input-radio" type="checkbox" id="CampType8" value="7">
+                        <span class="checkmark"></span>
                         <p class="create-company-select-type">Обзор товаров/услуг</p>
                       </label>
                     </div>
                     <div class="create-company-select-type input-select">
                       <label for="CampType9">
-                        <input class="input-radio" type="checkbox" id="CampType9" value="8"><span class="checkmark"></span>
+                        <input class="input-radio" type="checkbox" id="CampType9" value="8">
+                        <span class="checkmark"></span>
                         <p class="create-company-select-type">Путешествие/отдых</p>
                       </label>
                     </div>
                     <div class="create-company-select-type input-select">
                       <label for="CampType10">
-                        <input class="input-radio" type="checkbox" id="CampType10" value="9"><span class="checkmark"></span>
+                        <input class="input-radio" type="checkbox" id="CampType10" value="9">
+                        <span class="checkmark"></span>
                         <p class="create-company-select-type">Развлечения</p>
                       </label>
                     </div>
                     <div class="create-company-select-type input-select">
                       <label for="CampType11">
-                        <input class="input-radio" type="checkbox" id="CampType11" value="10"><span class="checkmark"></span>
+                        <input class="input-radio" type="checkbox" id="CampType11" value="10">
+                        <span class="checkmark"></span>
                         <p class="create-company-select-type">Спорт и ЗОЖ</p>
                       </label>
                     </div>
                     <div class="create-company-select-type input-select">
                       <label for="CampType12">
-                        <input class="input-radio" type="checkbox" id="CampType12" value="11"><span class="checkmark"></span>
+                        <input class="input-radio" type="checkbox" id="CampType12" value="11">
+                        <span class="checkmark"></span>
                         <p class="create-company-select-type">Паблик/Сообщество</p>
                       </label>
                     </div>
                     <div class="create-company-select-type input-select">
                       <label for="CampType13">
-                        <input class="input-radio" type="checkbox" id="CampType13" value="12"><span class="checkmark"></span>
+                        <input class="input-radio" type="checkbox" id="CampType13" value="12">
+                        <span class="checkmark"></span>
                         <p class="create-company-select-type">Авто/Мото</p>
                       </label>
                     </div>
-                    <p class="input-def-title input-def-title-3">По региону</p>
-                    <input class="input-def" placeholder="Например: Москва">
                   </div>
                   <div class="row">
                     <div class="col-6 offset-6">
@@ -276,75 +319,39 @@
             <div id="ChangeImagePreviewHide"></div>
             <div class="none" id="BlockCreateSelf">
               <div class="row">
-                <div class="col-xl-12">
+                <div class="col-12">
                   <div class="block-def margin">
                     <h2 class="fav-bloggers">
-                       <i class="bi bi-emoji-smile-upside-down svg-2 color-purple"></i> В избранном еще нет блогеров, выберите блогеров которые Вам понравились и они появятся тут!</h2>
+                      <i class="bi bi-emoji-smile-upside-down svg-2 color-purple"></i> В избранном еще нет блогеров, выберите блогеров которые Вам понравились и они появятся тут!
+                    </h2>
                   </div>
                 </div>
               </div>
             </div>
             <div id="BlockCreateBlogger">
               <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="col-md-6 col-sm-12">
                   <div class="block-blogger block-blogger-link">
                     <div class="row">
                       <div class="col-xl-4 offset-xl-0 col-lg-4 offset-lg-0 col-md-6 offset-md-3 col-sm-4">
-                        <div class="flex"><a href="blogger.html"><!-- BEGIN BLOGGER SOCIAL --><img class="block-blogger-social" src="img/social/instagram.png" draggable="false"><!-- END BLOGGER SOCIAL --><img class="block-blogger-avatar" src="img/blogger-card/1.png" draggable="false"></a></div>
-                      </div>
-                      <div class="col-xl-8 col-lg-8 col-md-12 col-sm-8">
-                        <p class="block-blogger-text mt-0 h-20">Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎</p>
-                        <p class="block-blogger-text h-20"> <a class="block-blogger-card-link" href="https://www.instagram.com/ksesimaa_/" target="_blank">@ksesimaa_</a></p>
-                        <div class="row">
-                          <div class="col-xl-7 col-lg-5 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Охват:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">1236 </p>
-                          </div>
-                          <div class="col-xl-7 col-lg-5 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Подписчики:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">4 334</p>
-                          </div>
-                          <div class="col-xl-7 col-lg-5 col-md-6 col-sm-5 col-5">
-                            <p class="block-blogger-text">Качество:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-6 col-sm-7 col-7">
-                            <div class="home-bloggers-block-icons color-purple text-align mt-5"><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star home-bloggers-block-icons-svg"></i>
-                            </div>
-                          </div>
-                          <div class="col-xl-5 col-lg-4 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Тематика:</p>
-                          </div>
-                          <div class="col-xl-7 col-lg-8 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">Путешествия/отдых </p>
-                          </div>
+                        <div class="flex">
+                          <a href="blogger.html">
+                            <img class="block-blogger-social" src="http://postmarket.pro/content/public/img/Instagram.png" draggable="false">
+                            <img class="block-blogger-avatar" src="https://postmarketstorage.blob.core.windows.net/publisher-avatars/publisher41595.jpg" draggable="false">
+                          </a>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                  <div class="block-blogger block-blogger-link">
-                    <div class="row">
-                      <div class="col-xl-4 offset-xl-0 col-lg-4 offset-lg-0 col-md-6 offset-md-3 col-sm-4">
-                        <div class="flex"><a href="blogger.html"><!-- BEGIN BLOGGER SOCIAL --><img class="block-blogger-social" src="img/social/instagram.png" draggable="false"><!-- END BLOGGER SOCIAL --><img class="block-blogger-avatar" src="img/blogger-card/1.png" draggable="false"></a></div>
-                      </div>
-                      <div class="col-xl-8 col-lg-8 col-md-12 col-sm-8">
-                        <p class="block-blogger-text mt-0 h-20">Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎</p>
-                        <p class="block-blogger-text h-20"> <a class="block-blogger-card-link" href="https://www.instagram.com/ksesimaa_/" target="_blank">@ksesimaa_</a></p>
+                      <div class="col-lg-8 col-md-12 col-sm-8">
+                        <p class="block-blogger-text mt-0 h-20">Adeliya</p>
+                        <p class="block-blogger-text h-20"> 
+                          <a class="block-blogger-card-link" href="https://www.instagram.com/adelia.twins_1/" target="_blank">@adelia.twins_1</a>
+                        </p>
                         <div class="row">
                           <div class="col-xl-7 col-lg-5 col-md-5 col-sm-5 col-5">
                             <p class="block-blogger-text">Охват:</p>
                           </div>
                           <div class="col-xl-5 col-lg-7 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">1236 </p>
+                            <p class="block-blogger-text text-align">1236</p>
                           </div>
                           <div class="col-xl-7 col-lg-5 col-md-5 col-sm-5 col-5">
                             <p class="block-blogger-text">Подписчики:</p>
@@ -356,370 +363,21 @@
                             <p class="block-blogger-text">Качество:</p>
                           </div>
                           <div class="col-xl-5 col-lg-7 col-md-6 col-sm-7 col-7">
-                            <div class="home-bloggers-block-icons color-purple text-align mt-5"><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star home-bloggers-block-icons-svg"></i>
+                            <div class="home-bloggers-block-icons color-purple text-align mt-5">
+                              <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                              <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                              <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                              <i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
+                              <i class="bi bi-star home-bloggers-block-icons-svg"></i>
                             </div>
                           </div>
                           <div class="col-xl-5 col-lg-4 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Тематика:</p>
+                            <p class="block-blogger-text">Тематики:</p>
                           </div>
                           <div class="col-xl-7 col-lg-8 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">Путешествия/отдых </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                  <div class="block-blogger block-blogger-link">
-                    <div class="row">
-                      <div class="col-xl-4 offset-xl-0 col-lg-4 offset-lg-0 col-md-6 offset-md-3 col-sm-4">
-                        <div class="flex"><a href="blogger.html"><!-- BEGIN BLOGGER SOCIAL --><img class="block-blogger-social" src="img/social/instagram.png" draggable="false"><!-- END BLOGGER SOCIAL --><img class="block-blogger-avatar" src="img/blogger-card/1.png" draggable="false"></a></div>
-                      </div>
-                      <div class="col-xl-8 col-lg-8 col-md-12 col-sm-8">
-                        <p class="block-blogger-text mt-0 h-20">Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎</p>
-                        <p class="block-blogger-text h-20"> <a class="block-blogger-card-link" href="https://www.instagram.com/ksesimaa_/" target="_blank">@ksesimaa_</a></p>
-                        <div class="row">
-                          <div class="col-xl-7 col-lg-5 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Охват:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">1236 </p>
-                          </div>
-                          <div class="col-xl-7 col-lg-5 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Подписчики:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">4 334</p>
-                          </div>
-                          <div class="col-xl-7 col-lg-5 col-md-6 col-sm-5 col-5">
-                            <p class="block-blogger-text">Качество:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-6 col-sm-7 col-7">
-                            <div class="home-bloggers-block-icons color-purple text-align mt-5"><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star home-bloggers-block-icons-svg"></i>
-                            </div>
-                          </div>
-                          <div class="col-xl-5 col-lg-4 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Тематика:</p>
-                          </div>
-                          <div class="col-xl-7 col-lg-8 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">Путешествия/отдых </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                  <div class="block-blogger block-blogger-link">
-                    <div class="row">
-                      <div class="col-xl-4 offset-xl-0 col-lg-4 offset-lg-0 col-md-6 offset-md-3 col-sm-4">
-                        <div class="flex"><a href="blogger.html"><!-- BEGIN BLOGGER SOCIAL --><img class="block-blogger-social" src="img/social/instagram.png" draggable="false"><!-- END BLOGGER SOCIAL --><img class="block-blogger-avatar" src="img/blogger-card/1.png" draggable="false"></a></div>
-                      </div>
-                      <div class="col-xl-8 col-lg-8 col-md-12 col-sm-8">
-                        <p class="block-blogger-text mt-0 h-20">Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎</p>
-                        <p class="block-blogger-text h-20"> <a class="block-blogger-card-link" href="https://www.instagram.com/ksesimaa_/" target="_blank">@ksesimaa_</a></p>
-                        <div class="row">
-                          <div class="col-xl-7 col-lg-5 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Охват:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">1236 </p>
-                          </div>
-                          <div class="col-xl-7 col-lg-5 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Подписчики:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">4 334</p>
-                          </div>
-                          <div class="col-xl-7 col-lg-5 col-md-6 col-sm-5 col-5">
-                            <p class="block-blogger-text">Качество:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-6 col-sm-7 col-7">
-                            <div class="home-bloggers-block-icons color-purple text-align mt-5"><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star home-bloggers-block-icons-svg"></i>
-                            </div>
-                          </div>
-                          <div class="col-xl-5 col-lg-4 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Тематика:</p>
-                          </div>
-                          <div class="col-xl-7 col-lg-8 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">Путешествия/отдых </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                  <div class="block-blogger block-blogger-link">
-                    <div class="row">
-                      <div class="col-xl-4 offset-xl-0 col-lg-4 offset-lg-0 col-md-6 offset-md-3 col-sm-4">
-                        <div class="flex"><a href="blogger.html"><!-- BEGIN BLOGGER SOCIAL --><img class="block-blogger-social" src="img/social/instagram.png" draggable="false"><!-- END BLOGGER SOCIAL --><img class="block-blogger-avatar" src="img/blogger-card/1.png" draggable="false"></a></div>
-                      </div>
-                      <div class="col-xl-8 col-lg-8 col-md-12 col-sm-8">
-                        <p class="block-blogger-text mt-0 h-20">Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎</p>
-                        <p class="block-blogger-text h-20"> <a class="block-blogger-card-link" href="https://www.instagram.com/ksesimaa_/" target="_blank">@ksesimaa_</a></p>
-                        <div class="row">
-                          <div class="col-xl-7 col-lg-5 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Охват:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">1236 </p>
-                          </div>
-                          <div class="col-xl-7 col-lg-5 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Подписчики:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">4 334</p>
-                          </div>
-                          <div class="col-xl-7 col-lg-5 col-md-6 col-sm-5 col-5">
-                            <p class="block-blogger-text">Качество:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-6 col-sm-7 col-7">
-                            <div class="home-bloggers-block-icons color-purple text-align mt-5"><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star home-bloggers-block-icons-svg"></i>
-                            </div>
-                          </div>
-                          <div class="col-xl-5 col-lg-4 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Тематика:</p>
-                          </div>
-                          <div class="col-xl-7 col-lg-8 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">Путешествия/отдых </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                  <div class="block-blogger block-blogger-link">
-                    <div class="row">
-                      <div class="col-xl-4 offset-xl-0 col-lg-4 offset-lg-0 col-md-6 offset-md-3 col-sm-4">
-                        <div class="flex"><a href="blogger.html"><!-- BEGIN BLOGGER SOCIAL --><img class="block-blogger-social" src="img/social/instagram.png" draggable="false"><!-- END BLOGGER SOCIAL --><img class="block-blogger-avatar" src="img/blogger-card/1.png" draggable="false"></a></div>
-                      </div>
-                      <div class="col-xl-8 col-lg-8 col-md-12 col-sm-8">
-                        <p class="block-blogger-text mt-0 h-20">Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎</p>
-                        <p class="block-blogger-text h-20"> <a class="block-blogger-card-link" href="https://www.instagram.com/ksesimaa_/" target="_blank">@ksesimaa_</a></p>
-                        <div class="row">
-                          <div class="col-xl-7 col-lg-5 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Охват:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">1236 </p>
-                          </div>
-                          <div class="col-xl-7 col-lg-5 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Подписчики:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">4 334</p>
-                          </div>
-                          <div class="col-xl-7 col-lg-5 col-md-6 col-sm-5 col-5">
-                            <p class="block-blogger-text">Качество:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-6 col-sm-7 col-7">
-                            <div class="home-bloggers-block-icons color-purple text-align mt-5"><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star home-bloggers-block-icons-svg"></i>
-                            </div>
-                          </div>
-                          <div class="col-xl-5 col-lg-4 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Тематика:</p>
-                          </div>
-                          <div class="col-xl-7 col-lg-8 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">Путешествия/отдых </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                  <div class="block-blogger block-blogger-link">
-                    <div class="row">
-                      <div class="col-xl-4 offset-xl-0 col-lg-4 offset-lg-0 col-md-6 offset-md-3 col-sm-4">
-                        <div class="flex"><a href="blogger.html"><!-- BEGIN BLOGGER SOCIAL --><img class="block-blogger-social" src="img/social/instagram.png" draggable="false"><!-- END BLOGGER SOCIAL --><img class="block-blogger-avatar" src="img/blogger-card/1.png" draggable="false"></a></div>
-                      </div>
-                      <div class="col-xl-8 col-lg-8 col-md-12 col-sm-8">
-                        <p class="block-blogger-text mt-0 h-20">Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎</p>
-                        <p class="block-blogger-text h-20"> <a class="block-blogger-card-link" href="https://www.instagram.com/ksesimaa_/" target="_blank">@ksesimaa_</a></p>
-                        <div class="row">
-                          <div class="col-xl-7 col-lg-5 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Охват:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">1236 </p>
-                          </div>
-                          <div class="col-xl-7 col-lg-5 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Подписчики:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">4 334</p>
-                          </div>
-                          <div class="col-xl-7 col-lg-5 col-md-6 col-sm-5 col-5">
-                            <p class="block-blogger-text">Качество:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-6 col-sm-7 col-7">
-                            <div class="home-bloggers-block-icons color-purple text-align mt-5"><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star home-bloggers-block-icons-svg"></i>
-                            </div>
-                          </div>
-                          <div class="col-xl-5 col-lg-4 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Тематика:</p>
-                          </div>
-                          <div class="col-xl-7 col-lg-8 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">Путешествия/отдых </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                  <div class="block-blogger block-blogger-link">
-                    <div class="row">
-                      <div class="col-xl-4 offset-xl-0 col-lg-4 offset-lg-0 col-md-6 offset-md-3 col-sm-4">
-                        <div class="flex"><a href="blogger.html"><!-- BEGIN BLOGGER SOCIAL --><img class="block-blogger-social" src="img/social/instagram.png" draggable="false"><!-- END BLOGGER SOCIAL --><img class="block-blogger-avatar" src="img/blogger-card/1.png" draggable="false"></a></div>
-                      </div>
-                      <div class="col-xl-8 col-lg-8 col-md-12 col-sm-8">
-                        <p class="block-blogger-text mt-0 h-20">Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎</p>
-                        <p class="block-blogger-text h-20"> <a class="block-blogger-card-link" href="https://www.instagram.com/ksesimaa_/" target="_blank">@ksesimaa_</a></p>
-                        <div class="row">
-                          <div class="col-xl-7 col-lg-5 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Охват:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">1236 </p>
-                          </div>
-                          <div class="col-xl-7 col-lg-5 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Подписчики:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">4 334</p>
-                          </div>
-                          <div class="col-xl-7 col-lg-5 col-md-6 col-sm-5 col-5">
-                            <p class="block-blogger-text">Качество:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-6 col-sm-7 col-7">
-                            <div class="home-bloggers-block-icons color-purple text-align mt-5"><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star home-bloggers-block-icons-svg"></i>
-                            </div>
-                          </div>
-                          <div class="col-xl-5 col-lg-4 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Тематика:</p>
-                          </div>
-                          <div class="col-xl-7 col-lg-8 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">Путешествия/отдых </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                  <div class="block-blogger block-blogger-link">
-                    <div class="row">
-                      <div class="col-xl-4 offset-xl-0 col-lg-4 offset-lg-0 col-md-6 offset-md-3 col-sm-4">
-                        <div class="flex"><a href="blogger.html"><!-- BEGIN BLOGGER SOCIAL --><img class="block-blogger-social" src="img/social/instagram.png" draggable="false"><!-- END BLOGGER SOCIAL --><img class="block-blogger-avatar" src="img/blogger-card/1.png" draggable="false"></a></div>
-                      </div>
-                      <div class="col-xl-8 col-lg-8 col-md-12 col-sm-8">
-                        <p class="block-blogger-text mt-0 h-20">Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎</p>
-                        <p class="block-blogger-text h-20"> <a class="block-blogger-card-link" href="https://www.instagram.com/ksesimaa_/" target="_blank">@ksesimaa_</a></p>
-                        <div class="row">
-                          <div class="col-xl-7 col-lg-5 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Охват:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">1236 </p>
-                          </div>
-                          <div class="col-xl-7 col-lg-5 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Подписчики:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">4 334</p>
-                          </div>
-                          <div class="col-xl-7 col-lg-5 col-md-6 col-sm-5 col-5">
-                            <p class="block-blogger-text">Качество:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-6 col-sm-7 col-7">
-                            <div class="home-bloggers-block-icons color-purple text-align mt-5"><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star home-bloggers-block-icons-svg"></i>
-                            </div>
-                          </div>
-                          <div class="col-xl-5 col-lg-4 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Тематика:</p>
-                          </div>
-                          <div class="col-xl-7 col-lg-8 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">Путешествия/отдых </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                  <div class="block-blogger block-blogger-link">
-                    <div class="row">
-                      <div class="col-xl-4 offset-xl-0 col-lg-4 offset-lg-0 col-md-6 offset-md-3 col-sm-4">
-                        <div class="flex"><a href="blogger.html"><!-- BEGIN BLOGGER SOCIAL --><img class="block-blogger-social" src="img/social/instagram.png" draggable="false"><!-- END BLOGGER SOCIAL --><img class="block-blogger-avatar" src="img/blogger-card/1.png" draggable="false"></a></div>
-                      </div>
-                      <div class="col-xl-8 col-lg-8 col-md-12 col-sm-8">
-                        <p class="block-blogger-text mt-0 h-20">Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎</p>
-                        <p class="block-blogger-text h-20"> <a class="block-blogger-card-link" href="https://www.instagram.com/ksesimaa_/" target="_blank">@ksesimaa_</a></p>
-                        <div class="row">
-                          <div class="col-xl-7 col-lg-5 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Охват:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">1236 </p>
-                          </div>
-                          <div class="col-xl-7 col-lg-5 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Подписчики:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">4 334</p>
-                          </div>
-                          <div class="col-xl-7 col-lg-5 col-md-6 col-sm-5 col-5">
-                            <p class="block-blogger-text">Качество:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-6 col-sm-7 col-7">
-                            <div class="home-bloggers-block-icons color-purple text-align mt-5"><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star home-bloggers-block-icons-svg"></i>
-                            </div>
-                          </div>
-                          <div class="col-xl-5 col-lg-4 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Тематика:</p>
-                          </div>
-                          <div class="col-xl-7 col-lg-8 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">Путешествия/отдых </p>
+                            <p class="block-blogger-text text-align">Личный блог</p>
+                            <p class="block-blogger-text text-align">Безнес/Финансы</p>
+                            <p class="block-blogger-text text-align">- не указано -</p>
                           </div>
                         </div>
                       </div>
@@ -727,52 +385,12 @@
                   </div>
                 </div>
                 <div class="col-xl-4 offset-xl-4 col-lg-6 offset-lg-3 col-md-6 offset-md-3">
-                  <div class="block-blogger-link-more-block"><a class="block-blogger-link-more" href="create-company.html">
+                  <div class="block-blogger-link-more-block">
+                    <a class="block-blogger-link-more" href="create-company.html">
                       <h2 class="block-blogger-link-more-block-title">
-                         <i class="bi bi-plus block-list-company-more-avatar block-list-company-more-2 svg-4"></i> Создать рекламную кампанию</h2></a></div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                  <div class="block-blogger block-blogger-link">
-                    <div class="row">
-                      <div class="col-xl-4 offset-xl-0 col-lg-4 offset-lg-0 col-md-6 offset-md-3 col-sm-5">
-                        <div class="flex"><a href="blogger.html"><img class="block-blogger-avatar" src="img/blogger-card/1.png" draggable="false"></a></div>
-                      </div>
-                      <div class="col-xl-8 col-lg-8 col-md-12 col-sm-7">
-                        <p class="block-blogger-text mt-0 h-20">Твоя 𝑀𝒶𝓂𝒶𝓈𝒾𝓉𝒶 💃🏻😎</p>
-                        <p class="block-blogger-text h-20"> <a class="block-blogger-card-link" href="https://www.instagram.com/ksesimaa_/" target="_blank">@ksesimaa_</a></p>
-                        <div class="row">
-                          <div class="col-xl-7 col-lg-5 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Охват:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">1236 </p>
-                          </div>
-                          <div class="col-xl-7 col-lg-5 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Подписчики:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">4 334</p>
-                          </div>
-                          <div class="col-xl-7 col-lg-5 col-md-6 col-sm-5 col-5">
-                            <p class="block-blogger-text">Качество:</p>
-                          </div>
-                          <div class="col-xl-5 col-lg-7 col-md-6 col-sm-7 col-7">
-                            <div class="home-bloggers-block-icons color-purple text-align mt-5"><i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
-<i class="bi bi-star home-bloggers-block-icons-svg"></i>
-                            </div>
-                          </div>
-                          <div class="col-xl-5 col-lg-4 col-md-5 col-sm-5 col-5">
-                            <p class="block-blogger-text">Тематика:</p>
-                          </div>
-                          <div class="col-xl-7 col-lg-8 col-md-7 col-sm-7 col-7">
-                            <p class="block-blogger-text text-align">Путешествия/отдых </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                        <i class="bi bi-plus block-list-company-more-avatar block-list-company-more-2 svg-4"></i> Создать рекламную кампанию
+                      </h2>
+                    </a>
                   </div>
                 </div>
               </div>

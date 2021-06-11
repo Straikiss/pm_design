@@ -1,12 +1,13 @@
 .header
   padding-left: 255px
   padding-right: 30px
-  background: $white
-  line-height: 80px
+  background: $purple
+  line-height: 60px
   position: fixed
   width: 100%
   z-index: 3
   +box-shadow()
+  display: none
 
 .header-link
   cursor: pointer
@@ -17,12 +18,12 @@
   text-align: right
 
 .header-status-balance
-  margin-right: 30px
   display: inline
 
 .header-status-pay,
 .header-link
-  color: $purple
+  color: $white
+  float: right
   +font-size()
 
 .header-status-pay,

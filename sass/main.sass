@@ -27,6 +27,9 @@ $lg: 767px
 $md: 578px
 $sm: 575px
 
+=transition()
+  transition: .1s
+
 =border($color)
   border: 1px solid $color
 
@@ -119,6 +122,18 @@ video, img, iframe
 
 .padding
   padding: 15px !important
+
+.height-15 
+  height: 15px !important
+  .home-bloggers-block-icons-svg
+    &::before
+      vertical-align: text-top !important
+
+.tooltip 
+  overflow: inherit !important
+
+.block-blogger-card-favorite 
+  margin-top: 24px !important
 
 select,
 textarea,
@@ -217,8 +232,10 @@ button
 
 .block-blogger-social 
   width: 35px
+  height: 35px
   position: relative
   margin-bottom: -35px
+  margin-right: -35px
 
 .fixed-height
   height: 200px

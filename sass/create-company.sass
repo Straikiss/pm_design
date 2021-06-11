@@ -149,7 +149,7 @@ input::placeholder
   color: $white
   +border-image()
   +margin-top()
-  +box-shadow()
+  // +box-shadow()
   +font-size()
   &:hover
     +opacity()
@@ -166,7 +166,7 @@ input::placeholder
   +border-image()
 
 .block-create-company-2
-  margin-left: 30px
+  // margin-left: 30px
 
 .create-company-change-type-2,
 .create-company-change-type
@@ -232,14 +232,25 @@ input::placeholder
     color: $pink
 
 .create-company-more-story
+  cursor: pointer
   background: $gray
-  height: 187.5px
+  height: 178px
   +border-image()
   +margin-top()
   +box-shadow()
 
+.create-company-more-story:hover
+  box-shadow: 0 0 3px $purple
+  .create-company-more-svg
+    &::before
+      color: $purple
+
+.create-company-more-story-active 
+  .create-company-more-svg
+    display: none
+
 .create-company-more-story-image
-  height: 187.5px
+  height: 178px
   object-fit: cover
   &:hover
     opacity: 1
@@ -256,9 +267,6 @@ input::placeholder
     width: 35px
     top: 111.25px
     margin: auto
-  &:hover
-    &::before
-      color: $orange
 
 .create-company-more-svg-2
   &::before
@@ -278,3 +286,10 @@ input::placeholder
   .create-company-more-story-image,
   .create-company-more-svg-2
     display: none
+
+.create-company-select-company-type
+  transition: .1s
+  cursor: pointer
+  margin-top: 30px
+  &:hover
+    box-shadow: 0 0 3px #6f42c1

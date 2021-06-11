@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Новая рекламная кампания - Таргетинг - Рекламодатель - PostMarket</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="img/fav/pm-fav.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+  <body>
+    <div class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-3 col-sm-5 col-4">
+            <div class="header-link" id="hidden-link">
+               <i class="bi bi-list svg-3"></i> Меню</div>
+            <h1 class="header-title">Новая рекламная кампания - Таргетинг</h1>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-9 col-sm-7 col-8">
+            <div class="header-status">
+              <p class="header-status-balance">0 ₽ <sup class="header-status-balance-money">5 000 ₽</p><a class="header-status-pay" href="settings.html">Пополнить баланс</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="aside" id="hidden-element">
+        <div class="aside-logo"><i class="aside-logo-svg"></i></div>
+        <div class="aside-link hide-2" id="hidden-link-2"><i class="bi bi-x-circle svg"></i> Закрыть меню</div><a class="aside-link aside-link-create" href="create-company.html">
+           <i class="bi bi-plus-circle svg"></i> Запустить рекламу</a><a class="aside-link" href="index.html"><i class="bi bi-house svg"></i> Главная</a><a class="aside-link aside-link-active" href="company.html">
+           <i class="bi bi-bullseye svg"></i> Реклама </a><a class="aside-link" href="bloggers.html">
+           <i class="bi bi-people svg"></i> Блогеры </a><a class="aside-link" href="settings.html">
+           <i class="bi bi-gear svg"></i> Настройки</a><a class="aside-link" href="partner.html">
+           <i class="bi bi-briefcase svg"></i> Партнер</a><a class="aside-link" href="#">
+           <i class="bi bi-box-arrow-right svg"></i> Выйти</a>
+      </div>
+      <div class="container block-create-company-steps">
+        <div class="block-def-2">
+          <div class="row mb-60">
+            <ul>
+              <li class="active"><a href="create-company.html"><span class="number">1</span><span class="text">Выбор блогеров</span></a></li>
+              <li class="active"><a href="create-company-cpa-1.html"><span class="number">2</span><span class="text">Создание контента</span></a></li>
+              <li class="active"><a href="create-company-cpa-2.html"><span class="number">3</span><span class="text">Таргетинг и охват      </span></a></li>
+              <li><a href="#"><span class="number">4</span><span class="text">Оплата кампании</span></a></li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="block-create-company">
+                <p class="input-def-title input-def-title-3 mt-0 tooltip w-100">
+                   Выбор цели <i class="bi bi-question-circle svg color-purple"></i><span class="tooltip-text">Вы можете выбрать тип цели - оплата за тапы/переходы, если Вы рекламируете Вашу страницу в Инстаграм или за действия на Вашем сайте, если продвигаете внешнюю ссылку.</span></p>
+                <div class="row">
+                  <div class="col-xl-6 col-lg-7 col-md-6 col-sm-7">
+                    <div class="create-company-select-type input-select mt-0" onclick="ChangeCofusTap()">
+                      <label for="CampTypeFocus1">
+                        <input class="input-radio" type="radio" id="CampTypeFocus1" name="CampTypeFocus" value="0" checked><span class="checkmark"></span>
+                        <p>Цена за переход/тап</p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-5 col-md-6 col-sm-5 ml-m-2">
+                    <div class="create-company-select-type input-select mt-0" onclick="ChangeCofusFocus()">
+                      <label for="CampTypeFocus2">
+                        <input class="input-radio" type="radio" id="CampTypeFocus2" name="CampTypeFocus" value="1"><span class="checkmark"></span>
+                        <p>Цена за цель</p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <input class="input-def text-center mt-10" id="ChangeFocus" placeholder="15">
+                <div class="none margin" id="ChangeImagePreviewHide">
+                  <p class="text-center margin mt-10"><a class="bb input-def-title" href="http://postmarket.pro/article/cpa-manual" target="_blank">Инструкция по настройке postback уведомлений</a></p>
+                  <p class="input-def-title mt-0">Цель на сайте</p>
+                  <select class="input-def" onchange="AddMoreTarget(this)">
+                    <option value="0" selected="selected">Регистрация</option>
+                    <option value="1">Продажа</option>
+                    <option value="2">Депозит</option>
+                    <option value="3">Заполнение формы</option>
+                    <option value="4">Другое</option>
+                  </select>
+                  <input class="input-def mt-10" id="target-2" style="display: none;" placeholder="Опишите другую цель на сайте">
+                  <div id="target" style="display: none;">
+                    <div class="row margin">
+                      <div class="col-xl-6 col-lg-7 col-md-5 col-sm-6 mt-10">
+                        <div class="create-company-select-type input-select mt-0">
+                          <label for="CampTypeEndtarget1">
+                            <input class="input-radio" type="radio" id="CampTypeEndtarget1" name="CampTypeEndtarget" value="0" checked><span class="checkmark"></span>
+                            <p>Процент от пополнения</p>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-5 col-md-5 col-sm-5 mt-10">
+                        <div class="create-company-select-type input-select mt-0">
+                          <label for="CampTypeEndtarget2">
+                            <input class="input-radio" type="radio" id="CampTypeEndtarget2" name="CampTypeEndtarget" value="1"><span class="checkmark"></span>
+                            <p>Фиксированная цена</p>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="input-def-title input-def-title-3">Кратко опишите Вашу цель</p>
+                  <textarea class="create-company-textarea margin" placeholder="Пример: оплата происходит за заполнение формы регистрации"></textarea>
+                  <p class="input-def-title mt-0">Тип связи</p>
+                  <select class="input-def">
+                    <option value="0" selected="selected">Telegram</option>
+                    <option value="1">WhatsApp</option>
+                    <option value="2">Viber</option>
+                    <option value="3">Звонок</option>
+                  </select>
+                  <p class="input-def-title">Телефона для связи</p>
+                  <input class="input-def mb-10" placeholder="+7 977 777 77 77">
+                </div>
+                <p class="input-def-title">Выберите регион где Вас рекламировать</p>
+                <div class="create-company-select-type mt-0 input-select">
+                  <label for="CampTypeLocation1">
+                    <input class="input-radio" type="radio" id="CampTypeLocation1" name="CampTypeLocation" value="0" checked><span class="checkmark"></span>
+                    <p>Россия</p>
+                  </label>
+                </div>
+                <div class="create-company-select-type input-select">
+                  <label for="CampTypeLocation2">
+                    <input class="input-radio" type="radio" id="CampTypeLocation2" name="CampTypeLocation" value="1"><span class="checkmark"></span>
+                    <p>Москва</p>
+                  </label>
+                </div>
+                <p class="input-def-title input-def-title-3">Дата запуска кампании</p>
+                <div class="row">
+                  <div class="col-xl-5 col-lg-6 col-md-5 col-sm-6">
+                    <div class="create-company-select-type input-select mt-0">
+                      <label for="CampTypeDate1">
+                        <input class="input-radio" type="radio" id="CampTypeDate1" name="CampTypeDate" value="0" checked><span class="checkmark"></span>
+                        <p>Запустить сразу</p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 ml-m-2 col-lg-7 col-md-5 col-sm-5">
+                    <div class="create-company-select-type input-select mt-0">
+                      <label for="CampTypeDate2">
+                        <input class="input-radio" type="radio" id="CampTypeDate2" name="CampTypeDate" value="1"><span class="checkmark"></span>
+                        <p>Выбрать дату</p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <input class="input-def mt-10" placeholder="11.11.2021">
+                <p class="input-def-title input-def-title-3">Срок действия</p>
+                <div class="row">
+                  <div class="col-xl-6 col-lg-7 col-md-5 col-sm-6">
+                    <div class="create-company-select-type input-select mt-0">
+                      <label for="CampTypeEnd1">
+                        <input class="input-radio" type="radio" id="CampTypeEnd1" name="CampTypeEnd" value="0" checked><span class="checkmark"></span>
+                        <p>Минимум (3 недели)</p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 ml-m-2 col-lg-5 col-md-5 col-sm-5">
+                    <div class="create-company-select-type input-select mt-0">
+                      <label for="CampTypeEnd2">
+                        <input class="input-radio" type="radio" id="CampTypeEnd2" name="CampTypeEnd" value="1"><span class="checkmark"></span>
+                        <p>Выбрать срок</p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <input class="input-def mt-10" placeholder="11.11.2021">
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-12">
+              <h2 class="mb-10">Бюджет</h2>
+              <div class="who-performs margin">
+                <div class="form-group app-state-contentby_publisher">
+                  <input class="app-trigger-contentfor" id="Item_PublicationKind_Any" name="Item.PublicationKind" type="radio" value="0" checked>
+                  <label for="Item_PublicationKind_Any">Эконом</label>
+                </div>
+                <div class="form-group">
+                  <input class="app-trigger-contentfor" id="Item_PublicationKind_Post" name="Item.PublicationKind" type="radio" value="1">
+                  <label for="Item_PublicationKind_Post">Легкий старт</label>
+                </div>
+                <div class="form-group">
+                  <input class="app-trigger-contentfor" id="Item_PublicationKind_Stories" name="Item.PublicationKind" type="radio" value="2">
+                  <label for="Item_PublicationKind_Stories">Оптимально</label>
+                </div>
+              </div>
+              <div class="container-budget app-state-isnotregular margin">
+                <input id="Item_Budget" name="Item.Budget" type="hidden" value="20000">
+                <div class="block-custome-price">
+                  <label>Ввести сумму вручную</label>
+                  <input id="manual-budget" min="20000" value="20000" step="10" max="65500">
+                </div><span class="irs irs--big js-irs-0">
+<span class="irs">
+<span class="irs-line" tabindex="0"></span>
+<span class="irs-min" style="display: none; visibility: hidden;">0</span>
+<span class="irs-max" style="display: none; visibility: visible;">1</span>
+<span class="irs-from" style="visibility: hidden;">0</span>
+<span class="irs-to" style="visibility: hidden;">0</span>
+<span class="irs-single" style="left: -2.05703%;">20 000₽</span>
+</span>
+<span class="irs-grid"></span>
+<span class="irs-bar irs-bar--single" style="left: 0px; width: 3.69458%;"></span>
+<span class="irs-shadow shadow-single" style="display: none;"></span>
+<span class="irs-handle single" style="left: 0%;"><i></i><i></i><i></i></span>
+</span>
+                <input class="js-range-slider irs-hidden-input" type="text" name="my_range" value="" tabindex="-1" readonly="">
+              </div>
+              <div class="block-create-company-3-bg margin">
+                <p class="text-center">Реклама в режиме CPA не несет никаких финансовых рисков - Вы платите за фактический результат, а не за рекламу. Ваши деньги пойдут только на оплату нужных Вам целей(продаж, регистраций). Кампания активна 3 недели, после чего Вы можете вывести оставшиеся деньги с депозита или продлить кампанию!</p>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-30">
+            <div class="col-xl-6 col-lg-6 col-md-12">
+              <div class="row">
+                <div class="col-5"><a class="block-create-company-link" href="create-company-cpa-1.html">Назад</a></div>
+                <div class="col-5 offset-2"><a class="block-create-company-link" href="create-company-cpa-3.html">Готово</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
