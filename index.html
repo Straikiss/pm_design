@@ -25,7 +25,7 @@
         <iframe class="block-modal-inside-iframe" src="https://www.youtube.com/embed/hpbNqUY2LQo" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
-    <div class="block-modal" id="video-modal-3" style="display: block;">
+    <!-- <div class="block-modal" id="video-modal-3" style="display: block;">
       <div class="block-modal-inside">
         <h2 style="display: inline-block;">Создание рекламной кампании</h2>
         <button class="block-modal-inside-btn" onclick="CloseModal('video-modal-3'); OpenModal('test');">
@@ -33,7 +33,7 @@
         </button>
         <iframe class="block-modal-inside-iframe" src="https://www.youtube.com/embed/ghp32hLaQlM" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-    </div>
+    </div> -->
 <!--     <div class="block-modal-start" id="start-modal" style="display: none;">
       <div class="block-modal-start-inside">
         <svg class="modal-svg" viewBox="0 0 223 90" fill="none">
@@ -61,19 +61,21 @@
     <div class="header">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-6 col-md-9 col-sm-7 col-8">
-            <div class="aside-logo-2">
+          <div class="col-2">
+            <div class="header-link" onclick="OpenMenu();" style="float:left;">
+              <span class="menu-burger"></span>
+              <span class="menu-burger"></span>
+              <span class="menu-burger"></span>
+            </div>
+            <!-- <h1 class="header-title">Главная</h1> -->
+          </div>
+          <div class="col-10">
+            <div class="aside-logo-2" style="float: right;">
               <p class="header-status-balance"> 
-                <i class="bi bi-wallet svg"></i> 25000₽ 
+                25000₽ 
                 <a class="header-status-pay-2" href="settings.html">Пополнить</a>
               </p>
             </div>
-          </div>
-          <div class="col-lg-6 col-md-3 col-sm-5 col-4">
-            <div class="header-link" onclick="OpenMenu();">
-              <i class="bi bi-list svg-3"></i>
-            </div>
-            <h1 class="header-title">Главная</h1>
           </div>
         </div>
       </div>
@@ -85,10 +87,12 @@
             <i class="bi bi-wallet svg"></i> 25000₽ 
             <a class="header-status-pay" href="settings.html">Пополнить</a>
           </p>
+          <div class="header-link" onclick="CloseMenu();" style="float:left;margin-top: -15px;">
+            <span class="menu-burger"></span>
+            <span class="menu-burger"></span>
+            <span class="menu-burger"></span>
+          </div>
         </div>
-        <!-- <div class="aside-link hide-2" id="hidden-link-2">
-          <i class="bi bi-x-circle svg"></i> Закрыть меню
-        </div> -->
         <a class="aside-link aside-link-create" href="create-company.html">
           <i class="bi bi-plus-circle svg"></i> Запустить рекламу
         </a>
@@ -101,11 +105,14 @@
         <a class="aside-link" href="bloggers.html">
           <i class="bi bi-people svg"></i> Блогеры 
         </a>
-        <a class="aside-link" href="settings.html">
-          <i class="bi bi-gear svg"></i> Настройки
-        </a>
         <a class="aside-link" href="partner.html">
           <i class="bi bi-briefcase svg"></i> Партнер
+        </a>
+        <a class="aside-link" href="settings.html">
+          <i class="bi bi-gear svg"></i> Профиль
+        </a>
+        <a class="aside-link" href="faq.html">
+          <i class="bi bi-patch-question svg"></i> F.A.Q
         </a>
         <a class="aside-link" href="#">
           <i class="bi bi-box-arrow-right svg"></i> Выйти
@@ -242,7 +249,7 @@
                 <div class="home-company-create" style="margin-top: 30px;">
                   <h2 class="home-company-create-title">Создайте рекламную кампанию.</h2>
                   <p class="home-company-create-text">Заполните форму, укажите все требуемые параметры и запустите рекламную кампанию.</p>
-                  <a class="home-company-create-button" href="create-company.html">Создать</a>
+                  <a class="home-company-create-button" href="create-company.html">Запустить рекламу</a>
                 </div>
               </div>
               <div class="col-12">
