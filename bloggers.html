@@ -2,11 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Блогеры - Рекламодатель - PostMarket</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <link rel="shortcut icon" href="img/fav/pm-fav.png">
+    <title>Блогеры - PostMarket</title>
     <link rel="stylesheet" href="css/main.css">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="https://postmarket.pro/favicon.ico">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
   </head>
   <body>
     <!-- <div class="header">
@@ -32,9 +32,6 @@
             <a class="header-status-pay" href="settings.html">Пополнить</a>
           </p>
         </div>
-        <div class="aside-link hide-2" id="hidden-link-2">
-          <i class="bi bi-x-circle svg"></i> Закрыть меню
-        </div>
         <a class="aside-link aside-link-create" href="create-company.html">
           <i class="bi bi-plus-circle svg"></i> Запустить рекламу
         </a>
@@ -42,16 +39,19 @@
           <i class="bi bi-house svg"></i> Главная
         </a> 
         <a class="aside-link" href="company.html">
-          <i class="bi bi-bullseye svg"></i> Реклама 
+          <i class="bi bi-bullseye svg"></i> Кампании 
         </a>
         <a class="aside-link aside-link-active" href="bloggers.html">
           <i class="bi bi-people svg"></i> Блогеры 
         </a>
-        <a class="aside-link" href="settings.html">
-          <i class="bi bi-gear svg"></i> Настройки
+        <a class="aside-link " href="settings.html">
+          <i class="bi bi-gear svg"></i> Профиль
         </a>
         <a class="aside-link" href="partner.html">
           <i class="bi bi-briefcase svg"></i> Партнер
+        </a>
+        <a class="aside-link" href="faq.html">
+          <i class="bi bi-patch-question svg"></i> F.A.Q
         </a>
         <a class="aside-link" href="#">
           <i class="bi bi-box-arrow-right svg"></i> Выйти
@@ -71,15 +71,15 @@
               <div class="row">
                 <div class="col-xl-3 col-lg-4 col-md-2 col-sm-3 col-5">
                   <p class="block-select-city-body">Блогеры: </p>
-                  <p><i class="bi bi-person svg color-purple"></i><strong>29 350</strong></p>
+                  <p><strong>29 350</strong></p>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-7">
                   <p class="block-select-city-body">Охват: </p>
-                  <p><i class="bi bi-bullseye svg color-purple"></i><strong>21 767 496</strong></p>
+                  <p><strong>21 767 496</strong></p>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4">
                   <p class="block-select-city-body mt-size">Аудиотория: </p>
-                  <p><i class="bi bi-people svg color-purple"></i><strong>120 930 532</strong></p>
+                  <p><strong>120 930 532</strong></p>
                 </div>
               </div>
             </div>
@@ -88,7 +88,7 @@
             <div class="home-company-create" style="margin-top: 30px;">
               <h2 class="home-company-create-title">Создайте рекламную кампанию.</h2>
               <p class="home-company-create-text">Заполните форму, укажите все требуемые параметры и запустите рекламную кампанию.</p>
-              <a class="home-company-create-button" href="create-company.html">Создать</a>
+              <a class="home-company-create-button" href="create-company.html">Запустить рекламу</a>
             </div>
           </div>
           <div class="col-12">
@@ -112,14 +112,14 @@
               <div class="col-xl-3 offset-xl-3 col-lg-3 offset-lg-3 col-md-4 col-sm-4">
                 <div class="block-blogger-link-block">
                   <button class="block-blogger-link-settings" onclick="openbox('settings-filtr');">
-                    <i class="bi bi-sliders svg-3"></i> Настройки
+                    <i class="bi bi-sliders svg-3"></i> Фильтр
                   </button>
                 </div>
               </div>
             </div>
             <div class="settings-filtr" style="display:none;">
               <div class="row"> 
-                <div class="col-md-6 bloggers-margin-size">
+                <div class="col-lg-6 bloggers-margin-size">
                   <div class="block-def">
                     <p class="input-def-title input-def-title-3 mt-0">Выбор социальной сети</p>
                     <div class="row">
@@ -127,7 +127,8 @@
                         <label for="instagram"> 
                           <input class="input-radio" type="checkbox" id="instagram" name="Item.SocialNetworksSelected" value="0" checked>
                           <div class="checkmark-2"></div>
-                          <div class="block-def-5 margin"><img src="img/social/instagram.png" draggable="false">
+                          <div class="block-def-5 margin">
+                            <img src="http://postmarket.pro/content/public/img/Instagram.png" draggable="false">
                             <div class="block-create-company-select-box input-select">
                               <p class="block-create-company-select-title">Instagram</p>
                             </div>
@@ -138,7 +139,8 @@
                         <label for="tiktok"> 
                           <input class="input-radio" type="checkbox" id="tiktok" name="Item.SocialNetworksSelected" value="1">
                           <div class="checkmark-2"></div>
-                          <div class="block-def-5 margin"><img src="img/social/tiktok.png" draggable="false">
+                          <div class="block-def-5 margin">
+                            <img src="http://postmarket.pro/content/public/img/Tiktok.png" draggable="false">
                             <div class="block-create-company-select-box input-select">
                               <p class="block-create-company-select-title">TikTok</p>
                             </div>
@@ -147,23 +149,58 @@
                       </div>
                     </div>
                     <p class="input-def-title input-def-title-3 mt-0">Пол блогера</p>
-                    <div class="create-company-select-type input-select">
-                      <label for="CampTypeGender1">
-                        <input class="input-radio" type="radio" id="CampTypeGender1" name="CampTypeGender" value="0" checked><span class="checkmark"></span>
-                        <p>Любой</p>
-                      </label>
+                    <div class="row">
+                      <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4">
+                        <div class="create-company-select-type mt-0 input-select">
+                          <label for="CampTypeGender1">
+                            <input class="input-radio" type="radio" id="CampTypeGender1" name="CampTypeGender" value="0" checked><span class="checkmark"></span>
+                            <p>Любой</p>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4">
+                        <div class="create-company-select-type mt-0 input-select ml-m">
+                          <label for="CampTypeGender2">
+                            <input class="input-radio" type="radio" id="CampTypeGender2" name="CampTypeGender" value="1"><span class="checkmark"></span>
+                            <p>Женский</p>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4">
+                        <div class="create-company-select-type mt-0 input-select ml-m-2">
+                          <label for="CampTypeGender3">
+                            <input class="input-radio" type="radio" id="CampTypeGender3" name="CampTypeGender" value="2"><span class="checkmark"></span>
+                            <p>Мужской</p>
+                          </label>
+                        </div>
+                      </div>
                     </div>
-                    <div class="create-company-select-type input-select">
-                      <label for="CampTypeGender2">
-                        <input class="input-radio" type="radio" id="CampTypeGender2" name="CampTypeGender" value="1"><span class="checkmark"></span>
-                        <p>Женский</p>
-                      </label>
-                    </div>
-                    <div class="create-company-select-type input-select">
-                      <label for="CampTypeGender3">
-                        <input class="input-radio" type="radio" id="CampTypeGender3" name="CampTypeGender" value="2"><span class="checkmark"></span>
-                        <p>Мужской</p>
-                      </label>
+                    <p class="input-def-title input-def-title-3">Пол целевой аудитории</p>
+                    <div class="row">
+                      <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4">
+                        <div class="create-company-select-type mt-0 input-select">
+                          <label for="CampTypeTarget1">
+                            <input class="input-radio" type="radio" id="CampTypeTarget1" name="CampTypeTarget" value="0" checked><span class="checkmark"></span>
+                            <p>Любой</p>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4">
+                        <div class="create-company-select-type mt-0 input-select ml-m">
+                          <label for="CampTypeTarget2">
+                            <input class="input-radio" type="radio" id="CampTypeTarget2" name="CampTypeTarget" value="1"><span class="checkmark"></span>
+                            <p>Женский</p>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-lg-4 col-md-3 col-sm-4">
+                        <div class="create-company-select-type mt-0 input-select ml-m-2">
+                          <label for="CampTypeTarget3">
+                            <input class="input-radio" type="radio" id="CampTypeTarget3" name="CampTypeTarget" value="2"><span class="checkmark"></span>
+                            <p>Мужской</p>
+                          </label>
+                        </div>
+                      </div>
                     </div>
                     <p class="input-def-title input-def-title-3">Количество подписчиков</p>
                     <span class="irs irs--big js-irs-0">
@@ -184,36 +221,21 @@
                     <input class="js-range-slider irs-hidden-input" type="text" name="my_range" value="" tabindex="-1" readonly="">
                     <div class="create-company-select-type input-select">
                       <label for="CampTypeFollowers1">
-                        <input class="input-radio" type="radio" id="CampTypeFollowers1" name="CampTypeFollowers" value="0">
+                        <input class="input-radio" type="checkbox" id="CampTypeFollowers1" name="CampTypeFollowers" value="0">
                         <span class="checkmark"></span>
                         <p>По убыванию</p>
                       </label>
                     </div>
                     <div class="create-company-select-type input-select">
                       <label for="CampTypeFollowers2">
-                        <input class="input-radio" type="radio" id="CampTypeFollowers2" name="CampTypeFollowers" value="1">
+                        <input class="input-radio" type="checkbox" id="CampTypeFollowers2" name="CampTypeFollowers" value="1">
                         <span class="checkmark"></span>
                         <p>По возрастанию</p>
                       </label>
                     </div>
-                    <p class="input-def-title input-def-title-3">По популярности</p>
-                    <div class="create-company-select-type input-select">
-                      <label for="CampTypeRate1">
-                        <input class="input-radio" type="radio" id="CampTypeRate1" name="CampTypeRate" value="0">
-                        <span class="checkmark"></span>
-                        <p>Сначала Высокая</p>
-                      </label>
-                    </div>
-                    <div class="create-company-select-type input-select">
-                      <label for="CampTypeRate2">
-                        <input class="input-radio" type="radio" id="CampTypeRate2" name="CampTypeRate" value="1">
-                        <span class="checkmark"></span>
-                        <p>Сначала Средняя</p>
-                      </label>
-                    </div>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                   <div class="block-def">
                     <p class="input-def-title input-def-title-3 mt-0">Тематика аккаунта</p>
                     <div class="create-company-select-type input-select">
@@ -308,11 +330,11 @@
                       </label>
                     </div>
                   </div>
-                  <div class="row">
+                  <!-- <div class="row">
                     <div class="col-6 offset-6">
                       <button class="block-first-company-button" onclick="openbox('settings-filtr');">Сбросить фильтр</button>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -371,6 +393,12 @@
                               <i class="bi bi-star home-bloggers-block-icons-svg"></i>
                             </div>
                           </div>
+                          <div class="col-xl-7 col-lg-5 col-md-5 col-sm-5 col-5">
+                            <p class="block-blogger-text">Город:</p>
+                          </div>
+                          <div class="col-xl-5 col-lg-7 col-md-7 col-sm-7 col-7">
+                            <p class="block-blogger-text text-align">Москва</p>
+                          </div>
                           <div class="col-xl-5 col-lg-4 col-md-5 col-sm-5 col-5">
                             <p class="block-blogger-text">Тематики:</p>
                           </div>
@@ -384,7 +412,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-4 offset-xl-4 col-lg-6 offset-lg-3 col-md-6 offset-md-3">
+                <div class="col-xl-4 offset-xl-4 col-lg-6 offset-lg-3 col-md-6 offset-md-3 mt-30">
                   <div class="block-blogger-link-more-block">
                     <a class="block-blogger-link-more" href="create-company.html">
                       <h2 class="block-blogger-link-more-block-title">

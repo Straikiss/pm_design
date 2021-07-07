@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Новая рекламная кампания - Контент - Рекламодатель - PostMarket</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <link rel="shortcut icon" href="../img/fav/pm-fav.png">
     <link rel="stylesheet" href="../css/main.css">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="https://postmarket.pro/favicon.ico">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
   </head>
   <body>
     <div id="alert-task">
@@ -68,10 +68,10 @@
         <div class="block-def-2">
           <div class="row mb-60">
             <ul>
-              <li class="active"><a href="create-company.html"><span class="number">1</span><span class="text">Выбор блогеров</span></a></li>
-              <li class="active"><a href="create-company-auto-1.html"><span class="number">2</span><span class="text">Создание контента</span></a></li>
-              <li><a href="#"><span class="number">3</span><span class="text">Таргетинг и охват      </span></a></li>
-              <li><a href="#"><span class="number">4</span><span class="text">Оплата кампании</span></a></li>
+              <li class="active"><a href="create-company.html"><span class="number">1</span><span class="text">Кампания</span></a></li>
+              <li class="active"><a href="create-company-auto-1.html"><span class="number">2</span><span class="text">Контент</span></a></li>
+              <li><a href="#"><span class="number">3</span><span class="text">Таргетинг</span></a></li>
+              <li><a href="#"><span class="number">4</span><span class="text">Бюджет</span></a></li>
             </ul>
           </div>
           <div class="row">
@@ -116,7 +116,7 @@
                       <div class="row">
                         <div class="col">
                           <div class="create-company-more-story create-company-more-story-active">
-                            <img class="block-blogger-avatar create-company-more-story-image" src="../img/blogger-card/1.png" draggable="false">
+                            <img class="block-blogger-avatar create-company-more-story-image" src="../img/check-circle.svg" style="width: 32px; height: 32px;" draggable="false">
                             <i class="bi bi-plus-circle create-company-more-svg"></i>
                             <i class="bi bi-x create-company-more-svg-2"></i>
                           </div>
@@ -182,6 +182,11 @@
                     </label>
                   </div>
                 </div>
+                <p class="input-def-title input-def-title-3 tooltip">Название кампании (не обязательно)
+                  <i class="bi bi-question-circle svg color-purple"></i>
+                    <span class="tooltip-text">Название кампании облегчит поиск кампании в списке кампаний. Название кампании будет отображаться блогерам в приложении.</span>
+                </p>
+                <input class="input-def" placeholder="Назовите кампанию (до 30 символов)" maxlength="30">
                 <p class="input-def-title input-def-title-3">Описание задачи</p>
                 <textarea class="create-company-textarea" id="textarea" placeholder="Опишите дополнительные пожелания к выполнению задачи."></textarea>
                 <p class="input-def-title input-def-title-3">Текст публикации (не обязательно)</p>
@@ -255,7 +260,7 @@
                 <input class="input-def" placeholder="#hashtag">
                 <p class="input-def-title">Отметка локации (не обязательно)</p>
                 <input class="input-def" placeholder="Например: Москва">
-                <p class="input-def-title tooltip w-100">E-mail (не обязательно) 
+                <p class="input-def-title tooltip">E-mail (не обязательно) 
                   <i class="bi bi-question-circle svg color-purple"></i>
                   <span class="tooltip-text">На Вашу почту будут приходить уведомления о работе Вашей рекламной кампании.</span>
                 </p>

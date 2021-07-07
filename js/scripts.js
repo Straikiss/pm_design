@@ -1,6 +1,9 @@
 function OpenMenu(){
-  let HiddenElement = document.getElementById('hidden-element');
-  HiddenElement.style.transform = (HiddenElement.style.transform == 'translateX(-100%)') ? 'translateX(0)' : 'translateX(-100%)'
+  document.getElementById('hidden-element').style.transform='translateX(0)';
+}
+
+function CloseMenu(){
+  document.getElementById('hidden-element').style.transform='translateX(-100%)';
 }
 
 var modal=document.getElementById("video-modal-1");
