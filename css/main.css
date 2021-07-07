@@ -2255,7 +2255,6 @@ input::placeholder {
     background: #f8f9fa;
     border-radius: 0;
     margin-top: 30px;
-    box-shadow: 0 0 10px #dee2e6;
 }
 .uploaded-image {
     border-radius: 5px;
@@ -2522,10 +2521,15 @@ ul {
 ul li {
     list-style-type: none;
     position: relative;
+    min-width: 110px;
 }
 ul li:first-child:before,
 ul li:last-child:after {
     display: none;
+}
+
+ul {
+    overflow-x: auto;
 }
 ul li:after,
 ul li:before {
@@ -2780,6 +2784,23 @@ ul li .text {
     border-style: solid !important;
     border-color: transparent !important;
 }
+
+.uploaded .create-company-svg {
+    display: none;
+    top: 15px !important;
+    right: 15px;
+}
+
+.create-company-svg, .create-company-svg:before {
+    font-size: 45px;
+    height: 45px;
+}
+
+.uploaded:hover .create-company-svg {
+    display: block;
+    color: red;
+}
+
 .irs--big .irs-handle {
     top: 25px;
     width: 30px;
