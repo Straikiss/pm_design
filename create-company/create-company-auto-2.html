@@ -114,11 +114,11 @@
                 <p class="input-def-title input-def-title-3">Тип публикации</p>
                 <div class="who-performs">
                   <div class="form-group app-state-contentby_publisher">
-                    <input class="app-trigger-contentfor" id="Item_PublicationKind_Any" name="Item.PublicationKind" type="radio" value="0">
+                    <input class="app-trigger-contentfor" id="Item_PublicationKind_Any" name="Item.PublicationKind" type="radio" value="0" checked>
                     <label for="Item_PublicationKind_Any">Любой</label>
                   </div>
                   <div class="form-group">
-                    <input class="app-trigger-contentfor" id="Item_PublicationKind_Post" name="Item.PublicationKind" type="radio" value="1" checked onclick="StoryPreviewHide()">
+                    <input class="app-trigger-contentfor" id="Item_PublicationKind_Post" name="Item.PublicationKind" type="radio" value="1" onclick="StoryPreviewHide()">
                     <label for="Item_PublicationKind_Post">Пост</label>
                   </div>
                   <div class="form-group">
@@ -127,7 +127,7 @@
                   </div>
                 </div>
                 <div id="ChangeImagePreviewHide">
-                  <div class="block-create-company-2 margin" id="ShowMoreStoryButtonOpened" style="display:none"> 
+                  <!-- <div class="block-create-company-2 margin" id="ShowMoreStoryButtonOpened" style="display:none"> 
                     <div class="input-select mt-30">
                       <label for="CampTypeMoreStory">
                         <input class="input-radio" type="checkbox" id="CampTypeMoreStory" name="CampTypeMoreStory" value="0" onclick="ShowMoreStory()">
@@ -174,30 +174,30 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                   <p class="input-def-title input-def-title-3">Выбор сценария рекламной публикации</p>
-                  <div class="create-company-select-type mt-0 input-select" onclick="ChangeImage('../img/company/instagram/post/1.png');">
+                  <div class="create-company-select-type mt-0 input-select" onclick="ChangeImage('https://postmarket.pro/content/promoter/image/Item_ScriptKind_UsageEffect.png');">
                     <label for="CampTypePost1">
                       <input class="input-radio" type="radio" id="CampTypePost1" name="CampTypePost" value="0" checked>
                       <span class="checkmark"></span>
                       <p>Эффект пользования с оценкой блогера</p>
                     </label>
                   </div>
-                  <div class="create-company-select-type input-select" onclick="ChangeImage('../img/company/instagram/post/2.png');">
+                  <div class="create-company-select-type input-select" onclick="ChangeImage('https://postmarket.pro/content/promoter/image/Item_ScriptKind_ProductPresentation.png');">
                     <label for="CampTypePost2">
                       <input class="input-radio" type="radio" id="CampTypePost2" name="CampTypePost" value="1">
                       <span class="checkmark"></span>
                       <p>Презентация продукта от имени блогера с позитивным комментарием</p>
                     </label>
                   </div>
-                  <div class="create-company-select-type input-select" onclick="ChangeImage('../img/company/instagram/post/3.png');">
+                  <div class="create-company-select-type input-select" onclick="ChangeImage('https://postmarket.pro/content/promoter/image/Item_ScriptKind_DirectExplosion.png');">
                     <label for="CampTypePost3">
                       <input class="input-radio" type="radio" id="CampTypePost3" name="CampTypePost" value="2">
                       <span class="checkmark"></span>
-                      <p>Публикаци от лица блогера с рекомендацией купить или воспользоваться рекламируемым продуктом</p>
+                      <p>Мне взорвали директ, все спрашивают о Вашем продукте/услуге</p>
                     </label>
                   </div>
-                  <div class="create-company-select-type input-select" onclick="ChangeImage('../img/company/instagram/post/4.png');">
+                  <div class="create-company-select-type input-select" onclick="ChangeImage('https://postmarket.pro/content/promoter/image/Item_ScriptKind_Custom.png');">
                     <label for="CampTypePost4">
                       <input class="input-radio" type="radio" id="CampTypePost4" name="CampTypePost" value="3">
                       <span class="checkmark"></span>
@@ -230,7 +230,7 @@
                       <a href="https://postmarketstorage.blob.core.windows.net/publisher-avatars/publisher41595.jpg">
                         <img class="uploaded-image" src="https://postmarketstorage.blob.core.windows.net/publisher-avatars/publisher41595.jpg" draggable="false">
                         <a class="uploaded-link" href="#">
-                          <i class="bi bi-x create-company-svg top-30"></i>
+                          <i class="bi bi-x-circle create-company-svg top-30"></i>
                         </a>
                       </a>
                     </div>
@@ -240,7 +240,7 @@
                       <a href="https://postmarketstorage.blob.core.windows.net/publisher-avatars/publisher41595.jpg">
                         <img class="uploaded-image" src="https://postmarketstorage.blob.core.windows.net/publisher-avatars/publisher41595.jpg" draggable="false">
                         <a class="uploaded-link" href="#">
-                          <i class="bi bi-x create-company-svg top-30"></i>
+                          <i class="bi bi-x-circle create-company-svg top-30"></i>
                         </a>
                       </a>
                     </div>
@@ -250,7 +250,7 @@
                       <a href="https://postmarketstorage.blob.core.windows.net/publisher-avatars/publisher41595.jpg">
                         <img class="uploaded-image" src="https://postmarketstorage.blob.core.windows.net/publisher-avatars/publisher41595.jpg" draggable="false">
                         <a class="uploaded-link" href="#">
-                          <i class="bi bi-x create-company-svg top-30"></i>
+                          <i class="bi bi-x-circle create-company-svg top-30"></i>
                         </a>
                       </a>
                     </div>
@@ -260,7 +260,7 @@
                       <a href="https://postmarketstorage.blob.core.windows.net/publisher-avatars/publisher41595.jpg">
                         <img class="uploaded-image" src="https://postmarketstorage.blob.core.windows.net/publisher-avatars/publisher41595.jpg" draggable="false">
                         <a class="uploaded-link" href="#">
-                          <i class="bi bi-x create-company-svg top-30"></i>
+                          <i class="bi bi-x-circle create-company-svg top-30"></i>
                         </a>
                       </a>
                     </div>
@@ -268,8 +268,7 @@
                 </div>
                 <p class="input-def-title">Профиль в Инстаграм/ТикТок (по желанию)</p>
                 <input class="input-def" id="input-1" placeholder="mention">
-                <p class="input-def-title">
-                  Ссылка на сайт (по желанию) 
+                <p class="input-def-title">Ссылка на сайт (по желанию)</p>
                 <input class="input-def" id="input-2" placeholder="https://site.ru">
                 <p class="input-def-title">Хэштег (не обязательно)</p>
                 <input class="input-def" placeholder="#hashtag">
@@ -285,7 +284,7 @@
             <div class="col-xl-4 offset-xl-1 col-lg-4 offset-lg-1 col-md-6 offset-md-3 col-12">
               <div class="block-create-company-2 margin">
                 <div id="BlockCreateBlogger">
-                  <img class="create-company-image" id="ImagePost" src="../img/company/instagram/post/1.png" draggable="false">
+                  <img id="ImagePost" src="https://postmarket.pro/content/promoter/image/Item_ScriptKind_UsageEffect.png" draggable="false">
                 </div>
                 <div class="none" id="BlockCreateSelf">
                   <svg class="mt-30-size" width="280" height="450" viewBox="0 0 249 452" fill="none">
@@ -320,7 +319,7 @@
                   <a class="block-create-company-link" href="create-company-auto-1.html">Назад</a>
                 </div>
                 <div class="col-4 offset-4">
-                  <button class="block-create-company-link" onclick="NextStep('create-company-auto-2.html');">Готово</button>
+                  <button class="block-create-company-link" onclick="NextStep('create-company-auto-3.html');">Готово</button>
                 </div>
               </div>
             </div>
