@@ -2048,7 +2048,6 @@ label {
     display: inline;
 }
 .block-create-company-select-text {
-    color: #adb5bd;
     font-size: 14px;
     padding-top: 10px;
     padding-bottom: 5px;
@@ -2765,6 +2764,18 @@ ul li .text {
     cursor: pointer;
 }
 
+.company-id {
+    position: absolute;
+    right: 25px;
+    top: 5px;
+}
+
+.budget-price {
+    position: absolute; 
+    text-align: right; 
+    right: 0;
+}
+
 @media (max-width: 1409px) {
     .create-company-more-story,
     .create-company-more-story-image {
@@ -2845,6 +2856,10 @@ ul li .text {
 }
 
 @media (max-width: 1216px) {
+    .budget-price {
+        position: inherit; 
+    }
+
     .header-title {
         display: none;
     }
