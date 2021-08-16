@@ -930,6 +930,7 @@ label {
 .block-company-inside .bi-x {
     display: block;
 }
+.block-company-cpf:before,
 .block-company-cpa:before,
 .block-company-pro:before {
     border-bottom-right-radius: 5px;
@@ -946,6 +947,9 @@ label {
 }
 .block-company-cpa:before {
     content: "CPA";
+}
+.block-company-cpf:before {
+    content: "CPF";
 }
 .block-company-inside-svg {
     margin: auto;
@@ -1282,6 +1286,57 @@ label {
     line-height: 35px;
     text-align: center;
     margin-bottom: 30px;
+}
+.block-followers {
+    margin-top: 38px;
+    max-height: 345px;
+    margin-bottom: -15px;
+}
+.block-followers .row {
+    padding-bottom: 15px;
+}
+.block-followers img {
+    width: 100px;
+}
+.created-company-mobile-inside .view-followers {
+    background: none;
+    padding: 0;
+    color: #6f42c1;
+    border: none;
+}
+.block-modal-fix {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 620px;
+    position: fixed;
+    background: #fff;
+    margin-left: -15px;
+    margin-top: -15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    z-index: 1;
+}
+.block-followers .table-size,
+.block-followers .created-company-table {
+    box-shadow: none !important;
+}
+
+.block-modal-followers {
+    overflow: auto;
+    max-height: 445px;
+    overflow-x: hidden;
+}
+.view-followers {
+    cursor: pointer;
+    background: #6f42c1;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: .1s;
+}
+.view-followers:hover {
+    opacity: .9;
 }
 .block-blogger-avatar {
     object-fit: cover;
@@ -3038,6 +3093,9 @@ ul li .text {
     }
 }
 @media (max-width: 767px) {
+    .block-modal-fix {
+        width: 510px;
+    }
     .header {
         padding-right: 0;
         padding-left: 0;
@@ -3079,7 +3137,7 @@ ul li .text {
     }
     .block-modal-inside {
         width: 510px;
-        height: 293px;
+        min-height: 293px;
     }
     .block-modal-inside-2 {
         width: 510px;
@@ -3240,6 +3298,18 @@ ul li .text {
     }
 }
 @media (max-width: 575px) {
+    .block-modal-followers.block-modal-inside {
+        max-height: 398px !important;
+    }
+
+    .block-modal-fix {
+        width: 330px;
+    }
+    .block-followers p, .block-followers a {
+        max-width: 180px;
+        position: relative;
+        overflow: hidden;
+    }
     .checkmark-2 {
         height: calc(100% - 15px);
     }
@@ -3281,7 +3351,7 @@ ul li .text {
     }
     .block-modal-inside {
         width: 330px;
-        height: 238px;
+        min-height: 238px;
     }
     .block-modal-inside-2 {
         width: 330px;
