@@ -59,6 +59,7 @@ function RateBloggers(){
 
 function CloseModal(ModalName){
   document.getElementById(ModalName).style.display='none';
+  document.getElementsByTagName('body')[0].style.overflowY="scroll";
   document.getElementById(ModalName).addEventListener('click', () => {
     document.querySelectorAll('iframe').forEach(i => {
         let source = i.src;
@@ -67,9 +68,13 @@ function CloseModal(ModalName){
     });
   });
 }
+
 function ChangeImage(Link){document.getElementById('ImagePost').src=Link;} 
 function ChangeLink(Link){document.getElementById('ChangeLink').href=Link;}
-function OpenModal(ModalName){document.getElementById(ModalName).style.display='block';}
+function OpenModal(ModalName){
+  document.getElementById(ModalName).style.display='block';
+  document.getElementsByTagName('body')[0].style.overflowY="hidden";
+}
 
 function OpenAlert(AlertName)
 {
