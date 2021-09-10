@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Профиль - PostMarket</title>
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="https://postmarket.pro/favicon.ico">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+  </head>
+  <body>
+    <div id="alert-send-promo">
+      <p>
+        <i class="bi bi-check-circle svg"></i> Запрос на создание промо материала отправлен, не забудьте проверять почту!
+      </p>
+    </div>
+    <div id="alert-copy-link">
+      <p>
+        <i class="bi bi-check-circle svg"></i> Реферальная/партнерская ссылка скопирована!
+      </p>
+    </div>
+    <div class="block-modal" id="chat-modal-1">
+      <div class="block-modal-inside-2">
+        <div class="row">
+          <div class="col-12">
+            <button class="block-modal-inside-btn" onclick="CloseModal('chat-modal-1');">
+              <i class="bi bi-x-circle svg-2"></i>
+            </button>
+          </div>
+        </div>
+        <p class="input-def-title-3">Опишите промо материалы которые Вы хотите получить</p>
+        <textarea class="create-company-textarea" id="textarea" placeholder="формат, размеры, назначение"></textarea>
+        <p class="input-def-title-3 input-def-title">Укажите @email</p>
+        <input class="input-def margin" id="input" placeholder="email@mail.ru">
+        <p class="text-align-center margin">Промо материал будет отправлен на Ваш @email, <br> в течение несколько часов бесплатно.</p>
+        <div class="row">
+          <div class="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-sm-6 offset-md-0 col-12">
+            <button class="block-settings-link ml-partner-size" onclick="SendPromo()">
+              <i class="bi bi-envelope svg-3"></i> Заказать бесплатно   
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-3 col-sm-5 col-4">
+            <div class="header-link" id="hidden-link">
+              <i class="bi bi-list svg-3"></i> Меню
+            </div>
+            <h1 class="header-title">Партнерская программа</h1>
+          </div>
+          <div class="col-lg-6 col-md-9 col-sm-7 col-8">
+            <div class="header-status">
+              <p class="header-status-balance">5000 ₽</p>
+              <a class="header-status-pay" href="settings.html">Пополнить баланс</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="aside" id="hidden-element">
+        <div class="aside-logo">
+          <p class="header-status-balance"> 
+            <i class="bi bi-wallet svg"></i> 5000₽ <a class="header-status-pay" href="settings.html">Пополнить</a>
+          </p>
+        </div>
+        <a class="aside-link aside-link-create" href="create-company.html">
+          <i class="bi bi-plus-circle svg"></i> Запустить рекламу
+        </a>
+        <a class="aside-link" href="index.html">
+          <i class="bi bi-house svg"></i> Главная
+        </a> 
+        <a class="aside-link" href="company.html">
+          <i class="bi bi-bullseye svg"></i> Кампании 
+        </a>
+        <a class="aside-link" href="bloggers.html">
+          <i class="bi bi-people svg"></i> Блогеры 
+        </a>
+        <a class="aside-link aside-link-active" href="partner.html">
+          <i class="bi bi-briefcase svg"></i> Партнер
+        </a>
+        <a class="aside-link" href="settings.html">
+          <i class="bi bi-gear svg"></i> Профиль
+        </a>
+        <a class="aside-link" href="faq.html">
+          <i class="bi bi-patch-question svg"></i> F.A.Q
+        </a>
+        <a class="aside-link" href="#">
+          <i class="bi bi-box-arrow-right svg"></i> Выйти
+        </a>
+        <i class="aside-logo-svg"></i>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="block-partner block-def" style="margin-top: 30px;">
+              <p class="font-size-14">
+                <i class="bi bi-percent svg color-purple"></i> Тип привлечения рекламодателей
+              </p>
+              <h2 class="block-partner-title">Процент с оплат кампаний 
+                <span class="color-purple">10%</span>
+              </h2>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="block-partner-2 block-def" style="margin-top: 30px;">
+              <p class="font-size-14">
+                <i class="bi bi-percent svg color-purple"></i> Тип привлечения блогеров
+              </p>
+              <h2 class="block-partner-title">Процент с дохода блогера 
+                <span class="color-purple">10%</span>
+              </h2>
+            </div>
+          </div>
+          <div class="col-12">
+            <p>Ваша реферальная/партнерская ссылка</p>
+            <div class="row margin">
+              <div class="col-xl-4 col-lg-5 col-md-6">
+                <button class="block-partner-button mb-0" onclick="OpenAlert('alert-copy-link');">
+                  <i class="bi bi-link-45deg svg-4"></i> https://postmarket.pro/pid/4556
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="block-def margin">
+              <p>Если Вы агентство или СММ, то есть несколько сценариев работы, которые Вы можете использовать, чтобы получить свой процент со всех оплат Ваших клиентов. Оба варианта Вы можете совмещать между собой.</p>
+              <div class="settings-more">
+                <button class="text-left" onclick="openbox('settings-first-plan');">
+                  Первый сценарий <i class="bi bi-caret-down created-company-svg cursor-pointer"></i>
+                </button>
+                <div class="settings-first-plan" style="display:none;">
+                  <p>Если Вы намерены сами создавать кампании для своих клиентов в одном личном кабинете, то Вам нужно перейти по Вашей ссылке и зарегистрировать новый аккаунт (не тот, что у Вас сейчас, под которым Вы сейчас зашли как партнер) и уже в этом аккаунте заводить все рекламные кампании Ваших клиентов, пополнить баланс, а Ваш процент будет отображаться тут.</p>
+                </div>
+              </div>
+              <div class="settings-more">
+                <button class="text-left" onclick="openbox('settings-second-plan');">
+                  Второй сценарий <i class="bi bi-caret-down created-company-svg cursor-pointer"></i>
+                </button>
+                <div class="settings-second-plan" style="display:none;">
+                  <p>Вам достаточно давать ссылку Вашим клиентам, они будут сами регистрироваться, создавать кампании, а Ваш процент будет отображаться у Вас на балансе.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="block-def margin">
+                  <p class="block-settings-stats">
+                    <i class="bi bi-bar-chart svg color-purple"></i> Статистика
+                  </p>
+                  <p class="block-partner-body-2">Рекламодателей: <span class="color-purple float-right">15</p>
+                  <p class="block-partner-body-2">Блогеров: <span class="color-purple float-right">10</p>
+                  <p class="block-partner-body-2">Партнеров: <span class="color-purple float-right">5</p>
+                  <button class="w-auto color-purple" onclick="openbox('settings-stats');">Полная статистика</button>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="block-def margin">
+                  <p class="block-settings-stats">
+                    <i class="bi bi-wallet svg color-purple"></i> Доход
+                  </p>
+                  <p class="block-partner-body-2">В ожидании: <span class="color-orange float-right">300 ₽</p>
+                  <p class="block-partner-body-2">За месяц: <span class="color-orange float-right">750 ₽</p>
+                  <p class="block-partner-body-2">Заработано: <span class="color-purple float-right">1200 ₽</p>
+                  <p>Баланс: <span class="color-green float-right">5000 ₽</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 partner-size settings-stats" style="display:none;">
+            <h2 class="margin">
+              <i class="bi bi-calendar svg-2 color-purple"></i> с 20.20.20 по 21.21.21
+            </h2>
+          </div>
+          <div class="col-12 partner-size settings-stats" style="display:none;">
+            <div class="partner-stats">
+              <div class="table-size">
+                <table class="table">
+                  <tr>
+                    <th>Переходов</th>
+                    <th>Рекламодателей</th>
+                    <th>Блогеров</th>
+                    <th>партнеров</th>
+                    <th>Доход</th>
+                    <th>Дата</th>
+                  </tr>
+                  <tr>
+                    <td class="color-purple">1000</td>
+                    <td class="color-purple">100</td>
+                    <td class="color-purple">100</td>
+                    <td class="color-purple">100</td>
+                    <td class="color-purple">1.000₽</td>
+                    <td class="color-purple">20.20.20</td>
+                  </tr>
+                  <tr>
+                    <td class="color-purple">1000</td>
+                    <td class="color-purple">100</td>
+                    <td class="color-purple">100</td>
+                    <td class="color-purple">100</td>
+                    <td class="color-purple">1.000₽</td>
+                    <td class="color-purple">20.20.20</td>
+                  </tr>
+                  <tr>
+                    <td class="color-purple">1000</td>
+                    <td class="color-purple">100</td>
+                    <td class="color-purple">100</td>
+                    <td class="color-purple">100</td>
+                    <td class="color-purple">1.000₽</td>
+                    <td class="color-purple">20.20.20</td>
+                  </tr>
+                  <tr>
+                    <td class="color-purple">1000</td>
+                    <td class="color-purple">100</td>
+                    <td class="color-purple">100</td>
+                    <td class="color-purple">100</td>
+                    <td class="color-purple">1.000₽</td>
+                    <td class="color-purple">20.20.20</td>
+                  </tr>
+                  <tr>
+                    <td class="color-purple">1000</td>
+                    <td class="color-purple">100</td>
+                    <td class="color-purple">100</td>
+                    <td class="color-purple">100</td>
+                    <td class="color-purple">1.000₽</td>
+                    <td class="color-purple">20.20.20</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <h2 class="home-block-title">
+              <i class="bi bi-archive svg-2 color-purple"></i> Промо материалы для привлечения рекламодателей
+            </h2>
+          </div>
+          <div class="col-lg-6 margin">
+            <div class="block-def">
+              <p>Видео <button class="home-bloggers-title-link" onclick="openbox('show-videos-promoter');">все</button></p>
+              <div class="row partner-show-pc">
+                <div class="col-sm-4 col-6 add-mb-2 text-center block-settings-post">
+                  <span class="block-settings-size">359кб</span>
+                  <img class="border-radius" src="partner/promoter/videos/preview/pm_promoter_preview_1.png" draggable="false">
+                  <a class="input-def-title mt-0 color-hover" href="partner/promoter/videos/post/pm_promoter_post_1.mp4" download>Скачать</a>
+                </div>
+                <div class="col-sm-4 col-6 add-mb-2 text-center block-settings-post">
+                  <span class="block-settings-size">417кб</span>
+                  <img class="border-radius" src="partner/promoter/videos/preview/pm_promoter_preview_2.png" draggable="false">
+                  <a class="input-def-title mt-0 color-hover" href="partner/promoter/videos/post/pm_promoter_post_2.mp4" download>Скачать</a>
+                </div>
+                <div class="col-sm-4 col-6 add-mb-2 text-center block-settings-post">
+                  <span class="block-settings-size">599кб</span>
+                  <img class="border-radius" src="partner/promoter/videos/preview/pm_promoter_preview_3.png" draggable="false">
+                  <a class="input-def-title mt-0 color-hover" href="partner/promoter/videos/post/pm_promoter_post_3.mp4" download>Скачать</a>
+                </div>
+                <div class="col-sm-4 col-6 show-videos-promoter add-mb-2 text-center block-settings-post" style="display:none;">
+                  <span class="block-settings-size">504кб</span>
+                  <img class="border-radius" src="partner/promoter/videos/preview/pm_promoter_preview_4.png" draggable="false">
+                  <a class="input-def-title mt-0 color-hover" href="partner/promoter/videos/post/pm_promoter_post_4.mp4" download>Скачать</a>
+                </div>
+                <div class="col-sm-4 col-6 show-videos-promoter add-mb-2 text-center block-settings-post" style="display:none;">
+                  <span class="block-settings-size">1.25мб</span>
+                  <img class="border-radius" src="partner/promoter/videos/preview/pm_promoter_preview_5.png" draggable="false">
+                  <a class="input-def-title mt-0 color-hover" href="partner/promoter/videos/post/pm_promoter_post_5.mp4" download>Скачать</a>
+                </div>
+                <div class="col-sm-4 col-6 show-videos-promoter text-center add-mb-2 block-settings-story" style="display:none;">
+                  <span class="block-settings-size">399кб</span>
+                  <img class="border-radius" src="partner/promoter/videos/preview/pm_promoter_preview_6.png" draggable="false">
+                  <a class="input-def-title mt-0 color-hover" href="partner/promoter/videos/story/pm_promoter_story_1.mp4" download>Скачать</a>
+                </div>
+                <div class="col-sm-4 col-6 show-videos-promoter text-center add-mb-2 block-settings-story" style="display:none;">
+                  <span class="block-settings-size">287кб</span>
+                  <img class="border-radius" src="partner/promoter/videos/preview/pm_promoter_preview_7.png" draggable="false">
+                  <a class="input-def-title mt-0 color-hover" href="partner/promoter/videos/story/pm_promoter_story_2.mp4" download>Скачать</a>
+                </div>
+                <div class="col-sm-4 col-6 show-videos-promoter text-center add-mb-2 block-settings-story" style="display:none;">
+                  <span class="block-settings-size">619кб</span>
+                  <img class="border-radius" src="partner/promoter/videos/preview/pm_promoter_preview_8.png" draggable="false">
+                  <a class="input-def-title mt-0 color-hover" href="partner/promoter/videos/story/pm_promoter_story_3.mp4" download>Скачать</a>
+                </div>
+              </div>
+              <div class="row partner-show-mobile">
+                <div class="col-sm-4 col-6 add-mb-2 text-center block-settings-post"><span class="block-settings-size">359кб</span><img class="border-radius" src="partner/promoter/videos/preview/pm_promoter_preview_1.png" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/promoter/videos/post/pm_promoter_post_1.mp4" download>Скачать</a></div>
+                <div class="col-sm-4 col-6 add-mb-2 text-center block-settings-post"><span class="block-settings-size">417кб</span><img class="border-radius" src="partner/promoter/videos/preview/pm_promoter_preview_2.png" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/promoter/videos/post/pm_promoter_post_2.mp4" download>Скачать</a></div>
+                <div class="col-sm-4 col-6 show-videos-promoter add-mb-2 text-center block-settings-post" style="display:none;"><span class="block-settings-size">599кб</span><img class="border-radius" src="partner/promoter/videos/preview/pm_promoter_preview_3.png" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/promoter/videos/post/pm_promoter_post_3.mp4" download>Скачать</a></div>
+                <div class="col-sm-4 col-6 show-videos-promoter add-mb-2 text-center block-settings-post" style="display:none;"><span class="block-settings-size">504кб</span><img class="border-radius" src="partner/promoter/videos/preview/pm_promoter_preview_4.png" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/promoter/videos/post/pm_promoter_post_4.mp4" download>Скачать</a></div>
+                <div class="col-sm-4 col-6 show-videos-promoter add-mb-2 text-center block-settings-post" style="display:none;"><span class="block-settings-size">1.25мб</span><img class="border-radius" src="partner/promoter/videos/preview/pm_promoter_preview_5.png" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/promoter/videos/post/pm_promoter_post_5.mp4" download>Скачать</a></div>
+                <div class="col-sm-4 col-6 show-videos-promoter text-center add-mb-2 block-settings-story" style="display:none;"><span class="block-settings-size">399кб</span><img class="border-radius" src="partner/promoter/videos/preview/pm_promoter_preview_6.png" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/promoter/videos/story/pm_promoter_story_1.mp4" download>Скачать</a></div>
+                <div class="col-sm-4 col-6 show-videos-promoter text-center add-mb-2 block-settings-story" style="display:none;"><span class="block-settings-size">287кб</span><img class="border-radius" src="partner/promoter/videos/preview/pm_promoter_preview_7.png" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/promoter/videos/story/pm_promoter_story_2.mp4" download>Скачать</a></div>
+                <div class="col-sm-4 col-6 show-videos-promoter text-center add-mb-2 block-settings-story" style="display:none;"><span class="block-settings-size">619кб</span><img class="border-radius" src="partner/promoter/videos/preview/pm_promoter_preview_8.png" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/promoter/videos/story/pm_promoter_story_3.mp4" download>Скачать</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 margin">
+            <div class="block-def">
+              <p>Баннеры <button class="home-bloggers-title-link" onclick="openbox('show-images-promoter');">все</button></p>
+              <div class="row partner-show-pc">
+                <div class="col-sm-4 col-6 add-mb-2 text-center"><span class="block-settings-size">373кб</span><img class="border-radius" src="partner/promoter/images/pm_promoter_banner_1.jpg" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/promoter/images/pm_promoter_banner_1.jpg" download>Скачать </a></div>
+                <div class="col-sm-4 col-6 add-mb-2 text-center"><span class="block-settings-size">379кб</span><img class="border-radius" src="partner/promoter/images/pm_promoter_banner_2.jpg" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/promoter/images/pm_promoter_banner_2.jpg" download>Скачать</a></div>
+                <div class="col-sm-4 col-6 add-mb-2 text-center"><span class="block-settings-size">70.6кб</span><img class="border-radius" src="partner/promoter/images/pm_promoter_banner_3.jpg" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/promoter/images/pm_promoter_banner_3.jpg" download>Скачать </a></div>
+              </div>
+              <div class="row partner-show-mobile">
+                <div class="col-sm-4 col-6 add-mb-2 text-center"><span class="block-settings-size">373кб</span><img class="border-radius" src="partner/promoter/images/pm_promoter_banner_1.jpg" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/promoter/images/pm_promoter_banner_1.jpg" download>Скачать </a></div>
+                <div class="col-sm-4 col-6 add-mb-2 text-center"><span class="block-settings-size">379кб</span><img class="border-radius" src="partner/promoter/images/pm_promoter_banner_2.jpg" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/promoter/images/pm_promoter_banner_2.jpg" download>Скачать</a></div>
+                <div class="col-sm-4 col-6 show-images-promoter add-mb-2 text-center" style="display:none;"><span class="block-settings-size">70.6кб</span><img class="border-radius" src="partner/promoter/images/pm_promoter_banner_3.jpg" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/promoter/images/pm_promoter_banner_3.jpg" download>Скачать </a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <h2 class="home-block-title">
+               <i class="bi bi-archive svg-2 color-purple"></i> Промо материалы для привлечения блогеров </h2>
+          </div>
+          <div class="col-lg-6 margin">
+            <div class="block-def">
+              <p>Видео <button class="home-bloggers-title-link" onclick="openbox('show-videos-blogger');">все</button></p>
+              <div class="row partner-show-pc">
+                <div class="col-sm-4 col-6 add-mb-2 text-center block-settings-post">
+                  <span class="block-settings-size">1.75мб</span>
+                  <img class="border-radius" src="partner/blogger/videos/preview/pm_blogger_preview_1.png" draggable="false">
+                  <a class="input-def-title mt-0 color-hover" href="partner/blogger/videos/post/pm_blogger_post_1.mp4" download>Скачать</a>
+                </div>
+                <div class="col-sm-4 col-6 add-mb-2 text-center block-settings-post">
+                  <span class="block-settings-size">1.20мб</span>
+                  <img class="border-radius" src="partner/blogger/videos/preview/pm_blogger_preview_2.png" draggable="false">
+                  <a class="input-def-title mt-0 color-hover" href="partner/blogger/videos/post/pm_blogger_post_2.mp4" download>Скачать</a>
+                </div>
+                <div class="col-sm-4 col-6 add-mb-2 text-center block-settings-post">
+                  <span class="block-settings-size">993кб</span>
+                  <img class="border-radius" src="partner/blogger/videos/preview/pm_blogger_preview_3.png" draggable="false">
+                  <a class="input-def-title mt-0 color-hover" href="partner/blogger/videos/post/pm_blogger_post_3.mp4" download>Скачать</a>
+                </div>
+                <div class="col-sm-4 col-6 show-videos-blogger text-center add-mb-2 block-settings-story" style="display:none;">
+                  <span class="block-settings-size">2.23мб</span>
+                  <img class="border-radius" src="partner/blogger/videos/preview/pm_blogger_preview_1.png" draggable="false">
+                  <a class="input-def-title mt-0 color-hover" href="partner/blogger/videos/story/pm_blogger_story_1.mp4" download>Скачать</a>
+                </div>
+                <div class="col-sm-4 col-6 show-videos-blogger text-center add-mb-2 block-settings-story" style="display:none;">
+                  <span class="block-settings-size">1.75мб</span>
+                  <img class="border-radius" src="partner/blogger/videos/preview/pm_blogger_preview_2.png" draggable="false">
+                  <a class="input-def-title mt-0 color-hover" href="partner/blogger/videos/story/pm_blogger_story_2.mp4" download>Скачать</a>
+                </div>
+                <div class="col-sm-4 col-6 show-videos-blogger text-center add-mb-2 block-settings-story" style="display:none;">
+                  <span class="block-settings-size">1.10мб</span>
+                  <img class="border-radius" src="partner/blogger/videos/preview/pm_blogger_preview_3.png" draggable="false">
+                  <a class="input-def-title mt-0 color-hover" href="partner/blogger/videos/story/pm_blogger_story_3.mp4" download>Скачать</a>
+                </div>
+              </div>
+              <div class="row partner-show-mobile">
+                <div class="col-sm-4 col-6 add-mb-2 text-center block-settings-post"><span class="block-settings-size">1.75мб</span><img class="border-radius" src="partner/blogger/videos/preview/pm_blogger_preview_1.png" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/blogger/videos/post/pm_blogger_post_1.mp4" download>Скачать</a></div>
+                <div class="col-sm-4 col-6 add-mb-2 text-center block-settings-post"><span class="block-settings-size">1.20мб</span><img class="border-radius" src="partner/blogger/videos/preview/pm_blogger_preview_2.png" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/blogger/videos/post/pm_blogger_post_2.mp4" download>Скачать</a></div>
+                <div class="col-sm-4 col-6 show-videos-blogger add-mb-2 text-center block-settings-post" style="display:none;"><span class="block-settings-size">993кб</span><img class="border-radius" src="partner/blogger/videos/preview/pm_blogger_preview_3.png" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/blogger/videos/post/pm_blogger_post_3.mp4" download>Скачать</a></div>
+                <div class="col-sm-4 col-6 show-videos-blogger text-center add-mb-2 block-settings-story" style="display:none;"><span class="block-settings-size">2.23мб</span><img class="border-radius" src="partner/blogger/videos/preview/pm_blogger_preview_1.png" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/blogger/videos/story/pm_blogger_story_1.mp4" download>Скачать</a></div>
+                <div class="col-sm-4 col-6 show-videos-blogger text-center add-mb-2 block-settings-story" style="display:none;"><span class="block-settings-size">1.75мб</span><img class="border-radius" src="partner/blogger/videos/preview/pm_blogger_preview_2.png" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/blogger/videos/story/pm_blogger_story_2.mp4" download>Скачать</a></div>
+                <div class="col-sm-4 col-6 show-videos-blogger text-center add-mb-2 block-settings-story" style="display:none;"><span class="block-settings-size">1.10мб</span><img class="border-radius" src="partner/blogger/videos/preview/pm_blogger_preview_3.png" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/blogger/videos/story/pm_blogger_story_3.mp4" download>Скачать</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 margin">
+            <div class="block-def">
+              <p>Баннеры <button class="home-bloggers-title-link" onclick="openbox('show-images-blogger');">все</button></p>
+              <div class="row partner-show-pc">
+                <div class="col-sm-4 col-6 add-mb-2 text-center"><span class="block-settings-size">303кб</span><img class="border-radius" src="partner/blogger/images/pm_blogger_banner_1.jpg" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/blogger/images/pm_blogger_banner_1.jpg" download>Скачать</a></div>
+                <div class="col-sm-4 col-6 add-mb-2 text-center"><span class="block-settings-size">392кб</span><img class="border-radius" src="partner/blogger/images/pm_blogger_banner_2.jpg" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/blogger/images/pm_blogger_banner_2.jpg" download>Скачать</a></div>
+                <div class="col-sm-4 col-6 text-center add-mb-2"><span class="block-settings-size">727кб</span><img class="border-radius" src="partner/blogger/images/pm_blogger_banner_3.jpg" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/blogger/images/pm_blogger_banner_3.jpg" download>Скачать</a></div>
+                <div class="col-sm-4 col-6 show-images-blogger text-center add-mb-2" style="display:none;"><span class="block-settings-size">492кб</span><img class="border-radius" src="partner/blogger/images/pm_blogger_banner_4.jpg" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/blogger/images/pm_blogger_banner_4.jpg" download>Скачать</a></div>
+              </div>
+              <div class="row partner-show-mobile">
+                <div class="col-sm-4 col-6 add-mb-2 text-center"><span class="block-settings-size">303кб</span><img class="border-radius" src="partner/blogger/images/pm_blogger_banner_1.jpg" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/blogger/images/pm_blogger_banner_1.jpg" download>Скачать</a></div>
+                <div class="col-sm-4 col-6 add-mb-2 text-center"><span class="block-settings-size">392кб</span><img class="border-radius" src="partner/blogger/images/pm_blogger_banner_2.jpg" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/blogger/images/pm_blogger_banner_2.jpg" download>Скачать</a></div>
+                <div class="col-sm-4 col-6 show-images-blogger text-center add-mb-2" style="display:none;"><span class="block-settings-size">727кб</span><img class="border-radius" src="partner/blogger/images/pm_blogger_banner_3.jpg" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/blogger/images/pm_blogger_banner_3.jpg" download>Скачать</a></div>
+                <div class="col-sm-4 col-6 show-images-blogger text-center add-mb-2" style="display:none;"><span class="block-settings-size">492кб</span><img class="border-radius" src="partner/blogger/images/pm_blogger_banner_4.jpg" draggable="false"><a class="input-def-title mt-0 color-hover" href="partner/blogger/images/pm_blogger_banner_4.jpg" download>Скачать</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="margin text-align-center-size">
+              <div class="row">
+                <div class="col-xl-3 offset-xl-0 col-lg-3 offset-lg-0 col-md-4 offset-md-0 col-sm-6 offset-sm-0 col-8 offset-2 order-xl-1 order-lg-1 order-md-1 order-sm-1 order-2">
+                  <p class="mb-10">Нет нужных промо?</p>
+                  <button class="block-settings-link" onclick="OpenModal('chat-modal-1');">
+                    <i class="bi bi-envelope svg-3"></i> Заказать бесплатно   
+                  </button>
+                </div>
+                <div class="col-xl-2 offset-xl-7 col-lg-3 offset-lg-6 col-md-4 offset-md-4 col-sm-6 col-12 order-1">
+                  <p class="header-status mb-10"> 
+                    <a class="color-purple" href="https://postmarketstorage.blob.core.windows.net/promo-materials/pm-promos.rar" download>Скачать все архивом</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script>
+      $(document).on('click', '.text-left', function(){
+        $(this).parents('.settings-more').toggleClass('open');
+      }); 
+    </script>
+  </body>
+</html>

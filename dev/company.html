@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Кампании - PostMarket</title>
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="https://postmarket.pro/favicon.ico">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+  </head>
+  <body>
+    <div class="block-modal" id="video-modal-3" style="display: none;">
+      <div class="block-modal-inside">
+        <h2 style="display: inline-block;">Создание рекламной кампании</h2>
+        <button class="block-modal-inside-btn" onclick="CloseModal('video-modal-3'); OpenModal('test');">
+          <i class="bi bi-x-circle svg-2"></i>
+        </button>
+        <iframe class="block-modal-inside-iframe" src="https://www.youtube.com/embed/ghp32hLaQlM" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-3 col-sm-5 col-4">
+            <div class="header-link" id="hidden-link">
+              <i class="bi bi-list svg-3"></i> Меню
+            </div>
+            <h1 class="header-title">Главная</h1>
+          </div>
+          <div class="col-lg-6 col-md-9 col-sm-7 col-8">
+            <div class="header-status">
+              <p class="header-status-balance">5000₽</p>
+              <a class="header-status-pay" href="settings.html">Пополнить баланс</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="aside" id="hidden-element">
+        <div class="aside-logo">
+          <p class="header-status-balance"> 
+            <i class="bi bi-wallet svg"></i> 5000₽ 
+            <a class="header-status-pay" href="settings.html">Пополнить</a>
+          </p>
+        </div>
+        <a class="aside-link aside-link-create" href="create-company.html">
+          <i class="bi bi-plus-circle svg"></i> Запустить рекламу
+        </a>
+        <a class="aside-link" href="index.html">
+          <i class="bi bi-house svg"></i> Главная
+        </a> 
+        <a class="aside-link aside-link-active" href="company.html">
+          <i class="bi bi-bullseye svg"></i> Кампании 
+        </a>
+        <a class="aside-link" href="bloggers.html">
+          <i class="bi bi-people svg"></i> Блогеры 
+        </a>
+        <a class="aside-link" href="settings.html">
+          <i class="bi bi-gear svg"></i> Профиль
+        </a>
+        <a class="aside-link" href="partner.html">
+          <i class="bi bi-briefcase svg"></i> Партнер
+        </a>
+        <a class="aside-link" href="faq.html">
+          <i class="bi bi-patch-question svg"></i> F.A.Q
+        </a>
+        <a class="aside-link" href="#">
+          <i class="bi bi-box-arrow-right svg"></i> Выйти
+        </a>
+        <i class="aside-logo-svg"></i>
+      </div>
+      <div class="container">
+        <div class="block-company-list" style="padding-top: 30px;">
+          <div class="row">
+            <div class="col-xl-4 order-xl-1 col-lg-6 order-lg-1 col-md-6 order-md-1 col-sm-12 col-12 order-2">
+              <!-- <h2 onclick="OpenModal('video-modal-3');" class="btn-how-to">
+                Создать рекламную кампанию <i class="bi bi-plus-circle  svg-2"></i>
+              </h2> -->
+            </div>
+            <div class="col-xl-4 order-xl-2 offset-xl-4 col-lg-6 order-lg-2 col-md-6 order-md-2 col-sm-12 col-12 order-1">
+              <a class="color-green" href="create-company.html">
+                <h2 class="block-company-list-title text-align">Создать рекламную кампанию
+                  <i class="bi bi-plus block-list-company-more-avatar block-list-company-more-2 svg-4"></i>
+                </h2>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- TEMPL COMPANY -->
+          <div class="col-lg-6">
+            <a class="block-company status-done" href="created-company/created-company-cpf-done.html">
+              <p>Интернет магазин продуктов</p>
+              <p class="input-def-title mt-0 mb-15">Название кампании</p>
+              <div class="block-company-inside bg-done block-company-cpf">
+                <i class="bi bi-check2 block-company-inside-svg"></i>
+              </div>
+              <p class="block-company-text">
+                Аудитория: 350 000
+                <span class="color-done float-right">Выполнена</span>
+              </p>
+              <p class="block-company-text">Блогеров: 300</p>
+              <p>Подписок: 7</p>
+            </a>
+          </div>
+          <!-- TEMPL COMPANY -->
+          <div class="col-lg-6">
+            <a class="block-company status-done" href="created-company/created-company-auto-done.html">
+              <p>Интернет магазин продуктов</p>
+              <p class="input-def-title mt-0 mb-15">Название кампании</p>
+              <div class="block-company-inside bg-done block-company-pro">
+                <i class="bi bi-check2 block-company-inside-svg"></i>
+              </div>
+              <p class="block-company-text">
+                Аудитория: 350 000
+                <span class="color-done float-right">Выполнена</span>
+              </p>
+              <p class="block-company-text">Охват: 15 000</p>
+              <p>Блогеров: 7</p>
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="block-company status-done" href="created-company/created-company-cpa-done.html">
+              <p>Интернет магазин продуктов</p>
+              <p class="input-def-title mt-0 mb-15">Название кампании</p>
+              <div class="block-company-inside bg-done block-company-cpa">
+                <i class="bi bi-check2 block-company-inside-svg"></i>
+              </div>
+              <p class="block-company-text">
+                Аудитория: 350 000
+                <span class="color-done float-right">Выполнена</span>
+              </p>
+              <p class="block-company-text">Охват: 15 000</p>
+              <p>Блогеров: 7</p>
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="block-company status-not-paid" href="created-company/created-company-auto-not-paid.html">
+              <p>Интернет магазин продуктов</p>
+              <p class="input-def-title mt-0 mb-15">Название кампании</p>
+              <div class="block-company-inside bg-not-paid">
+                <i class="bi bi-question block-company-inside-svg"></i>
+              </div>
+              <p class="block-company-text">
+                Аудитория: 350 000
+                <span class="color-not-paid float-right">Не оплачена</span>
+              </p>
+              <p class="block-company-text">Охват: 15 000</p>
+              <p>Блогеров: 7</p>
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="block-company status-process" href="created-company/created-company-auto-process.html">
+              <p>Интернет магазин продуктов</p>
+              <p class="input-def-title mt-0 mb-15">Название кампании</p>
+              <div class="block-company-inside bg-process">
+                <i class="bi bi-lightning block-company-inside-svg"></i>
+              </div>
+              <p class="block-company-text">
+                Аудитория: 350 000
+                <span class="color-process float-right">Выполняется</span>
+              </p>
+              <p class="block-company-text">Охват: 15 000</p>
+              <p>Блогеров: 7</p>
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="block-company status-considered" href="created-company/created-company-auto-considered.html">
+              <p>Интернет магазин продуктов</p>
+              <p class="input-def-title mt-0 mb-15">Название кампании</p>
+              <div class="block-company-inside bg-considered">
+                <i class="bi bi-clock block-company-inside-svg"></i>
+              </div>
+              <p class="block-company-text">
+                Аудитория: 350 000
+                <span class="color-considered float-right">На модерации</span>
+              </p>
+              <p class="block-company-text">Охват: 15 000</p>
+              <p>Блогеров: 7</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

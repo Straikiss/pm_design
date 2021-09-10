@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Блогер - PostMarket</title>
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="https://postmarket.pro/favicon.ico">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+  </head>
+  <body>
+    <div id="alert-add-to-favorite">
+      <p><i class="bi bi-check-circle svg"></i> Блогер добавлен в избранное для быстрого поиска в списке блогеров и при создании рекламной кампании в ручном режиме!</p>
+    </div>
+    <div id="alert-remove-from-favorite">
+      <p><i class="bi bi-x-circle svg"></i> Блогер убран из избранное для быстрого поиска в списке блогеров и при создании рекламной кампании в ручном режиме!</p>
+    </div>
+    <div id="alert-add-to-company">
+      <p><i class="bi bi-check-circle svg"></i> Блогер добавлен в Вашу уже созданную кампанию!</p>
+    </div>
+    <div id="alert-remove-from-company">
+      <p><i class="bi bi-x-circle svg"></i> Блогер убран из Вашей уже созданной кампанию!</p>
+    </div>
+    <div class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-3 col-sm-5 col-4">
+            <div class="header-link" id="hidden-link">
+              <i class="bi bi-list svg-3"></i> Меню
+            </div>
+            <h1 class="header-title">Блогер</h1>
+          </div>
+          <div class="col-lg-6 col-md-9 col-sm-7 col-8">
+            <div class="header-status">
+              <p class="header-status-balance">5000₽</p>
+              <a class="header-status-pay" href="settings.html">Пополнить баланс</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="aside" id="hidden-element">
+        <div class="aside-logo">
+          <p class="header-status-balance"> 
+            <i class="bi bi-wallet svg"></i> 5000₽
+            <a class="header-status-pay" href="settings.html">Пополнить</a>
+          </p>
+        </div>
+        <a class="aside-link aside-link-create" href="create-company.html">
+          <i class="bi bi-plus-circle svg"></i> Запустить рекламу
+        </a>
+        <a class="aside-link" href="index.html">
+          <i class="bi bi-house svg"></i> Главная
+        </a> 
+        <a class="aside-link" href="company.html">
+          <i class="bi bi-bullseye svg"></i> Кампании 
+        </a>
+        <a class="aside-link aside-link-active" href="bloggers.html">
+          <i class="bi bi-people svg"></i> Блогеры 
+        </a>
+        <a class="aside-link " href="settings.html">
+          <i class="bi bi-gear svg"></i> Профиль
+        </a>
+        <a class="aside-link" href="partner.html">
+          <i class="bi bi-briefcase svg"></i> Партнер
+        </a>
+        <a class="aside-link" href="faq.html">
+          <i class="bi bi-patch-question svg"></i> F.A.Q
+        </a>
+        <a class="aside-link" href="#">
+          <i class="bi bi-box-arrow-right svg"></i> Выйти
+        </a>
+        <i class="aside-logo-svg"></i>
+      </div>
+      <div class="container">
+        <div class="row block-blogger-card" style="padding-top: 30px;">
+          <div class="col-xl-5 offset-xl-1 col-lg-6 col-md-6">
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="block-def margin">
+                  <div class="row">
+                    <div class="col-md-6 ml-25 col-sm-5">
+                      <div class="flex">
+                        <img class="block-blogger-social" src="http://postmarket.pro/content/public/img/Instagram.png" draggable="false">
+                        <img class="block-bloggers-card-avatar" src="https://postmarketstorage.blob.core.windows.net/publisher-avatars/publisher41595.jpg" draggable="false">
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-7">
+                      <p class="block-select-city-body">О себе</p>
+                      <p>I am Adelia from Russia🌸 Делаю рекламу, НЕДОРОГО ☝️ охват большой. По вопросам рекламы пишите в direct 💌 🤝</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <span class="favorite block-blogger-card-favorite">
+                        <span class="favorite-add" onclick="OpenAlert('alert-add-to-favorite');">
+                          <i class="bi bi-plus-circle svg-4"></i> в избранное
+                        </span>
+                        <span class="favorite-remove" onclick="OpenAlert('alert-remove-from-favorite');">
+                          <i class="bi bi-x-circle svg-4"></i> из избранного
+                        </span>
+                      </span>
+                    </div>
+                    <div class="col-lg-6">
+                      <span class="company block-blogger-card-favorite">
+                        <span class="company-add" onclick="OpenAlert('alert-add-to-company');">
+                          <i class="bi bi-plus-circle svg-4"></i> в кампанию
+                        </span>
+                        <span class="company-remove" onclick="OpenAlert('alert-remove-from-company');">
+                          <i class="bi bi-x-circle svg-4"></i> из кампании
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                  <!-- BEGIN NEW CONTENT -->
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <p class="block-blogger-card-head block-select-city-body">Имя аккаунта</p>
+                      <p>Adeliya</p>
+                      <p class="block-blogger-card-head block-select-city-body">Ник аккаунта</p>
+                      <p><a class="block-blogger-card-link" href="https://www.instagram.com/adelia.twins_1/" target="_blank">@adelia.twins_1</a></p>
+                      <p class="block-blogger-card-head block-select-city-body tooltip w-100">
+                        Активность аккаунта <i class="bi bi-question-circle svg color-purple"></i>
+                        <span class="tooltip-text">Частота выкладываемых публикаций на странице у блогера.</span>
+                      </p>
+                      <div class="block-icons color-purple align-left height-15">
+                        <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                        <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                        <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                        <i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
+                        <i class="bi bi-star home-bloggers-block-icons-svg"></i>
+                      </div>
+                      <p class="block-blogger-card-head block-select-city-body tooltip w-100">
+                        Качество аккаунта <i class="bi bi-question-circle svg color-purple"></i>
+                        <span class="tooltip-text">Качество определяется на основе анализа профиля блогера и результатов выполнения тестового рекламного задания, где проверяется статистика и выявляется наличие или отсутствие накрутки этих данных.</span>
+                      </p>
+                      <div class="block-icons color-purple align-left height-15">
+                        <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                        <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                        <i class="bi bi-star-fill home-bloggers-block-icons-svg"></i>
+                        <i class="bi bi-star-half home-bloggers-block-icons-svg"></i>
+                        <i class="bi bi-star home-bloggers-block-icons-svg"></i>
+                      </div>
+                      <p class="block-blogger-card-head block-select-city-body">Подписчики</p>
+                      <p>4 334</p>
+                      <p class="block-blogger-card-head block-select-city-body">Локация</p>
+                      <p>Москва</p>
+                      <p class="block-blogger-card-head block-select-city-body tooltip w-100">
+                        Стоимость <i class="bi bi-question-circle svg color-purple"></i>
+                        <span class="tooltip-text">Цена формируется исходя из просмотров рекламы реальной, не ненакрученной аудитории блогера.</span>
+                      </p>
+                    </div>
+                    <div class="col-lg-6">
+                      <p class="block-blogger-card-head block-select-city-body">Тематики аккаунта</p>
+                      <p class="mb-5">Личный блог</p>
+                      <p class="mb-5">Бизнес/Финансы</p>
+                      <p>- не указано -</p>
+                    </div>
+                  </div>
+                 <!-- END NEW CONTENT -->
+                  <div class="row">
+                    <div class="col-sm-6 col-12">
+                      <div class="block-blogger-card-price">
+                        <div class="row">
+                          <div class="col-lg-6 col-md-12 col-sm-6 col-6">
+                            <p class="text-center-size">Пост</p>
+                          </div>
+                          <div class="col-lg-6 col-md-12 col-sm-6 col-6">
+                            <p class="text-align text-center-size">5940 ₽</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-12">
+                      <div class="block-blogger-card-price">
+                        <div class="row">
+                          <div class="col-lg-6 col-md-12 col-sm-6 col-6">
+                            <p class="text-center-size">Сторис</p>
+                          </div>
+                          <div class="col-lg-6 col-md-12 col-sm-6 col-6">
+                            <p class="text-align text-center-size">4560 ₽</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+<!--                     <div class="col-sm-6 col-12">
+                      <div class="block-blogger-card-price">
+                        <div class="row">
+                          <div class="col-lg-6 col-md-12 col-sm-6 col-6">
+                            <p class="text-center-size">Видео</p>
+                          </div>
+                          <div class="col-lg-6 col-md-12 col-sm-6 col-6">
+                            <p class="text-align text-center-size">4560 ₽</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="block-view">
+                  <h2 class="margin-25">Охват публикаций</h2>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="block-view-padding">
+                        <h2 class="size-320"><strong>1 236</strong> пост</h2>
+                        <p>просмотров</p>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="block-view-padding">
+                        <h2 class="size-320"><strong>485</strong> сторис</h2>
+                        <p>просмотров</p>
+                      </div>
+                    </div>
+<!--                     <div class="col-12">
+                      <div class="block-view-padding">
+                        <h2 class="size-320"><strong>1 236</strong> видео</h2>
+                        <p>просмотров</p>
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-6 col-md-6">
+            <div class="block-def mt-0-size margin">
+              <!-- BEGIN NEW ICON -->
+              <p class="block-blogger-card-title" style="display:flex;">
+               <img src="http://postmarket.pro/content/public/img/Instagram.png" style="width: 20px; margin-right: 5px;"> Последние публикации в Instagram 
+              <!-- 
+                <img src="http://postmarket.pro/content/public/img/Tiktok.png" style="width: 20px; margin-right: 5px;"> Последние публикации в Tiktok  
+              -->
+              </p>
+              <!-- END NEW ICON -->
+              <div class="row">
+                <div class="col-6">
+                  <a class="block-bloggers-link" href="https://postmarketstorage.blob.core.windows.net/reverse-proxy-cache/689ac54d1f73f7daba46b7baa64ed2be.jpg">
+                    <img class="block-bloggers-avatar" src="https://postmarketstorage.blob.core.windows.net/reverse-proxy-cache/689ac54d1f73f7daba46b7baa64ed2be.jpg" draggable="false">
+                  </a>
+                  <p class="block-blogger-card-head-2 color-purple">
+                    <i class="bi bi-clock svg svg-mr"></i> 26/12/2020
+                  </p>
+                  <p class="block-blogger-card-body">Дата публикации</p>
+                  <p class="block-blogger-card-head-2 color-purple">
+                    <i class="bi bi-emoji-heart-eyes svg svg-mr"></i> 13% 
+                  </p>
+                  <p class="block-blogger-card-body">Вовлеченность</p>
+                  <p class="block-blogger-card-head-2 color-purple">
+                    <i class="bi bi-chat-right-text svg svg-mr"></i> 29
+                  </p>
+                  <p class="block-blogger-card-body">Комменты</p>
+                  <p class="block-blogger-card-head-2 color-purple">
+                    <i class="bi bi-heart svg svg-mr"></i> 533 
+                  </p>
+                  <p class="block-blogger-card-body">Лайки</p>
+                </div>
+                <div class="col-6">
+                  <a class="block-bloggers-link" href="https://postmarketstorage.blob.core.windows.net/reverse-proxy-cache/a54240790a8ea967cdd175cb34cc114c.jpg">
+                    <img class="block-bloggers-avatar" src="https://postmarketstorage.blob.core.windows.net/reverse-proxy-cache/a54240790a8ea967cdd175cb34cc114c.jpg" draggable="false">
+                  </a>
+                  <p class="block-blogger-card-head-2 color-purple">
+                    <i class="bi bi-clock svg svg-mr"></i> 26/12/2020
+                  </p>
+                  <p class="block-blogger-card-body">Дата публикации</p>
+                  <p class="block-blogger-card-head-2 color-purple">
+                    <i class="bi bi-emoji-heart-eyes svg svg-mr"></i> 13%
+                  </p>
+                  <p class="block-blogger-card-body">Вовлеченность</p>
+                  <p class="block-blogger-card-head-2 color-purple">
+                    <i class="bi bi-chat-right-text svg svg-mr"></i> 29
+                  </p>
+                  <p class="block-blogger-card-body">Комменты</p>
+                  <p class="block-blogger-card-head-2 color-purple">
+                    <i class="bi bi-heart svg svg-mr"></i> 533
+                  </p>
+                  <p class="block-blogger-card-body">Лайки</p>
+                </div>
+                <div class="col-6">
+                  <a class="block-bloggers-link" href="https://postmarketstorage.blob.core.windows.net/reverse-proxy-cache/4009e619be064f82c8eb14fa80089446.jpg">
+                    <img class="block-bloggers-avatar" src="https://postmarketstorage.blob.core.windows.net/reverse-proxy-cache/4009e619be064f82c8eb14fa80089446.jpg" draggable="false">
+                  </a>
+                  <p class="block-blogger-card-head-2 color-purple">
+                    <i class="bi bi-clock svg svg-mr"></i> 26/12/2020
+                  </p>
+                  <p class="block-blogger-card-body">Дата публикации</p>
+                  <p class="block-blogger-card-head-2 color-purple">
+                    <i class="bi bi-emoji-heart-eyes svg svg-mr"></i> 13%
+                  </p>
+                  <p class="block-blogger-card-body">Вовлеченность</p>
+                  <p class="block-blogger-card-head-2 color-purple">
+                    <i class="bi bi-chat-right-text svg svg-mr"></i> 29
+                  </p>
+                  <p class="block-blogger-card-body">Комменты</p>
+                  <p class="block-blogger-card-head-2 color-purple">
+                    <i class="bi bi-heart svg svg-mr"></i> 533
+                  </p>
+                  <p class="block-blogger-card-body">Лайки</p>
+                </div>
+                <div class="col-6">
+                  <a class="block-bloggers-link" href="https://postmarketstorage.blob.core.windows.net/reverse-proxy-cache/9ba9d76dfedd4d8e8b1efb09464ce147.jpg">
+                    <img class="block-bloggers-avatar" src="https://postmarketstorage.blob.core.windows.net/reverse-proxy-cache/9ba9d76dfedd4d8e8b1efb09464ce147.jpg" draggable="false">
+                  </a>
+                  <p class="block-blogger-card-head-2 color-purple">
+                    <i class="bi bi-clock svg svg-mr"></i> 26/12/2020
+                  </p>
+                  <p class="block-blogger-card-body">Дата публикации</p>
+                  <p class="block-blogger-card-head-2 color-purple">
+                    <i class="bi bi-emoji-heart-eyes svg svg-mr"></i> 13%
+                  </p>
+                  <p class="block-blogger-card-body">Вовлеченность</p>
+                  <p class="block-blogger-card-head-2 color-purple">
+                    <i class="bi bi-chat-right-text svg svg-mr"></i> 29
+                  </p>
+                  <p class="block-blogger-card-body">Комменты</p>
+                  <p class="block-blogger-card-head-2 color-purple">
+                    <i class="bi bi-heart svg svg-mr"></i> 533
+                  </p>
+                  <p class="block-blogger-card-body">Лайки</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-5 offset-xl-1 col-lg-6">
+            <h2 class="block-blogger-stats">
+              <i class="bi bi-bar-chart svg-2 color-purple"></i> Аналитика аудитории
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-5 offset-xl-1 col-lg-6">
+            <div class="block-gender">
+              <h2 class="block-gender-title">Пол</h2>
+              <div class="row">
+                <div class="col-12">
+                  <h2>71% <span style="float: right;">29%</span></h2>
+                  <div class="progress-line female">
+                    <div class="empty-line" style="margin-left: 71%; background: #6ea8fe; opacity: 1;"></div>
+                  </div>
+                  <p class="block-gender-body">Женщины<span style="float: right;">Мужчины</span></p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-6">
+            <div class="block-age">
+              <h2 class="block-gender-title">Возраст</h2>
+              <div class="row">
+                <div class="col-2">
+                  <div class="progress-line-age">
+                    <div class="empty-line-age empty-line-age-1"></div>
+                  </div>
+                  <p class="text-center block-gender-body">13-17</p>
+                </div>
+                <div class="col-2">
+                  <div class="progress-line-age">
+                    <div class="empty-line-age empty-line-age-2"></div>
+                  </div>
+                  <p class="text-center block-gender-body">18-24</p>
+                </div>
+                <div class="col-2">
+                  <div class="progress-line-age">
+                    <div class="empty-line-age empty-line-age-3"></div>
+                  </div>
+                  <p class="text-center block-gender-body">25-35</p>
+                </div>
+                <div class="col-2">
+                  <div class="progress-line-age">
+                    <div class="empty-line-age empty-line-age-4"></div>
+                  </div>
+                  <p class="text-center block-gender-body">35-44</p>
+                </div>
+                <div class="col-2">
+                  <div class="progress-line-age">
+                    <div class="empty-line-age empty-line-age-5"></div>
+                  </div>
+                  <p class="text-center block-gender-body">45-54</p>
+                </div>
+                <div class="col-2">
+                  <div class="progress-line-age">
+                    <div class="empty-line-age empty-line-age-6"></div>
+                  </div>
+                  <p class="text-center block-gender-body">55-64</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-5 offset-xl-1 col-lg-6 margin">
+            <div class="block-def">
+              <h2 class="block-gender-title">Локация</h2>
+              <p class="mb-10">Москва <span class="float-right color-purple">15%</span></p>
+              <p class="mb-10">Москва <span class="float-right color-purple">15%</span></p>
+              <p class="mb-10">Москва <span class="float-right color-purple">15%</span></p>
+              <p>Москва <span class="float-right color-purple">15%</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-5 offset-xl-1">
+            <h2 class="block-gender-title block-blogger-stats">
+              <i class="bi bi-camera svg-2 color-purple"></i> Скриншоты статистики
+            </h2>
+          </div>
+          <div class="col-xl-10 offset-xl-1">
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-30-size">
+                <div class="block-def">
+                  <p class="text-center">Публикации</p>
+                  <a href="img/screenshots/instagram/1.png">
+                    <img class="block-screenshots-avatar" src="img/screenshots/instagram/1.png" draggable="false">
+                  </a>
+                  <!-- TIKTOK
+                    <p class="text-center">Просмотры</p>
+                    <a href="img/screenshots/tiktok/1.png">
+                      <img class="block-screenshots-avatar" src="img/screenshots/tiktok/1.jpg" draggable="false">
+                    </a>
+                  -->
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-30-size">
+                <div class="block-def">
+                  <p class="text-center">Истории</p>
+                  <a href="img/screenshots/instagram/2.png">
+                    <img class="block-screenshots-avatar" src="img/screenshots/instagram/2.png" draggable="false">
+                  </a>
+                  <!-- TIKTOK
+                    <p class="text-center">Подписчики</p>
+                    <a href="img/screenshots/tiktok/1.png">
+                      <img class="block-screenshots-avatar" src="img/screenshots/tiktok/1.jpg" draggable="false">
+                    </a>
+                  -->
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-30-size">
+                <div class="block-def">
+                  <p class="text-center">Возраст и пол</p>
+                  <a href="img/screenshots/instagram/3.png">
+                    <img class="block-screenshots-avatar" src="img/screenshots/instagram/3.png" draggable="false">
+                  </a>
+                  <!-- TIKTOK
+                    <p class="text-center">Профиль</p>
+                    <a href="img/screenshots/tiktok/3.png">
+                      <img class="block-screenshots-avatar" src="img/screenshots/tiktok/3.jpg" draggable="false">
+                    </a>
+                  -->
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-30-size">
+                <div class="block-def">
+                  <p class="text-center">Местоположение</p>
+                  <a href="img/screenshots/instagram/4.png">
+                    <img class="block-screenshots-avatar" src="img/screenshots/instagram/4.png" draggable="false">
+                  </a>
+                  <!-- TIKTOK
+                    <p class="text-center">Популярные</p>
+                    <a href="img/screenshots/tiktok/4.png">
+                      <img class="block-screenshots-avatar" src="img/screenshots/tiktok/4.jpg" draggable="false">
+                    </a>
+                  -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-30">
+          <div class="col-xl-4 offset-xl-4 col-lg-6 offset-lg-3 col-md-6 offset-md-3">
+            <div class="block-blogger-link-more-block">
+              <a class="block-blogger-link-more" href="create-company.html">
+                <h2 class="block-blogger-link-more-block-title">
+                  <i class="bi bi-plus block-list-company-more-avatar block-list-company-more-2 svg-4"></i> Создать рекламную кампанию
+                </h2>
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-7 offset-xl-1">
+            <h2 class="block-screenshots-title mt-0">
+              <i class="bi bi-trophy svg-2 color-purple"></i> Реклама через PostMarket
+            </h2>
+          </div>
+          <div class="col-xl-10 offset-xl-1">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="block-def margin">
+                  <a href="https://postmarketstorage.blob.core.windows.net/tasks/task46228_image1.jpg">
+                    <img class="block-screenshots-avatar-2" src="https://postmarketstorage.blob.core.windows.net/tasks/task46228_image1.jpg" draggable="false">
+                  </a>
+                  <p class="block-blogger-card-head">
+                    <i class="bi bi-bullseye svg color-purple"></i> Охват: 375
+                  </p>
+                  <p class="block-blogger-card-head">
+                    <i class="bi bi-hand-index-thumb svg color-purple"></i> Действия: 321
+                  </p>
+                  <p class="block-blogger-card-head">
+                    <a class="block-blogger-link-screen" href="">Скриншот статистики</a>
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="block-def margin">
+                  <a href="https://postmarketstorage.blob.core.windows.net/tasks/task45505_image1.jpg">
+                    <img class="block-screenshots-avatar-2" src="https://postmarketstorage.blob.core.windows.net/tasks/task45505_image1.jpg" draggable="false">
+                  </a>
+                  <p class="block-blogger-card-head">
+                    <i class="bi bi-bullseye svg color-purple"></i> Охват: 375
+                  </p>
+                  <p class="block-blogger-card-head">
+                    <i class="bi bi-hand-index-thumb svg color-purple"></i> Действия: 321
+                  </p>
+                  <p class="block-blogger-card-head">
+                    <a class="block-blogger-link-screen" href="">Скриншот статистики</a>
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="block-def margin">
+                  <a href="https://postmarketstorage.blob.core.windows.net/tasks/task45163_image1.jpg">
+                    <img class="block-screenshots-avatar-2" src="https://postmarketstorage.blob.core.windows.net/tasks/task45163_image1.jpg" draggable="false">
+                  </a>
+                  <p class="block-blogger-card-head">
+                    <i class="bi bi-bullseye svg color-purple"></i> Охват: 375
+                  </p>
+                  <p class="block-blogger-card-head">
+                    <i class="bi bi-hand-index-thumb svg color-purple"></i> Действия: 321
+                  </p>
+                  <p class="block-blogger-card-head">
+                    <a class="block-blogger-link-screen" href="">Скриншот статистики</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script>
+      $(".favorite").click(function(){
+        $(this).toggleClass("favorite-added");
+      }); 
+      $(".company").click(function(){
+        $(this).toggleClass("company-added");
+      }); 
+    </script>
+  </body>
+</html>
