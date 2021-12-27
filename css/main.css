@@ -3428,7 +3428,7 @@ ul li .text {
     .block-modal-inside {
         /* width: 330px; */
         width: auto;
-        min-height: 238px;
+        min-height: fit-content;
     }
     .block-modal-inside-2 {
         width: 330px;
