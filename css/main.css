@@ -2077,7 +2077,7 @@ label {
     top: 15px;
 }
 .block-modal-inside {
-    height: 398px;
+    height: fit-content;
 }
 .block-modal-inside-2 {
     height: 494px;
