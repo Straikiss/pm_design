@@ -1,5 +1,6 @@
 function OpenMenu(){
   document.getElementById('hidden-element').style.transform='translateX(0)';
+  document.getElementsByClassName('container').style.opacity = "0.5";
 }
 
 function CloseMenu(){
