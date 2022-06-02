@@ -5,6 +5,7 @@ function OpenMenu(){
 
 function CloseMenu(){
   document.getElementById('hidden-element').style.transform='translateX(-100%)';
+  document.getElementsByClassName('container').style.opacity = "0";
 }
 
 var modal=document.getElementById("video-modal-1");
